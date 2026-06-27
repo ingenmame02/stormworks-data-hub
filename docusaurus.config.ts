@@ -15,15 +15,15 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://example.com',
+  url: 'https://ingenmame02.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/stormworks-data-hub/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'yukic', // Usually your GitHub org/user name.
-  projectName: 'stormworks-wiki', // Usually your repo name.
+  organizationName: 'ingenmame02', // Usually your GitHub org/user name.
+  projectName: 'stormworks-data-hub', // Usually your repo name.
 
   onBrokenLinks: 'throw',
 
