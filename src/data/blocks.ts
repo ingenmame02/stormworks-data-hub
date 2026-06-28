@@ -288,14 +288,14 @@ export const blockCategories: BlockCategory[] = [
     ],
   },
   {
-    name: 'kari',
-    description: 'ゲームの基本的な構造ブロックの一覧です',
+    name: 'Vehicle Control',
+    description: '',
     blocks: [
       {
-        name: '10x1 Block',
-        mass: 1,
-        cost: 1,
-        description: '基本的な構造ブロック。',
+        name: 'Keel (Medium)',
+        mass: 1000,
+        cost: 1000,
+        description: '航海のための船の中型のキールです。キールが水中にある場合は、船が横転する力に抵抗するため船が直立しやすくなります。また、キールは横方向への移動も防ぐため、船はキールの向きと同じ方向に動くことになります。これにより風の向きにかかわらず、帆船が目的の方向に進めます。',
         image: '/img/blocks/20260620180158_1.jpg',
       },
     ],
