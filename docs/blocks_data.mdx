@@ -4,10 +4,13 @@ title: ブロックデータ
 ---
 
 import BlocksTable from '@site/src/components/BlocksTable';
-
-
+import { blockCategories } from '@site/src/data/blocks';
 
 Stormworksに登場するブロックのデータをまとめています。
+
+{blockCategories.map((category) => (
+  <h2 key={category.name}>{category.name}</h2>
+))}
 
 <BlocksTable />
 
