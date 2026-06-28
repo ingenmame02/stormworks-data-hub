@@ -51,7 +51,7 @@ function BlockCategoryTable({
   return (
     <section>
       <h2>{category.name} </h2>
-
+      {category.description && <p>{category.description}</p>}
       <table>
         <thead>
           <tr>

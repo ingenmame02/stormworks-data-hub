@@ -8,12 +8,14 @@ export type BlockData = {
 
 export type BlockCategory = {
   name: string;
+  description?: string;
   blocks: BlockData[];
 };
 
 export const blockCategories: BlockCategory[] = [
   {
     name: 'BLOCKS',
+    description: 'ゲームの基本的な構造ブロックの一覧です',
     blocks: [
       {
         name: 'Block',
@@ -152,6 +154,7 @@ export const blockCategories: BlockCategory[] = [
   },
   {
     name: 'kari',
+    description: 'ゲームの基本的な構造ブロックの一覧です',
     blocks: [
       {
         name: '10x1 Block',
