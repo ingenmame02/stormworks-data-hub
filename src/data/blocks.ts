@@ -15,7 +15,7 @@ export type BlockCategory = {
 export const blockCategories: BlockCategory[] = [
   {
     name: 'BLOCKS',
-    description: 'ゲームの基本的な構造ブロックの一覧です',
+    description: '',
     blocks: [
       {
         name: 'Block',
@@ -288,7 +288,7 @@ export const blockCategories: BlockCategory[] = [
     ],
   },
   {
-    name: 'kari',
+    name: 'Vehicle Control',
     description: 'ゲームの基本的な構造ブロックの一覧です',
     blocks: [
       {
