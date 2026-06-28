@@ -1,3 +1,13 @@
+
+# stormworks data hubについて
+stormworksのすべての情報を網羅するサイトを作っていきます
+ぼちぼちやっていきます
+
+## 寄稿大歓迎です！！
+
+DMはこちらまで
+https://x.com/ingenmame02
+
 # Website
 
 This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
