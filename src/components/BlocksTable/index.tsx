@@ -4,14 +4,23 @@ import {type BlockCategory, blockCategories} from '@site/src/data/blocks';
 
 type SortKey = 'offset' | 'name' | 'mass' | 'cost';
 
-export default function BlocksTable() {
+type BlocksTableProps = {
+  categoryIndex?: number;
+};
+
+export default function BlocksTable({categoryIndex}: BlocksTableProps) {
   const [sortKey, setSortKey] = useState<SortKey>('offset');
+
+  // categoryIndexが指定されている場合はそのカテゴリーのみ、なければすべて表示
+  const categoriesToShow = categoryIndex !== undefined 
+    ? [blockCategories[categoryIndex]]
+    : blockCategories;
 
   return (
     <>
-      <p>表の見出しボタンを押すと、各カテゴリー内で並び替えできます。</p>
+      {categoryIndex === undefined && <p>表の見出しボタンを押すと、各カテゴリー内で並び替えできます。</p>}
 
-      {blockCategories.map((category) => (
+      {categoriesToShow.map((category) => (
         <BlockCategoryTable
           key={category.name}
           category={category}
@@ -50,7 +59,6 @@ function BlockCategoryTable({
 
   return (
     <section>
-      <h2 id={category.name}>{category.name}</h2>
       {category.description && <p>{category.description}</p>}
       <table>
         <thead>
