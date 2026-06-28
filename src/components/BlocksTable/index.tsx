@@ -1,8 +1,33 @@
 import React, {useMemo, useState} from 'react';
-import useBaseUrl from '@docusaurus/useBaseUrl';
 import {type BlockCategory, blockCategories} from '@site/src/data/blocks';
 
 type SortKey = 'offset' | 'name' | 'mass' | 'cost';
+
+// Map of image paths to require'd modules for proper URL resolution
+const imageRequires: Record<string, string> = {
+  '/img/Block_data/BLOCKS/Block.png': require('@site/static/img/Block_data/BLOCKS/Block.png').default,
+  '/img/Block_data/BLOCKS/Handle.png': require('@site/static/img/Block_data/BLOCKS/Handle.png').default,
+  '/img/Block_data/BLOCKS/Pyramid.png': require('@site/static/img/Block_data/BLOCKS/Pyramid.png').default,
+  '/img/Block_data/BLOCKS/Pyramid 1x2.png': require('@site/static/img/Block_data/BLOCKS/Pyramid 1x2.png').default,
+  '/img/Block_data/BLOCKS/Pyramid 1x4.png': require('@site/static/img/Block_data/BLOCKS/Pyramid 1x4.png').default,
+  '/img/Block_data/BLOCKS/Pyramid 2x2.png': require('@site/static/img/Block_data/BLOCKS/Pyramid 2x2.png').default,
+  '/img/Block_data/BLOCKS/Pyramid 2x4.png': require('@site/static/img/Block_data/BLOCKS/Pyramid 2x4.png').default,
+  '/img/Block_data/BLOCKS/Pyramid 4x4.png': require('@site/static/img/Block_data/BLOCKS/Pyramid 4x4.png').default,
+  '/img/Block_data/BLOCKS/Wedge.png': require('@site/static/img/Block_data/BLOCKS/Wedge.png').default,
+  '/img/Block_data/BLOCKS/Wedge 1x2.png': require('@site/static/img/Block_data/BLOCKS/Wedge 1x2.png').default,
+  '/img/Block_data/BLOCKS/Wedge 1x4.png': require('@site/static/img/Block_data/BLOCKS/Wedge 1x4.png').default,
+  '/img/Block_data/BLOCKS/Ladder.png': require('@site/static/img/Block_data/BLOCKS/Ladder.png').default,
+  '/img/Block_data/BLOCKS/Physics Flooder.png': require('@site/static/img/Block_data/BLOCKS/Physics Flooder.png').default,
+  '/img/Block_data/BLOCKS/Inverse Pyramid.png': require('@site/static/img/Block_data/BLOCKS/Inverse Pyramid.png').default,
+  '/img/Block_data/BLOCKS/Inverse Pyramid 1x2.png': require('@site/static/img/Block_data/BLOCKS/Inverse Pyramid 1x2.png').default,
+  '/img/Block_data/BLOCKS/Inverse Pyramid 1x4.png': require('@site/static/img/Block_data/BLOCKS/Inverse Pyramid 1x4.png').default,
+  '/img/Block_data/BLOCKS/Inverse Pyramid 2x2.png': require('@site/static/img/Block_data/BLOCKS/Inverse Pyramid 2x2.png').default,
+  '/img/Block_data/BLOCKS/Inverse Pyramid 2x4.png': require('@site/static/img/Block_data/BLOCKS/Inverse Pyramid 2x4.png').default,
+  '/img/Block_data/BLOCKS/Inverse Pyramid 4x4.png': require('@site/static/img/Block_data/BLOCKS/Inverse Pyramid 4x4.png').default,
+};
+
+const fallbackImage = require('@site/static/img/stormworks_data_hub_logo.svg').default;
+
 
 export default function BlocksTable() {
   const [sortKey, setSortKey] = useState<SortKey>('offset');
@@ -96,24 +121,15 @@ function BlockCategoryTable({
 }
 
 function BlockImage({src, alt}: {src: string; alt: string}) {
-  const fallbackSrc = useBaseUrl('/img/stormworks_data_hub_logo.svg');
-  // Properly encode the image path to handle spaces and special characters
-  const encodedSrc = encodeURI(src) || '/img/stormworks_data_hub_logo.svg';
-  const resolvedSrc = useBaseUrl(encodedSrc);
-  const [currentSrc, setCurrentSrc] = useState(resolvedSrc);
+  const imageSrc = imageRequires[src] || fallbackImage;
 
   return (
     <img
-      src={currentSrc}
+      src={imageSrc}
       alt={alt}
       width="64"
       height="64"
       style={{objectFit: 'contain'}}
-      onError={() => {
-        if (currentSrc !== fallbackSrc) {
-          setCurrentSrc(fallbackSrc);
-        }
-      }}
     />
   );
 }
