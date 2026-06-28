@@ -1,6 +1,7 @@
 
 # stormworks data hubについて
 stormworksのすべての情報を網羅するサイトを作っていきます
+リンク:https://ingenmame02.github.io/stormworks-data-hub/blocks_data/
 ぼちぼちやっていきます
 
 ！！寄稿大歓迎です！！
