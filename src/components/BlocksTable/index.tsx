@@ -97,7 +97,9 @@ function BlockCategoryTable({
 
 function BlockImage({src, alt}: {src: string; alt: string}) {
   const fallbackSrc = useBaseUrl('/img/stormworks_data_hub_logo.svg');
-  const resolvedSrc = useBaseUrl(src || '/img/stormworks_data_hub_logo.svg');
+  // Properly encode the image path to handle spaces and special characters
+  const encodedSrc = encodeURI(src) || '/img/stormworks_data_hub_logo.svg';
+  const resolvedSrc = useBaseUrl(encodedSrc);
   const [currentSrc, setCurrentSrc] = useState(resolvedSrc);
 
   return (
