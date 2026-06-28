@@ -11,7 +11,16 @@ const config: Config = {
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
-    v4: true, // Improve compatibility with the upcoming Docusaurus v4
+    v4: false,
+    faster: {
+      swcJsLoader: false,
+      swcJsMinimizer: false,
+      swcHtmlMinimizer: false,
+      lightningCssMinimizer: false,
+      mdxCrossCompilerCache: false,
+      rspackBundler: false,
+      rspackPersistentCache: false,
+    },
   },
 
   // Set the production url of your site here
@@ -50,6 +59,19 @@ const config: Config = {
           customCss: require.resolve('./src/css/custom.css'),
         },
       }),
+    ],
+  ],
+  plugins: [
+    [
+      require.resolve('@cmfcmf/docusaurus-search-local'),
+      {
+        indexDocs: true,
+        indexDocSidebarParentCategories: 1,
+        includeParentCategoriesInPageTitle: true,
+        indexBlog: false,
+        indexPages: true,
+        language: 'ja',
+      },
     ],
   ],
   themeConfig: {
