@@ -1,4 +1,5 @@
 import React, {useMemo, useState} from 'react';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import {type BlockCategory, blockCategories} from '@site/src/data/blocks';
 
 type SortKey = 'offset' | 'name' | 'mass' | 'cost';
@@ -33,7 +34,6 @@ function BlockCategoryTable({
   sortKey,
   onSortChange,
 }: BlockCategoryTableProps) {
-  
   const sortedBlocks = useMemo(() => {
     if (sortKey === 'offset') {
       return [...category.blocks];
@@ -82,7 +82,7 @@ function BlockCategoryTable({
             <tr key={block.name}>
               <td>{block.name}</td>
               <td>
-                <img src={block.image} alt="" width="64" height="64" style={{ objectFit: 'contain' }} />
+                <BlockImage src={block.image} alt={block.name} />
               </td>
               <td>{block.mass}</td>
               <td>{block.cost}</td>
@@ -92,5 +92,26 @@ function BlockCategoryTable({
         </tbody>
       </table>
     </section>
+  );
+}
+
+function BlockImage({src, alt}: {src: string; alt: string}) {
+  const fallbackSrc = useBaseUrl('/img/stormworks_data_hub_logo.svg');
+  const resolvedSrc = useBaseUrl(src || '/img/stormworks_data_hub_logo.svg');
+  const [currentSrc, setCurrentSrc] = useState(resolvedSrc);
+
+  return (
+    <img
+      src={currentSrc}
+      alt={alt}
+      width="64"
+      height="64"
+      style={{objectFit: 'contain'}}
+      onError={() => {
+        if (currentSrc !== fallbackSrc) {
+          setCurrentSrc(fallbackSrc);
+        }
+      }}
+    />
   );
 }
