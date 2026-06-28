@@ -288,7 +288,7 @@ export const blockCategories: BlockCategory[] = [
     ],
   },
   {
-    name: 'Vehicle Control',
+    name: 'kari',
     description: 'ゲームの基本的な構造ブロックの一覧です',
     blocks: [
       {
