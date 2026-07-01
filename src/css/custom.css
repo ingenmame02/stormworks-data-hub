@@ -15,6 +15,44 @@
   --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --block-card-bg: #fff;
+  --block-card-border: #ddd;
+  --block-card-text: #111111;
+  --block-description-text: #333;
+  --block-card-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --block-sort-button-bg: transparent;
+  --block-sort-button-active-bg: #dfdfdf;
+  --block-sort-button-border: #999;
+  --block-sort-button-text: #111111;
+  --block-sort-button-hover-bg: rgba(0, 0, 0, 0.06);
+  --block-detail-header-bg: #fafafa;
+  --block-detail-border: #ddd;
+}
+
+.blocks-table-card {
+  background: var(--block-card-bg);
+  border: 1px solid var(--block-card-border);
+  color: var(--block-card-text);
+  box-shadow: var(--block-card-shadow);
+}
+
+.blocks-table-sort-button {
+  border: 1px solid var(--block-sort-button-border);
+  background: var(--block-sort-button-bg);
+  color: var(--block-sort-button-text);
+  cursor: pointer;
+  padding: 0.45rem 0.75rem;
+  border-radius: 0.35rem;
+  font-size: 0.95rem;
+  transition: background 0.15s ease;
+}
+
+.blocks-table-sort-button:hover {
+  background: var(--block-sort-button-hover-bg);
+}
+
+.blocks-table-sort-button.active {
+  background: var(--block-sort-button-active-bg);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -27,4 +65,15 @@
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --block-card-bg: #1d2430;
+  --block-card-border: #384355;
+  --block-card-text: #f4f7fb;
+  --block-description-text: #dcdfe7;
+  --block-card-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+  --block-sort-button-active-bg: #2e4060;
+  --block-sort-button-border: #5f6d84;
+  --block-sort-button-text: #f4f7fb;
+  --block-sort-button-hover-bg: rgba(255, 255, 255, 0.08);
+  --block-detail-header-bg: #2c3647;
+  --block-detail-border: #384355;
 }
