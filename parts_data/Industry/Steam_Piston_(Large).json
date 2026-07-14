@@ -1,0 +1,60 @@
+{
+  "name": "Steam Piston (Large)",
+  "category": "Industry",
+  "dlc": "",
+  "description": "Steam pressurized through the outer coupling extends the piston and steam pressurized through the inner coupling retracts the piston. Alternating pressure to the couplings based on the piston position will allow the crankpin to rotate continuously.",
+  "shortDescription": "A steam powered piston that converts steam pressure into torque.",
+  "value": 2400,
+  "mass": 300.0,
+  "logicNodes": [
+    {
+      "label": "RPS",
+      "mode": "output",
+      "type": "number",
+      "description": ""
+    },
+    {
+      "label": "Piston Position",
+      "mode": "output",
+      "type": "number",
+      "description": ""
+    },
+    {
+      "label": "RPS",
+      "mode": "output",
+      "type": "torque",
+      "description": "Power connection A."
+    },
+    {
+      "label": "RPS",
+      "mode": "output",
+      "type": "torque",
+      "description": "Power connection B."
+    },
+    {
+      "label": "Steam In",
+      "mode": "output",
+      "type": "fluid",
+      "description": ""
+    },
+    {
+      "label": "Steam Out",
+      "mode": "output",
+      "type": "fluid",
+      "description": ""
+    },
+    {
+      "label": "Steam In",
+      "mode": "output",
+      "type": "fluid",
+      "description": ""
+    },
+    {
+      "label": "Steam Out",
+      "mode": "output",
+      "type": "fluid",
+      "description": ""
+    }
+  ],
+  "properties": []
+}

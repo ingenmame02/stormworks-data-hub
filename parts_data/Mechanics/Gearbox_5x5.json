@@ -1,0 +1,36 @@
+{
+  "name": "Gearbox 5x5",
+  "category": "Mechanics",
+  "dlc": "",
+  "description": "The ratio can be toggled between two values which can be set in the properties.",
+  "shortDescription": "Gearbox for changing the torque and speed across power connections.",
+  "value": 150,
+  "mass": 25.0,
+  "logicNodes": [
+    {
+      "label": "Gear Switch",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Toggle between the two gear ratios."
+    },
+    {
+      "label": "RPS A",
+      "mode": "input",
+      "type": "torque",
+      "description": "Power connection A."
+    },
+    {
+      "label": "RPS B",
+      "mode": "input",
+      "type": "torque",
+      "description": "Power connection B."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "The electric connection to power the component."
+    }
+  ],
+  "properties": []
+}

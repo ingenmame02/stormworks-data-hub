@@ -1,0 +1,36 @@
+{
+  "name": "Microphone",
+  "category": "Sensors",
+  "dlc": "",
+  "description": "A simple microphone that picks up voice data from nearby players. (Range : 15)",
+  "shortDescription": "A microphone for transmitting player voice data.",
+  "value": 250,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Activate",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Activate the microphone."
+    },
+    {
+      "label": "Transmit",
+      "mode": "output",
+      "type": "onoff",
+      "description": "If the microphone is currently transmitting."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    },
+    {
+      "label": "Audio",
+      "mode": "output",
+      "type": "audio",
+      "description": "Audio data connection."
+    }
+  ],
+  "properties": []
+}

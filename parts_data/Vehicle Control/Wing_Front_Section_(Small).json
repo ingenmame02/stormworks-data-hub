@@ -1,0 +1,11 @@
+{
+  "name": "Wing Front Section (Small)",
+  "category": "Vehicle Control",
+  "dlc": "",
+  "description": "Wing surface to provide lift and cut through the air.",
+  "shortDescription": "The wing front surface cuts through the air while resisting movement against the flat plane of its surface. The aerofoil section also provides lift.",
+  "value": 100,
+  "mass": 5.0,
+  "logicNodes": [],
+  "properties": []
+}

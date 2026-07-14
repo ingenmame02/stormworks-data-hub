@@ -1,0 +1,11 @@
+{
+  "name": "Railing Segment Extension Incline",
+  "category": "Misc",
+  "dlc": "",
+  "description": "",
+  "shortDescription": "Inclined railing extension segment.",
+  "value": 30,
+  "mass": 2.0,
+  "logicNodes": [],
+  "properties": []
+}

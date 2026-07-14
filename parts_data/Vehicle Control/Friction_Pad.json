@@ -1,0 +1,11 @@
+{
+  "name": "Friction Pad",
+  "category": "Vehicle Control",
+  "dlc": "",
+  "description": "High friction pad that grips any surface it touches.",
+  "shortDescription": "Friction pad that grips to surfaces.",
+  "value": 15,
+  "mass": 1.0,
+  "logicNodes": [],
+  "properties": []
+}

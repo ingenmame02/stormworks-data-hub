@@ -1,0 +1,11 @@
+{
+  "name": "Buoyancy Float Wedge",
+  "category": "Specialist Equipment",
+  "dlc": "",
+  "description": "",
+  "shortDescription": "A wedge-shaped buoyant float.",
+  "value": 50,
+  "mass": 1.0,
+  "logicNodes": [],
+  "properties": []
+}

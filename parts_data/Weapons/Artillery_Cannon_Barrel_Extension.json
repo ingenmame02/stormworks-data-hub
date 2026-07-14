@@ -1,0 +1,11 @@
+{
+  "name": "Artillery Cannon Barrel Extension",
+  "category": "Weapons",
+  "dlc": "",
+  "description": "Barrel extensions increase weapon accuracy, but also produce more recoil force.",
+  "shortDescription": "An artillery cannon barrel extension.",
+  "value": 50,
+  "mass": 80.0,
+  "logicNodes": [],
+  "properties": []
+}

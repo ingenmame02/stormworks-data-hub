@@ -1,0 +1,24 @@
+{
+  "name": "Steam Whistle",
+  "category": "Fluid",
+  "dlc": "",
+  "description": "When open, the steam whistle produces sound as steam flows through the pipe connection. The whistle pitch can be set in the component properties menu.",
+  "shortDescription": "A steam powered signal whistle.",
+  "value": 50,
+  "mass": 4.0,
+  "logicNodes": [
+    {
+      "label": "Open",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Opens the steam whistle, allowing steam to flow through."
+    },
+    {
+      "label": "Fluid",
+      "mode": "input",
+      "type": "fluid",
+      "description": "Allows steam to flow out."
+    }
+  ],
+  "properties": []
+}

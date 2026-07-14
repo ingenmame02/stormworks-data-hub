@@ -1,0 +1,24 @@
+{
+  "name": "Artificial Horizon",
+  "category": "Displays",
+  "dlc": "",
+  "description": "The horizon ball rotates up and down as your vehicle's pitch changes, and the central line gives an indication of your vehicle's roll. This is a useful component to have in your helicopter to make it easier to fly at night and in thick fog. An on/off signal can be used to toggle the backlight.",
+  "shortDescription": "The artificial horizon shows you the orientation of your vehicle with respect to the horizon line.",
+  "value": 20,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Backlight",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Enables the backlight when receiving an on signal."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    }
+  ],
+  "properties": []
+}

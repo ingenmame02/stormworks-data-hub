@@ -1,0 +1,36 @@
+{
+  "name": "Instrument Panel",
+  "category": "Displays",
+  "dlc": "",
+  "description": "The 4 instruments can be selected in the properties window. Each type of instrument has options for choosing the composite channels that they read from or write to. Composite signals are bridged from the input node to the output node to enable displays to be chained together. Instruments marked as '(On/Off)' require multiple on/off signals to control each of their segments individually.",
+  "shortDescription": "A customisable panel that can have up to 4 different instruments, controlled by a composite signal from a microcontroller.",
+  "value": 200,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Backlight",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Enables the backlight when receiving an on signal."
+    },
+    {
+      "label": "Electric",
+      "mode": "output",
+      "type": "electric",
+      "description": "Electrical power connection."
+    },
+    {
+      "label": "In Signal",
+      "mode": "input",
+      "type": "composite",
+      "description": "Input signal containing data to be displayed."
+    },
+    {
+      "label": "Out Signal",
+      "mode": "output",
+      "type": "composite",
+      "description": "Output signal containing data set by buttons on the display."
+    }
+  ],
+  "properties": []
+}

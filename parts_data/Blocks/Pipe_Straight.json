@@ -1,0 +1,11 @@
+{
+  "name": "Pipe Straight",
+  "category": "Blocks",
+  "dlc": "",
+  "description": "",
+  "shortDescription": "A straight section of pipe for transferring to components from an engine.",
+  "value": 5,
+  "mass": 1.0,
+  "logicNodes": [],
+  "properties": []
+}

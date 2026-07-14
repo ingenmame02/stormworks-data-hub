@@ -1,0 +1,11 @@
+{
+  "name": "Piston Suspension",
+  "category": "Mechanics",
+  "dlc": "",
+  "description": "",
+  "shortDescription": "",
+  "value": 0,
+  "mass": 20.0,
+  "logicNodes": [],
+  "properties": []
+}

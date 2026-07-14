@@ -1,0 +1,11 @@
+{
+  "name": "Stair Step",
+  "category": "Blocks",
+  "dlc": "",
+  "description": "",
+  "shortDescription": "A single step that can be stacked to create a staircase.",
+  "value": 20,
+  "mass": 6.0,
+  "logicNodes": [],
+  "properties": []
+}

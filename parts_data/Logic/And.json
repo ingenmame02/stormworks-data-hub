@@ -1,0 +1,30 @@
+{
+  "name": "And",
+  "category": "Logic",
+  "dlc": "",
+  "description": "The output will only be switched on if both inputs are on.",
+  "shortDescription": "A logic gate that outputs the logical AND of two input signals.",
+  "value": 20,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "A",
+      "mode": "input",
+      "type": "onoff",
+      "description": "The first value to perform the logical AND on."
+    },
+    {
+      "label": "B",
+      "mode": "input",
+      "type": "onoff",
+      "description": "The second value to perform the logical AND on."
+    },
+    {
+      "label": "A AND B",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal when both A and B are on, and an off signal if either one is off."
+    }
+  ],
+  "properties": []
+}

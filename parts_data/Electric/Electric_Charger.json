@@ -1,0 +1,24 @@
+{
+  "name": "Electric Charger",
+  "category": "Electric",
+  "dlc": "",
+  "description": "The charger transfers electric one-way between its nodes when there is a significant discrepancy in charge. It can be used to recharge batteries.",
+  "shortDescription": "A one-way charger.",
+  "value": 100,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Electric In",
+      "mode": "output",
+      "type": "electric",
+      "description": "Input node for electric."
+    },
+    {
+      "label": "Electric Out",
+      "mode": "output",
+      "type": "electric",
+      "description": "Output node for electric."
+    }
+  ],
+  "properties": []
+}

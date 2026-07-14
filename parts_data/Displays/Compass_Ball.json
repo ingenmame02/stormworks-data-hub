@@ -1,0 +1,24 @@
+{
+  "name": "Compass Ball",
+  "category": "Displays",
+  "dlc": "",
+  "description": "It is one of several tools that can be used to aid navigation in low visibility situations. An on/off signal controls whether or not the compass' backlight is enabled.",
+  "shortDescription": "The compass rotates to point to north on the map.",
+  "value": 20,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Backlight",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Enables the backlight when receiving an on signal."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    }
+  ],
+  "properties": []
+}

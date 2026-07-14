@@ -1,0 +1,48 @@
+{
+  "name": "Steam Boiler",
+  "category": "Industry",
+  "dlc": "",
+  "description": "The boiler should be connected to a firebox to supply heat for evaporation. Control the rate of evaporation to maintain consistent output steam pressure.",
+  "shortDescription": "A boiler for evaporating water into steam.",
+  "value": 250,
+  "mass": 500.0,
+  "logicNodes": [
+    {
+      "label": "Fluid Volume",
+      "mode": "output",
+      "type": "number",
+      "description": ""
+    },
+    {
+      "label": "Temperature",
+      "mode": "output",
+      "type": "number",
+      "description": ""
+    },
+    {
+      "label": "Coolant A",
+      "mode": "input",
+      "type": "fluid",
+      "description": "Port for supplying hot fluid to heat the contents of the boiler."
+    },
+    {
+      "label": "Coolant B",
+      "mode": "input",
+      "type": "fluid",
+      "description": "Port for supplying hot fluid to heat the contents of the boiler."
+    },
+    {
+      "label": "Water In",
+      "mode": "input",
+      "type": "fluid",
+      "description": ""
+    },
+    {
+      "label": "Steam Out",
+      "mode": "output",
+      "type": "fluid",
+      "description": ""
+    }
+  ],
+  "properties": []
+}

@@ -1,0 +1,66 @@
+{
+  "name": "Hardpoint Connector Body",
+  "category": "Mechanics",
+  "dlc": "",
+  "description": "A hardpoint body will connect to a hardpoint attachment when correctly aligned, fixing the two components in place while transferring logic and fluid. The hardpoint body can release the connection by receiving an on/off input signal.",
+  "shortDescription": "A hardpoint connector for building detachable vehicle sections.",
+  "value": 20,
+  "mass": 2.0,
+  "logicNodes": [
+    {
+      "label": "Release",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Release the connector when receiving an on signal."
+    },
+    {
+      "label": "Launch",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Release the connector and activate the ordinance when receiving an on signal."
+    },
+    {
+      "label": "Ordinance Type",
+      "mode": "output",
+      "type": "number",
+      "description": "Returns the ordinance type of the attached object."
+    },
+    {
+      "label": "Fluid",
+      "mode": "output",
+      "type": "fluid",
+      "description": "Fluid connection to link to another fluid connector."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    },
+    {
+      "label": "Composite Data Send",
+      "mode": "input",
+      "type": "composite",
+      "description": "Composite data to send to the connected connector."
+    },
+    {
+      "label": "Composite Data Receive",
+      "mode": "output",
+      "type": "composite",
+      "description": "Composite data to receive from the connected connector."
+    },
+    {
+      "label": "Video Data Send",
+      "mode": "input",
+      "type": "video",
+      "description": "Video data to send to the connected connector."
+    },
+    {
+      "label": "Video Data Receive",
+      "mode": "output",
+      "type": "video",
+      "description": "Video data to receive from the connected connector."
+    }
+  ],
+  "properties": []
+}

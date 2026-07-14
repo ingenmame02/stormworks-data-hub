@@ -1,0 +1,36 @@
+{
+  "name": "PID Controller",
+  "category": "Logic",
+  "dlc": "",
+  "description": "It takes the current measured output of a system or sensor, and a desired target measurement. It outputs a value that can be used as an input to the system to gradually correct its error. For example, the controller could input to an engine's throttle to maintain a desired speed or altitude. The control terms (proportional, integral and derivative) can be set by selecting the component with the select tool. The control terms must be carefully tuned for optimal output.",
+  "shortDescription": "A control loop feedback mechanism that measures and corrects the error in a system over time.",
+  "value": 100,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Active",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Sets whether or not the controller is active. When inactive, stored values are reset."
+    },
+    {
+      "label": "Process Variable",
+      "mode": "input",
+      "type": "number",
+      "description": "The current measured value of the system."
+    },
+    {
+      "label": "Setpoint",
+      "mode": "input",
+      "type": "number",
+      "description": "The desired value to correct the process variable to."
+    },
+    {
+      "label": "Control Output",
+      "mode": "output",
+      "type": "number",
+      "description": "The output computed by the controller."
+    }
+  ],
+  "properties": []
+}

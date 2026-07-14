@@ -1,0 +1,18 @@
+{
+  "name": "Autocannon Ammo Drum (Large)",
+  "category": "Weapons",
+  "dlc": "",
+  "description": "Ammo drums store autocannon cartridges of the caliber specified in the component properties window. Differing calibers cannot be mixed within a single ammo drum.",
+  "shortDescription": "A large capacity autocannon ammo drum.",
+  "value": 100,
+  "mass": 40.0,
+  "logicNodes": [
+    {
+      "label": "Ammo Count",
+      "mode": "output",
+      "type": "number",
+      "description": "Outputs the total ammo count stored in the drum."
+    }
+  ],
+  "properties": []
+}

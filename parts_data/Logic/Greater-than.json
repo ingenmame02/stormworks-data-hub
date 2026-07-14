@@ -1,0 +1,30 @@
+{
+  "name": "Greater-than",
+  "category": "Logic",
+  "dlc": "",
+  "description": "Outputs an on signal if the first input is greater than the second, and outputs an off signal if the first input is less than or equal to the second.",
+  "shortDescription": "Compares two numerical values.",
+  "value": 20,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "A GREATER THAN B",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal if A is greater than B. Outputs an off signal if A is less than or equal to B."
+    },
+    {
+      "label": "A",
+      "mode": "input",
+      "type": "number",
+      "description": "The value to compare."
+    },
+    {
+      "label": "B",
+      "mode": "input",
+      "type": "number",
+      "description": "The value to be compared to."
+    }
+  ],
+  "properties": []
+}

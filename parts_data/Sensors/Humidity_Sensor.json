@@ -1,0 +1,18 @@
+{
+  "name": "Humidity Sensor",
+  "category": "Sensors",
+  "dlc": "",
+  "description": "The reading can be read from the sensor's number output and is measured from 0 (no fog) to 1 (max fog).",
+  "shortDescription": "A humidity sensor for measuring the current fog and visibility meteorological conditions.",
+  "value": 400,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Humidity Factor",
+      "mode": "output",
+      "type": "number",
+      "description": "The level of humidity in the air, relating to the fog visibility."
+    }
+  ],
+  "properties": []
+}

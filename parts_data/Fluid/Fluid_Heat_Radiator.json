@@ -1,0 +1,24 @@
+{
+  "name": "Fluid Heat Radiator",
+  "category": "Fluid",
+  "dlc": "",
+  "description": "Fluid inside the cooler will lose temperature.",
+  "shortDescription": "Radiator type cooler for fluid.",
+  "value": 200,
+  "mass": 10.0,
+  "logicNodes": [
+    {
+      "label": "Fluid A",
+      "mode": "input",
+      "type": "fluid",
+      "description": "Fluid Connection."
+    },
+    {
+      "label": "Fluid B",
+      "mode": "input",
+      "type": "fluid",
+      "description": "Fluid Connection."
+    }
+  ],
+  "properties": []
+}

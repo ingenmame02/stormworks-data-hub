@@ -1,0 +1,30 @@
+{
+  "name": "Large Generator",
+  "category": "Electric",
+  "dlc": "",
+  "description": "",
+  "shortDescription": "A large generator unit for converting mechanical power to electricity.",
+  "value": 12000,
+  "mass": 400.0,
+  "logicNodes": [
+    {
+      "label": "Output",
+      "mode": "output",
+      "type": "number",
+      "description": "Data output giving the electrical generation of the generator."
+    },
+    {
+      "label": "RPS",
+      "mode": "input",
+      "type": "torque",
+      "description": "The torque power input to convert to electric energy."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "The electric connection to output electric energy."
+    }
+  ],
+  "properties": []
+}

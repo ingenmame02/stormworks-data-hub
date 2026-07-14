@@ -1,0 +1,30 @@
+{
+  "name": "Water Extractor",
+  "category": "Industry",
+  "dlc": "",
+  "description": "Extracts water from hydrous ores when supplied with electric power.",
+  "shortDescription": "A machine to process minerals into water.",
+  "value": 100,
+  "mass": 20.0,
+  "logicNodes": [
+    {
+      "label": "Process",
+      "mode": "input",
+      "type": "onoff",
+      "description": ""
+    },
+    {
+      "label": "Water Out",
+      "mode": "output",
+      "type": "fluid",
+      "description": ""
+    },
+    {
+      "label": "Power",
+      "mode": "input",
+      "type": "electric",
+      "description": ""
+    }
+  ],
+  "properties": []
+}

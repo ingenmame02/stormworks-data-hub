@@ -1,0 +1,11 @@
+{
+  "name": "Block",
+  "category": "Blocks",
+  "dlc": "",
+  "description": "The block is a quarter-metre in size. Components can be attached to all 6 faces.",
+  "shortDescription": "Basic cube-shaped building block.",
+  "value": 2,
+  "mass": 1.0,
+  "logicNodes": [],
+  "properties": []
+}

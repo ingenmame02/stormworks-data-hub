@@ -1,0 +1,42 @@
+{
+  "name": "Train Wheel Drive Piston Small",
+  "category": "Propulsion",
+  "dlc": "",
+  "description": "Attach to the front of a group of train-wheel assemblies to generate torque for them via mechanical steam power. Activate the reverser to flip the internal valves and the direction of travel.",
+  "shortDescription": "Steam powered train piston assembly.",
+  "value": 300,
+  "mass": 300.0,
+  "logicNodes": [
+    {
+      "label": "Reverser",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Reverse piston direction."
+    },
+    {
+      "label": "Steam In",
+      "mode": "output",
+      "type": "fluid",
+      "description": ""
+    },
+    {
+      "label": "Steam In",
+      "mode": "output",
+      "type": "fluid",
+      "description": ""
+    },
+    {
+      "label": "Steam Out",
+      "mode": "output",
+      "type": "fluid",
+      "description": ""
+    },
+    {
+      "label": "Steam Out",
+      "mode": "output",
+      "type": "fluid",
+      "description": ""
+    }
+  ],
+  "properties": []
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Physics Sensor",
+  "category": "Sensors",
+  "dlc": "",
+  "description": "Outputs physics information to a composite logic node. Requires Electric for GPS position functionality. This component is directed along its local Y axis.",
+  "shortDescription": "Sensor component that outputs various physics measurements such as position and velocity.",
+  "value": 20,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    },
+    {
+      "label": "Composite Output",
+      "mode": "output",
+      "type": "composite",
+      "description": "Outputs [1] x position, [2] y position, [3] z position, [4] euler rotation x, [5] euler rotation y, [6] euler rotation z, [7] linear velocity x, [8] linear velocity y, [9] linear velocity z, [10] angular velocity x, [11] angular velocity y, [12] angular velocity z, [13] absolute linear velocity, [14] absolute angular velocity, [15] local z tilt, [16] local x tilt and [17] compass heading (-0.5 to 0.5) to the respective composite channels."
+    }
+  ],
+  "properties": []
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Small Tyre",
+  "category": "Misc",
+  "dlc": "",
+  "description": "Useful for creating tyre stacks and fenders.",
+  "shortDescription": "A small decorative tyre.",
+  "value": 15,
+  "mass": 4.0,
+  "logicNodes": [],
+  "properties": []
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Porthole",
+  "category": "Windows",
+  "dlc": "",
+  "description": "Useful for large vehicles that require windows with a more robust appearance.",
+  "shortDescription": "Large 3x5 window piece with a thick frame.",
+  "value": 50,
+  "mass": 8.0,
+  "logicNodes": [],
+  "properties": []
+}

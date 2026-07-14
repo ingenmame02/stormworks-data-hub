@@ -1,0 +1,18 @@
+{
+  "name": "Modular Engine Exhaust Manifold (Straight)",
+  "category": "Modular Engines",
+  "dlc": "",
+  "description": "Attach a manifold to a cylinder to provide an exhaust output connection for that cylinder. Cylinders that are chained directly adjacent to each other can share a single manifold.",
+  "shortDescription": "A modular engine manifold.",
+  "value": 10,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Exhaust",
+      "mode": "output",
+      "type": "fluid",
+      "description": ""
+    }
+  ],
+  "properties": []
+}

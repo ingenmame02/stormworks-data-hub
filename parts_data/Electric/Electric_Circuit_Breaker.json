@@ -1,0 +1,24 @@
+{
+  "name": "Electric Circuit Breaker",
+  "category": "Electric",
+  "dlc": "",
+  "description": "When turned on, the circuit breaker closes the circuit, allowing electrical energy to flow between terminals A and B.",
+  "shortDescription": "A circuit breaker for electrical systems.",
+  "value": 100,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Electric A",
+      "mode": "input",
+      "type": "electric",
+      "description": "Terminal A electrical connection."
+    },
+    {
+      "label": "Electric B",
+      "mode": "input",
+      "type": "electric",
+      "description": "Terminal B electrical connection."
+    }
+  ],
+  "properties": []
+}

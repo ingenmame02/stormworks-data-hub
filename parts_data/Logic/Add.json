@@ -1,0 +1,30 @@
+{
+  "name": "Add",
+  "category": "Logic",
+  "dlc": "",
+  "description": "",
+  "shortDescription": "Takes two number inputs, adds them together, and outputs the result.",
+  "value": 20,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "A",
+      "mode": "input",
+      "type": "number",
+      "description": "The first value to be added."
+    },
+    {
+      "label": "B",
+      "mode": "input",
+      "type": "number",
+      "description": "The second value to be added."
+    },
+    {
+      "label": "A + B",
+      "mode": "output",
+      "type": "number",
+      "description": "Outputs the result of A + B."
+    }
+  ],
+  "properties": []
+}

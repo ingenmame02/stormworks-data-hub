@@ -1,0 +1,42 @@
+{
+  "name": "Large Keypad",
+  "category": "Mechanics",
+  "dlc": "",
+  "description": "Interacting with the keypad will show a menu where the 2 numbers can be entered, along with a button for quickly inputting waypoint coordinates. A short pulse will be emitted from the keypad's pulse node when the confirm button is clicked and the stored numbers will be continuously output from the other output nodes. An on/off signal controls whether or not the keypad's backlight is enabled.",
+  "shortDescription": "A keypad that allows 2 numbers to be input.",
+  "value": 40,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Backlight",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Enables the backlight when receiving an on signal."
+    },
+    {
+      "label": "Pulse",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Emits a short pulse when a value is entered."
+    },
+    {
+      "label": "Output A",
+      "mode": "output",
+      "type": "number",
+      "description": "Outputs the first stored value."
+    },
+    {
+      "label": "Output B",
+      "mode": "output",
+      "type": "number",
+      "description": "Outputs the second stored value."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    }
+  ],
+  "properties": []
+}

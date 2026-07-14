@@ -1,0 +1,24 @@
+{
+  "name": "Control Surface (Medium)",
+  "category": "Vehicle Control",
+  "dlc": "",
+  "description": "It takes a number input between -1 and 1 that represent the two extremes of the fin's rotation.",
+  "shortDescription": "The control surface can be attached to a surface of the vehicle to apply force as air or water is flowing over it.",
+  "value": 250,
+  "mass": 15.0,
+  "logicNodes": [
+    {
+      "label": "Rotation",
+      "mode": "input",
+      "type": "number",
+      "description": "Accepts a value between -1 and 1 that represent the two extremes of the rudder's rotation."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    }
+  ],
+  "properties": []
+}

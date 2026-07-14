@@ -1,0 +1,84 @@
+{
+  "name": "RX Directional",
+  "category": "Vehicle Control",
+  "dlc": "",
+  "description": "Must be pointed at the target RX device. Sends and receives data on the specified frequency. Transmit Mode defaults to receive. (Max effective range at ground level : 8000km)",
+  "shortDescription": "A powerful directional radio and video data transmitter and receiver.",
+  "value": 5000,
+  "mass": 20.0,
+  "logicNodes": [
+    {
+      "label": "Transmit Mode",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Whether the radio is transmitting or receiving."
+    },
+    {
+      "label": "Frequency",
+      "mode": "input",
+      "type": "number",
+      "description": "Radio Send/Receive Frequency."
+    },
+    {
+      "label": "Target Pitch",
+      "mode": "input",
+      "type": "number",
+      "description": "Target dish pitch in turns. Max 0.1"
+    },
+    {
+      "label": "Target Yaw",
+      "mode": "input",
+      "type": "number",
+      "description": "Target dish yaw in turns."
+    },
+    {
+      "label": "Signal Strength",
+      "mode": "output",
+      "type": "number",
+      "description": "Strength of connection signal."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical input."
+    },
+    {
+      "label": "Data Send",
+      "mode": "input",
+      "type": "composite",
+      "description": "Input for composite data to send."
+    },
+    {
+      "label": "Data Recv",
+      "mode": "output",
+      "type": "composite",
+      "description": "Output for received composite data."
+    },
+    {
+      "label": "Video Send",
+      "mode": "input",
+      "type": "video",
+      "description": "Input for video data to send."
+    },
+    {
+      "label": "Video Recv",
+      "mode": "output",
+      "type": "video",
+      "description": "Output for recieved video data."
+    },
+    {
+      "label": "Audio Send",
+      "mode": "input",
+      "type": "audio",
+      "description": "Input for audio data to send."
+    },
+    {
+      "label": "Audio Recv",
+      "mode": "output",
+      "type": "audio",
+      "description": "Output for received audio data."
+    }
+  ],
+  "properties": []
+}

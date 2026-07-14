@@ -1,0 +1,30 @@
+{
+  "name": "Oil Rig Rotary Table",
+  "category": "Industry",
+  "dlc": "",
+  "description": "Torque provided by an external motor rotates the table, which can rotate a drill rod placed through the center of the table.",
+  "shortDescription": "A rotary table for drilling in an oil rig.",
+  "value": 1000,
+  "mass": 500.0,
+  "logicNodes": [
+    {
+      "label": "Clamp",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Attach a drill rod to the table. This will transfer any rotation of the table to the attached drill rod."
+    },
+    {
+      "label": "RPS",
+      "mode": "output",
+      "type": "number",
+      "description": "The rotations per second of the table."
+    },
+    {
+      "label": "Torque",
+      "mode": "input",
+      "type": "torque",
+      "description": "Torque connection to power the rotation of the table."
+    }
+  ],
+  "properties": []
+}

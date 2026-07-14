@@ -1,0 +1,11 @@
+{
+  "name": "Heavy Autocannon Barrel Extension",
+  "category": "Weapons",
+  "dlc": "",
+  "description": "Barrel extensions increase weapon accuracy, but also produce more recoil force.",
+  "shortDescription": "A heavy autocannon barrel extension.",
+  "value": 50,
+  "mass": 20.0,
+  "logicNodes": [],
+  "properties": []
+}

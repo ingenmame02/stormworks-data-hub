@@ -1,0 +1,18 @@
+{
+  "name": "Data Logger (Bool)",
+  "category": "Vehicle Control",
+  "dlc": "",
+  "description": "Link to the bool output node of another component to record data for unit tests.",
+  "shortDescription": "A bool data logging block for unit tests.",
+  "value": 1,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Bool In",
+      "mode": "input",
+      "type": "onoff",
+      "description": ""
+    }
+  ],
+  "properties": []
+}

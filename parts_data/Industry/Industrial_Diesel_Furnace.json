@@ -1,0 +1,60 @@
+{
+  "name": "Industrial Diesel Furnace",
+  "category": "Industry",
+  "dlc": "",
+  "description": "Produces large amounts of heat by burning supplied diesel. Consumes a portion of the diesel reserve to ignite the fire.",
+  "shortDescription": "A diesel powered furnace.",
+  "value": 750,
+  "mass": 350.0,
+  "logicNodes": [
+    {
+      "label": "Ignition",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Activate to consume diesel and ignite the furnace."
+    },
+    {
+      "label": "Diesel Level",
+      "mode": "output",
+      "type": "number",
+      "description": ""
+    },
+    {
+      "label": "Temperature",
+      "mode": "output",
+      "type": "number",
+      "description": "Temperature of the coolant that is being heated."
+    },
+    {
+      "label": "Coolant In",
+      "mode": "input",
+      "type": "fluid",
+      "description": "In port for fluid to be heated by the furnace."
+    },
+    {
+      "label": "Coolant Out",
+      "mode": "input",
+      "type": "fluid",
+      "description": "Out port for fluid to be heated by the furnace."
+    },
+    {
+      "label": "Air In",
+      "mode": "input",
+      "type": "fluid",
+      "description": "Port for supplying air."
+    },
+    {
+      "label": "Diesel In",
+      "mode": "input",
+      "type": "fluid",
+      "description": "Port for supplying diesel fuel."
+    },
+    {
+      "label": "Exhaust Out",
+      "mode": "output",
+      "type": "fluid",
+      "description": "Port for removing exhaust from the furnace."
+    }
+  ],
+  "properties": []
+}

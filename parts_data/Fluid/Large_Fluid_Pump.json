@@ -1,0 +1,42 @@
+{
+  "name": "Large Fluid Pump",
+  "category": "Fluid",
+  "dlc": "",
+  "description": "Connect to an inlet and outlet to create a pumping system to move fluid around a vehicle.",
+  "shortDescription": "A large fluid pump.",
+  "value": 200,
+  "mass": 10.0,
+  "logicNodes": [
+    {
+      "label": "On/Off",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Controls whether or not the fluid is being pumped."
+    },
+    {
+      "label": "Flow Rate",
+      "mode": "output",
+      "type": "number",
+      "description": "Fluid flow rate in L/s."
+    },
+    {
+      "label": "Fluid In",
+      "mode": "input",
+      "type": "fluid",
+      "description": "Connect to an inlet component to take fluid into the system."
+    },
+    {
+      "label": "Fluid Out",
+      "mode": "input",
+      "type": "fluid",
+      "description": "Connect to an outlet component to release fluid from the system."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    }
+  ],
+  "properties": []
+}

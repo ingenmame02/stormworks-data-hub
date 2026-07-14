@@ -1,0 +1,11 @@
+{
+  "name": "Modular Engine Drive Belt 5x5",
+  "category": "Modular Engines",
+  "dlc": "",
+  "description": "The drive belt attaches to the crankshaft and provides an interface for starters, alternators and pumps.",
+  "shortDescription": "A modular engine drive belt.",
+  "value": 160,
+  "mass": 27.0,
+  "logicNodes": [],
+  "properties": []
+}

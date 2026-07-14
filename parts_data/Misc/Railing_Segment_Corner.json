@@ -1,0 +1,11 @@
+{
+  "name": "Railing Segment Corner",
+  "category": "Misc",
+  "dlc": "",
+  "description": "",
+  "shortDescription": "Corner railing segment.",
+  "value": 30,
+  "mass": 2.0,
+  "logicNodes": [],
+  "properties": []
+}

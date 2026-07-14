@@ -1,0 +1,11 @@
+{
+  "name": "Wing Section (Medium)",
+  "category": "Vehicle Control",
+  "dlc": "",
+  "description": "Wing surface to provide lift and cut through the air.",
+  "shortDescription": "The wing surface cuts through the air while resisting movement against the flat plane of its surface. The aerofoil section also provides lift.",
+  "value": 350,
+  "mass": 15.0,
+  "logicNodes": [],
+  "properties": []
+}

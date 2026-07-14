@@ -1,0 +1,11 @@
+{
+  "name": "Pipe Omni (Enclosed)",
+  "category": "Blocks",
+  "dlc": "",
+  "description": "",
+  "shortDescription": "An omnidirectional pipe segment.",
+  "value": 5,
+  "mass": 1.0,
+  "logicNodes": [],
+  "properties": []
+}

@@ -1,0 +1,48 @@
+{
+  "name": "Fluid Jet",
+  "category": "Fluid",
+  "dlc": "",
+  "description": "Converts mechanical power and water into a high power jet for generating thrust.",
+  "shortDescription": "A fluid impeller and jet nozzle for ocean propulsion.",
+  "value": 3000,
+  "mass": 10.0,
+  "logicNodes": [
+    {
+      "label": "Vertical Trim",
+      "mode": "input",
+      "type": "number",
+      "description": "Vertical nozzle angle to control jet direction."
+    },
+    {
+      "label": "Deflector A",
+      "mode": "input",
+      "type": "number",
+      "description": "Left bucket defector control input."
+    },
+    {
+      "label": "Deflector B",
+      "mode": "input",
+      "type": "number",
+      "description": "Right bucket defector control input."
+    },
+    {
+      "label": "RPS",
+      "mode": "input",
+      "type": "torque",
+      "description": "Mechanical power input to power jet."
+    },
+    {
+      "label": "Fluid Flow In",
+      "mode": "input",
+      "type": "fluid",
+      "description": "Fluid inlet to supply jet."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    }
+  ],
+  "properties": []
+}

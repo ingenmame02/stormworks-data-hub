@@ -1,0 +1,90 @@
+{
+  "name": "Large Connector",
+  "category": "Mechanics",
+  "dlc": "",
+  "description": "Two large connectors will attach when they are within close proximity and both are switched on. The additional inputs and outputs allow you to send and receive power and signals between two connected magnets, giving you a limited amount of control over a linked vehicle. An additional on/off output allows you to check whether or not this connector is currently attached to anything.",
+  "shortDescription": "A magnetic connector that can be used to attach two or more vehicles together.",
+  "value": 50,
+  "mass": 20.0,
+  "logicNodes": [
+    {
+      "label": "Magnet Toggle",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Enables the connector's magnet when receiving an on signal."
+    },
+    {
+      "label": "On/Off Sent",
+      "mode": "input",
+      "type": "onoff",
+      "description": "An on/off signal to send to a connected magnet."
+    },
+    {
+      "label": "Connected",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal if the connector is attached to another connector."
+    },
+    {
+      "label": "On/Off Received",
+      "mode": "output",
+      "type": "onoff",
+      "description": "The on/off signal received from a connected magnet."
+    },
+    {
+      "label": "Number Sent",
+      "mode": "input",
+      "type": "number",
+      "description": "A number signal to send to a connected magnet."
+    },
+    {
+      "label": "Number Received",
+      "mode": "output",
+      "type": "number",
+      "description": "The number value received from a connected magnet."
+    },
+    {
+      "label": "RPS",
+      "mode": "output",
+      "type": "torque",
+      "description": "Power connection for transfering mechanical energy to another connector."
+    },
+    {
+      "label": "Fluid",
+      "mode": "input",
+      "type": "fluid",
+      "description": "Fluid connection for transfering fluid to another connector."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    },
+    {
+      "label": "Composite Data Send",
+      "mode": "input",
+      "type": "composite",
+      "description": "Composite data to send to the connected connector."
+    },
+    {
+      "label": "Composite Data Receive",
+      "mode": "output",
+      "type": "composite",
+      "description": "Composite data to receive from the connected connector."
+    },
+    {
+      "label": "Video Data Send",
+      "mode": "input",
+      "type": "video",
+      "description": "Video data to send to the connected connector."
+    },
+    {
+      "label": "Video Data Receive",
+      "mode": "output",
+      "type": "video",
+      "description": "Video data to receive from the connected connector."
+    }
+  ],
+  "properties": []
+}

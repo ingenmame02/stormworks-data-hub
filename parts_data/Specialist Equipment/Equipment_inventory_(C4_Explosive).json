@@ -1,0 +1,18 @@
+{
+  "name": "Equipment inventory (C4 Explosive)",
+  "category": "Specialist Equipment",
+  "dlc": "",
+  "description": "Press [$[action_equipment_use]] to arm and plant the C-4 explosive on a nearby surface.",
+  "shortDescription": "A small equipment storage unit containing C-4 plastic explosive.",
+  "value": 50,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    }
+  ],
+  "properties": []
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Paintable Sign",
+  "category": "Displays",
+  "dlc": "",
+  "description": "This block has a paintable surface where small grid squares can be painted individually.",
+  "shortDescription": "Sign block for displaying painted detail.",
+  "value": 50,
+  "mass": 1.0,
+  "logicNodes": [],
+  "properties": []
+}

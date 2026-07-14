@@ -1,0 +1,30 @@
+{
+  "name": "Viewing Scope",
+  "category": "Displays",
+  "dlc": "",
+  "description": "Interact to display video data at full detail.",
+  "shortDescription": "A viewing scope.",
+  "value": 2000,
+  "mass": 5.0,
+  "logicNodes": [
+    {
+      "label": "Occupied",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal if this viewing scope is occupied by a character."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": ""
+    },
+    {
+      "label": "Video Signal",
+      "mode": "input",
+      "type": "video",
+      "description": ""
+    }
+  ],
+  "properties": []
+}

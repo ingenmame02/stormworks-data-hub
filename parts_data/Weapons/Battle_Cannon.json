@@ -1,0 +1,36 @@
+{
+  "name": "Battle Cannon",
+  "category": "Weapons",
+  "dlc": "",
+  "description": "Battle cannons provide powerful, consistent firepower in a compact form.",
+  "shortDescription": "A battle cannon.",
+  "value": 100,
+  "mass": 100.0,
+  "logicNodes": [
+    {
+      "label": "Trigger",
+      "mode": "input",
+      "type": "onoff",
+      "description": "When true: fires a loaded shell."
+    },
+    {
+      "label": "Open Breech",
+      "mode": "input",
+      "type": "onoff",
+      "description": "When true: opens the breech to allow shells to be loaded."
+    },
+    {
+      "label": "Loaded",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Returns true when a shell is loaded and ready to fire."
+    },
+    {
+      "label": "Fuse Timer",
+      "mode": "input",
+      "type": "number",
+      "description": "Sets the optional time-delay fuse in seconds for high-explosive and fragmentation ammo types."
+    }
+  ],
+  "properties": []
+}

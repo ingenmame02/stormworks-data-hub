@@ -1,0 +1,66 @@
+{
+  "name": "Harness",
+  "category": "Specialist Equipment",
+  "dlc": "",
+  "description": "You can get in and out of the harness by interacting with it using [$[action_use_seat]]. You can place a rescued survivor in any harness by using [$[action_use_seat]] while carrying them.",
+  "shortDescription": "A rescue harness.",
+  "value": 150,
+  "mass": 20.0,
+  "logicNodes": [
+    {
+      "label": "Occupied",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal if this harness is occupied by a character."
+    },
+    {
+      "label": "Trigger [$[action_trigger]]",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal when [$[action_trigger]] is held, and off when it is not."
+    },
+    {
+      "label": "Hotkey 1 [$[action_hotkey_1]]",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal when [$[action_hotkey_1]] is held, and off when it is not."
+    },
+    {
+      "label": "Hotkey 2 [$[action_hotkey_2]]",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal when [$[action_hotkey_2]] is held, and off when it is not."
+    },
+    {
+      "label": "Hotkey 3 [$[action_hotkey_3]]",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal when [$[action_hotkey_3]] is held, and off when it is not."
+    },
+    {
+      "label": "Hotkey 4 [$[action_hotkey_4]]",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal when [$[action_hotkey_4]] is held, and off when it is not."
+    },
+    {
+      "label": "Hotkey 5 [$[action_hotkey_5]]",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal when [$[action_hotkey_5]] is held, and off when it is not."
+    },
+    {
+      "label": "Hotkey 6 [$[action_hotkey_6]]",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal when [$[action_hotkey_6]] is held, and off when it is not."
+    },
+    {
+      "label": "Seat Data",
+      "mode": "output",
+      "type": "composite",
+      "description": "Outputs the axis, hotkey and occupied data from the seat. (On/Off 1+ : Hotkeys) (On/Off 31 : Trigger) (On/Off 32 : Occupied) (Value 1 : [$[action_left]]/[$[action_right]]) (Value 2 : [$[action_up]]/[$[action_down]]) (Value 3 : [$[action_pedal_left]]/[$[action_pedal_right]]) (Value 4 : [$[action_throttle_up]]/[$[action_throttle_down]])"
+    }
+  ],
+  "properties": []
+}

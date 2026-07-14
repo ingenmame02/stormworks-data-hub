@@ -1,0 +1,42 @@
+{
+  "name": "Fluid Variable Valve",
+  "category": "Fluid",
+  "dlc": "",
+  "description": "Controls flow from one side of the valve to the other. Fluid can flow in both directions.",
+  "shortDescription": "A variable fluid valve.",
+  "value": 100,
+  "mass": 4.0,
+  "logicNodes": [
+    {
+      "label": "Valve Control",
+      "mode": "input",
+      "type": "number",
+      "description": "Valve gate control for opening and closing the valve."
+    },
+    {
+      "label": "Flow Rate",
+      "mode": "output",
+      "type": "number",
+      "description": "Fluid flow rate in L/s."
+    },
+    {
+      "label": "Fluid In",
+      "mode": "output",
+      "type": "fluid",
+      "description": "Fluid input connection for the valve."
+    },
+    {
+      "label": "Fluid Out",
+      "mode": "output",
+      "type": "fluid",
+      "description": "Fluid output connection for the valve."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    }
+  ],
+  "properties": []
+}

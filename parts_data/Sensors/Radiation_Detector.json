@@ -1,0 +1,18 @@
+{
+  "name": "Radiation Detector",
+  "category": "Sensors",
+  "dlc": "",
+  "description": "Outputs radiation dose rate per second at its location.",
+  "shortDescription": "A sensor to detect radiation.",
+  "value": 250,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Radiation",
+      "mode": "output",
+      "type": "number",
+      "description": "The detected radiation dose rate."
+    }
+  ],
+  "properties": []
+}

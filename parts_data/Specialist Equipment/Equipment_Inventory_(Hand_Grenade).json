@@ -1,0 +1,18 @@
+{
+  "name": "Equipment Inventory (Hand Grenade)",
+  "category": "Specialist Equipment",
+  "dlc": "",
+  "description": "Press [$[action_equipment_use]] to throw a hand grenade, which will detonate after a short delay.",
+  "shortDescription": "A small equipment storage unit containing a hand grenade.",
+  "value": 50,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    }
+  ],
+  "properties": []
+}

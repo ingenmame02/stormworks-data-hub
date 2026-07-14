@@ -1,0 +1,24 @@
+{
+  "name": "Mounted End-Effector",
+  "category": "Specialist Equipment",
+  "dlc": "",
+  "description": "The end-effector can interact with button components.",
+  "shortDescription": "A vehicle mounted end-effector.",
+  "value": 1000,
+  "mass": 10.0,
+  "logicNodes": [
+    {
+      "label": "Activate",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Enable end-effector."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    }
+  ],
+  "properties": []
+}

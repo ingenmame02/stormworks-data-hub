@@ -1,0 +1,18 @@
+{
+  "name": "Tank Wheel (Large)",
+  "category": "Vehicle Control",
+  "dlc": "",
+  "description": "A drive wheel is required to rotate the connected track. The wheel will form a track with other wheels of the same size and orientation that are placed in line and on the same body.",
+  "shortDescription": "Large wheel for tracked vehicles.",
+  "value": 250,
+  "mass": 40.0,
+  "logicNodes": [
+    {
+      "label": "Brake",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Locks the wheel into place when receiving an on signal."
+    }
+  ],
+  "properties": []
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Mounted Welder",
+  "category": "Specialist Equipment",
+  "dlc": "",
+  "description": "The welding torch can repair components. This welder is electrically powered and works underwater.",
+  "shortDescription": "A vehicle mounted welding torch.",
+  "value": 1000,
+  "mass": 10.0,
+  "logicNodes": [
+    {
+      "label": "Activate",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Enable welding torch."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    }
+  ],
+  "properties": []
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Function (1 input)",
+  "category": "Logic",
+  "dlc": "",
+  "description": "The function can be entered by selecting this component with the select tool. A full list of valid operations are also visible in the component's selection menu.",
+  "shortDescription": "Evaluates a mathematical function with 1 variable inputs",
+  "value": 80,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Input 1 (x)",
+      "mode": "input",
+      "type": "number",
+      "description": "X input to the function."
+    },
+    {
+      "label": "f(x)",
+      "mode": "output",
+      "type": "number",
+      "description": "Outputs the evaluation of the entered function."
+    }
+  ],
+  "properties": []
+}

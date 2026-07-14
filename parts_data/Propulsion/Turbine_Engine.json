@@ -1,0 +1,36 @@
+{
+  "name": "Turbine Engine",
+  "category": "Propulsion",
+  "dlc": "",
+  "description": "An on/off signal controls engine startup. The throttle input takes a standard value between -1 and 1 and controls the forward and backward force of connected components. The engine's maximum power output is split between connected components.",
+  "shortDescription": "Turbine engine that can be connected to powered components.",
+  "value": 150,
+  "mass": 45.0,
+  "logicNodes": [
+    {
+      "label": "Starter",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Increases the engine RPS using electrical power to start up the engine."
+    },
+    {
+      "label": "Throttle",
+      "mode": "input",
+      "type": "number",
+      "description": "Standard value between 0 and 1 that controls the throttle of the engine."
+    },
+    {
+      "label": "RPS",
+      "mode": "output",
+      "type": "torque",
+      "description": "The rps supplied by the engine for inputting to other components."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    }
+  ],
+  "properties": []
+}

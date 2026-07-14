@@ -1,0 +1,11 @@
+{
+  "name": "Railing Segment Corner Diagonal",
+  "category": "Misc",
+  "dlc": "",
+  "description": "",
+  "shortDescription": "Corner railing that connects a straight segment to the diagonal extension segment.",
+  "value": 30,
+  "mass": 2.0,
+  "logicNodes": [],
+  "properties": []
+}

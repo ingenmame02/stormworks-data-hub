@@ -1,0 +1,36 @@
+{
+  "name": "Numerical Switchbox",
+  "category": "Logic",
+  "dlc": "",
+  "description": "Which of the two inputs is sent to the output is determined by the on/off switch signal. When the signal is on, the first value is sent to the output. When it is off, the second output is sent.",
+  "shortDescription": "Acts as a switchbox for two number signals.",
+  "value": 20,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Switch Signal",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Controls which of the two input values will be sent to the output."
+    },
+    {
+      "label": "First Value (On)",
+      "mode": "input",
+      "type": "number",
+      "description": "The value to output when the switch signal is on."
+    },
+    {
+      "label": "Second Value (Off)",
+      "mode": "input",
+      "type": "number",
+      "description": "The value to output when the switch signal is off."
+    },
+    {
+      "label": "Switched Value",
+      "mode": "output",
+      "type": "number",
+      "description": "Outputs the first value when the switch signal is on, and the second value when it is off."
+    }
+  ],
+  "properties": []
+}

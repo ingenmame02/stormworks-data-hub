@@ -1,0 +1,18 @@
+{
+  "name": "Machine Gun Ammo Box",
+  "category": "Weapons",
+  "dlc": "",
+  "description": "Stores machine gun ammo, but can only be reloaded by hand. Machine guns are restricted to Kinetic, Armor-Piercing, and Incendiary ammo only.",
+  "shortDescription": "A machine gun ammo box.",
+  "value": 20,
+  "mass": 5.0,
+  "logicNodes": [
+    {
+      "label": "Ammo count",
+      "mode": "output",
+      "type": "number",
+      "description": "Outputs the total ammo count stored in the box."
+    }
+  ],
+  "properties": []
+}

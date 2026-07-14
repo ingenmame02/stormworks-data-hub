@@ -1,0 +1,24 @@
+{
+  "name": "Flare Launcher",
+  "category": "Specialist Equipment",
+  "dlc": "",
+  "description": "Set the flare canister type and launch velocity in the component properties.",
+  "shortDescription": "Single-use flare launcher for signalling and illumination.",
+  "value": 10,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Launch",
+      "mode": "input",
+      "type": "onoff",
+      "description": ""
+    },
+    {
+      "label": "Launch Passthrough",
+      "mode": "output",
+      "type": "onoff",
+      "description": ""
+    }
+  ],
+  "properties": []
+}

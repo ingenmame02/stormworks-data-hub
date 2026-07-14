@@ -1,0 +1,30 @@
+{
+  "name": "Toggle Button",
+  "category": "Mechanics",
+  "dlc": "",
+  "description": "An external on/off signal can also be used to control whether or not the button is pressed, allowing you to chain multiple buttons together to unify their outputs. The button's default state can be configured by selecting it with the select component.",
+  "shortDescription": "A button that toggles between sending an on or off signal when you press [$[action_interact_left]]/[$[action_interact_right]] on it.",
+  "value": 10,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "External Input",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Allows an external on/off signal to control whether or not the button is pressed."
+    },
+    {
+      "label": "Toggled",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on/off signal that can be toggled by interacting with [$[action_interact_left]]/[$[action_interact_right]]."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    }
+  ],
+  "properties": []
+}

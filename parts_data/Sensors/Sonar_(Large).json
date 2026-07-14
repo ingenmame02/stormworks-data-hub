@@ -1,0 +1,36 @@
+{
+  "name": "Sonar (Large)",
+  "category": "Sensors",
+  "dlc": "",
+  "description": "This sensor outputs the relative angle to detected objects within its range using underwater sound waves. The sensor will passively detect certain noisy components such as propellers or engines but can also send out a loud ping to detect quiet underwater bodies. While the ping input is held passive signals will be supressed. After activating a ping additional detected signals will appear momentarily in the data channel as the signal returns to the sonar. Activating another ping will override the previous ping and no further data will be returned from the old signal.",
+  "shortDescription": "A sonar that returns information about a detected objects within 200km.",
+  "value": 4000,
+  "mass": 200.0,
+  "logicNodes": [
+    {
+      "label": "Activate",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Enable the Sonar."
+    },
+    {
+      "label": "Ping",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Send a ping and listen for return sounds."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    },
+    {
+      "label": "Sonar Data",
+      "mode": "output",
+      "type": "composite",
+      "description": "Outputs data for up to 16 targets. On/Off 1-16 : Target 1 Found, Target 2 Found, Etc... Values 1-32: Target 1 Pivot, Target 1 Pitch, Target 2 Pivot, Target 2 Pitch, Etc..."
+    }
+  ],
+  "properties": []
+}

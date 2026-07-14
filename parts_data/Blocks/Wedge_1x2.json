@@ -1,0 +1,11 @@
+{
+  "name": "Wedge 1x2",
+  "category": "Blocks",
+  "dlc": "",
+  "description": "Components can be attached to all faces, with the exception of the sloped face.",
+  "shortDescription": "1x2 wedge-shaped building block.",
+  "value": 2,
+  "mass": 1.0,
+  "logicNodes": [],
+  "properties": []
+}

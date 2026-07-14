@@ -1,0 +1,18 @@
+{
+  "name": "Power Add",
+  "category": "Logic",
+  "dlc": "",
+  "description": "",
+  "shortDescription": "Combines the outputs of two engines, allowing you to connect multiple engines to the same input.",
+  "value": 20,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Combined Power",
+      "mode": "output",
+      "type": "torque",
+      "description": "Outputs the combined power of engine 1 and 2."
+    }
+  ],
+  "properties": []
+}

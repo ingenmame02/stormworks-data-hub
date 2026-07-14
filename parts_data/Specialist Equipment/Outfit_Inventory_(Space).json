@@ -1,0 +1,24 @@
+{
+  "name": "Outfit Inventory (Space)",
+  "category": "Specialist Equipment",
+  "dlc": "",
+  "description": "When equipped, it will protect against low temperatures, low pressures and provide oxygen.",
+  "shortDescription": "An outfit inventory unit containing specialist Space Exploration gear required for surviving in space. The air tank can be refilled by storing the gear in an outfit inventory unit with an attached air input or via space seat.",
+  "value": 5000,
+  "mass": 9.0,
+  "logicNodes": [
+    {
+      "label": "Fluid In",
+      "mode": "input",
+      "type": "fluid",
+      "description": ""
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    }
+  ],
+  "properties": []
+}

@@ -1,0 +1,48 @@
+{
+  "name": "Liquid Fuel Rocket",
+  "category": "Propulsion",
+  "dlc": "",
+  "description": "Fuel with liquid oxygen and hydrogen.",
+  "shortDescription": "A liquid fuel rocket engine.",
+  "value": 4500,
+  "mass": 60.0,
+  "logicNodes": [
+    {
+      "label": "Ignition",
+      "mode": "input",
+      "type": "onoff",
+      "description": ""
+    },
+    {
+      "label": "Gimbal Z",
+      "mode": "input",
+      "type": "number",
+      "description": ""
+    },
+    {
+      "label": "Gimbal X",
+      "mode": "input",
+      "type": "number",
+      "description": ""
+    },
+    {
+      "label": "Throttle",
+      "mode": "input",
+      "type": "number",
+      "description": ""
+    },
+    {
+      "label": "Oxygen",
+      "mode": "input",
+      "type": "fluid",
+      "description": ""
+    },
+    {
+      "label": "Hydrogen",
+      "mode": "input",
+      "type": "fluid",
+      "description": ""
+    }
+  ],
+  "properties": []
+}

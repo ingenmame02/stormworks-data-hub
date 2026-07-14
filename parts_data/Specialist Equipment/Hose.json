@@ -1,0 +1,42 @@
+{
+  "name": "Hose",
+  "category": "Specialist Equipment",
+  "dlc": "",
+  "description": "This can be used to transport water between Two bodies. Two on/off signals are used to control whether the hose is moving up (towards the base) or down (away from the base). A number output allows you to measure the hose's current length if necessary. The maximum length of the hose is 16 metres (64 blocks). The speed of the hose mechanism can be configured by selecting this component with the select tool.",
+  "shortDescription": "A building block attached to the end of a mechanical hose that can be raised and lowered.",
+  "value": 100,
+  "mass": 25.0,
+  "logicNodes": [
+    {
+      "label": "Hose Up",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Raises the hose up when receiving an on signal."
+    },
+    {
+      "label": "Hose Down",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Lowers the hose down when receiving an on signal."
+    },
+    {
+      "label": "Hose Length",
+      "mode": "output",
+      "type": "number",
+      "description": "The current length of the hose in metres."
+    },
+    {
+      "label": "Fluid",
+      "mode": "output",
+      "type": "fluid",
+      "description": "Fluid connection for the hose coil."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    }
+  ],
+  "properties": []
+}

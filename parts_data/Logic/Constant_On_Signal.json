@@ -1,0 +1,18 @@
+{
+  "name": "Constant On Signal",
+  "category": "Logic",
+  "dlc": "",
+  "description": "This is useful for creating logic circuits that are permanently switched on.",
+  "shortDescription": "A simple logic component that continuously outputs an on signal.",
+  "value": 20,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "On",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs a constant on signal."
+    }
+  ],
+  "properties": []
+}

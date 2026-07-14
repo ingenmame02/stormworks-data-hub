@@ -1,0 +1,24 @@
+{
+  "name": "Door Frame Controller",
+  "category": "Mechanics",
+  "dlc": "",
+  "description": "Placing the controller as part of a door frame will let you lock the door when closed, and check whether the door is closed enough to be forming a seal. Only one controller should be placed per frame.",
+  "shortDescription": "Controller unit for sealing door frames.",
+  "value": 100,
+  "mass": 10.0,
+  "logicNodes": [
+    {
+      "label": "Lock Seal",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Controls if the door panel will lock in place when sealed."
+    },
+    {
+      "label": "Seal State",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Indicates if the door panel is closed and forming a seal."
+    }
+  ],
+  "properties": []
+}

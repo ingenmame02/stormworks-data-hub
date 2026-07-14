@@ -1,0 +1,36 @@
+{
+  "name": "Heavy Autocannon",
+  "category": "Weapons",
+  "dlc": "",
+  "description": "Heavy autocannons bridge the gap between fast-firing autocannons and high-caliber cannons. Autocannons require electric power to load ammo from connected belts or drums.",
+  "shortDescription": "A heavy autocannon.",
+  "value": 100,
+  "mass": 50.0,
+  "logicNodes": [
+    {
+      "label": "Trigger",
+      "mode": "input",
+      "type": "onoff",
+      "description": "When true: feeds, loads, and fires cartridges from a connected belt or drum."
+    },
+    {
+      "label": "Loaded",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Returns true when a cartridge is loaded and ready to fire."
+    },
+    {
+      "label": "Fuse Timer",
+      "mode": "input",
+      "type": "number",
+      "description": "Sets the optional time-delay fuse in seconds for high-explosive and fragmentation ammo types."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    }
+  ],
+  "properties": []
+}

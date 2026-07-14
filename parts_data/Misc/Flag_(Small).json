@@ -1,0 +1,11 @@
+{
+  "name": "Flag (Small)",
+  "category": "Misc",
+  "dlc": "",
+  "description": "The flag design can be set in the properties menu.",
+  "shortDescription": "A small sized flagpole.",
+  "value": 25,
+  "mass": 1.0,
+  "logicNodes": [],
+  "properties": []
+}

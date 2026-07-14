@@ -1,0 +1,30 @@
+{
+  "name": "Key Button",
+  "category": "Mechanics",
+  "dlc": "",
+  "description": "Once activated, interacting with the button again will deactivate it instantly. The hold duration can be customised by selecting this component with the select tool. The external input can be used to simulate interacting with the button down using the output of another component. The button's default state can be configured by selecting it with the select component.",
+  "shortDescription": "A button that must be held down for a set duration before activating.",
+  "value": 20,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "External Input",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Allows an external on/off signal to hold the button down."
+    },
+    {
+      "label": "Activated",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal when interacting with the button for the set duration."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    }
+  ],
+  "properties": []
+}

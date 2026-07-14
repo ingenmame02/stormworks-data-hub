@@ -1,0 +1,24 @@
+{
+  "name": "Sliding Connector Gripper",
+  "category": "Mechanics",
+  "dlc": "",
+  "description": "The gripper will attach to a track when they are aligned and close enough, and will detach when it slides off the end or receives an on signal to the connector release input. The brake can be enabled to prevent the gripper from sliding along the track.",
+  "shortDescription": "A connector that will attach to and slide along a connector track.",
+  "value": 20,
+  "mass": 2.0,
+  "logicNodes": [
+    {
+      "label": "Release Connector",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Releases the connector when receiving an on signal."
+    },
+    {
+      "label": "Brake",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Enables the gripper's brake to keep it in place on the track."
+    }
+  ],
+  "properties": []
+}

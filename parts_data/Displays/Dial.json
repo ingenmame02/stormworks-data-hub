@@ -1,0 +1,30 @@
+{
+  "name": "Dial",
+  "category": "Displays",
+  "dlc": "",
+  "description": "The dial's face represents values ranging from -1 to 1 by default. This can be configured by selecting it with the select tool. Values outside this range will cause the needle to wrap around, but can be scaled to fit using additional logic components if necessary. An on/off signal can be used to toggle the backlight.",
+  "shortDescription": "A dial with a rotating needle for displaying numerical values.",
+  "value": 20,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Backlight",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Enables the backlight when receiving an on signal."
+    },
+    {
+      "label": "Value to Display",
+      "mode": "input",
+      "type": "number",
+      "description": "The numerical value to display, ideally scaled to be within a -1 to 1 range."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    }
+  ],
+  "properties": []
+}

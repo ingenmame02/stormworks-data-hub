@@ -1,0 +1,18 @@
+{
+  "name": "Equipment inventory (Radio Signal Locator)",
+  "category": "Specialist Equipment",
+  "dlc": "",
+  "description": "Press [$[action_equipment_use]] to toggle the locator on or off. When active, the locator produces audible beeps that increase in frequency as the player nears an active transponder. The handheld locator has a shorter detection range than the vehicle mounted locator, but can narrow down the target location to a smaller area. Requires electric charge to function, and will recharge when placed into a powered large equipment storage unit.",
+  "shortDescription": "A large equipment storage unit containing a handheld transponder locator.",
+  "value": 200,
+  "mass": 3.0,
+  "logicNodes": [
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    }
+  ],
+  "properties": []
+}

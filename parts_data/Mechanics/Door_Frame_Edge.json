@@ -1,0 +1,11 @@
+{
+  "name": "Door Frame Edge",
+  "category": "Mechanics",
+  "dlc": "",
+  "description": "To create a valid frame, there must be a continuous loop of frame parts in a consistent orientation with no other parts inside the frame.",
+  "shortDescription": "A straight edge for building openings to sealed fluid compartments.",
+  "value": 10,
+  "mass": 5.0,
+  "logicNodes": [],
+  "properties": []
+}

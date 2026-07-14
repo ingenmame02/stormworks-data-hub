@@ -1,0 +1,11 @@
+{
+  "name": "Modular Engine Drive Belt 3x3",
+  "category": "Modular Engines",
+  "dlc": "",
+  "description": "The drive belt attaches to the crankshaft and provides an interface for starters, alternators and pumps.",
+  "shortDescription": "A modular engine drive belt.",
+  "value": 80,
+  "mass": 9.0,
+  "logicNodes": [],
+  "properties": []
+}

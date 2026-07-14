@@ -1,0 +1,30 @@
+{
+  "name": "Clock",
+  "category": "Displays",
+  "dlc": "",
+  "description": "The clock has a display to visualise the time of day or night. The 12 o'clock position is the white arrow on the face of the display.",
+  "shortDescription": "An analogue clock display that outputs a number value representing the time of day.",
+  "value": 100,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Backlight",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Enables the backlight when receiving an on signal."
+    },
+    {
+      "label": "Time",
+      "mode": "output",
+      "type": "number",
+      "description": "The time as a factor of a day, from 0 (midnight) to 1 (midnight)."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    }
+  ],
+  "properties": []
+}

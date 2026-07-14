@@ -1,0 +1,36 @@
+{
+  "name": "Mag All",
+  "category": "Mechanics",
+  "dlc": "",
+  "description": "While the connector is active the end will glow and it will stick to most surfaces that it touches. The connection will break if enough stress (200) is applied.",
+  "shortDescription": "A small connector that will attach to most surfaces.",
+  "value": 250,
+  "mass": 5.0,
+  "logicNodes": [
+    {
+      "label": "Magnet Toggle",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Enables the connector's magnet when receiving an on signal."
+    },
+    {
+      "label": "Connected",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal if the connector is attached to another connector."
+    },
+    {
+      "label": "Force",
+      "mode": "output",
+      "type": "number",
+      "description": "Outputs the current force stress on the connector."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    }
+  ],
+  "properties": []
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Equipment inventory (Flaregun)",
+  "category": "Specialist Equipment",
+  "dlc": "",
+  "description": "Press [$[action_equipment_use]] to fire a red illumination flare that burns for a short time, and [$[action_equipment_secondary]] to reload.",
+  "shortDescription": "A small equipment storage unit containing a flaregun preloaded with 1 flaregun round.",
+  "value": 50,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    }
+  ],
+  "properties": []
+}

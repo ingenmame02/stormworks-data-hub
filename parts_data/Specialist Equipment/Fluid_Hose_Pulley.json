@@ -1,0 +1,48 @@
+{
+  "name": "Fluid Hose Pulley",
+  "category": "Specialist Equipment",
+  "dlc": "",
+  "description": "Draw a rope logic link between two rope nodes to form a hose. Hoses will slide based on difference in force applied to each hose.",
+  "shortDescription": "A pulley that changes attached hose lengths based on forces applied to hoses.",
+  "value": 250,
+  "mass": 25.0,
+  "logicNodes": [
+    {
+      "label": "Rope 1 Length",
+      "mode": "output",
+      "type": "number",
+      "description": "The current length of rope 1 in metres."
+    },
+    {
+      "label": "Rope 2 Length",
+      "mode": "output",
+      "type": "number",
+      "description": "The current length of rope 2 in metres."
+    },
+    {
+      "label": "Fluid Node 1",
+      "mode": "output",
+      "type": "fluid",
+      "description": ""
+    },
+    {
+      "label": "Fluid Node 2",
+      "mode": "output",
+      "type": "fluid",
+      "description": ""
+    },
+    {
+      "label": "Rope 2",
+      "mode": "input",
+      "type": "rope",
+      "description": ""
+    },
+    {
+      "label": "Rope 1",
+      "mode": "input",
+      "type": "rope",
+      "description": ""
+    }
+  ],
+  "properties": []
+}

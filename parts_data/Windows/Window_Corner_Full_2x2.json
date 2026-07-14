@@ -1,0 +1,11 @@
+{
+  "name": "Window Corner Full 2x2",
+  "category": "Windows",
+  "dlc": "",
+  "description": "Corner windows are triangular in shape, making them useful for creating corners between angled windows.",
+  "shortDescription": "Basic window piece.",
+  "value": 20,
+  "mass": 2.0,
+  "logicNodes": [],
+  "properties": []
+}

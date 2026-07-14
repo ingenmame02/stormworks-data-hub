@@ -1,0 +1,24 @@
+{
+  "name": "Outfit Inventory (Diving)",
+  "category": "Specialist Equipment",
+  "dlc": "",
+  "description": "When equipped, it will allow deep sea diving to a depth of 230m, and provides air for 10 minutes. The air tank can be refilled by storing the gear in an outfit inventory unit with an attached air input or via space seat.",
+  "shortDescription": "An outfit inventory unit containing specialist diving equipment.",
+  "value": 2000,
+  "mass": 9.0,
+  "logicNodes": [
+    {
+      "label": "Fluid In",
+      "mode": "input",
+      "type": "fluid",
+      "description": ""
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    }
+  ],
+  "properties": []
+}

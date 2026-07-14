@@ -1,0 +1,24 @@
+{
+  "name": "Robotic Hinge",
+  "category": "Mechanics",
+  "dlc": "",
+  "description": "",
+  "shortDescription": "",
+  "value": 0,
+  "mass": 3.0,
+  "logicNodes": [
+    {
+      "label": "RPS",
+      "mode": "input",
+      "type": "torque",
+      "description": "Power connection for transfering mechanical energy."
+    },
+    {
+      "label": "Fluid",
+      "mode": "input",
+      "type": "fluid",
+      "description": "Fluid connection for transfering fluid."
+    }
+  ],
+  "properties": []
+}

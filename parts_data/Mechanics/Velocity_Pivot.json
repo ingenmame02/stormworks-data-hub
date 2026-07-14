@@ -1,0 +1,30 @@
+{
+  "name": "Velocity Pivot",
+  "category": "Mechanics",
+  "dlc": "",
+  "description": "Inputting a value of 0 will cause it to stop. The pivot's current rotation can be read from its output. An output of 1 corresponds to one full turn, and -1 to a full turn in the opposite direction.",
+  "shortDescription": "A pivot that will continuously rotate at a set input speed.",
+  "value": 25,
+  "mass": 9.0,
+  "logicNodes": [
+    {
+      "label": "Rotational Speed",
+      "mode": "input",
+      "type": "number",
+      "description": "The speed at which the pivot should rotate."
+    },
+    {
+      "label": "Current Rotation",
+      "mode": "output",
+      "type": "number",
+      "description": "The pivot's measured rotation expressed in fractions of full turns."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    }
+  ],
+  "properties": []
+}

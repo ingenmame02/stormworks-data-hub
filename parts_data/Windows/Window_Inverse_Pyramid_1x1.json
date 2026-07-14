@@ -1,0 +1,11 @@
+{
+  "name": "Window Inverse Pyramid 1x1",
+  "category": "Windows",
+  "dlc": "",
+  "description": "",
+  "shortDescription": "Basic window piece.",
+  "value": 5,
+  "mass": 1.0,
+  "logicNodes": [],
+  "properties": []
+}

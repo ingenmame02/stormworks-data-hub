@@ -1,0 +1,36 @@
+{
+  "name": "Hydrogen Fuel Cell",
+  "category": "Fluid",
+  "dlc": "",
+  "description": "Pumping hydrogen and oxygen into the fuel cell generates power while creating water as a byproduct.",
+  "shortDescription": "A hydrogen fuel cell capable of generating electric power.",
+  "value": 800,
+  "mass": 50.0,
+  "logicNodes": [
+    {
+      "label": "Oxygen In",
+      "mode": "input",
+      "type": "fluid",
+      "description": ""
+    },
+    {
+      "label": "Hydrogen In",
+      "mode": "input",
+      "type": "fluid",
+      "description": ""
+    },
+    {
+      "label": "Water Out",
+      "mode": "output",
+      "type": "fluid",
+      "description": ""
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "The electric connection to output electric energy."
+    }
+  ],
+  "properties": []
+}

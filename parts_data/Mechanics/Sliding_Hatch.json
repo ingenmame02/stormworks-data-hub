@@ -1,0 +1,18 @@
+{
+  "name": "Sliding Hatch",
+  "category": "Mechanics",
+  "dlc": "",
+  "description": "",
+  "shortDescription": "Sliding door that can be opened and closed by hand and locked using an on/off signal.",
+  "value": 40,
+  "mass": 20.0,
+  "logicNodes": [
+    {
+      "label": "Lock",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Locks the door when receiving an on signal."
+    }
+  ],
+  "properties": []
+}

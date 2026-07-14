@@ -1,0 +1,30 @@
+{
+  "name": "Torque Meter",
+  "category": "Propulsion",
+  "dlc": "",
+  "description": "Measures the torque and rotations per second in the connected power network.",
+  "shortDescription": "A sensor for reading torque and rotations per second.",
+  "value": 25,
+  "mass": 4.0,
+  "logicNodes": [
+    {
+      "label": "RPS",
+      "mode": "output",
+      "type": "number",
+      "description": "The rotations per second of the power system."
+    },
+    {
+      "label": "Torque",
+      "mode": "output",
+      "type": "number",
+      "description": "The torque reading from the power system."
+    },
+    {
+      "label": "RPS",
+      "mode": "output",
+      "type": "torque",
+      "description": "Connection to the power system."
+    }
+  ],
+  "properties": []
+}

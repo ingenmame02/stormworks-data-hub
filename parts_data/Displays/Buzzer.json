@@ -1,0 +1,24 @@
+{
+  "name": "Buzzer",
+  "category": "Displays",
+  "dlc": "",
+  "description": "The type of sound, volume, and pitch can be customised by selecting this component with the select tool. It has an audible range of 30m.",
+  "shortDescription": "A buzzer that will play a selected sound when toggled from off to on.",
+  "value": 100,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Buzzer",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Plays the selected sound when toggled from off to on."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    }
+  ],
+  "properties": []
+}

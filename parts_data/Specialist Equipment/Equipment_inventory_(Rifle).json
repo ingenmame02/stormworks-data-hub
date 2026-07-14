@@ -1,0 +1,18 @@
+{
+  "name": "Equipment inventory (Rifle)",
+  "category": "Specialist Equipment",
+  "dlc": "",
+  "description": "Press [$[action_equipment_use]] to fire, and [$[action_equipment_secondary]] to reload. The rifle fires accurate and powerful shots for long-range engagements.",
+  "shortDescription": "A large equipment storage unit containing a rifle.",
+  "value": 200,
+  "mass": 3.0,
+  "logicNodes": [
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    }
+  ],
+  "properties": []
+}

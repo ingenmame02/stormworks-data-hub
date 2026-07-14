@@ -1,0 +1,30 @@
+{
+  "name": "Medium Electric Motor",
+  "category": "Propulsion",
+  "dlc": "",
+  "description": "Converts electrical energy into mechanical force.",
+  "shortDescription": "A medium electric motor.",
+  "value": 1500,
+  "mass": 100.0,
+  "logicNodes": [
+    {
+      "label": "Throttle",
+      "mode": "input",
+      "type": "number",
+      "description": "The throttle input to control how much electric energy is converted to force."
+    },
+    {
+      "label": "RPS",
+      "mode": "input",
+      "type": "torque",
+      "description": "The power output for mechanical force."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "The electric energy input to be converted into mechanical force."
+    }
+  ],
+  "properties": []
+}

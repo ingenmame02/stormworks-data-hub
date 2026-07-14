@@ -1,0 +1,30 @@
+{
+  "name": "Speaker (Small)",
+  "category": "Displays",
+  "dlc": "",
+  "description": "A small speaker capable of playing audio data to nearby players. (Range : 15)",
+  "shortDescription": "A speaker capable of playing audio data to players within its range.",
+  "value": 250,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Is Transmit",
+      "mode": "output",
+      "type": "onoff",
+      "description": "If the speaker is currently transmitting."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    },
+    {
+      "label": "Audio",
+      "mode": "input",
+      "type": "audio",
+      "description": "Audio data connection."
+    }
+  ],
+  "properties": []
+}

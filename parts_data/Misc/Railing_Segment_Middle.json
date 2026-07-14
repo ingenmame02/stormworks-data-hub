@@ -1,0 +1,11 @@
+{
+  "name": "Railing Segment Middle",
+  "category": "Misc",
+  "dlc": "",
+  "description": "",
+  "shortDescription": "Straight railing extension segment with a vertical pole.",
+  "value": 30,
+  "mass": 2.0,
+  "logicNodes": [],
+  "properties": []
+}

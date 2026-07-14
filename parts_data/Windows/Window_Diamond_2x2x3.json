@@ -1,0 +1,11 @@
+{
+  "name": "Window Diamond 2x2x3",
+  "category": "Windows",
+  "dlc": "",
+  "description": "Skewed in all dimensions for building of angular windows.",
+  "shortDescription": "Basic window piece.",
+  "value": 30,
+  "mass": 3.0,
+  "logicNodes": [],
+  "properties": []
+}

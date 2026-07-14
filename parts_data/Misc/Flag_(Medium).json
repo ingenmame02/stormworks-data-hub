@@ -1,0 +1,11 @@
+{
+  "name": "Flag (Medium)",
+  "category": "Misc",
+  "dlc": "",
+  "description": "The flag design can be set in the properties menu.",
+  "shortDescription": "A medium sized flagpole.",
+  "value": 75,
+  "mass": 2.0,
+  "logicNodes": [],
+  "properties": []
+}

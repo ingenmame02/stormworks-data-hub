@@ -1,0 +1,48 @@
+{
+  "name": "Liquid-Liquid Heat Exchanger 2x2",
+  "category": "Fluid",
+  "dlc": "",
+  "description": "A heat exchanger that averages heat between two liquid systems at a rate proportional to the component's size.",
+  "shortDescription": "A heat exchanger that averages heat between two liquid systems.",
+  "value": 30,
+  "mass": 4.0,
+  "logicNodes": [
+    {
+      "label": "Temp A",
+      "mode": "output",
+      "type": "number",
+      "description": "Compartment temperature."
+    },
+    {
+      "label": "Temp B",
+      "mode": "output",
+      "type": "number",
+      "description": "Compartment temperature."
+    },
+    {
+      "label": "Fluid A In",
+      "mode": "input",
+      "type": "fluid",
+      "description": "Input fluid port."
+    },
+    {
+      "label": "Fluid A Out",
+      "mode": "input",
+      "type": "fluid",
+      "description": "Output fluid port."
+    },
+    {
+      "label": "Fluid B In",
+      "mode": "input",
+      "type": "fluid",
+      "description": "Input fluid port."
+    },
+    {
+      "label": "Fluid B Out",
+      "mode": "input",
+      "type": "fluid",
+      "description": "Output fluid port."
+    }
+  ],
+  "properties": []
+}

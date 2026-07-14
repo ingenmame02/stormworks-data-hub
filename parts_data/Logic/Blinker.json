@@ -1,0 +1,24 @@
+{
+  "name": "Blinker",
+  "category": "Logic",
+  "dlc": "",
+  "description": "You can set the duration that the signal should stay on and off for by selecting it with the select tool. A control signal determines whether or not the blinker should output anything. If the control signal is off, the blinker's output will be off. The internal blink timer is reset every time the control signal is switched off.",
+  "shortDescription": "The blinker outputs a value that blinks between on and off at a set rate.",
+  "value": 20,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Control Signal",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Controls whether or not the blinker should output anything at all."
+    },
+    {
+      "label": "Blinking Signal",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs a signal that blinks between on and off at the set rate when the control signal is on. Outputs off if the control signal is off."
+    }
+  ],
+  "properties": []
+}

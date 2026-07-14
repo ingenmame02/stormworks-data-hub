@@ -1,0 +1,11 @@
+{
+  "name": "Static Block",
+  "category": "Blocks",
+  "dlc": "",
+  "description": "This block cannot be removed.",
+  "shortDescription": "Static root block used as a base for all vehicles.",
+  "value": 10,
+  "mass": 1.0,
+  "logicNodes": [],
+  "properties": []
+}

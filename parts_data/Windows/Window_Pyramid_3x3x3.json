@@ -1,0 +1,11 @@
+{
+  "name": "Window Pyramid 3x3x3",
+  "category": "Windows",
+  "dlc": "",
+  "description": "",
+  "shortDescription": "Basic window piece.",
+  "value": 135,
+  "mass": 4.0,
+  "logicNodes": [],
+  "properties": []
+}

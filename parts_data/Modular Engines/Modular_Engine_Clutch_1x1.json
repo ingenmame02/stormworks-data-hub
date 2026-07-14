@@ -1,0 +1,24 @@
+{
+  "name": "Modular Engine Clutch 1x1",
+  "category": "Modular Engines",
+  "dlc": "",
+  "description": "Attach a clutch to a crankshaft block to control the torque made available to the connected system.",
+  "shortDescription": "A modular engine clutch.",
+  "value": 15,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Clutch Pressure",
+      "mode": "input",
+      "type": "number",
+      "description": ""
+    },
+    {
+      "label": "RPS",
+      "mode": "input",
+      "type": "torque",
+      "description": "The power supplied by the engine for inputting to other components."
+    }
+  ],
+  "properties": []
+}

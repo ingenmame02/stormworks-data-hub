@@ -1,0 +1,36 @@
+{
+  "name": "SR Latch",
+  "category": "Logic",
+  "dlc": "",
+  "description": "When both inputs are off, there is no change in state. If both Set and Reset are set to on, Reset will take precedence.",
+  "shortDescription": "An SR latch that can be set and reset using two on/off inputs.",
+  "value": 20,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Set",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Sets the output to on."
+    },
+    {
+      "label": "Reset",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Sets the output to off."
+    },
+    {
+      "label": "Output",
+      "mode": "output",
+      "type": "onoff",
+      "description": "The internal state of the latch."
+    },
+    {
+      "label": "NOT Output",
+      "mode": "output",
+      "type": "onoff",
+      "description": "The inverse of the internal state of the latch."
+    }
+  ],
+  "properties": []
+}

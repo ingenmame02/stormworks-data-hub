@@ -1,0 +1,18 @@
+{
+  "name": "Equipment inventory (Radio)",
+  "category": "Specialist Equipment",
+  "dlc": "",
+  "description": "Hold [$[action_equipment_use]] transmit voice audio. Press [$[action_equipment_secondary]] to cycle between frequencies 0~8, or turn the radio off. When a frequency is selected, the radio will transmit and receive voice audio on that frequency only. Requires electric charge to function, and will recharge when placed into a powered small equipment storage unit. (Max Effective Range : 500m)",
+  "shortDescription": "A small equipment storage unit containing a handheld radio.",
+  "value": 50,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    }
+  ],
+  "properties": []
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Equipment inventory (Pistol)",
+  "category": "Specialist Equipment",
+  "dlc": "",
+  "description": "Press [$[action_equipment_use]] to fire, and [$[action_equipment_secondary]] to reload. The pistol is compact enough for a belt holster, and can be accurate when recoil is carefully managed.",
+  "shortDescription": "A small equipment storage unit containing a pistol.",
+  "value": 200,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    }
+  ],
+  "properties": []
+}

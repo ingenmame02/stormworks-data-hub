@@ -1,0 +1,24 @@
+{
+  "name": "Compact Velocity Pivot",
+  "category": "Mechanics",
+  "dlc": "",
+  "description": "Inputting a value of 0 will cause it to stop.",
+  "shortDescription": "A small pivot that will continuously rotate at a set input speed.",
+  "value": 40,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Rotational Speed",
+      "mode": "input",
+      "type": "number",
+      "description": "The speed at which the pivot should rotate."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    }
+  ],
+  "properties": []
+}

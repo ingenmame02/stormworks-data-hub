@@ -1,0 +1,11 @@
+{
+  "name": "Physics Flooder",
+  "category": "Blocks",
+  "dlc": "",
+  "description": "Floods an enclosed volume with massless physics, allowing for physics shape optimisation without comprimising vehicle integrity.",
+  "shortDescription": "A device that floods an enclosed volume with physics for optimisation.",
+  "value": 20,
+  "mass": 1.0,
+  "logicNodes": [],
+  "properties": []
+}

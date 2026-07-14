@@ -1,0 +1,18 @@
+{
+  "name": "Equipment inventory (Dog Whistle)",
+  "category": "Specialist Equipment",
+  "dlc": "",
+  "description": "Hold [$[action_equipment_use]] to sound the whistle. Nearby dogs will respond to certain whistle patterns. 1 long burst = Wait. 2 short bursts = Follow.",
+  "shortDescription": "A small equipment storage unit containing a dog whistle.",
+  "value": 50,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    }
+  ],
+  "properties": []
+}

@@ -1,0 +1,30 @@
+{
+  "name": "RCS Thruster",
+  "category": "Specialist Equipment",
+  "dlc": "",
+  "description": "The reaction control system can fire in 4 non-cardinal directions resulting in 5 directions of motion. RCS thrusters also have body relative activation modes where thrusters will collaborate from different orientations to achieve the desired translation or rotation. The RCS thruster also has positional and rotational stabilization toggles.",
+  "shortDescription": "A fluid jet that fires pressurized air for altitude control and translation.",
+  "value": 140,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Fluid Supply",
+      "mode": "input",
+      "type": "fluid",
+      "description": "The fluid input to output from the thruster."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    },
+    {
+      "label": "Composite Input",
+      "mode": "input",
+      "type": "composite",
+      "description": "Composite bool channels: 1:Component X+, 2:Component X-, 3:Component Z+, 4:Component Z-, 5:Enable position stabilization, 6:Enable rotation stabilization, 7:Body X+, 8:Body X-, 9:Body Y+, 10:Body Y-, 11:Body Z+, 12:Body Z-, 13:Body Rotate X+, 14:Body Rotate X-, 15:Body Rotate Y+, 16:Body Rotate Y-, 17:Body Rotate Z+, 18:Body Rotate Z-"
+    }
+  ],
+  "properties": []
+}

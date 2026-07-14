@@ -1,0 +1,18 @@
+{
+  "name": "Equipment inventory (Underwater Welding Torch)",
+  "category": "Specialist Equipment",
+  "dlc": "",
+  "description": "Hold [$[action_equipment_use]] to repair damaged vehicle components highlighted by the players crosshair. The underwater welding torch holds less fuel than the standard welding torch, but can be operated while submerged in water. This equipment has a limited fuel capacity and cannot be refilled.",
+  "shortDescription": "A large equipment storage unit containing an underwater welding torch.",
+  "value": 200,
+  "mass": 3.0,
+  "logicNodes": [
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    }
+  ],
+  "properties": []
+}

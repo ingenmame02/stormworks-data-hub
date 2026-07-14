@@ -1,0 +1,24 @@
+{
+  "name": "Rope Anchor",
+  "category": "Specialist Equipment",
+  "dlc": "",
+  "description": "Draw a rope logic link between two Rope Anchors to form a rope.",
+  "shortDescription": "An anchor point for a basic rope.",
+  "value": 15,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Detach Rope",
+      "mode": "input",
+      "type": "onoff",
+      "description": ""
+    },
+    {
+      "label": "Rope Node",
+      "mode": "input",
+      "type": "rope",
+      "description": ""
+    }
+  ],
+  "properties": []
+}

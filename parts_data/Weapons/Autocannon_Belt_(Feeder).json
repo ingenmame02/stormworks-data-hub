@@ -1,0 +1,30 @@
+{
+  "name": "Autocannon Belt (Feeder)",
+  "category": "Weapons",
+  "dlc": "",
+  "description": "Autocannon belts can transfer all calibers of autocannon ammo. Feeder belts transfer ammo forwards using electric power.",
+  "shortDescription": "An autocannon ammo belt.",
+  "value": 100,
+  "mass": 4.0,
+  "logicNodes": [
+    {
+      "label": "Feed",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Transfer cartridges in the direction of the arrow."
+    },
+    {
+      "label": "Contains Ammo",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Returns true if the belt contains a shell."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    }
+  ],
+  "properties": []
+}

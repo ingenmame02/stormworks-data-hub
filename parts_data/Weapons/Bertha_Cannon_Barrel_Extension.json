@@ -1,0 +1,11 @@
+{
+  "name": "Bertha Cannon Barrel Extension",
+  "category": "Weapons",
+  "dlc": "",
+  "description": "Barrel extensions increase weapon accuracy, but also produce more recoil force.",
+  "shortDescription": "A Bertha cannon barrel extension.",
+  "value": 50,
+  "mass": 200.0,
+  "logicNodes": [],
+  "properties": []
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Fluid Heat Sink",
+  "category": "Fluid",
+  "dlc": "",
+  "description": "Fluid inside the cooler will lose temperature.",
+  "shortDescription": "Heat sink type cooler for fluid.",
+  "value": 300,
+  "mass": 18.0,
+  "logicNodes": [
+    {
+      "label": "Fluid A",
+      "mode": "input",
+      "type": "fluid",
+      "description": "Fluid Connection."
+    },
+    {
+      "label": "Fluid B",
+      "mode": "input",
+      "type": "fluid",
+      "description": "Fluid Connection."
+    }
+  ],
+  "properties": []
+}

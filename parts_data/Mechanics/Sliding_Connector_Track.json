@@ -1,0 +1,11 @@
+{
+  "name": "Sliding Connector Track",
+  "category": "Mechanics",
+  "dlc": "",
+  "description": "Gripper connectors will attach to the track when aligned and close enough, and will detach when they slide off the end.",
+  "shortDescription": "A connector that can be used to build a track for grippers to attach to.",
+  "value": 10,
+  "mass": 2.0,
+  "logicNodes": [],
+  "properties": []
+}

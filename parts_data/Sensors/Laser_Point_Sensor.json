@@ -1,0 +1,30 @@
+{
+  "name": "Laser Point Sensor",
+  "category": "Sensors",
+  "dlc": "",
+  "description": "The closest point to the center of the sensor's field of view will be reported. It outputs a value of -1 to 1 on composite number channel 1 for the x position, and a value of -1 to 1 on composite number channel 2 for the y position. Composite on/off channel 1 is set to on when a point is visible. The -1 to 1 values map to an fov of -cos(0.5) to cos(0.5) in both the x and y directions.",
+  "shortDescription": "A sensor that outputs a relative x and y position of a laser point that it can see within its field of view.",
+  "value": 100,
+  "mass": 2.0,
+  "logicNodes": [
+    {
+      "label": "Wavelength",
+      "mode": "input",
+      "type": "number",
+      "description": "The specific light wavelength to detect (whole number)."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    },
+    {
+      "label": "Data Output",
+      "mode": "output",
+      "type": "composite",
+      "description": "On/Off channel 1: is laser detected. Number channel 1, 2: X, Y position within the sensors 120 degree field of view."
+    }
+  ],
+  "properties": []
+}

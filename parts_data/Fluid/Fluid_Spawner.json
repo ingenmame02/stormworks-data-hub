@@ -1,0 +1,11 @@
+{
+  "name": "Fluid Spawner",
+  "category": "Fluid",
+  "dlc": "",
+  "description": "The fluid spawner for helping with custom fluid tanks, so they can be spawned full, without a need to fill after spawning. Gases are spawned compressed (60atm).",
+  "shortDescription": "A component to mark an enclosed area to be spawned with fluid inside.",
+  "value": 20,
+  "mass": 1.0,
+  "logicNodes": [],
+  "properties": []
+}

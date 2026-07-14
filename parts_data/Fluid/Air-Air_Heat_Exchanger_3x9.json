@@ -1,0 +1,48 @@
+{
+  "name": "Air-Air Heat Exchanger 3x9",
+  "category": "Fluid",
+  "dlc": "",
+  "description": "A heat exchanger that averages heat between two air systems at a rate proportional to the component's size.",
+  "shortDescription": "A heat exchanger that averages heat between two air systems.",
+  "value": 100,
+  "mass": 27.0,
+  "logicNodes": [
+    {
+      "label": "Temp A",
+      "mode": "output",
+      "type": "number",
+      "description": "Compartment temperature."
+    },
+    {
+      "label": "Temp B",
+      "mode": "output",
+      "type": "number",
+      "description": "Compartment temperature."
+    },
+    {
+      "label": "Air A In",
+      "mode": "input",
+      "type": "fluid",
+      "description": "Input air port."
+    },
+    {
+      "label": "Air A Out",
+      "mode": "input",
+      "type": "fluid",
+      "description": "Output air port."
+    },
+    {
+      "label": "Air B In",
+      "mode": "input",
+      "type": "fluid",
+      "description": "Input air port."
+    },
+    {
+      "label": "Air B Out",
+      "mode": "input",
+      "type": "fluid",
+      "description": "Output air port."
+    }
+  ],
+  "properties": []
+}

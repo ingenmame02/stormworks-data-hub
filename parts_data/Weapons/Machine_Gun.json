@@ -1,0 +1,24 @@
+{
+  "name": "Machine Gun",
+  "category": "Weapons",
+  "dlc": "",
+  "description": "Machine guns are lightweight and compact, but require ammo boxes to be reloaded by hand.",
+  "shortDescription": "A machine gun.",
+  "value": 50,
+  "mass": 10.0,
+  "logicNodes": [
+    {
+      "label": "Trigger",
+      "mode": "input",
+      "type": "onoff",
+      "description": "When true: feeds, loads, and fires cartridges from a connected ammo box."
+    },
+    {
+      "label": "Loaded",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Returns true when a cartridge is loaded and ready to fire."
+    }
+  ],
+  "properties": []
+}

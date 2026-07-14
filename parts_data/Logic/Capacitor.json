@@ -1,0 +1,24 @@
+{
+  "name": "Capacitor",
+  "category": "Logic",
+  "dlc": "",
+  "description": "The charge and discharge times can be configured by selecting this component with the select tool. Once charged, inputting a new signal will reset the discharge timer.",
+  "shortDescription": "Charges up when receiving an on signal, then discharges over a period of time.",
+  "value": 20,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Charge",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Charges the capacitor when on, discharges when off."
+    },
+    {
+      "label": "Stored Charge",
+      "mode": "output",
+      "type": "onoff",
+      "description": "The capacitor's stored charge."
+    }
+  ],
+  "properties": []
+}

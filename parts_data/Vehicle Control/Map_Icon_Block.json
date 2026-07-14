@@ -1,0 +1,11 @@
+{
+  "name": "Map Icon Block",
+  "category": "Vehicle Control",
+  "dlc": "",
+  "description": "When on a vehicle, the vehicle will show on the map and other vehicles in the group will be hidden. The custom name set here will be the name set on the map.",
+  "shortDescription": "A vehicle tracking block.",
+  "value": 100,
+  "mass": 1.0,
+  "logicNodes": [],
+  "properties": []
+}

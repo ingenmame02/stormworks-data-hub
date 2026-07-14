@@ -1,0 +1,36 @@
+{
+  "name": "Divide",
+  "category": "Logic",
+  "dlc": "",
+  "description": "If a division by 0 occurs, an on signal will be produced and the output number value will be set to 0.",
+  "shortDescription": "Takes two number inputs, divides one by the other, and outputs the result.",
+  "value": 20,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Error",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs true when a division by 0 occurs."
+    },
+    {
+      "label": "A",
+      "mode": "input",
+      "type": "number",
+      "description": "The number to divide."
+    },
+    {
+      "label": "B",
+      "mode": "input",
+      "type": "number",
+      "description": "The number to divide by."
+    },
+    {
+      "label": "A / B",
+      "mode": "output",
+      "type": "number",
+      "description": "The result of A divided by B, or 0 attempting to divide by 0."
+    }
+  ],
+  "properties": []
+}

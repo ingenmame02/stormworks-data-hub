@@ -1,0 +1,30 @@
+{
+  "name": "Gas Tank (Huge)",
+  "category": "Fluid",
+  "dlc": "",
+  "description": "The tank will spawn full of the selected fluid type.",
+  "shortDescription": "A tank for storing gas.",
+  "value": 20,
+  "mass": 22.0,
+  "logicNodes": [
+    {
+      "label": "Tank Content",
+      "mode": "output",
+      "type": "number",
+      "description": "The amount of gas in the tank in litres."
+    },
+    {
+      "label": "Tank Pressure",
+      "mode": "output",
+      "type": "number",
+      "description": "The pressure in the tank in atmospheres."
+    },
+    {
+      "label": "Stored Gas",
+      "mode": "input",
+      "type": "fluid",
+      "description": "The fluid connection for the stored contents."
+    }
+  ],
+  "properties": []
+}

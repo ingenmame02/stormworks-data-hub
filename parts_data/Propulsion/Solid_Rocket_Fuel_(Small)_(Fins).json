@@ -1,0 +1,24 @@
+{
+  "name": "Solid Rocket Fuel (Small) (Fins)",
+  "category": "Propulsion",
+  "dlc": "",
+  "description": "Fuel can be stacked to increase the burn duration of a rocket booster. Link up to the instruction output of a missile radar for automatic guidance.",
+  "shortDescription": "A small solid rocket fuel segment with in-built controllable fins.",
+  "value": 200,
+  "mass": 5.0,
+  "logicNodes": [
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    },
+    {
+      "label": "Composite Input",
+      "mode": "input",
+      "type": "composite",
+      "description": "Composite data for the flight control surfaces. (Value 1 : Yaw) (Value 2 : Pitch)."
+    }
+  ],
+  "properties": []
+}

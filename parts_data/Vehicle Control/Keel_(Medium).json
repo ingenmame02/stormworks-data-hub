@@ -1,0 +1,11 @@
+{
+  "name": "Keel (Medium)",
+  "category": "Vehicle Control",
+  "dlc": "",
+  "description": "The keel resists rolling forces while submerged, helping to keep a boat upright and stable. The keel also resists lateral sliding forces, causing the majority of a boats movement to be in the direction of the keel axis. When combined with the force provided by a sail, this allows a sailboat to move forward in a crosswind, or even upwind.",
+  "shortDescription": "A medium boat keel used for sailing.",
+  "value": 1000,
+  "mass": 1000.0,
+  "logicNodes": [],
+  "properties": []
+}

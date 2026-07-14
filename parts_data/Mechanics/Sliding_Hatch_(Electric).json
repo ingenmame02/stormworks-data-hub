@@ -1,0 +1,24 @@
+{
+  "name": "Sliding Hatch (Electric)",
+  "category": "Mechanics",
+  "dlc": "",
+  "description": "",
+  "shortDescription": "Sliding hatch that can be opened and closed using an on/off signal.",
+  "value": 50,
+  "mass": 15.0,
+  "logicNodes": [
+    {
+      "label": "Hatch Open/Close",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Opens the hatch when receiving an on signal, and closes it when receiving an off signal."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    }
+  ],
+  "properties": []
+}

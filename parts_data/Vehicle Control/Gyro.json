@@ -1,0 +1,72 @@
+{
+  "name": "Gyro",
+  "category": "Vehicle Control",
+  "dlc": "",
+  "description": "It outputs stabilised values that can be sent to rotors and engines to make them much easier to control. An on/off input allows you to activate and deactivate the internal auto-hover circuit. When auto-hover is enabled, the gyroscope will attempt to keep your helicopter steady.",
+  "shortDescription": "The gyroscope takes 4 standard value signals representing the desired yaw, pitch, roll and vertical motion of a helicopter.",
+  "value": 500,
+  "mass": 10.0,
+  "logicNodes": [
+    {
+      "label": "Auto-hover",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Enables the gyroscope's auto-hover circuit when receiving an on signal."
+    },
+    {
+      "label": "Roll",
+      "mode": "input",
+      "type": "number",
+      "description": "Accepts a standard value between -1 and 1 representing the desired roll speed."
+    },
+    {
+      "label": "Pitch",
+      "mode": "input",
+      "type": "number",
+      "description": "Accepts a standard value between -1 and 1 representing the desired pitch speed."
+    },
+    {
+      "label": "Yaw",
+      "mode": "input",
+      "type": "number",
+      "description": "Accepts a standard value between -1 and 1 representing the desired yaw speed."
+    },
+    {
+      "label": "Up/Down",
+      "mode": "input",
+      "type": "number",
+      "description": "Accepts a standard value between -1 and 1 representing the desired vertical speed."
+    },
+    {
+      "label": "Stabilised Roll",
+      "mode": "output",
+      "type": "number",
+      "description": "Outputs a standard value between -1 and 1 representing a stabilised roll speed."
+    },
+    {
+      "label": "Stabilised Pitch",
+      "mode": "output",
+      "type": "number",
+      "description": "Outputs a standard value between -1 and 1 representing a stabilised pitch speed."
+    },
+    {
+      "label": "Stabilised Yaw",
+      "mode": "output",
+      "type": "number",
+      "description": "Outputs a standard value between -1 and 1 representing a stabilised yaw speed."
+    },
+    {
+      "label": "Stabilised Up/Down",
+      "mode": "output",
+      "type": "number",
+      "description": "Outputs a standard value between 0 and 1 representing a stabilised upward thrust."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    }
+  ],
+  "properties": []
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Sonar Noisemaker",
+  "category": "Specialist Equipment",
+  "dlc": "",
+  "description": "Emits a very loud noise at an inaudible frequency when activated, as a decoy or distraction for sonar components that are listening passively.",
+  "shortDescription": "A distracting device for sonar.",
+  "value": 250,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Enable",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Enable the noisemaker."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical connection."
+    }
+  ],
+  "properties": []
+}

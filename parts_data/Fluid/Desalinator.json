@@ -1,0 +1,24 @@
+{
+  "name": "Desalinator",
+  "category": "Fluid",
+  "dlc": "",
+  "description": "A pipe with a fine desalination filter that slowly converts seawater to freshwater and allows free flow of freshwater.",
+  "shortDescription": "A pipe that slowly converts seawater to freshwater.",
+  "value": 400,
+  "mass": 5.0,
+  "logicNodes": [
+    {
+      "label": "Fluid In",
+      "mode": "input",
+      "type": "fluid",
+      "description": "Seawater connection."
+    },
+    {
+      "label": "Fluid Out",
+      "mode": "input",
+      "type": "fluid",
+      "description": "Freshwater connection."
+    }
+  ],
+  "properties": []
+}

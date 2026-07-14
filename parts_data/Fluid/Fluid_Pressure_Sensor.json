@@ -1,0 +1,24 @@
+{
+  "name": "Fluid Pressure Sensor",
+  "category": "Fluid",
+  "dlc": "",
+  "description": "Measures the fluid pressure in the connected fluid network.",
+  "shortDescription": "A sensor for reading fluid pressure.",
+  "value": 100,
+  "mass": 4.0,
+  "logicNodes": [
+    {
+      "label": "Pressure",
+      "mode": "output",
+      "type": "number",
+      "description": "The pressure reading of the fluid."
+    },
+    {
+      "label": "Fluid",
+      "mode": "output",
+      "type": "fluid",
+      "description": "Fluid to measure the pressure of."
+    }
+  ],
+  "properties": []
+}

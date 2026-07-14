@@ -1,0 +1,36 @@
+{
+  "name": "Oil Rig Drill Swivel",
+  "category": "Industry",
+  "dlc": "",
+  "description": "The swivel connects to the end of a drill rod, and has fluid ports for drilling slurry and crude oil. Pumping a supply of drilling slurry through a drill rod is required for effective drilling.",
+  "shortDescription": "A swivel for transferring fluids through a drill rod.",
+  "value": 1000,
+  "mass": 30.0,
+  "logicNodes": [
+    {
+      "label": "Clamp Rod",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Attach a drill rod to the swivel."
+    },
+    {
+      "label": "Rod Clamped",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Returns true when a drill rod is attached."
+    },
+    {
+      "label": "Fluid In",
+      "mode": "input",
+      "type": "fluid",
+      "description": "Fluid port to transfer drilling slurry through an attached rod linked to a well."
+    },
+    {
+      "label": "Fluid Out",
+      "mode": "input",
+      "type": "fluid",
+      "description": "Fluid port to transfer drilling slurry from an attached rod linked to a well."
+    }
+  ],
+  "properties": []
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Autocannon Belt (Connector)",
+  "category": "Weapons",
+  "dlc": "",
+  "description": "Autocannon belts can transfer all calibers of autocannon ammo. Connector belts allow ammo transfers between vehicles.",
+  "shortDescription": "An autocannon ammo belt.",
+  "value": 100,
+  "mass": 3.0,
+  "logicNodes": [
+    {
+      "label": "Contains Ammo",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Returns true if the belt contains a shell."
+    },
+    {
+      "label": "Connected",
+      "mode": "output",
+      "type": "onoff",
+      "description": ""
+    }
+  ],
+  "properties": []
+}

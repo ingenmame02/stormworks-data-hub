@@ -1,0 +1,24 @@
+{
+  "name": "Vacuum Duct",
+  "category": "Industry",
+  "dlc": "",
+  "description": "Can be toggled to move resources through the vacuum. The vacuum can transport resources from ducts and hoppers immediately in front of the vacuum nozzle.",
+  "shortDescription": "A vacuum for moving resources.",
+  "value": 50,
+  "mass": 20.0,
+  "logicNodes": [
+    {
+      "label": "Active",
+      "mode": "input",
+      "type": "onoff",
+      "description": ""
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical input."
+    }
+  ],
+  "properties": []
+}

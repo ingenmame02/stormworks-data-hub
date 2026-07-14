@@ -1,0 +1,42 @@
+{
+  "name": "Laser Distance Sensor",
+  "category": "Sensors",
+  "dlc": "",
+  "description": "The reading can be read from the sensor's number output and is measured in metres (1 metre = 4 blocks). Can be pivoted up to 0.125 turns using composite input.",
+  "shortDescription": "A laser distance sensor with a maximum measurement range of 4000m.",
+  "value": 100,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Active",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Controls whether or not the laser is active."
+    },
+    {
+      "label": "Wavelength",
+      "mode": "input",
+      "type": "number",
+      "description": "The specific light wavelength to emit (whole number)."
+    },
+    {
+      "label": "Distance",
+      "mode": "output",
+      "type": "number",
+      "description": "The measured distance in metres."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    },
+    {
+      "label": "Pivot",
+      "mode": "input",
+      "type": "composite",
+      "description": "Inputs for laser X/Y pivot. (Value 1 : Pivot X) (Value 2 : Pivot Y)"
+    }
+  ],
+  "properties": []
+}

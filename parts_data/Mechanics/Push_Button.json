@@ -1,0 +1,30 @@
+{
+  "name": "Push Button",
+  "category": "Mechanics",
+  "dlc": "",
+  "description": "An external on/off signal can also be used to control whether or not the button is pressed, allowing you to chain multiple buttons together to unify their outputs.",
+  "shortDescription": "A button that outputs an on signal when you interact with [$[action_interact_left]]/[$[action_interact_right]], and an off signal when not interacting.",
+  "value": 10,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "External Input",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Allows an external on/off signal to control whether or not the button is pressed."
+    },
+    {
+      "label": "Pressed",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal when you interact wtih [$[action_interact_left]]/[$[action_interact_right]], and an off signal otherwise."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    }
+  ],
+  "properties": []
+}

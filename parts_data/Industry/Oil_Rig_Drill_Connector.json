@@ -1,0 +1,42 @@
+{
+  "name": "Oil Rig Drill Connector",
+  "category": "Industry",
+  "dlc": "",
+  "description": "It can connect drill rods together to lengthen them, or separate drill rods to shorten them.",
+  "shortDescription": "A clamp for moving drill rods into place.",
+  "value": 100,
+  "mass": 50.0,
+  "logicNodes": [
+    {
+      "label": "Clamp Rod",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Attach a drill rod to the clamp."
+    },
+    {
+      "label": "Connect/Disconnect",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Connects or disconnects a pair of drill rods when the ends are aligned at the connection point."
+    },
+    {
+      "label": "Rod Clamped",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Returns true when a drill rod is attached."
+    },
+    {
+      "label": "Connector Aligned",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Returns true when the connection point aligns over the end of a pair of drill rods."
+    },
+    {
+      "label": "Slider Velocity",
+      "mode": "input",
+      "type": "number",
+      "description": "Moves an attached drill rod up or down the clamp."
+    }
+  ],
+  "properties": []
+}

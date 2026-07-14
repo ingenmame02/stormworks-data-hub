@@ -1,0 +1,11 @@
+{
+  "name": "Flag (Large)",
+  "category": "Misc",
+  "dlc": "",
+  "description": "The flag design can be set in the properties menu.",
+  "shortDescription": "A large sized flagpole.",
+  "value": 100,
+  "mass": 3.0,
+  "logicNodes": [],
+  "properties": []
+}

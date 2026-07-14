@@ -1,0 +1,24 @@
+{
+  "name": "Light",
+  "category": "Specialist Equipment",
+  "dlc": "",
+  "description": "",
+  "shortDescription": "A basic light that can be controlled using an on/off signal.",
+  "value": 20,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Light Switch",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Controls whether or not the light is switched on."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    }
+  ],
+  "properties": []
+}

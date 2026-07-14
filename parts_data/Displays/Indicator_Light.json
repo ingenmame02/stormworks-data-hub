@@ -1,0 +1,24 @@
+{
+  "name": "Indicator Light",
+  "category": "Displays",
+  "dlc": "",
+  "description": "",
+  "shortDescription": "A simple light that can be used as an indicator in logic systems.",
+  "value": 20,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Indicator Light",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Switches the light on when receiving an on signal."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    }
+  ],
+  "properties": []
+}

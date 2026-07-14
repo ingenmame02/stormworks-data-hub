@@ -1,0 +1,30 @@
+{
+  "name": "Fishfinder",
+  "category": "Sensors",
+  "dlc": "",
+  "description": "This sensor outputs the relative angle, distance and depth to a random detected fish within its range using sound waves when submerged.",
+  "shortDescription": "A sensor that returns information about a fish within 100m when submerged.",
+  "value": 500,
+  "mass": 10.0,
+  "logicNodes": [
+    {
+      "label": "Activate",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Enable the Fishfinder."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    },
+    {
+      "label": "Fish Data",
+      "mode": "output",
+      "type": "composite",
+      "description": "Outputs data for a detected fish. On/Off 1: Returns true when a fish is detected. Value 1: The yaw angle between the sensor and the detected fish measured in turns, Value 2: The horizontal distance from the sensor to the detected fish measured in metres, Value 3: The depth from the sensor to the fish measured in metres."
+    }
+  ],
+  "properties": []
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Indicator Light (RGB)",
+  "category": "Displays",
+  "dlc": "",
+  "description": "Three channels of the composite input can be used to set the red, green and blue components of the indicator's color using numbers between 0 and 1. The light can also operate in HSV mode, where the 3 inputs correspond to the hue, saturation and value (brightness) of the color between 0 and 1. The color mode and input channels can be customised by selecting this component with the select tool.",
+  "shortDescription": "An advanced indicator that can be controlled using a microcontroller.",
+  "value": 50,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    },
+    {
+      "label": "Color Data",
+      "mode": "input",
+      "type": "composite",
+      "description": "Composite link containing the indicator's color data."
+    }
+  ],
+  "properties": []
+}

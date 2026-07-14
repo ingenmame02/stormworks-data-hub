@@ -1,0 +1,18 @@
+{
+  "name": "Artillery Cannon Belt (Corner Outer)",
+  "category": "Weapons",
+  "dlc": "",
+  "description": "Cannon ammo belts can store and transfer ammo shells. Spawned ammo type can be set in component properties window.",
+  "shortDescription": "An artillery cannon ammo belt.",
+  "value": 100,
+  "mass": 15.0,
+  "logicNodes": [
+    {
+      "label": "Contains Ammo",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Returns true if the belt contains a shell."
+    }
+  ],
+  "properties": []
+}

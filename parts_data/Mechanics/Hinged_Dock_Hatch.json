@@ -1,0 +1,72 @@
+{
+  "name": "Hinged Dock Hatch",
+  "category": "Mechanics",
+  "dlc": "",
+  "description": "",
+  "shortDescription": "Hinged door that can be opened and closed using an on/off signal.",
+  "value": 200,
+  "mass": 15.0,
+  "logicNodes": [
+    {
+      "label": "Open/Close",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Opens the door when receiving an on signal, and closes it when receiving an off signal."
+    },
+    {
+      "label": "Magnet Toggle",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Enables the door's magnet when receiving an on signal."
+    },
+    {
+      "label": "On/Off Sent",
+      "mode": "input",
+      "type": "onoff",
+      "description": "An on/off signal to send to a connected door."
+    },
+    {
+      "label": "Connected",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal if the door is attached to another door."
+    },
+    {
+      "label": "On/Off Received",
+      "mode": "output",
+      "type": "onoff",
+      "description": "The on/off signal received from a connected door."
+    },
+    {
+      "label": "Number Sent",
+      "mode": "input",
+      "type": "number",
+      "description": "A number signal to send to a connected door."
+    },
+    {
+      "label": "Number Received",
+      "mode": "output",
+      "type": "number",
+      "description": "The number value received from a connected door."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    },
+    {
+      "label": "Composite input",
+      "mode": "input",
+      "type": "composite",
+      "description": "Composite data input."
+    },
+    {
+      "label": "Composite output",
+      "mode": "output",
+      "type": "composite",
+      "description": "Composite data output."
+    }
+  ],
+  "properties": []
+}

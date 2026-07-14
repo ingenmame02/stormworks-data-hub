@@ -1,0 +1,18 @@
+{
+  "name": "Tilt Sensor",
+  "category": "Sensors",
+  "dlc": "",
+  "description": "The measurement is expressed in terms of turns, with an output range of -0.25 to 0.25 turns. A value of zero points towards the horizon.",
+  "shortDescription": "A sensor that measures how much it has tilted, relative to the horizon.",
+  "value": 20,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Tilt",
+      "mode": "output",
+      "type": "number",
+      "description": "The measured tilt relative to the horizon."
+    }
+  ],
+  "properties": []
+}

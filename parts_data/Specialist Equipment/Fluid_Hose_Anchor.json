@@ -1,0 +1,24 @@
+{
+  "name": "Fluid Hose Anchor",
+  "category": "Specialist Equipment",
+  "dlc": "",
+  "description": "Draw a rope logic link between two Fluid Hose Anchors to form a hose. Limited to only one link but can transfer fluid across the link.",
+  "shortDescription": "An anchor point for a basic fluid hose.",
+  "value": 15,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Fluid Node",
+      "mode": "input",
+      "type": "fluid",
+      "description": ""
+    },
+    {
+      "label": "Rope Node",
+      "mode": "input",
+      "type": "rope",
+      "description": ""
+    }
+  ],
+  "properties": []
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Warhead (EMP)",
+  "category": "Weapons",
+  "dlc": "",
+  "description": "Detonates from an impact, creating an EMP to temporarily shut down nearby electronic systems.",
+  "shortDescription": "A electromagnetic-pulse warhead.",
+  "value": 200,
+  "mass": 500.0,
+  "logicNodes": [
+    {
+      "label": "Arm",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Arm the EMP charge in the warhead to detonate when the internal impact sensor reaches its threshold."
+    }
+  ],
+  "properties": []
+}

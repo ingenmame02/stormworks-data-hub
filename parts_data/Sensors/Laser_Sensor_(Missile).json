@@ -1,0 +1,42 @@
+{
+  "name": "Laser Sensor (Missile)",
+  "category": "Sensors",
+  "dlc": "",
+  "description": "This sensor is designed for missiles and acts along the Z axis, with an output node that passes data to course correct linked rocket fin components toward the closest target. The sensor also outputs data for up to 8 detected laser points.",
+  "shortDescription": "A short range sensor that returns information about detected laser points within its view.",
+  "value": 800,
+  "mass": 5.0,
+  "logicNodes": [
+    {
+      "label": "Activate",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Enable the Laser Sensor."
+    },
+    {
+      "label": "Wavelength",
+      "mode": "input",
+      "type": "number",
+      "description": "The specific light wavelength to detect (whole number)."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    },
+    {
+      "label": "Sensor Data",
+      "mode": "output",
+      "type": "composite",
+      "description": "Outputs data for up to 8 targets. On/Off 1-8 : Target 1 Found, Target 2 Found, etc... Values 1-32 : Target 1 Distance, Target 1 Azimuth Angle, Target 1 Elevation Angle, Target 1 Time Since Detection, Target 2 Distance, Target 2 Azimuth Angle, Target 2 Elevation Angle, Target 2 Time Since Detection, etc..."
+    },
+    {
+      "label": "Missile Output",
+      "mode": "output",
+      "type": "composite",
+      "description": "Outputs yaw and pitch rotations toward the most immediate target. (Value 1 : Yaw) (Value 2 : Pitch). Link this directly into a rocket fins component."
+    }
+  ],
+  "properties": []
+}

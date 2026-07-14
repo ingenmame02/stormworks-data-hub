@@ -1,0 +1,18 @@
+{
+  "name": "Equipment inventory (Fire Extinguisher)",
+  "category": "Specialist Equipment",
+  "dlc": "",
+  "description": "Hold [$[action_equipment_use]] to spray a stream of water capable of extinguishing fires. This equipment has a limited water capacity and cannot be refilled.",
+  "shortDescription": "A large equipment storage unit containing a fire extinguisher.",
+  "value": 200,
+  "mass": 3.0,
+  "logicNodes": [
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    }
+  ],
+  "properties": []
+}

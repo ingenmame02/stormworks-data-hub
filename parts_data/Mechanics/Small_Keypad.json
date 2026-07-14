@@ -1,0 +1,30 @@
+{
+  "name": "Small Keypad",
+  "category": "Mechanics",
+  "dlc": "",
+  "description": "Interacting with the keypad will show a menu where the number can be entered. The stored numbers will be continuously output from the other output node. An on/off signal controls whether or not the keypad's backlight is enabled.",
+  "shortDescription": "A keypad that allows a number to be input.",
+  "value": 20,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Backlight",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Enables the backlight when receiving an on signal."
+    },
+    {
+      "label": "Output",
+      "mode": "output",
+      "type": "number",
+      "description": "Outputs the stored value."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    }
+  ],
+  "properties": []
+}

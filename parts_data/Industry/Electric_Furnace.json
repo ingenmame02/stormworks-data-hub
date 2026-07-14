@@ -1,0 +1,42 @@
+{
+  "name": "Electric Furnace",
+  "category": "Industry",
+  "dlc": "",
+  "description": "Produces large amounts of heat from electricity.",
+  "shortDescription": "An electrically powered furnace.",
+  "value": 900,
+  "mass": 220.0,
+  "logicNodes": [
+    {
+      "label": "Enable",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Activate the electric furnace."
+    },
+    {
+      "label": "Temperature",
+      "mode": "output",
+      "type": "number",
+      "description": "Temperature of the coolant that is being heated."
+    },
+    {
+      "label": "Coolant In",
+      "mode": "input",
+      "type": "fluid",
+      "description": "In port for fluid to be heated by the furnace."
+    },
+    {
+      "label": "Coolant Out",
+      "mode": "input",
+      "type": "fluid",
+      "description": "Out port for fluid to be heated by the furnace."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    }
+  ],
+  "properties": []
+}

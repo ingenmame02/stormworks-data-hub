@@ -1,0 +1,72 @@
+{
+  "name": "Electrical Cable Anchor",
+  "category": "Specialist Equipment",
+  "dlc": "",
+  "description": "Draw a rope logic link between two Electrical Cable Anchors to form a cable. Limited to only one link but can transfer Data and Electric across the link.",
+  "shortDescription": "An anchor point for a basic data/electric cable.",
+  "value": 15,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "On/Off Input",
+      "mode": "input",
+      "type": "onoff",
+      "description": "On/Off data to send to the connected anchor."
+    },
+    {
+      "label": "On/Off Output",
+      "mode": "output",
+      "type": "onoff",
+      "description": "On/Off data to receive from the connected anchor."
+    },
+    {
+      "label": "Electric Node",
+      "mode": "input",
+      "type": "electric",
+      "description": ""
+    },
+    {
+      "label": "Composite Input",
+      "mode": "input",
+      "type": "composite",
+      "description": "Composite data to send to the connected anchor."
+    },
+    {
+      "label": "Composite Output",
+      "mode": "output",
+      "type": "composite",
+      "description": "Composite data to receive from the connected anchor."
+    },
+    {
+      "label": "Video Data Send",
+      "mode": "input",
+      "type": "video",
+      "description": "Video data to send to the connected anchor."
+    },
+    {
+      "label": "Video Data Receive",
+      "mode": "output",
+      "type": "video",
+      "description": "Video data to receive from the connected anchor."
+    },
+    {
+      "label": "Audio Data Send",
+      "mode": "input",
+      "type": "audio",
+      "description": "Audio data to send to the connected anchor."
+    },
+    {
+      "label": "Audio Data Receive",
+      "mode": "output",
+      "type": "audio",
+      "description": "Audio data to receive from the connected anchor."
+    },
+    {
+      "label": "Rope Node",
+      "mode": "input",
+      "type": "rope",
+      "description": ""
+    }
+  ],
+  "properties": []
+}

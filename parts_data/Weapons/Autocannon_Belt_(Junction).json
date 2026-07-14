@@ -1,0 +1,24 @@
+{
+  "name": "Autocannon Belt (Junction)",
+  "category": "Weapons",
+  "dlc": "",
+  "description": "Autocannon belts can transfer all calibers of autocannon ammo. Junction belts redirect the path of ammo transfer.",
+  "shortDescription": "An autocannon ammo belt.",
+  "value": 100,
+  "mass": 3.0,
+  "logicNodes": [
+    {
+      "label": "Junction Switch",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Switches the ammo transfer T-junction between the left and right sides."
+    },
+    {
+      "label": "Contains Ammo",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Returns true if the belt contains a shell."
+    }
+  ],
+  "properties": []
+}

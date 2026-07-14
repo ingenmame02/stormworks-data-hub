@@ -1,0 +1,54 @@
+{
+  "name": "Radar",
+  "category": "Sensors",
+  "dlc": "",
+  "description": "This sensor outputs the distance and angle to a detected object within its range and field of view using radio waves. (Range : 5000) (Max FOV : 0.125)",
+  "shortDescription": "A short range Radar that returns information about a detected object within its view.",
+  "value": 1000,
+  "mass": 10.0,
+  "logicNodes": [
+    {
+      "label": "Target Found",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Returns if an object has been detected."
+    },
+    {
+      "label": "FOV",
+      "mode": "input",
+      "type": "number",
+      "description": "The sensor's yaw field of view in turns from 0.01 to 0.125."
+    },
+    {
+      "label": "Facing Yaw",
+      "mode": "input",
+      "type": "number",
+      "description": "The sensor's yaw direction in turns from -0.5 to 0.5."
+    },
+    {
+      "label": "Target Distance",
+      "mode": "output",
+      "type": "number",
+      "description": "The distance to the target in meters."
+    },
+    {
+      "label": "Signal Strength",
+      "mode": "output",
+      "type": "number",
+      "description": "The strength of the returned signal."
+    },
+    {
+      "label": "Elevation Angle",
+      "mode": "output",
+      "type": "number",
+      "description": "The pitch angle between the sensor and the target in turns."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    }
+  ],
+  "properties": []
+}

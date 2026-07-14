@@ -1,0 +1,30 @@
+{
+  "name": "Medium Generator",
+  "category": "Electric",
+  "dlc": "",
+  "description": "",
+  "shortDescription": "A medium generator unit for converting mechanical power to electricity.",
+  "value": 2000,
+  "mass": 100.0,
+  "logicNodes": [
+    {
+      "label": "Output",
+      "mode": "output",
+      "type": "number",
+      "description": "Data output giving the electrical generation of the generator."
+    },
+    {
+      "label": "RPS",
+      "mode": "input",
+      "type": "torque",
+      "description": "The torque power input to convert to electric energy."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "The electric connection to output electric energy."
+    }
+  ],
+  "properties": []
+}

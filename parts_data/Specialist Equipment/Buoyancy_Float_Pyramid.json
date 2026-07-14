@@ -1,0 +1,11 @@
+{
+  "name": "Buoyancy Float Pyramid",
+  "category": "Specialist Equipment",
+  "dlc": "",
+  "description": "",
+  "shortDescription": "A pyramid-shaped buoyant float.",
+  "value": 50,
+  "mass": 1.0,
+  "logicNodes": [],
+  "properties": []
+}

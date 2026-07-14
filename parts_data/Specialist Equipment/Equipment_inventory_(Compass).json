@@ -1,0 +1,18 @@
+{
+  "name": "Equipment inventory (Compass)",
+  "category": "Specialist Equipment",
+  "dlc": "",
+  "description": "When held, the red needle of the compass will point northwards. The compass also displays a bearing on the equipment hotbar UI.",
+  "shortDescription": "A small equipment storage unit containing a compass.",
+  "value": 50,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    }
+  ],
+  "properties": []
+}

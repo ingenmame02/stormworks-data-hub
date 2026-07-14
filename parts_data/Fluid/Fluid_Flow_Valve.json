@@ -1,0 +1,30 @@
+{
+  "name": "Fluid Flow Valve",
+  "category": "Fluid",
+  "dlc": "",
+  "description": "Allows fluid to move from the input side of the valve to the output but resists fluid flow in the other direction.",
+  "shortDescription": "A one way valve for controlling fluid flow.",
+  "value": 100,
+  "mass": 4.0,
+  "logicNodes": [
+    {
+      "label": "Flow Rate",
+      "mode": "output",
+      "type": "number",
+      "description": "Fluid flow rate in L/s."
+    },
+    {
+      "label": "Fluid In",
+      "mode": "output",
+      "type": "fluid",
+      "description": "Fluid connection for the valve input."
+    },
+    {
+      "label": "Fluid Out",
+      "mode": "output",
+      "type": "fluid",
+      "description": "Fluid connection for the valve output."
+    }
+  ],
+  "properties": []
+}

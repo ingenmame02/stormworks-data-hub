@@ -1,0 +1,18 @@
+{
+  "name": "Saddle Passenger Seat",
+  "category": "Specialist Equipment",
+  "dlc": "",
+  "description": "You can get in and out of the seat by interacting with it using [$[action_use_seat]]. You can place a rescued survivor in any seat by using [$[action_use_seat]] while carrying them.",
+  "shortDescription": "A small padded passenger seat.",
+  "value": 25,
+  "mass": 3.0,
+  "logicNodes": [
+    {
+      "label": "Occupied",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal if the seat is occupied by a character."
+    }
+  ],
+  "properties": []
+}

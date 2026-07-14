@@ -1,0 +1,11 @@
+{
+  "name": "Pyramid 1x4",
+  "category": "Blocks",
+  "dlc": "",
+  "description": "Components can be attached to all faces, with the exception of the triangular face. Pyramids can act as a corner-piece for perpendicular lines of wedge blocks.",
+  "shortDescription": "1x4 pyramid-shaped building block. ",
+  "value": 4,
+  "mass": 1.0,
+  "logicNodes": [],
+  "properties": []
+}

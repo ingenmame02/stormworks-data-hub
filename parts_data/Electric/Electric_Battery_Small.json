@@ -1,0 +1,24 @@
+{
+  "name": "Electric Battery Small",
+  "category": "Electric",
+  "dlc": "",
+  "description": "",
+  "shortDescription": "A small battery for storing electrical charge.",
+  "value": 150,
+  "mass": 10.0,
+  "logicNodes": [
+    {
+      "label": "Charge",
+      "mode": "output",
+      "type": "number",
+      "description": "Data output giving the charge of the battery from 0 to 1."
+    },
+    {
+      "label": "Electric Store",
+      "mode": "input",
+      "type": "electric",
+      "description": "Energy storage for the electrical system."
+    }
+  ],
+  "properties": []
+}

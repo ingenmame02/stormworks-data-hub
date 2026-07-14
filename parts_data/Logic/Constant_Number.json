@@ -1,0 +1,18 @@
+{
+  "name": "Constant Number",
+  "category": "Logic",
+  "dlc": "",
+  "description": "The number that is being outputted can be configured by selecting this component with the select tool.",
+  "shortDescription": "Outputs a constant numerical value.",
+  "value": 20,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Constant Number",
+      "mode": "output",
+      "type": "number",
+      "description": "The selected output number."
+    }
+  ],
+  "properties": []
+}

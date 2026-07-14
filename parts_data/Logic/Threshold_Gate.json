@@ -1,0 +1,24 @@
+{
+  "name": "Threshold Gate",
+  "category": "Logic",
+  "dlc": "",
+  "description": "A lower and upper bound to the threshold must be set. The output is set to on if the input value is less than or equal to the upper bound, and greater than or equal to the lower bound. If it is outside this range, the output is set to off. The threshold bounds can be configured by selecting this component with the select tool.",
+  "shortDescription": "Takes a value and compares it to a set threshold.",
+  "value": 20,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Within Threshold",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal when the input value is within the set threshold."
+    },
+    {
+      "label": "Value to Test",
+      "mode": "input",
+      "type": "number",
+      "description": "The value to test within the threshold."
+    }
+  ],
+  "properties": []
+}

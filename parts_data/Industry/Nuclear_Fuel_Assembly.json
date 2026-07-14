@@ -1,0 +1,24 @@
+{
+  "name": "Nuclear Fuel Assembly",
+  "category": "Industry",
+  "dlc": "",
+  "description": "A fuel rod can be inserted into the assembly to facilitate a fission reaction. Fuel rods consume uranium ingots from the workbench inventory to fuel.",
+  "shortDescription": "A Fuel assembly powered by uranium ingots.",
+  "value": 500,
+  "mass": 80.0,
+  "logicNodes": [
+    {
+      "label": "Release Fuel Rod",
+      "mode": "input",
+      "type": "onoff",
+      "description": ""
+    },
+    {
+      "label": "Fuel Rod Temperature",
+      "mode": "output",
+      "type": "number",
+      "description": ""
+    }
+  ],
+  "properties": []
+}

@@ -1,0 +1,30 @@
+{
+  "name": "GPS Sensor",
+  "category": "Sensors",
+  "dlc": "",
+  "description": "The coordinates represent an offset from the centre of the world, measured in metres. You can check the world coordinates of any location by looking at your map.",
+  "shortDescription": "Outputs its x and y world coordinates according to its location on the map.",
+  "value": 20,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "X Coordinate",
+      "mode": "output",
+      "type": "number",
+      "description": "The x coordinate of this component on the world map."
+    },
+    {
+      "label": "Y Coordinate",
+      "mode": "output",
+      "type": "number",
+      "description": "The y coordinate of this component on the world map."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    }
+  ],
+  "properties": []
+}

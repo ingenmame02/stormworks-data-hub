@@ -1,0 +1,24 @@
+{
+  "name": "Sail Anchor",
+  "category": "Specialist Equipment",
+  "dlc": "",
+  "description": "Draw a rope logic link between four Sail Anchors in a loop to form a sail. A sail will convert force from the wind to the direction of the sail facing. The sail force is strongest when fully facing the wind to act as a parachute, but also has a strong force when facing slightly off a right-angle from the wind to act as a wing. A keel is recommended for sailboats to apply sail forces in a useful direction.",
+  "shortDescription": "An anchor point for a sail.",
+  "value": 50,
+  "mass": 3.0,
+  "logicNodes": [
+    {
+      "label": "Take In/Out Sails",
+      "mode": "input",
+      "type": "onoff",
+      "description": "While active, allows the ropes forming the sail to spool freely."
+    },
+    {
+      "label": "Sail Node",
+      "mode": "input",
+      "type": "rope",
+      "description": ""
+    }
+  ],
+  "properties": []
+}

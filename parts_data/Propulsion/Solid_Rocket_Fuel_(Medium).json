@@ -1,0 +1,11 @@
+{
+  "name": "Solid Rocket Fuel (Medium)",
+  "category": "Propulsion",
+  "dlc": "",
+  "description": "Fuel can be stacked to increase the burn duration of a rocket booster.",
+  "shortDescription": "A medium solid rocket fuel segment.",
+  "value": 200,
+  "mass": 20.0,
+  "logicNodes": [],
+  "properties": []
+}

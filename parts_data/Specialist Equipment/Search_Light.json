@@ -1,0 +1,30 @@
+{
+  "name": "Search Light",
+  "category": "Specialist Equipment",
+  "dlc": "",
+  "description": "The light has a standard value input that sets the target orientation within the its range of motion. It can rotate a quarter turn in both directions. An on/off signal is used to switch the light on and off. It has a range of 120m.",
+  "shortDescription": "A spotlight that can be rotated up and down.",
+  "value": 30,
+  "mass": 20.0,
+  "logicNodes": [
+    {
+      "label": "Light Switch",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Controls whether or not the light is switched on."
+    },
+    {
+      "label": "Rotation",
+      "mode": "input",
+      "type": "number",
+      "description": "Standard value between -1 and 1 representing the target orientation of the light."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    }
+  ],
+  "properties": []
+}

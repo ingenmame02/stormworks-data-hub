@@ -1,0 +1,30 @@
+{
+  "name": "Small Spotlight (Mounted)",
+  "category": "Specialist Equipment",
+  "dlc": "",
+  "description": "It has a range of 60m. Can be pivoted up to 0.125 turns using composite input.",
+  "shortDescription": "A small spotlight that can be controlled using an on/off signal.",
+  "value": 20,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Light Switch",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Controls whether or not the light is switched on."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    },
+    {
+      "label": "Pivot",
+      "mode": "input",
+      "type": "composite",
+      "description": "Inputs for spotlight X/Y pivot. (Value 1 : Pivot X) (Value 2 : Pivot Y)"
+    }
+  ],
+  "properties": []
+}

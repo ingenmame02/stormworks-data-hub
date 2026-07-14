@@ -1,0 +1,18 @@
+{
+  "name": "Altimeter",
+  "category": "Sensors",
+  "dlc": "",
+  "description": "Outputs distance above sea-level in meters.",
+  "shortDescription": "An altitude sensor.",
+  "value": 20,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Altitude",
+      "mode": "output",
+      "type": "number",
+      "description": "The measured altitude of the component in metres above sea-level."
+    }
+  ],
+  "properties": []
+}

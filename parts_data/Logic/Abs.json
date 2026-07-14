@@ -1,0 +1,24 @@
+{
+  "name": "Abs",
+  "category": "Logic",
+  "dlc": "",
+  "description": "Negative numbers are converted to positive numbers, whilst positive numbers are unchanged.",
+  "shortDescription": "Outputs the absolute value of a number input.",
+  "value": 20,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Input Number",
+      "mode": "input",
+      "type": "number",
+      "description": "The number to get the absolute value of."
+    },
+    {
+      "label": "Absolute Value",
+      "mode": "output",
+      "type": "number",
+      "description": "The absolute value of the input."
+    }
+  ],
+  "properties": []
+}

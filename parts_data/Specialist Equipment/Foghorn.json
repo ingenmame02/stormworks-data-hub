@@ -1,0 +1,24 @@
+{
+  "name": "Foghorn",
+  "category": "Specialist Equipment",
+  "dlc": "",
+  "description": "It has an audible range of 1500m.",
+  "shortDescription": "A ship's foghorn that will sound when receiving an on signal.",
+  "value": 200,
+  "mass": 5.0,
+  "logicNodes": [
+    {
+      "label": "Horn",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Sounds the horn when recieving an on signal."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    }
+  ],
+  "properties": []
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Not",
+  "category": "Logic",
+  "dlc": "",
+  "description": "The output will always be the opposite of the input.",
+  "shortDescription": "A logic gate that outputs the logical NOT of its input signal.",
+  "value": 20,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "A",
+      "mode": "input",
+      "type": "onoff",
+      "description": "The signal to invert."
+    },
+    {
+      "label": "NOT A",
+      "mode": "output",
+      "type": "onoff",
+      "description": "The logical NOT of input A. This output will always be the opposite of the input."
+    }
+  ],
+  "properties": []
+}

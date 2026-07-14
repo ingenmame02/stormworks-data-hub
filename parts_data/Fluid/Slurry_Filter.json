@@ -1,0 +1,36 @@
+{
+  "name": "Slurry Filter",
+  "category": "Fluid",
+  "dlc": "",
+  "description": "A pipe with a solids filter that consumes fresh water to slowly convert saturated slurry to slurry and allows free flow of slurry.",
+  "shortDescription": "A filter that slowly desaturates slurry.",
+  "value": 320,
+  "mass": 140.0,
+  "logicNodes": [
+    {
+      "label": "Water In",
+      "mode": "input",
+      "type": "fluid",
+      "description": "Water Input."
+    },
+    {
+      "label": "Slurry In",
+      "mode": "input",
+      "type": "fluid",
+      "description": "Saturated Slurry input."
+    },
+    {
+      "label": "Water Out",
+      "mode": "output",
+      "type": "fluid",
+      "description": "Water Output."
+    },
+    {
+      "label": "Slurry Out",
+      "mode": "output",
+      "type": "fluid",
+      "description": "Slurry output."
+    }
+  ],
+  "properties": []
+}

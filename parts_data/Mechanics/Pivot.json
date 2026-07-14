@@ -1,0 +1,11 @@
+{
+  "name": "Pivot",
+  "category": "Mechanics",
+  "dlc": "",
+  "description": "The pivot can rotate to 0.25 turns in both directions.",
+  "shortDescription": "A basic pivot that can move freely.",
+  "value": 20,
+  "mass": 1.0,
+  "logicNodes": [],
+  "properties": []
+}

@@ -1,0 +1,42 @@
+{
+  "name": "Fluid Heat Radiator 5x5 (Electric)",
+  "category": "Fluid",
+  "dlc": "",
+  "description": "Fluid inside the cooler will lose temperature, supplying electric for the fan will increase the rate of exchange.",
+  "shortDescription": "Radiator type cooler for fluid.",
+  "value": 700,
+  "mass": 25.0,
+  "logicNodes": [
+    {
+      "label": "Fan On/Off",
+      "mode": "input",
+      "type": "onoff",
+      "description": ""
+    },
+    {
+      "label": "Temperature",
+      "mode": "output",
+      "type": "number",
+      "description": ""
+    },
+    {
+      "label": "Fluid A",
+      "mode": "input",
+      "type": "fluid",
+      "description": "Fluid Connection."
+    },
+    {
+      "label": "Fluid B",
+      "mode": "input",
+      "type": "fluid",
+      "description": "Fluid Connection."
+    },
+    {
+      "label": "Electric",
+      "mode": "output",
+      "type": "electric",
+      "description": ""
+    }
+  ],
+  "properties": []
+}

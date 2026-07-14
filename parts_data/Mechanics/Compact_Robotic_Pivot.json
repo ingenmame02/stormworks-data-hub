@@ -1,0 +1,24 @@
+{
+  "name": "Compact Robotic Pivot",
+  "category": "Mechanics",
+  "dlc": "",
+  "description": "The pivot has a range of motion of 0.25 turns in both directions. A standard input value sets the target orientation within the pivot's range of motion. The pivot's speed can be configured by selecting it with the select tool.",
+  "shortDescription": "A small robotic pivot that will orientate towards the input value within its range of motion.",
+  "value": 40,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Rotation Target",
+      "mode": "input",
+      "type": "number",
+      "description": "The standard value setting the orientation within the range of motion."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    }
+  ],
+  "properties": []
+}

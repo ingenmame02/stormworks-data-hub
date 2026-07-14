@@ -1,0 +1,24 @@
+{
+  "name": "Mineral Converter",
+  "category": "Industry",
+  "dlc": "",
+  "description": "Transports minerals through the connected system.",
+  "shortDescription": "A basic mineral duct.",
+  "value": 250000,
+  "mass": 80.0,
+  "logicNodes": [
+    {
+      "label": "Mineral Level",
+      "mode": "output",
+      "type": "number",
+      "description": ""
+    },
+    {
+      "label": "water",
+      "mode": "input",
+      "type": "fluid",
+      "description": ""
+    }
+  ],
+  "properties": []
+}

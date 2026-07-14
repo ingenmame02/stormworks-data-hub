@@ -1,0 +1,11 @@
+{
+  "name": "Jet Duct Straight",
+  "category": "Jet Engines",
+  "dlc": "",
+  "description": "",
+  "shortDescription": "An straight section of ducting for use in jet engines.",
+  "value": 30,
+  "mass": 3.0,
+  "logicNodes": [],
+  "properties": []
+}

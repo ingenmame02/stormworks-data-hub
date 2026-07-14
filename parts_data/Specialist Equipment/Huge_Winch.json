@@ -1,0 +1,42 @@
+{
+  "name": "Huge Winch",
+  "category": "Specialist Equipment",
+  "dlc": "",
+  "description": "The winch is operated electrically, and outputs its current length.",
+  "shortDescription": "A building block attached to the end of a 500m mechanical winch that can be raised and lowered.",
+  "value": 5000,
+  "mass": 400.0,
+  "logicNodes": [
+    {
+      "label": "Up",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Raises the winch cable up when receiving an on signal."
+    },
+    {
+      "label": "Down",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Lowers the winch cable down when receiving an on signal."
+    },
+    {
+      "label": "Length",
+      "mode": "output",
+      "type": "number",
+      "description": "The current length of the winch cable in metres."
+    },
+    {
+      "label": "Fluid",
+      "mode": "output",
+      "type": "fluid",
+      "description": "Fluid connection for the hose coil."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    }
+  ],
+  "properties": []
+}

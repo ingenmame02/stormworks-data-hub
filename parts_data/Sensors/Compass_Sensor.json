@@ -1,0 +1,30 @@
+{
+  "name": "Compass Sensor",
+  "category": "Sensors",
+  "dlc": "",
+  "description": "The sensor has a display to visualise the direction of north. The measured output is taken relative to the white arrow on the face of the display.",
+  "shortDescription": "A digital compass that outputs a number value representing the turn that must be made for it to face north.",
+  "value": 20,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Backlight",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Enables the backlight when receiving an on signal."
+    },
+    {
+      "label": "Compass Reading",
+      "mode": "output",
+      "type": "number",
+      "description": "The angle measured in turns that the needle is rotated from the white arrow on the display."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    }
+  ],
+  "properties": []
+}

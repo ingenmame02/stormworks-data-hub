@@ -1,0 +1,18 @@
+{
+  "name": "Equipment inventory (Transponder)",
+  "category": "Specialist Equipment",
+  "dlc": "",
+  "description": "Press [$[action_equipment_use]] to toggle the transponder on or off. Press [$[action_equipment_secondary]] to toggle MOB (man overboard) mode, which will automatically turn the transponder on if the player is submerged in water. The transponder will continue to function when unequipped or discarded. Requires electric charge to function, and will recharge when placed into a powered small equipment storage unit.",
+  "shortDescription": "A small equipment storage unit containing a handheld transponder.",
+  "value": 50,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    }
+  ],
+  "properties": []
+}

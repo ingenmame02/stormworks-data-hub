@@ -1,0 +1,11 @@
+{
+  "name": "Keep Active Block",
+  "category": "Vehicle Control",
+  "dlc": "",
+  "description": "When on a vehicle, the vehicle will not despawn when out of range.",
+  "shortDescription": "A keep alive marking block.",
+  "value": 100,
+  "mass": 1.0,
+  "logicNodes": [],
+  "properties": []
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Transponder",
+  "category": "Specialist Equipment",
+  "dlc": "",
+  "description": "When activated, emits a continuous transponder signal that can be detected over great distances by any transponder locator.",
+  "shortDescription": "An emergency search and rescue transponder.",
+  "value": 20,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Active",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Emit a continuous transponder signal when active."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    }
+  ],
+  "properties": []
+}

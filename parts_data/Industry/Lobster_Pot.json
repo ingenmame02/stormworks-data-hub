@@ -1,0 +1,24 @@
+{
+  "name": "Lobster Pot",
+  "category": "Industry",
+  "dlc": "",
+  "description": "A portable trap for catching lobsters and crabs on the sea floor.",
+  "shortDescription": "A trap for lobsters and crabs.",
+  "value": 150,
+  "mass": 45.0,
+  "logicNodes": [
+    {
+      "label": "Release",
+      "mode": "input",
+      "type": "onoff",
+      "description": "When on, releases captured crabs and lobsters. When off, keeps them contained."
+    },
+    {
+      "label": "Fill Level",
+      "mode": "output",
+      "type": "number",
+      "description": ""
+    }
+  ],
+  "properties": []
+}

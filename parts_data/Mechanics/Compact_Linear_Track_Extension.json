@@ -1,0 +1,11 @@
+{
+  "name": "Compact Linear Track Extension",
+  "category": "Mechanics",
+  "dlc": "",
+  "description": "A Compact Linear Track Base must be attached somewhere along the track for it to function.",
+  "shortDescription": "An extension piece that can be used to build compact linear tracks.",
+  "value": 20,
+  "mass": 1.0,
+  "logicNodes": [],
+  "properties": []
+}

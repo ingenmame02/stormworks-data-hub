@@ -1,0 +1,18 @@
+{
+  "name": "Warhead (Large)",
+  "category": "Weapons",
+  "dlc": "",
+  "description": "Detonates from an impact, or when receiving damage. Be careful!",
+  "shortDescription": "A large explosive warhead.",
+  "value": 100,
+  "mass": 400.0,
+  "logicNodes": [
+    {
+      "label": "Arm",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Arm the explosives in the warhead to detonate when the internal impact sensor reaches its threshold."
+    }
+  ],
+  "properties": []
+}

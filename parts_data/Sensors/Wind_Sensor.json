@@ -1,0 +1,24 @@
+{
+  "name": "Wind Sensor",
+  "category": "Sensors",
+  "dlc": "",
+  "description": "The sensor outputs the wind direction relative to the orientation of the base of the sensor (in number of turns from -0.5 to 0.5) and the wind speed in m/s. Wind data is relative to the speed of the sensor and only measures wind in the plane of the sensor.",
+  "shortDescription": "A wind sensor for measuring relative wind speed and direction.",
+  "value": 200,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Wind Speed",
+      "mode": "output",
+      "type": "number",
+      "description": "The relative wind velocity."
+    },
+    {
+      "label": "Wind Direction",
+      "mode": "output",
+      "type": "number",
+      "description": "The direction of the wind relative to the component."
+    }
+  ],
+  "properties": []
+}

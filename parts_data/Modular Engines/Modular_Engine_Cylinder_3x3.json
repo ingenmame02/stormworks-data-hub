@@ -1,0 +1,18 @@
+{
+  "name": "Modular Engine Cylinder 3x3",
+  "category": "Modular Engines",
+  "dlc": "",
+  "description": "Attach a cylinder to a crankshafts outer surface to produce power for an engine. The cylinder requires a manifold to move air, fuel, and exhaust through the cylinder. Cylinders that are chained directly adjacent to each other can share a single manifold.",
+  "shortDescription": "A modular engine cylinder.",
+  "value": 100,
+  "mass": 27.0,
+  "logicNodes": [
+    {
+      "label": "Composite Data",
+      "mode": "output",
+      "type": "composite",
+      "description": "Outputs data from the cylinder. (Value 1 : Air Volume) (Value 2 : Fuel Volume) (Value 3 : Temperature)"
+    }
+  ],
+  "properties": []
+}

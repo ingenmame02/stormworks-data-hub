@@ -1,0 +1,18 @@
+{
+  "name": "Outfit Inventory (Arctic)",
+  "category": "Specialist Equipment",
+  "dlc": "",
+  "description": "When equipped, it will increase your temperature enough to survive in colder weather conditions. Its thermal effectiveness is reduced when wet.",
+  "shortDescription": "An outfit inventory unit containing specialist thermal clothing for surviving Arctic temperatures.",
+  "value": 500,
+  "mass": 9.0,
+  "logicNodes": [
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    }
+  ],
+  "properties": []
+}

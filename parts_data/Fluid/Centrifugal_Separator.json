@@ -1,0 +1,36 @@
+{
+  "name": "Centrifugal Separator",
+  "category": "Fluid",
+  "dlc": "",
+  "description": "Provide torque to begin spinning the separator, fluid output ports will separate with increased effectiveness based on the spin speed.",
+  "shortDescription": "A tank that can be spun to separate contained fluids.",
+  "value": 480,
+  "mass": 80.0,
+  "logicNodes": [
+    {
+      "label": "RPS",
+      "mode": "output",
+      "type": "torque",
+      "description": "RPS input node for spinning the centrifuge."
+    },
+    {
+      "label": "Fluid In",
+      "mode": "input",
+      "type": "fluid",
+      "description": "Input fluid port."
+    },
+    {
+      "label": "Fluid Out",
+      "mode": "output",
+      "type": "fluid",
+      "description": "Main output fluid port."
+    },
+    {
+      "label": "Dense Fluid Out",
+      "mode": "output",
+      "type": "fluid",
+      "description": "Output port that will filter the denser fluid when the centrifuge is operating at high speed."
+    }
+  ],
+  "properties": []
+}

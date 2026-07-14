@@ -1,0 +1,36 @@
+{
+  "name": "Gauge Display",
+  "category": "Displays",
+  "dlc": "",
+  "description": "The primary needle is white and the secondary needle is red. The positions of the needles represent values ranging from -1 to 1 by default. This range can be configured by selecting the display with the select tool.",
+  "shortDescription": "A display with two needles that can be positioned independently.",
+  "value": 20,
+  "mass": 2.0,
+  "logicNodes": [
+    {
+      "label": "Backlight",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Enables the backlight when receiving an on signal."
+    },
+    {
+      "label": "Primary Display Value",
+      "mode": "input",
+      "type": "number",
+      "description": "The numerical value that sets the position of the white needle."
+    },
+    {
+      "label": "Secondary Display Value",
+      "mode": "input",
+      "type": "number",
+      "description": "The numerical value that sets the position of the red needle."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    }
+  ],
+  "properties": []
+}

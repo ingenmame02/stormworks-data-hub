@@ -1,0 +1,24 @@
+{
+  "name": "Rudder",
+  "category": "Vehicle Control",
+  "dlc": "",
+  "description": "It takes a number input between -1 and 1 that represent the two extremes of the rudder's rotation.",
+  "shortDescription": "The rudder can be attached to the underside of a boat to control its yaw, allowing you to steer left and right.",
+  "value": 150,
+  "mass": 10.0,
+  "logicNodes": [
+    {
+      "label": "Rotation",
+      "mode": "input",
+      "type": "number",
+      "description": "Accepts a value between -1 and 1 that represent the two extremes of the rudder's rotation."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    }
+  ],
+  "properties": []
+}

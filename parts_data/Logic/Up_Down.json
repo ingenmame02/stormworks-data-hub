@@ -1,0 +1,30 @@
+{
+  "name": "Up/Down",
+  "category": "Logic",
+  "dlc": "",
+  "description": "The up input moves the value towards 1, and the down input moves it towards -1. This component can be used for converting on/off button presses into a standard number value that can be used to control any mechanical components that accept a standard number input.",
+  "shortDescription": "This component uses two on/off signals to move an internal value between -1 and 1.",
+  "value": 20,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Up",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Moves the internal value towards 1."
+    },
+    {
+      "label": "Down",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Moves the internal value towards -1."
+    },
+    {
+      "label": "Up/Down Value",
+      "mode": "output",
+      "type": "number",
+      "description": "The internally stored value between -1 an 1."
+    }
+  ],
+  "properties": []
+}

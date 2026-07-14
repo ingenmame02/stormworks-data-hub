@@ -1,0 +1,30 @@
+{
+  "name": "Megaphone Speaker (Small)",
+  "category": "Specialist Equipment",
+  "dlc": "",
+  "description": "A small megaphone capable of playing audio data to players within its range. (Range : 300)",
+  "shortDescription": "A speaker capable of playing audio data to players within its range.",
+  "value": 500,
+  "mass": 3.0,
+  "logicNodes": [
+    {
+      "label": "Is Transmit",
+      "mode": "output",
+      "type": "onoff",
+      "description": "If the speaker is currently transmitting."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    },
+    {
+      "label": "Audio",
+      "mode": "input",
+      "type": "audio",
+      "description": "Audio data connection."
+    }
+  ],
+  "properties": []
+}

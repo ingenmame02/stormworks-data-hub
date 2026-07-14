@@ -1,0 +1,42 @@
+{
+  "name": "Radar (Phalanx)",
+  "category": "Sensors",
+  "dlc": "",
+  "description": "This sensor outputs the distance and relative angle to a detected object within its range and field of view using radio waves. Sensitivity is based on FOV, target size, and distance.",
+  "shortDescription": "A radar that returns information about a detected object within its view.",
+  "value": 2000,
+  "mass": 55.0,
+  "logicNodes": [
+    {
+      "label": "Activate",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Enable the Radar."
+    },
+    {
+      "label": "Radar Rotation",
+      "mode": "output",
+      "type": "number",
+      "description": "Current radar rotation from forward in turns."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    },
+    {
+      "label": "Gimbal Input",
+      "mode": "input",
+      "type": "composite",
+      "description": "Inputs rotation data for radar in manual mode. Value 1: The yaw angle of the radar measured in turns, Value 2: The pitch angle of the radar measured in turns from -0.125 to 0.125."
+    },
+    {
+      "label": "Radar Data",
+      "mode": "output",
+      "type": "composite",
+      "description": "Outputs data for up to 8 targets. On/Off 1-8 : Target 1 Found, Target 2 Found, etc... Values 1-32 : Target 1 Distance, Target 1 Azimuth Angle, Target 1 Elevation Angle, Target 1 Time Since Detection, Target 2 Distance, Target 2 Azimuth Angle, Target 2 Elevation Angle, Target 2 Time Since Detection, etc..."
+    }
+  ],
+  "properties": []
+}

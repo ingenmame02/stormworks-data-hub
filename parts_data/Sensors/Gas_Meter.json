@@ -1,0 +1,30 @@
+{
+  "name": "Gas Meter",
+  "category": "Sensors",
+  "dlc": "",
+  "description": "This will output a quantity in litres and the total capacity in litres.",
+  "shortDescription": "A device to measure how much gas is within an enclosed volume.",
+  "value": 20,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Gas Level",
+      "mode": "output",
+      "type": "number",
+      "description": "Returns the number of litres of gas in an enclosed volume."
+    },
+    {
+      "label": "Fluid Capacity",
+      "mode": "output",
+      "type": "number",
+      "description": "Returns the total capacity of an enclosed volume in litres, or 0 if not enclosed."
+    },
+    {
+      "label": "Composite Data",
+      "mode": "output",
+      "type": "composite",
+      "description": "Outputs the volumes of individual gas types on their respective channel. The data can be directly merged with a Liquid meter. The Air fluid type is equivalent to the sum of the oxygen, carbon dioxide and nitrogen values. Channels: 4-Air, 5-CO2, 8-Steam, 11-Oxygen, 12-Nitrogen, 13-Hydrogen."
+    }
+  ],
+  "properties": []
+}

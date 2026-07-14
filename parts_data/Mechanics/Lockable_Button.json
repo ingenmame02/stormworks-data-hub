@@ -1,0 +1,30 @@
+{
+  "name": "Lockable Button",
+  "category": "Mechanics",
+  "dlc": "",
+  "description": "An on signal must be sent to the button's unlock node to allow player interaction. The button's default state can be configured by selecting it with the select component.",
+  "shortDescription": "A toggle button that can only be interacted with when unlocked.",
+  "value": 20,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Unlock",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Allows the button to be interacted with when receiving an on signal."
+    },
+    {
+      "label": "Toggled",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on/off signal that can be toggled by interacting with [$[action_interact_left]]/[$[action_interact_right]] when unlocked."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    }
+  ],
+  "properties": []
+}

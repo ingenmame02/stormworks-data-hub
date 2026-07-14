@@ -1,0 +1,24 @@
+{
+  "name": "Train Junction Controller",
+  "category": "Logic",
+  "dlc": "",
+  "description": "This can allow regular push buttons to act as toggle buttons.",
+  "shortDescription": "This component has an internal on/off switch that is toggled every time a new on signal is sent to its input.",
+  "value": 20,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Toggle Signal",
+      "mode": "input",
+      "type": "onoff",
+      "description": "An on signal toggles the internal on/off switch."
+    },
+    {
+      "label": "Internal State",
+      "mode": "output",
+      "type": "onoff",
+      "description": "The output of the internal on/off switch."
+    }
+  ],
+  "properties": []
+}

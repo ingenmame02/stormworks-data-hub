@@ -1,0 +1,30 @@
+{
+  "name": "Fluid Pump (Manual)",
+  "category": "Fluid",
+  "dlc": "",
+  "description": "Hold [$[action_interact_left]]/[$[action_interact_right]] to create pressure in the pump. Connect to an inlet and outlet to create a pumping system to move fluid around a vehicle.",
+  "shortDescription": "A small fluid pump with a manual handle.",
+  "value": 100,
+  "mass": 4.0,
+  "logicNodes": [
+    {
+      "label": "Flow Rate",
+      "mode": "output",
+      "type": "number",
+      "description": "Fluid flow rate in L/s."
+    },
+    {
+      "label": "Fluid In",
+      "mode": "input",
+      "type": "fluid",
+      "description": "Connect to an inlet component to take fluid into the system."
+    },
+    {
+      "label": "Fluid Out",
+      "mode": "output",
+      "type": "fluid",
+      "description": "Connect to an outlet component to release fluid from the system."
+    }
+  ],
+  "properties": []
+}

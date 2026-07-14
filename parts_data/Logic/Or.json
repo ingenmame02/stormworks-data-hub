@@ -1,0 +1,30 @@
+{
+  "name": "Or",
+  "category": "Logic",
+  "dlc": "",
+  "description": "The output will be switched on if either of the inputs is on, and off if neither are on.",
+  "shortDescription": "A logic gate that outputs the logical OR of two input signals.",
+  "value": 20,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "A",
+      "mode": "input",
+      "type": "onoff",
+      "description": "The first value to perform the logical OR on."
+    },
+    {
+      "label": "B",
+      "mode": "input",
+      "type": "onoff",
+      "description": "The second value to perform the logical OR on."
+    },
+    {
+      "label": "A OR B",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal when either A or B are on, and an off signal if neither are on."
+    }
+  ],
+  "properties": []
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Nuclear Fuel Rod",
+  "category": "Industry",
+  "dlc": "",
+  "description": "Can be inserted into a fuel assembly to start the nuclear fission process.",
+  "shortDescription": "A Radioactive Fuel Rod.",
+  "value": 2500,
+  "mass": 80.0,
+  "logicNodes": [],
+  "properties": []
+}

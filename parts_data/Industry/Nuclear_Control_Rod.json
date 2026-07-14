@@ -1,0 +1,24 @@
+{
+  "name": "Nuclear Control Rod",
+  "category": "Industry",
+  "dlc": "",
+  "description": "Can be inserted into a fuel assembly to decrease the rate of reaction of adjacent rods.",
+  "shortDescription": "A Control Rod.",
+  "value": 250,
+  "mass": 100.0,
+  "logicNodes": [
+    {
+      "label": "Insertion Target",
+      "mode": "input",
+      "type": "number",
+      "description": ""
+    },
+    {
+      "label": "Insertion",
+      "mode": "output",
+      "type": "number",
+      "description": ""
+    }
+  ],
+  "properties": []
+}

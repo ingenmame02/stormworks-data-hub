@@ -1,0 +1,18 @@
+{
+  "name": "Equipment inventory (Night Vision Binoculars)",
+  "category": "Specialist Equipment",
+  "dlc": "",
+  "description": "Hold [$[action_equipment_use]] to zoom in on faraway objects. The night vision effect provides improved visibility in low light conditions, but hinders visibility in daylight. Requires electric charge to function, and will recharge when placed into a powered small equipment storage unit.",
+  "shortDescription": "A small equipment storage unit containing a pair of night vision binoculars.",
+  "value": 50,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    }
+  ],
+  "properties": []
+}

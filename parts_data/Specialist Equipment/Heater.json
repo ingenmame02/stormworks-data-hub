@@ -1,0 +1,24 @@
+{
+  "name": "Heater",
+  "category": "Specialist Equipment",
+  "dlc": "",
+  "description": "When enabled, the heater will warm either the compartment it is within or any players within a 10m radius, allowing them to survive cold temperatures.",
+  "shortDescription": "A small heater that will provide warmth in a radius.",
+  "value": 50,
+  "mass": 3.0,
+  "logicNodes": [
+    {
+      "label": "Heating Element",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Enables the heating element when receiving an on signal."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    }
+  ],
+  "properties": []
+}

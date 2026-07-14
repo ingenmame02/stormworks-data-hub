@@ -1,0 +1,30 @@
+{
+  "name": "Laser Beacon",
+  "category": "Displays",
+  "dlc": "",
+  "description": "",
+  "shortDescription": "A beacon that produces a laser point light, visible by laser point sensors.",
+  "value": 5,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Beacon Light",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Switches the beacon on when receiving an on signal."
+    },
+    {
+      "label": "Wavelength",
+      "mode": "input",
+      "type": "number",
+      "description": "The specific light wavelength to emit (whole number)."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    }
+  ],
+  "properties": []
+}

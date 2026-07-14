@@ -1,0 +1,24 @@
+{
+  "name": "Sliding Door (Electric)",
+  "category": "Mechanics",
+  "dlc": "",
+  "description": "",
+  "shortDescription": "Sliding door that can be opened and closed using an on/off signal.",
+  "value": 70,
+  "mass": 20.0,
+  "logicNodes": [
+    {
+      "label": "Open/Close",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Opens the door when receiving an on signal, and closes it when receiving an off signal."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    }
+  ],
+  "properties": []
+}

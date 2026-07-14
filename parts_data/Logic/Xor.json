@@ -1,0 +1,30 @@
+{
+  "name": "Xor",
+  "category": "Logic",
+  "dlc": "",
+  "description": "The output will be switched on if only one of the signals are on. The output will be switched off if the two signals are the same.",
+  "shortDescription": "A logic gate that outputs the logical XOR of two input signals.",
+  "value": 20,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "A",
+      "mode": "input",
+      "type": "onoff",
+      "description": "The first value to perform the logical XOR on."
+    },
+    {
+      "label": "B",
+      "mode": "input",
+      "type": "onoff",
+      "description": "The first value to perform the logical XOR on."
+    },
+    {
+      "label": "A XOR B",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal if only A is on, or only B is on. The output is off if A and B are both on or off."
+    }
+  ],
+  "properties": []
+}

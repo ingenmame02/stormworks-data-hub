@@ -1,0 +1,18 @@
+{
+  "name": "Data Logger (Number)",
+  "category": "Vehicle Control",
+  "dlc": "",
+  "description": "Link to the number output node of another component to record data for unit tests.",
+  "shortDescription": "A number data logging block for unit tests.",
+  "value": 1,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Number In",
+      "mode": "input",
+      "type": "number",
+      "description": ""
+    }
+  ],
+  "properties": []
+}

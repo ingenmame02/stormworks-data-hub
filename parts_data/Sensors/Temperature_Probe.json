@@ -1,0 +1,18 @@
+{
+  "name": "Temperature Probe",
+  "category": "Sensors",
+  "dlc": "",
+  "description": "A sensor that outputs the current temperature of an enclosed space in Celcius, if not within an enclosed volume it outputs the ambient air temperature at its location.",
+  "shortDescription": "A sensor to determine temperature.",
+  "value": 250,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Temperature",
+      "mode": "output",
+      "type": "number",
+      "description": "The detected temperature in degrees."
+    }
+  ],
+  "properties": []
+}

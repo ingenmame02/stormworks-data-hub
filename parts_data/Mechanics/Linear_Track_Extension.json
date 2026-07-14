@@ -1,0 +1,11 @@
+{
+  "name": "Linear Track Extension",
+  "category": "Mechanics",
+  "dlc": "",
+  "description": "A Linear Track Base must be attached somewhere along the track for it to function.",
+  "shortDescription": "An extension piece that can be used to build linear tracks.",
+  "value": 10,
+  "mass": 3.0,
+  "logicNodes": [],
+  "properties": []
+}

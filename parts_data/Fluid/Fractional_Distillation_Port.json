@@ -1,0 +1,18 @@
+{
+  "name": "Fractional Distillation Port",
+  "category": "Fluid",
+  "dlc": "",
+  "description": "Place the port inside of an enclosed volume to connect to that volume. Outputs different fluids based on height relative to the bottom of the compartment.",
+  "shortDescription": "Port used to collect output in a distillation column.",
+  "value": 80,
+  "mass": 36.0,
+  "logicNodes": [
+    {
+      "label": "Fluid",
+      "mode": "output",
+      "type": "fluid",
+      "description": "Collects distilled fluids from an enclosed volume."
+    }
+  ],
+  "properties": []
+}

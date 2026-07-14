@@ -1,0 +1,18 @@
+{
+  "name": "Torque Crank",
+  "category": "Propulsion",
+  "dlc": "",
+  "description": "Holding [$[action_interact_left]]/[$[action_interact_right]] turns the crank, generating a small amount of mechanical power.",
+  "shortDescription": "A hand crank to produce mechanical power.",
+  "value": 25,
+  "mass": 4.0,
+  "logicNodes": [
+    {
+      "label": "RPS",
+      "mode": "output",
+      "type": "torque",
+      "description": "Connection to the power system."
+    }
+  ],
+  "properties": []
+}

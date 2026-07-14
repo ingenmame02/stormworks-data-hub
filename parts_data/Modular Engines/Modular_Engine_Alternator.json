@@ -1,0 +1,24 @@
+{
+  "name": "Modular Engine Alternator",
+  "category": "Modular Engines",
+  "dlc": "",
+  "description": "Alternators convert mechanical energy from a Drive Belt into electric charge.",
+  "shortDescription": "A modular engine alternator.",
+  "value": 30,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Clutch Pressure",
+      "mode": "input",
+      "type": "number",
+      "description": ""
+    },
+    {
+      "label": "Electric",
+      "mode": "output",
+      "type": "electric",
+      "description": ""
+    }
+  ],
+  "properties": []
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Modular Engine Fluid Pump",
+  "category": "Modular Engines",
+  "dlc": "",
+  "description": "An pump that attaches to a Drive Belt to mechanically push fluid around a system.",
+  "shortDescription": "A modular engine fluid pump.",
+  "value": 50,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Clutch Pressure",
+      "mode": "input",
+      "type": "number",
+      "description": ""
+    },
+    {
+      "label": "Fluid In",
+      "mode": "input",
+      "type": "fluid",
+      "description": ""
+    },
+    {
+      "label": "Fluid Out",
+      "mode": "output",
+      "type": "fluid",
+      "description": ""
+    }
+  ],
+  "properties": []
+}

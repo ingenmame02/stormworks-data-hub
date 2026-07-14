@@ -1,0 +1,30 @@
+{
+  "name": "Rocket Launcher",
+  "category": "Weapons",
+  "dlc": "",
+  "description": "Rocket launchers fire powerful high explosive rockets, but cannot be reloaded once empty. Rockets are vulnerable to bullets while in flight.",
+  "shortDescription": "A 4-shot rocket launcher.",
+  "value": 100,
+  "mass": 50.0,
+  "logicNodes": [
+    {
+      "label": "Trigger",
+      "mode": "input",
+      "type": "onoff",
+      "description": "When true: fires a loaded rocket."
+    },
+    {
+      "label": "Loaded",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Returns true when a rocket is loaded and ready to fire."
+    },
+    {
+      "label": "Trigger Passthrough",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs the trigger value once all rockets have been expended."
+    }
+  ],
+  "properties": []
+}

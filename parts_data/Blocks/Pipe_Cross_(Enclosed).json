@@ -1,0 +1,11 @@
+{
+  "name": "Pipe Cross (Enclosed)",
+  "category": "Blocks",
+  "dlc": "",
+  "description": "",
+  "shortDescription": "An X-shaped pipe segment that can be used to branch piping into four directions.",
+  "value": 5,
+  "mass": 1.0,
+  "logicNodes": [],
+  "properties": []
+}

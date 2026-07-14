@@ -1,0 +1,24 @@
+{
+  "name": "Distance Sensor",
+  "category": "Sensors",
+  "dlc": "",
+  "description": "The reading can be read from the sensor's number output and is measured in metres (1 metre = 4 blocks).",
+  "shortDescription": "A laser distance sensor with a maximum measurement range of 500m.",
+  "value": 20,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Distance",
+      "mode": "output",
+      "type": "number",
+      "description": "The measured distance in metres."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    }
+  ],
+  "properties": []
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Fluid Nozzle",
+  "category": "Specialist Equipment",
+  "dlc": "",
+  "description": "The angle of spray can be adjusted.",
+  "shortDescription": "A fluid nozzle that fires pressurized water for putting out fires.",
+  "value": 100,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Spray Angle",
+      "mode": "input",
+      "type": "number",
+      "description": "Adjustable spray angle from 0 (focused) to 1 (spread)."
+    },
+    {
+      "label": "Fluid Supply",
+      "mode": "input",
+      "type": "fluid",
+      "description": "The fluid input to output from the nozzle."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    }
+  ],
+  "properties": []
+}

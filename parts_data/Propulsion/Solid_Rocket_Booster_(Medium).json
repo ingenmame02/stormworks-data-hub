@@ -1,0 +1,24 @@
+{
+  "name": "Solid Rocket Booster (Medium)",
+  "category": "Propulsion",
+  "dlc": "",
+  "description": "Additional fuel can be stacked on top of the booster to increase its burn duration. The burn rate can be set in the component's properties, with slower burn rates producing less thrust.",
+  "shortDescription": "A medium single-use solid rocket booster.",
+  "value": 300,
+  "mass": 20.0,
+  "logicNodes": [
+    {
+      "label": "Trigger",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Triggers the booster's combustion."
+    },
+    {
+      "label": "Fuel Remaining",
+      "mode": "output",
+      "type": "number",
+      "description": "The booster's remaining fuel level."
+    }
+  ],
+  "properties": []
+}

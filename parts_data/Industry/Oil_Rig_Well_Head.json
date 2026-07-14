@@ -1,0 +1,36 @@
+{
+  "name": "Oil Rig Well Head",
+  "category": "Industry",
+  "dlc": "",
+  "description": "Once anchored to the terrain, a drill rod can be inserted into a well head to begin drilling a well. In order to drill effectively a drill rod should be driven by a rotary table and forced downward toward the terrain. A continuous supply of drilling slurry must be provided through the drill rod via a swivel, and the saturated drilling slurry extracted from the well head fluid port.",
+  "shortDescription": "A well head for oil drilling.",
+  "value": 5000,
+  "mass": 1000.0,
+  "logicNodes": [
+    {
+      "label": "Anchor",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Extend / retract piles to anchor the well head to the terrain, allowing for a new well to be drilled. The well head must be close to the terrain (~1m) and upright (+-30 degrees) to be anchored. Unanchoring the well will reset any drilling progress made."
+    },
+    {
+      "label": "Is Anchored",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Returns true when the well head is anchored to the terrain."
+    },
+    {
+      "label": "Drill Depth",
+      "mode": "output",
+      "type": "number",
+      "description": "Returns the depth of an attached drill rod in meters."
+    },
+    {
+      "label": "Well Depth",
+      "mode": "output",
+      "type": "number",
+      "description": "Returns the depth of the drilled well in meters."
+    }
+  ],
+  "properties": []
+}

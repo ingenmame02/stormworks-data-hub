@@ -1,0 +1,24 @@
+{
+  "name": "Outfit Inventory (Firefighter SCBA)",
+  "category": "Specialist Equipment",
+  "dlc": "",
+  "description": "When equipped, it will absorb 95% of damage dealt by fires, and provides breathable air for the user. The air tank can be refilled by storing the gear in an outfit inventory unit.",
+  "shortDescription": "An outfit inventory unit containing specialist firefighting gear.",
+  "value": 1000,
+  "mass": 9.0,
+  "logicNodes": [
+    {
+      "label": "Fluid In",
+      "mode": "input",
+      "type": "fluid",
+      "description": ""
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    }
+  ],
+  "properties": []
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Jet Exhaust",
+  "category": "Jet Engines",
+  "dlc": "",
+  "description": "This is part of a set of modular jet engine components. Thrust will be produced at the back of the exhaust proportional to the internal RPS of the engine.",
+  "shortDescription": "A jet engine exhaust that will produce thrust.",
+  "value": 500,
+  "mass": 5.0,
+  "logicNodes": [
+    {
+      "label": "Thrust Spoiler",
+      "mode": "input",
+      "type": "number",
+      "description": "The air flow spoiler for reducing effective thrust from the exhaust. Takes value 0 (no reduction in thrust) to 1 (total reduction in thrust)."
+    },
+    {
+      "label": "Air Pressure",
+      "mode": "output",
+      "type": "number",
+      "description": "The pressure of air into the exhaust."
+    },
+    {
+      "label": "Temperature",
+      "mode": "output",
+      "type": "number",
+      "description": "The temperature of air into the exhaust."
+    }
+  ],
+  "properties": []
+}

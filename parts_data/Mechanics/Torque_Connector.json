@@ -1,0 +1,54 @@
+{
+  "name": "Torque Connector",
+  "category": "Mechanics",
+  "dlc": "",
+  "description": "Two torque connectors will attach when they are within close proximity. When connected, mechanical energy will be transferred between the connectors.",
+  "shortDescription": "A small torque connector that can be used to transfer mechanical energy between vehicles.",
+  "value": 20,
+  "mass": 2.0,
+  "logicNodes": [
+    {
+      "label": "Release Connector",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Release the connector when receiving an on signal."
+    },
+    {
+      "label": "Connected",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal if the connector is attached to another connector."
+    },
+    {
+      "label": "RPS",
+      "mode": "output",
+      "type": "torque",
+      "description": "Power connection for transfering mechanical energy."
+    },
+    {
+      "label": "Composite Data Send",
+      "mode": "input",
+      "type": "composite",
+      "description": "Composite data to send to the connected connector."
+    },
+    {
+      "label": "Composite Data Receive",
+      "mode": "output",
+      "type": "composite",
+      "description": "Composite data to receive from the connected connector."
+    },
+    {
+      "label": "Video Data Send",
+      "mode": "input",
+      "type": "video",
+      "description": "Video data to send to the connected connector."
+    },
+    {
+      "label": "Video Data Receive",
+      "mode": "output",
+      "type": "video",
+      "description": "Video data to receive from the connected connector."
+    }
+  ],
+  "properties": []
+}

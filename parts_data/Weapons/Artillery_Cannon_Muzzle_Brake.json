@@ -1,0 +1,11 @@
+{
+  "name": "Artillery Cannon Muzzle Brake",
+  "category": "Weapons",
+  "dlc": "",
+  "description": "A muzzle brake will reduce weapon recoil force when added to the end of a weapon barrel.",
+  "shortDescription": "A artillery cannon muzzle brake.",
+  "value": 50,
+  "mass": 80.0,
+  "logicNodes": [],
+  "properties": []
+}

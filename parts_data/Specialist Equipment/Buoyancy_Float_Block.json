@@ -1,0 +1,11 @@
+{
+  "name": "Buoyancy Float Block",
+  "category": "Specialist Equipment",
+  "dlc": "",
+  "description": "",
+  "shortDescription": "A block-shaped buoyant float.",
+  "value": 50,
+  "mass": 1.0,
+  "logicNodes": [],
+  "properties": []
+}

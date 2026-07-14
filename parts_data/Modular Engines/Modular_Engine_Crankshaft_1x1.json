@@ -1,0 +1,18 @@
+{
+  "name": "Modular Engine Crankshaft 1x1",
+  "category": "Modular Engines",
+  "dlc": "",
+  "description": "The crankshaft is the core of an engine. Attach cylinders to the outer surfaces to generate power. Multiple crankshaft blocks can be placed adajcent to each other to form larger engines.",
+  "shortDescription": "A modular engine crankshaft block.",
+  "value": 50,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "RPS",
+      "mode": "output",
+      "type": "number",
+      "description": "Output value giving data info on engine speed."
+    }
+  ],
+  "properties": []
+}

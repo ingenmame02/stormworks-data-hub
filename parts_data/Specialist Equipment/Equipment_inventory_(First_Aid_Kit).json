@@ -1,0 +1,18 @@
+{
+  "name": "Equipment inventory (First Aid Kit)",
+  "category": "Specialist Equipment",
+  "dlc": "",
+  "description": "Press [$[action_equipment_use]] to heal yourself, or heal a survivor highlighted by your crosshair.",
+  "shortDescription": "A small equipment storage unit containing a first aid kit.",
+  "value": 50,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    }
+  ],
+  "properties": []
+}

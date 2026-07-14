@@ -1,0 +1,36 @@
+{
+  "name": "Clutch",
+  "category": "Mechanics",
+  "dlc": "",
+  "description": "The number input controls the amount of power transmitted.",
+  "shortDescription": "A clutch for managing the transmission of power between two nodes.",
+  "value": 50,
+  "mass": 2.0,
+  "logicNodes": [
+    {
+      "label": "Clutch Pressure",
+      "mode": "input",
+      "type": "number",
+      "description": "A number between 0 and 1 representing the clutch engagement factor."
+    },
+    {
+      "label": "RPS B",
+      "mode": "input",
+      "type": "torque",
+      "description": "Power connection B."
+    },
+    {
+      "label": "RPS A",
+      "mode": "input",
+      "type": "torque",
+      "description": "Power connection A."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "The electric connection to power the component."
+    }
+  ],
+  "properties": []
+}

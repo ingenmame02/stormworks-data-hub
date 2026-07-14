@@ -1,0 +1,18 @@
+{
+  "name": "Fluid Port",
+  "category": "Fluid",
+  "dlc": "",
+  "description": "Place the port inside of an enclosed volume to connect to that volume, or outside of the vehicle to connect to the ocean.",
+  "shortDescription": "Port used to allow fluid in and out of a fluid system.",
+  "value": 50,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Fluid",
+      "mode": "output",
+      "type": "fluid",
+      "description": "Allows fluid to flow in and out of an enclosed volume or the ocean."
+    }
+  ],
+  "properties": []
+}

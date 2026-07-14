@@ -1,0 +1,18 @@
+{
+  "name": "winch end",
+  "category": "Specialist Equipment",
+  "dlc": "",
+  "description": "",
+  "shortDescription": "",
+  "value": 0,
+  "mass": 20.0,
+  "logicNodes": [
+    {
+      "label": "Fluid",
+      "mode": "output",
+      "type": "fluid",
+      "description": "Fluid connection for the end of the hose."
+    }
+  ],
+  "properties": []
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Landing Float",
+  "category": "Specialist Equipment",
+  "dlc": "",
+  "description": "Ideal for attaching to helicopters to allow them to land on the ocean.",
+  "shortDescription": "A buoyant float.",
+  "value": 50,
+  "mass": 1.0,
+  "logicNodes": [],
+  "properties": []
+}

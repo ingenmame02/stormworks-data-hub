@@ -1,0 +1,48 @@
+{
+  "name": "Steam Condenser",
+  "category": "Industry",
+  "dlc": "",
+  "description": "The condenser should be continously cooled to function efficiently.",
+  "shortDescription": "A condenser for converting steam back to water.",
+  "value": 250,
+  "mass": 250.0,
+  "logicNodes": [
+    {
+      "label": "Fluid Volume",
+      "mode": "output",
+      "type": "number",
+      "description": ""
+    },
+    {
+      "label": "Temperature",
+      "mode": "output",
+      "type": "number",
+      "description": ""
+    },
+    {
+      "label": "Coolant A",
+      "mode": "input",
+      "type": "fluid",
+      "description": "Port for supplying cold fluid to cool the contents of the condenser."
+    },
+    {
+      "label": "Coolant B",
+      "mode": "input",
+      "type": "fluid",
+      "description": "Port for supplying cold fluid to cool the contents of the condenser."
+    },
+    {
+      "label": "Steam In",
+      "mode": "input",
+      "type": "fluid",
+      "description": ""
+    },
+    {
+      "label": "Water Out",
+      "mode": "output",
+      "type": "fluid",
+      "description": ""
+    }
+  ],
+  "properties": []
+}

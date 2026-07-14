@@ -1,0 +1,11 @@
+{
+  "name": "Window 1x1",
+  "category": "Windows",
+  "dlc": "",
+  "description": "Sits flush with walls and ceilings.",
+  "shortDescription": "Basic window piece.",
+  "value": 5,
+  "mass": 1.0,
+  "logicNodes": [],
+  "properties": []
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Modular Engine Starter",
+  "category": "Modular Engines",
+  "dlc": "",
+  "description": "Attach a starter to a Drive Belt component and supply power to apply an inefficient force on the engine to get it started.",
+  "shortDescription": "A modular engine starter.",
+  "value": 30,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Starter",
+      "mode": "input",
+      "type": "onoff",
+      "description": ""
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    }
+  ],
+  "properties": []
+}

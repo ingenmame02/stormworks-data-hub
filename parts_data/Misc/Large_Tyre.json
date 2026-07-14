@@ -1,0 +1,11 @@
+{
+  "name": "Large Tyre",
+  "category": "Misc",
+  "dlc": "",
+  "description": "Useful for creating tyre stacks and fenders.",
+  "shortDescription": "A large decorative tyre.",
+  "value": 20,
+  "mass": 12.0,
+  "logicNodes": [],
+  "properties": []
+}

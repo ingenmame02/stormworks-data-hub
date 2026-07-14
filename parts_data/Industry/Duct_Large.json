@@ -1,0 +1,18 @@
+{
+  "name": "Duct Large",
+  "category": "Industry",
+  "dlc": "",
+  "description": "Transports resources through the connected system.",
+  "shortDescription": "A basic resource duct.",
+  "value": 150,
+  "mass": 112.0,
+  "logicNodes": [
+    {
+      "label": "Fill Level",
+      "mode": "output",
+      "type": "number",
+      "description": ""
+    }
+  ],
+  "properties": []
+}

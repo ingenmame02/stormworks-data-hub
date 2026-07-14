@@ -1,0 +1,18 @@
+{
+  "name": "Hinged Door",
+  "category": "Mechanics",
+  "dlc": "",
+  "description": "",
+  "shortDescription": "Hinged door that can be opened and closed by hand and locked using an on/off signal.",
+  "value": 200,
+  "mass": 20.0,
+  "logicNodes": [
+    {
+      "label": "Lock",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Locks the door when receiving an on signal."
+    }
+  ],
+  "properties": []
+}

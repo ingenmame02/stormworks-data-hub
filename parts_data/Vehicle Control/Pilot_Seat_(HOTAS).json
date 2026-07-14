@@ -1,0 +1,396 @@
+{
+  "name": "Pilot Seat (HOTAS)",
+  "category": "Vehicle Control",
+  "dlc": "",
+  "description": "It provides 10 number outputs that produce a standard value ranging from -1 to 1, and 48 on/off outputs. You can get in and out of the pilot seat by interacting with it using [$[action_use_seat]]. Designed for use with HOTAS controllers.",
+  "shortDescription": "The pilot seat lets you translate controller presses into output signals that can control logic components.",
+  "value": 250,
+  "mass": 50.0,
+  "logicNodes": [
+    {
+      "label": "Occupied",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal if this seat is occupied by a character."
+    },
+    {
+      "label": "Trigger [$[action_trigger]]",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal when [$[action_trigger]] is held, and off when it is not."
+    },
+    {
+      "label": "Hotkey 1 [$[action_hotkey_1]]",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal when [$[action_hotkey_1]] is held, and off when it is not."
+    },
+    {
+      "label": "Hotkey 2 [$[action_hotkey_2]]",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal when [$[action_hotkey_2]] is held, and off when it is not."
+    },
+    {
+      "label": "Hotkey 3 [$[action_hotkey_3]]",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal when [$[action_hotkey_3]] is held, and off when it is not."
+    },
+    {
+      "label": "Hotkey 4 [$[action_hotkey_4]]",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal when [$[action_hotkey_4]] is held, and off when it is not."
+    },
+    {
+      "label": "Hotkey 5 [$[action_hotkey_5]]",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal when [$[action_hotkey_5]] is held, and off when it is not."
+    },
+    {
+      "label": "Hotkey 6 [$[action_hotkey_6]]",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal when [$[action_hotkey_6]] is held, and off when it is not."
+    },
+    {
+      "label": "Hotkey 7",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal when the controller button is held, and off when it is not."
+    },
+    {
+      "label": "Hotkey 8",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal when the controller button is held, and off when it is not."
+    },
+    {
+      "label": "Hotkey 9",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal when the controller button is held, and off when it is not."
+    },
+    {
+      "label": "Hotkey 10",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal when the controller button is held, and off when it is not."
+    },
+    {
+      "label": "Hotkey 11",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal when the controller button is held, and off when it is not."
+    },
+    {
+      "label": "Hotkey 12",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal when the controller button is held, and off when it is not."
+    },
+    {
+      "label": "Hotkey 13",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal when the controller button is held, and off when it is not."
+    },
+    {
+      "label": "Hotkey 14",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal when the controller button is held, and off when it is not."
+    },
+    {
+      "label": "Hotkey 15",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal when the controller button is held, and off when it is not."
+    },
+    {
+      "label": "Hotkey 16",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal when the controller button is held, and off when it is not."
+    },
+    {
+      "label": "Hotkey 17",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal when the controller button is held, and off when it is not."
+    },
+    {
+      "label": "Hotkey 18",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal when the controller button is held, and off when it is not."
+    },
+    {
+      "label": "Hotkey 19",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal when the controller button is held, and off when it is not."
+    },
+    {
+      "label": "Hotkey 20",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal when the controller button is held, and off when it is not."
+    },
+    {
+      "label": "Hotkey 21",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal when the controller button is held, and off when it is not."
+    },
+    {
+      "label": "Hotkey 22",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal when the controller button is held, and off when it is not."
+    },
+    {
+      "label": "Hotkey 23",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal when the controller button is held, and off when it is not."
+    },
+    {
+      "label": "Hotkey 24",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal when the controller button is held, and off when it is not."
+    },
+    {
+      "label": "Hotkey 25",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal when the controller button is held, and off when it is not."
+    },
+    {
+      "label": "Hotkey 26",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal when the controller button is held, and off when it is not."
+    },
+    {
+      "label": "Hotkey 27",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal when the controller button is held, and off when it is not."
+    },
+    {
+      "label": "Hotkey 28",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal when the controller button is held, and off when it is not."
+    },
+    {
+      "label": "Hotkey 29",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal when the controller button is held, and off when it is not."
+    },
+    {
+      "label": "Hotkey 30",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal when the controller button is held, and off when it is not."
+    },
+    {
+      "label": "Hotkey 31",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal when the controller button is held, and off when it is not."
+    },
+    {
+      "label": "Hotkey 32",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal when the controller button is held, and off when it is not."
+    },
+    {
+      "label": "Hotkey 33",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal when the controller button is held, and off when it is not."
+    },
+    {
+      "label": "Hotkey 34",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal when the controller button is held, and off when it is not."
+    },
+    {
+      "label": "Hotkey 35",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal when the controller button is held, and off when it is not."
+    },
+    {
+      "label": "Hotkey 36",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal when the controller button is held, and off when it is not."
+    },
+    {
+      "label": "Hotkey 37",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal when the controller button is held, and off when it is not."
+    },
+    {
+      "label": "Hotkey 38",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal when the controller button is held, and off when it is not."
+    },
+    {
+      "label": "Hotkey 39",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal when the controller button is held, and off when it is not."
+    },
+    {
+      "label": "Hotkey 40",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal when the controller button is held, and off when it is not."
+    },
+    {
+      "label": "Hotkey 41",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal when the controller button is held, and off when it is not."
+    },
+    {
+      "label": "Hotkey 42",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal when the controller button is held, and off when it is not."
+    },
+    {
+      "label": "Hotkey 43",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal when the controller button is held, and off when it is not."
+    },
+    {
+      "label": "Hotkey 44",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal when the controller button is held, and off when it is not."
+    },
+    {
+      "label": "Hotkey 45",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal when the controller button is held, and off when it is not."
+    },
+    {
+      "label": "Hotkey 46",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal when the controller button is held, and off when it is not."
+    },
+    {
+      "label": "Hotkey 47",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal when the controller button is held, and off when it is not."
+    },
+    {
+      "label": "Hotkey 48",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal when the controller button is held, and off when it is not."
+    },
+    {
+      "label": "Look X",
+      "mode": "output",
+      "type": "number",
+      "description": "Outputs the character look direction in turns along the X-axis."
+    },
+    {
+      "label": "Look Y",
+      "mode": "output",
+      "type": "number",
+      "description": "Outputs the character look direction in turns along the Y-axis."
+    },
+    {
+      "label": "Axis 1 [$[action_left]]/[$[action_right]]",
+      "mode": "output",
+      "type": "number",
+      "description": "Outputs a standard value between -1 and 1, controlled using [$[action_left]] and [$[action_right]]. [$[action_left]] causes the output value to move towards -1, and [$[action_right]] moves it towards 1."
+    },
+    {
+      "label": "Axis 2 [$[action_up]]/[$[action_down]]",
+      "mode": "output",
+      "type": "number",
+      "description": "Outputs a standard value between -1 and 1, controlled using [$[action_up]] and [$[action_down]]. [$[action_down]] causes the output value to move towards -1, and [$[action_up]] moves it towards 1."
+    },
+    {
+      "label": "Axis 3 [$[action_pedal_left]]/[$[action_pedal_right]]",
+      "mode": "output",
+      "type": "number",
+      "description": "Outputs a standard value between -1 and 1, controlled using [$[action_pedal_left]] and [$[action_pedal_right]]. [$[action_pedal_left]] causes the output value to move towards -1, and [$[action_pedal_right]] moves it towards 1."
+    },
+    {
+      "label": "Axis 4 [$[action_throttle_up]]/[$[action_throttle_down]]",
+      "mode": "output",
+      "type": "number",
+      "description": "Outputs a standard value between -1 and 1, controlled using [$[action_throttle_up]] and [$[action_throttle_down]]. [$[action_throttle_down]] causes the output value to move towards -1, and [$[action_throttle_up]] moves it towards 1."
+    },
+    {
+      "label": "Axis 5",
+      "mode": "output",
+      "type": "number",
+      "description": "Outputs a standard value between -1 and 1, controlled using the controller axis."
+    },
+    {
+      "label": "Axis 6",
+      "mode": "output",
+      "type": "number",
+      "description": "Outputs a standard value between -1 and 1, controlled using the controller axis."
+    },
+    {
+      "label": "Axis 7",
+      "mode": "output",
+      "type": "number",
+      "description": "Outputs a standard value between -1 and 1, controlled using the controller axis."
+    },
+    {
+      "label": "Axis 8",
+      "mode": "output",
+      "type": "number",
+      "description": "Outputs a standard value between -1 and 1, controlled using the controller axis."
+    },
+    {
+      "label": "Seat data",
+      "mode": "output",
+      "type": "composite",
+      "description": "Outputs the axis, hotkey and occupied data from the seat. (On/Off 1+ : Hotkeys) (On/Off 31 : Trigger) (On/Off 32 : Occupied) (Value 1 : [$[action_left]]/[$[action_right]]) (Value 2 : [$[action_up]]/[$[action_down]]) (Value 3 : [$[action_pedal_left]]/[$[action_pedal_right]]) (Value 4 : [$[action_throttle_up]]/[$[action_throttle_down]]) (Values 5/6/7/8 : Controller Axes) (Value 9 : Look X)  (Value 10 : Look Y)"
+    },
+    {
+      "label": "Headset Video",
+      "mode": "input",
+      "type": "video",
+      "description": "Displays video UI overlay on a helmet mounted display."
+    },
+    {
+      "label": "Headset Audio",
+      "mode": "input",
+      "type": "audio",
+      "description": ""
+    },
+    {
+      "label": "Headset Audio",
+      "mode": "output",
+      "type": "audio",
+      "description": ""
+    }
+  ],
+  "properties": []
+}

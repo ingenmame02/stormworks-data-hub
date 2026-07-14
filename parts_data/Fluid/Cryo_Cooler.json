@@ -1,0 +1,60 @@
+{
+  "name": "Cryo Cooler",
+  "category": "Fluid",
+  "dlc": "",
+  "description": "A component that cools liquid A and transfers the heat to liquid B.",
+  "shortDescription": "A powered component that creates a temperature difference between two liquid systems.",
+  "value": 30,
+  "mass": 4.0,
+  "logicNodes": [
+    {
+      "label": "On/Off",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Controls whether or not the component transfers heat between liquids."
+    },
+    {
+      "label": "Temp A",
+      "mode": "output",
+      "type": "number",
+      "description": "Compartment temperature."
+    },
+    {
+      "label": "Temp B",
+      "mode": "output",
+      "type": "number",
+      "description": "Compartment temperature."
+    },
+    {
+      "label": "Liquid A In",
+      "mode": "input",
+      "type": "fluid",
+      "description": "Input liquid port for liquid that gets cooled."
+    },
+    {
+      "label": "Liquid A Out",
+      "mode": "input",
+      "type": "fluid",
+      "description": "Output liquid port for liquid that gets cooled."
+    },
+    {
+      "label": "Liquid B In",
+      "mode": "input",
+      "type": "fluid",
+      "description": "Input liquid port for liquid that gets warmed."
+    },
+    {
+      "label": "Liquid B Out",
+      "mode": "input",
+      "type": "fluid",
+      "description": "Output liquid port for liquid that gets warmed."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    }
+  ],
+  "properties": []
+}

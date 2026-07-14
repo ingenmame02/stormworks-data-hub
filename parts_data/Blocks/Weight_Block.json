@@ -1,0 +1,11 @@
+{
+  "name": "Weight Block",
+  "category": "Blocks",
+  "dlc": "",
+  "description": "Weight blocks have a larger impact on the vehicle's centre of mass, making them useful for balance and stability.",
+  "shortDescription": "Basic cube-shaped building block with an increased mass.",
+  "value": 5,
+  "mass": 10.0,
+  "logicNodes": [],
+  "properties": []
+}

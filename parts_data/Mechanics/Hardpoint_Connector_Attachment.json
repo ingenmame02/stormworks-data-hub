@@ -1,0 +1,54 @@
+{
+  "name": "Hardpoint Connector Attachment",
+  "category": "Mechanics",
+  "dlc": "",
+  "description": "A hardpoint body will connect to a hardpoint attachment when correctly aligned, fixing the two components in place while transferring logic and fluid.",
+  "shortDescription": "A hardpoint connector for building detachable vehicle sections.",
+  "value": 20,
+  "mass": 2.0,
+  "logicNodes": [
+    {
+      "label": "Launched",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal if the connector is sent a launch signal by the parent."
+    },
+    {
+      "label": "Fluid",
+      "mode": "output",
+      "type": "fluid",
+      "description": "Fluid connection to link to another fluid connector."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    },
+    {
+      "label": "Composite Data Send",
+      "mode": "input",
+      "type": "composite",
+      "description": "Composite data to send to the connected connector."
+    },
+    {
+      "label": "Composite Data Receive",
+      "mode": "output",
+      "type": "composite",
+      "description": "Composite data to receive from the connected connector."
+    },
+    {
+      "label": "Video Data Send",
+      "mode": "input",
+      "type": "video",
+      "description": "Video data to send to the connected connector."
+    },
+    {
+      "label": "Video Data Receive",
+      "mode": "output",
+      "type": "video",
+      "description": "Video data to receive from the connected connector."
+    }
+  ],
+  "properties": []
+}

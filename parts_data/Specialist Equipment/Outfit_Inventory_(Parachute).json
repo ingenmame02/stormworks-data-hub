@@ -1,0 +1,18 @@
+{
+  "name": "Outfit Inventory (Parachute)",
+  "category": "Specialist Equipment",
+  "dlc": "",
+  "description": "When selected, press [$[action_equipment_use]] while falling to deploy the parachute. It will then open when you are falling fast enough. Press [$[action_equipment_secondary]] to close the parachute. This parachute is single-use once equipped but can be refolded by storing it in an outfit inventory unit.",
+  "shortDescription": "An outfit inventory unit containing a single-use parachute.",
+  "value": 500,
+  "mass": 9.0,
+  "logicNodes": [
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    }
+  ],
+  "properties": []
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Modulo",
+  "category": "Logic",
+  "dlc": "",
+  "description": "",
+  "shortDescription": "Takes two number inputs, outputs the remainder after dividing the first by the second.",
+  "value": 20,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "A",
+      "mode": "input",
+      "type": "number",
+      "description": "The value to modulo."
+    },
+    {
+      "label": "B",
+      "mode": "input",
+      "type": "number",
+      "description": "The value to modulo A by."
+    },
+    {
+      "label": "A % B",
+      "mode": "output",
+      "type": "number",
+      "description": "Outputs the remainder when A is divided by B."
+    }
+  ],
+  "properties": []
+}

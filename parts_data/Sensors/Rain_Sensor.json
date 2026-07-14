@@ -1,0 +1,18 @@
+{
+  "name": "Rain Sensor",
+  "category": "Sensors",
+  "dlc": "",
+  "description": "The reading can be read from the sensor's number output and is measured from 0 (no rain) to 1 (max rain).",
+  "shortDescription": "A rain sensor for measuring the current meteorological conditions.",
+  "value": 180,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Rain Factor",
+      "mode": "output",
+      "type": "number",
+      "description": "The amount of current rain fall from 0 to 1."
+    }
+  ],
+  "properties": []
+}

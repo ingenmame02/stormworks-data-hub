@@ -1,0 +1,30 @@
+{
+  "name": "Liquid Meter",
+  "category": "Sensors",
+  "dlc": "",
+  "description": "This will output a quantity in litres and the total capacity in litres. If not inside an enclosed volume, it will give the height relative to the water surface.",
+  "shortDescription": "A device to measure how much liquid is within an enclosed volume.",
+  "value": 20,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Liquid Level",
+      "mode": "output",
+      "type": "number",
+      "description": "Returns the number of litres of liquid in an enclosed volume, or height relative to water if not enclosed."
+    },
+    {
+      "label": "Fluid Capacity",
+      "mode": "output",
+      "type": "number",
+      "description": "Returns the total capacity of an enclosed volume in litres, or 0 if not enclosed."
+    },
+    {
+      "label": "Composite Data",
+      "mode": "output",
+      "type": "composite",
+      "description": "Outputs the volumes of individual liquid types on their respective channel. The data can be directly merged with a Gas meter. Channels: 1-Water, 2-Diesel, 3-Jet Fuel, 6-Oil, 7-Seawater, 9-Slurry, 10-Saturated Slurry"
+    }
+  ],
+  "properties": []
+}

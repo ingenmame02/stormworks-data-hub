@@ -1,0 +1,60 @@
+{
+  "name": "Radio RX Medium",
+  "category": "Vehicle Control",
+  "dlc": "",
+  "description": "Sends and receives data on the specified frequency. Transmit Mode defaults to receive. (Max effective range at ground level : 1km)",
+  "shortDescription": "A radio data transmitter and receiver.",
+  "value": 500,
+  "mass": 8.0,
+  "logicNodes": [
+    {
+      "label": "Transmit Mode",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Whether the radio is transmitting or receiving."
+    },
+    {
+      "label": "Frequency",
+      "mode": "input",
+      "type": "number",
+      "description": "Radio Send/Receive Frequency."
+    },
+    {
+      "label": "Signal Strength",
+      "mode": "output",
+      "type": "number",
+      "description": "Strength of connection signal."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical input."
+    },
+    {
+      "label": "Data Send",
+      "mode": "input",
+      "type": "composite",
+      "description": "Input for composite data to send."
+    },
+    {
+      "label": "Data Recv",
+      "mode": "output",
+      "type": "composite",
+      "description": "Output for received composite data."
+    },
+    {
+      "label": "Audio Send",
+      "mode": "input",
+      "type": "audio",
+      "description": "Input for audio data to send."
+    },
+    {
+      "label": "Audio Recv",
+      "mode": "output",
+      "type": "audio",
+      "description": "Output for received audio data."
+    }
+  ],
+  "properties": []
+}

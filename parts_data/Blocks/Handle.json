@@ -1,0 +1,18 @@
+{
+  "name": "Handle",
+  "category": "Blocks",
+  "dlc": "",
+  "description": "Interacting with [$[action_interact_left]] or [$[action_interact_right]] again will detach that hand. The handle can be used to drag vehicles around. If a vehicle is too heavy to move, you will be detached automatically when you move outside the handle's interaction range.",
+  "shortDescription": "A handle that you can attach to by interacting with [$[action_interact_left]] or [$[action_interact_right]].",
+  "value": 5,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Occupied",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal if a player is attached to the handle."
+    }
+  ],
+  "properties": []
+}

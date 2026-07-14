@@ -1,0 +1,54 @@
+{
+  "name": "Hinge Connector",
+  "category": "Mechanics",
+  "dlc": "",
+  "description": "Two connectors will attach when they are within close proximity and both are switched on. They will connect along their long edge and hinge along this axis. An on/off output allows you to check whether or not this connector is currently attached to anything.",
+  "shortDescription": "A small magnetic connector that can be used to attach two or more vehicles together.",
+  "value": 40,
+  "mass": 3.0,
+  "logicNodes": [
+    {
+      "label": "Magnet Toggle",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Enables the connector's magnet when receiving an on signal."
+    },
+    {
+      "label": "Connected",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal if the connector is attached to another connector."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    },
+    {
+      "label": "Composite Data Send",
+      "mode": "input",
+      "type": "composite",
+      "description": "Composite data to send to the connected connector."
+    },
+    {
+      "label": "Composite Data Receive",
+      "mode": "output",
+      "type": "composite",
+      "description": "Composite data to receive from the connected connector."
+    },
+    {
+      "label": "Video Data Send",
+      "mode": "input",
+      "type": "video",
+      "description": "Video data to send to the connected connector."
+    },
+    {
+      "label": "Video Data Receive",
+      "mode": "output",
+      "type": "video",
+      "description": "Video data to receive from the connected connector."
+    }
+  ],
+  "properties": []
+}

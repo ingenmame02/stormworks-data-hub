@@ -1,0 +1,18 @@
+{
+  "name": "Astronomy Sensor",
+  "category": "Sensors",
+  "dlc": "",
+  "description": "Outputs relative position data based on the optimal target trajectory between the earth and moon.",
+  "shortDescription": "A sensor that provides raw space navigation data.",
+  "value": 150,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Data",
+      "mode": "output",
+      "type": "composite",
+      "description": "Outputs [1] x position in metres, [2] y position in metres (earth sea level is 0), [3] z position in metres, [4] euler rotation x, [5] euler rotation y, [6] euler rotation z, [7] angular velocity x, [8] angular velocity y, [9] angular velocity z, [10] local z tilt and [11] local x tilt to the respective composite channels."
+    }
+  ],
+  "properties": []
+}

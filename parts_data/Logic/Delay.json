@@ -1,0 +1,24 @@
+{
+  "name": "Delay",
+  "category": "Logic",
+  "dlc": "",
+  "description": "The delay time can be configured by selecting the component with the select tool. The internal delay timer is reset whenever the input signal changes.",
+  "shortDescription": "This component stores an input on/off signal, and then outputs it after a delay.",
+  "value": 20,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Signal to Delay",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Can be an on or off signal. Changing this will reset the delay's timer."
+    },
+    {
+      "label": "Delayed Signal",
+      "mode": "output",
+      "type": "onoff",
+      "description": "The input signal that has been delayed."
+    }
+  ],
+  "properties": []
+}

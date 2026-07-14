@@ -1,0 +1,11 @@
+{
+  "name": "Ladder",
+  "category": "Blocks",
+  "dlc": "",
+  "description": "You can attach to the ladder by interacting with [$[action_use_seat]], then detach again with either [$[action_use_seat]] or [$[action_jump]]. You will automatically detach from the ladder when you reach the top.",
+  "shortDescription": "Single ladder rung. Multiple rungs can placed on top of each other to form a ladder of abitrary length.",
+  "value": 5,
+  "mass": 3.0,
+  "logicNodes": [],
+  "properties": []
+}

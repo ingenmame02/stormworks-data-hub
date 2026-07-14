@@ -1,0 +1,3066 @@
+{
+  "Blocks": [
+    {
+      "name": "Block",
+      "file": "Blocks/Block.json"
+    },
+    {
+      "name": "Handle",
+      "file": "Blocks/Handle.json"
+    },
+    {
+      "name": "Inverse Pyramid",
+      "file": "Blocks/Inverse_Pyramid.json"
+    },
+    {
+      "name": "Inverse Pyramid 1x2",
+      "file": "Blocks/Inverse_Pyramid_1x2.json"
+    },
+    {
+      "name": "Inverse Pyramid 1x4",
+      "file": "Blocks/Inverse_Pyramid_1x4.json"
+    },
+    {
+      "name": "Inverse Pyramid 2x2",
+      "file": "Blocks/Inverse_Pyramid_2x2.json"
+    },
+    {
+      "name": "Inverse Pyramid 2x4",
+      "file": "Blocks/Inverse_Pyramid_2x4.json"
+    },
+    {
+      "name": "Inverse Pyramid 4x4",
+      "file": "Blocks/Inverse_Pyramid_4x4.json"
+    },
+    {
+      "name": "Ladder",
+      "file": "Blocks/Ladder.json"
+    },
+    {
+      "name": "Physics Flooder",
+      "file": "Blocks/Physics_Flooder.json"
+    },
+    {
+      "name": "Pipe Angle",
+      "file": "Blocks/Pipe_Angle.json"
+    },
+    {
+      "name": "Pipe Angle (Enclosed)",
+      "file": "Blocks/Pipe_Angle_(Enclosed).json"
+    },
+    {
+      "name": "Pipe Angle Corner",
+      "file": "Blocks/Pipe_Angle_Corner.json"
+    },
+    {
+      "name": "Pipe Angle Corner (Enclosed)",
+      "file": "Blocks/Pipe_Angle_Corner_(Enclosed).json"
+    },
+    {
+      "name": "Pipe Cross",
+      "file": "Blocks/Pipe_Cross.json"
+    },
+    {
+      "name": "Pipe Cross (Enclosed)",
+      "file": "Blocks/Pipe_Cross_(Enclosed).json"
+    },
+    {
+      "name": "Pipe Cross Corner",
+      "file": "Blocks/Pipe_Cross_Corner.json"
+    },
+    {
+      "name": "Pipe Cross Corner (Enclosed)",
+      "file": "Blocks/Pipe_Cross_Corner_(Enclosed).json"
+    },
+    {
+      "name": "Pipe Omni",
+      "file": "Blocks/Pipe_Omni.json"
+    },
+    {
+      "name": "Pipe Omni (Enclosed)",
+      "file": "Blocks/Pipe_Omni_(Enclosed).json"
+    },
+    {
+      "name": "Pipe Straight",
+      "file": "Blocks/Pipe_Straight.json"
+    },
+    {
+      "name": "Pipe Straight (Enclosed)",
+      "file": "Blocks/Pipe_Straight_(Enclosed).json"
+    },
+    {
+      "name": "Pipe T-Piece",
+      "file": "Blocks/Pipe_T-Piece.json"
+    },
+    {
+      "name": "Pipe T-Piece (Enclosed)",
+      "file": "Blocks/Pipe_T-Piece_(Enclosed).json"
+    },
+    {
+      "name": "Pipe T-Piece Corner",
+      "file": "Blocks/Pipe_T-Piece_Corner.json"
+    },
+    {
+      "name": "Pipe T-Piece Corner (Enclosed)",
+      "file": "Blocks/Pipe_T-Piece_Corner_(Enclosed).json"
+    },
+    {
+      "name": "Pivot",
+      "file": "Blocks/Pivot.json"
+    },
+    {
+      "name": "Pivot (Power)",
+      "file": "Blocks/Pivot_(Power).json"
+    },
+    {
+      "name": "Pyramid",
+      "file": "Blocks/Pyramid.json"
+    },
+    {
+      "name": "Pyramid 1x2",
+      "file": "Blocks/Pyramid_1x2.json"
+    },
+    {
+      "name": "Pyramid 1x4",
+      "file": "Blocks/Pyramid_1x4.json"
+    },
+    {
+      "name": "Pyramid 2x2",
+      "file": "Blocks/Pyramid_2x2.json"
+    },
+    {
+      "name": "Pyramid 2x4",
+      "file": "Blocks/Pyramid_2x4.json"
+    },
+    {
+      "name": "Pyramid 4x4",
+      "file": "Blocks/Pyramid_4x4.json"
+    },
+    {
+      "name": "Robotic Pivot",
+      "file": "Blocks/Robotic_Pivot.json"
+    },
+    {
+      "name": "Robotic Pivot",
+      "file": "Blocks/Robotic_Pivot.json"
+    },
+    {
+      "name": "Robotic Pivot",
+      "file": "Blocks/Robotic_Pivot.json"
+    },
+    {
+      "name": "Stair Step",
+      "file": "Blocks/Stair_Step.json"
+    },
+    {
+      "name": "Stair Top",
+      "file": "Blocks/Stair_Top.json"
+    },
+    {
+      "name": "Static Block",
+      "file": "Blocks/Static_Block.json"
+    },
+    {
+      "name": "Turret Ring (Large)",
+      "file": "Blocks/Turret_Ring_(Large).json"
+    },
+    {
+      "name": "Turret Ring (Medium)",
+      "file": "Blocks/Turret_Ring_(Medium).json"
+    },
+    {
+      "name": "Turret Ring (Small)",
+      "file": "Blocks/Turret_Ring_(Small).json"
+    },
+    {
+      "name": "Velocity Pivot",
+      "file": "Blocks/Velocity_Pivot.json"
+    },
+    {
+      "name": "Velocity Pivot",
+      "file": "Blocks/Velocity_Pivot.json"
+    },
+    {
+      "name": "Wedge",
+      "file": "Blocks/Wedge.json"
+    },
+    {
+      "name": "Wedge 1x2",
+      "file": "Blocks/Wedge_1x2.json"
+    },
+    {
+      "name": "Wedge 1x4",
+      "file": "Blocks/Wedge_1x4.json"
+    },
+    {
+      "name": "Weight Block",
+      "file": "Blocks/Weight_Block.json"
+    }
+  ],
+  "Vehicle Control": [
+    {
+      "name": "Compact Pilot Seat",
+      "file": "Vehicle Control/Compact_Pilot_Seat.json"
+    },
+    {
+      "name": "Control Fin Large",
+      "file": "Vehicle Control/Control_Fin_Large.json"
+    },
+    {
+      "name": "Control Fin Medium",
+      "file": "Vehicle Control/Control_Fin_Medium.json"
+    },
+    {
+      "name": "Control Fin Small",
+      "file": "Vehicle Control/Control_Fin_Small.json"
+    },
+    {
+      "name": "Control Handle",
+      "file": "Vehicle Control/Control_Handle.json"
+    },
+    {
+      "name": "Control Surface (Large)",
+      "file": "Vehicle Control/Control_Surface_(Large).json"
+    },
+    {
+      "name": "Control Surface (Medium)",
+      "file": "Vehicle Control/Control_Surface_(Medium).json"
+    },
+    {
+      "name": "Control Surface (Small)",
+      "file": "Vehicle Control/Control_Surface_(Small).json"
+    },
+    {
+      "name": "Data Logger (Bool)",
+      "file": "Vehicle Control/Data_Logger_(Bool).json"
+    },
+    {
+      "name": "Data Logger (Number)",
+      "file": "Vehicle Control/Data_Logger_(Number).json"
+    },
+    {
+      "name": "Driver seat",
+      "file": "Vehicle Control/Driver_seat.json"
+    },
+    {
+      "name": "Fin Rudder",
+      "file": "Vehicle Control/Fin_Rudder.json"
+    },
+    {
+      "name": "Friction Pad",
+      "file": "Vehicle Control/Friction_Pad.json"
+    },
+    {
+      "name": "Gyro",
+      "file": "Vehicle Control/Gyro.json"
+    },
+    {
+      "name": "Helm",
+      "file": "Vehicle Control/Helm.json"
+    },
+    {
+      "name": "Keel (Large)",
+      "file": "Vehicle Control/Keel_(Large).json"
+    },
+    {
+      "name": "Keel (Medium)",
+      "file": "Vehicle Control/Keel_(Medium).json"
+    },
+    {
+      "name": "Keel (Small)",
+      "file": "Vehicle Control/Keel_(Small).json"
+    },
+    {
+      "name": "Keep Active Block",
+      "file": "Vehicle Control/Keep_Active_Block.json"
+    },
+    {
+      "name": "Large Landing Wheel",
+      "file": "Vehicle Control/Large_Landing_Wheel.json"
+    },
+    {
+      "name": "Map Icon Block",
+      "file": "Vehicle Control/Map_Icon_Block.json"
+    },
+    {
+      "name": "Medium Wheel",
+      "file": "Vehicle Control/Medium_Wheel.json"
+    },
+    {
+      "name": "Pilot Seat",
+      "file": "Vehicle Control/Pilot_Seat.json"
+    },
+    {
+      "name": "Pilot Seat (HOTAS)",
+      "file": "Vehicle Control/Pilot_Seat_(HOTAS).json"
+    },
+    {
+      "name": "Radio RX Huge",
+      "file": "Vehicle Control/Radio_RX_Huge.json"
+    },
+    {
+      "name": "Radio RX Huge",
+      "file": "Vehicle Control/Radio_RX_Huge.json"
+    },
+    {
+      "name": "Radio RX Large",
+      "file": "Vehicle Control/Radio_RX_Large.json"
+    },
+    {
+      "name": "Radio RX Large",
+      "file": "Vehicle Control/Radio_RX_Large.json"
+    },
+    {
+      "name": "Radio RX Medium",
+      "file": "Vehicle Control/Radio_RX_Medium.json"
+    },
+    {
+      "name": "Radio RX Medium",
+      "file": "Vehicle Control/Radio_RX_Medium.json"
+    },
+    {
+      "name": "Radio RX Small",
+      "file": "Vehicle Control/Radio_RX_Small.json"
+    },
+    {
+      "name": "Radio RX Small",
+      "file": "Vehicle Control/Radio_RX_Small.json"
+    },
+    {
+      "name": "Radio Video Recv",
+      "file": "Vehicle Control/Radio_Video_Recv.json"
+    },
+    {
+      "name": "Radio Video Xmit",
+      "file": "Vehicle Control/Radio_Video_Xmit.json"
+    },
+    {
+      "name": "Rudder",
+      "file": "Vehicle Control/Rudder.json"
+    },
+    {
+      "name": "RX Directional",
+      "file": "Vehicle Control/RX_Directional.json"
+    },
+    {
+      "name": "RX Directional (Large)",
+      "file": "Vehicle Control/RX_Directional_(Large).json"
+    },
+    {
+      "name": "Saddle Seat",
+      "file": "Vehicle Control/Saddle_Seat.json"
+    },
+    {
+      "name": "Ski",
+      "file": "Vehicle Control/Ski.json"
+    },
+    {
+      "name": "Ski (Small)",
+      "file": "Vehicle Control/Ski_(Small).json"
+    },
+    {
+      "name": "Small Wheel",
+      "file": "Vehicle Control/Small_Wheel.json"
+    },
+    {
+      "name": "Space Seat",
+      "file": "Vehicle Control/Space_Seat.json"
+    },
+    {
+      "name": "Tank Drive Wheel (Huge)",
+      "file": "Vehicle Control/Tank_Drive_Wheel_(Huge).json"
+    },
+    {
+      "name": "Tank Drive Wheel (Large)",
+      "file": "Vehicle Control/Tank_Drive_Wheel_(Large).json"
+    },
+    {
+      "name": "Tank Drive Wheel (Medium)",
+      "file": "Vehicle Control/Tank_Drive_Wheel_(Medium).json"
+    },
+    {
+      "name": "Tank Drive Wheel (Small)",
+      "file": "Vehicle Control/Tank_Drive_Wheel_(Small).json"
+    },
+    {
+      "name": "Tank Drive Wheel (Small/Wide)",
+      "file": "Vehicle Control/Tank_Drive_Wheel_(Small_Wide).json"
+    },
+    {
+      "name": "Tank Wheel (Huge)",
+      "file": "Vehicle Control/Tank_Wheel_(Huge).json"
+    },
+    {
+      "name": "Tank Wheel (Large)",
+      "file": "Vehicle Control/Tank_Wheel_(Large).json"
+    },
+    {
+      "name": "Tank Wheel (Medium)",
+      "file": "Vehicle Control/Tank_Wheel_(Medium).json"
+    },
+    {
+      "name": "Tank Wheel (Small)",
+      "file": "Vehicle Control/Tank_Wheel_(Small).json"
+    },
+    {
+      "name": "Tank Wheel (Small/Wide)",
+      "file": "Vehicle Control/Tank_Wheel_(Small_Wide).json"
+    },
+    {
+      "name": "Wheel 3x3",
+      "file": "Vehicle Control/Wheel_3x3.json"
+    },
+    {
+      "name": "Wheel 3x3 (Suspension)",
+      "file": "Vehicle Control/Wheel_3x3_(Suspension).json"
+    },
+    {
+      "name": "Wheel 5x5",
+      "file": "Vehicle Control/Wheel_5x5.json"
+    },
+    {
+      "name": "Wheel 5x5 (Suspension)",
+      "file": "Vehicle Control/Wheel_5x5_(Suspension).json"
+    },
+    {
+      "name": "Wheel 7x7",
+      "file": "Vehicle Control/Wheel_7x7.json"
+    },
+    {
+      "name": "Wheel 7x7 (Suspension)",
+      "file": "Vehicle Control/Wheel_7x7_(Suspension).json"
+    },
+    {
+      "name": "Wheel 9x9",
+      "file": "Vehicle Control/Wheel_9x9.json"
+    },
+    {
+      "name": "Wheel 9x9 (Suspension)",
+      "file": "Vehicle Control/Wheel_9x9_(Suspension).json"
+    },
+    {
+      "name": "Wheel Coaster",
+      "file": "Vehicle Control/Wheel_Coaster.json"
+    },
+    {
+      "name": "Wing Front Section (Small)",
+      "file": "Vehicle Control/Wing_Front_Section_(Small).json"
+    },
+    {
+      "name": "Wing Section (Large)",
+      "file": "Vehicle Control/Wing_Section_(Large).json"
+    },
+    {
+      "name": "Wing Section (Medium)",
+      "file": "Vehicle Control/Wing_Section_(Medium).json"
+    },
+    {
+      "name": "Wing Section (Small)",
+      "file": "Vehicle Control/Wing_Section_(Small).json"
+    },
+    {
+      "name": "Wing Section (XLarge)",
+      "file": "Vehicle Control/Wing_Section_(XLarge).json"
+    },
+    {
+      "name": "Wing Section (XXLarge)",
+      "file": "Vehicle Control/Wing_Section_(XXLarge).json"
+    }
+  ],
+  "Mechanics": [
+    {
+      "name": "Clutch",
+      "file": "Mechanics/Clutch.json"
+    },
+    {
+      "name": "Compact Linear Track Base",
+      "file": "Mechanics/Compact_Linear_Track_Base.json"
+    },
+    {
+      "name": "Compact Linear Track Extension",
+      "file": "Mechanics/Compact_Linear_Track_Extension.json"
+    },
+    {
+      "name": "Compact Linear Track Head",
+      "file": "Mechanics/Compact_Linear_Track_Head.json"
+    },
+    {
+      "name": "Compact Pivot",
+      "file": "Mechanics/Compact_Pivot.json"
+    },
+    {
+      "name": "Compact Pivot (Power)",
+      "file": "Mechanics/Compact_Pivot_(Power).json"
+    },
+    {
+      "name": "Compact Pivot (Power)",
+      "file": "Mechanics/Compact_Pivot_(Power).json"
+    },
+    {
+      "name": "Compact Robotic Pivot",
+      "file": "Mechanics/Compact_Robotic_Pivot.json"
+    },
+    {
+      "name": "Compact Velocity Pivot",
+      "file": "Mechanics/Compact_Velocity_Pivot.json"
+    },
+    {
+      "name": "Door Frame Controller",
+      "file": "Mechanics/Door_Frame_Controller.json"
+    },
+    {
+      "name": "Door Frame Corner",
+      "file": "Mechanics/Door_Frame_Corner.json"
+    },
+    {
+      "name": "Door Frame Edge",
+      "file": "Mechanics/Door_Frame_Edge.json"
+    },
+    {
+      "name": "Door Panel Corner",
+      "file": "Mechanics/Door_Panel_Corner.json"
+    },
+    {
+      "name": "Door Panel Edge",
+      "file": "Mechanics/Door_Panel_Edge.json"
+    },
+    {
+      "name": "Electric Connector",
+      "file": "Mechanics/Electric_Connector.json"
+    },
+    {
+      "name": "Fluid Connector",
+      "file": "Mechanics/Fluid_Connector.json"
+    },
+    {
+      "name": "Gearbox",
+      "file": "Mechanics/Gearbox.json"
+    },
+    {
+      "name": "Gearbox",
+      "file": "Mechanics/Gearbox.json"
+    },
+    {
+      "name": "Gearbox 1x1",
+      "file": "Mechanics/Gearbox_1x1.json"
+    },
+    {
+      "name": "Gearbox 3x3",
+      "file": "Mechanics/Gearbox_3x3.json"
+    },
+    {
+      "name": "Gearbox 5x5",
+      "file": "Mechanics/Gearbox_5x5.json"
+    },
+    {
+      "name": "Hardpoint Connector Attachment",
+      "file": "Mechanics/Hardpoint_Connector_Attachment.json"
+    },
+    {
+      "name": "Hardpoint Connector Attachment (Round)",
+      "file": "Mechanics/Hardpoint_Connector_Attachment_(Round).json"
+    },
+    {
+      "name": "Hardpoint Connector Body",
+      "file": "Mechanics/Hardpoint_Connector_Body.json"
+    },
+    {
+      "name": "Hinge Connector",
+      "file": "Mechanics/Hinge_Connector.json"
+    },
+    {
+      "name": "Hinged Dock Door",
+      "file": "Mechanics/Hinged_Dock_Door.json"
+    },
+    {
+      "name": "Hinged Dock Hatch",
+      "file": "Mechanics/Hinged_Dock_Hatch.json"
+    },
+    {
+      "name": "Hinged Door",
+      "file": "Mechanics/Hinged_Door.json"
+    },
+    {
+      "name": "Hinged Hatch",
+      "file": "Mechanics/Hinged_Hatch.json"
+    },
+    {
+      "name": "Key Button",
+      "file": "Mechanics/Key_Button.json"
+    },
+    {
+      "name": "Large Connector",
+      "file": "Mechanics/Large_Connector.json"
+    },
+    {
+      "name": "Large Keypad",
+      "file": "Mechanics/Large_Keypad.json"
+    },
+    {
+      "name": "Linear Track Base",
+      "file": "Mechanics/Linear_Track_Base.json"
+    },
+    {
+      "name": "Linear Track Extension",
+      "file": "Mechanics/Linear_Track_Extension.json"
+    },
+    {
+      "name": "Linear Track Head",
+      "file": "Mechanics/Linear_Track_Head.json"
+    },
+    {
+      "name": "Lockable Button",
+      "file": "Mechanics/Lockable_Button.json"
+    },
+    {
+      "name": "Mag All",
+      "file": "Mechanics/Mag_All.json"
+    },
+    {
+      "name": "Piston Suspension",
+      "file": "Mechanics/Piston_Suspension.json"
+    },
+    {
+      "name": "Piston Suspension",
+      "file": "Mechanics/Piston_Suspension.json"
+    },
+    {
+      "name": "Pivot",
+      "file": "Mechanics/Pivot.json"
+    },
+    {
+      "name": "Pivot (Power)",
+      "file": "Mechanics/Pivot_(Power).json"
+    },
+    {
+      "name": "Pneumatic Piston",
+      "file": "Mechanics/Pneumatic_Piston.json"
+    },
+    {
+      "name": "Pneumatic Piston",
+      "file": "Mechanics/Pneumatic_Piston.json"
+    },
+    {
+      "name": "Push Button",
+      "file": "Mechanics/Push_Button.json"
+    },
+    {
+      "name": "Push Button (2 Sided)",
+      "file": "Mechanics/Push_Button_(2_Sided).json"
+    },
+    {
+      "name": "Reaction Wheel",
+      "file": "Mechanics/Reaction_Wheel.json"
+    },
+    {
+      "name": "Reaction Wheel (Large)",
+      "file": "Mechanics/Reaction_Wheel_(Large).json"
+    },
+    {
+      "name": "Reaction Wheel (Small)",
+      "file": "Mechanics/Reaction_Wheel_(Small).json"
+    },
+    {
+      "name": "Robotic Door Hinge",
+      "file": "Mechanics/Robotic_Door_Hinge.json"
+    },
+    {
+      "name": "Robotic Door Hinge",
+      "file": "Mechanics/Robotic_Door_Hinge.json"
+    },
+    {
+      "name": "Robotic Hinge",
+      "file": "Mechanics/Robotic_Hinge.json"
+    },
+    {
+      "name": "Robotic Hinge",
+      "file": "Mechanics/Robotic_Hinge.json"
+    },
+    {
+      "name": "Robotic Pivot (Fluid)",
+      "file": "Mechanics/Robotic_Pivot_(Fluid).json"
+    },
+    {
+      "name": "Robotic Pivot (Power)",
+      "file": "Mechanics/Robotic_Pivot_(Power).json"
+    },
+    {
+      "name": "Sliding Connector Gripper",
+      "file": "Mechanics/Sliding_Connector_Gripper.json"
+    },
+    {
+      "name": "Sliding Connector Track",
+      "file": "Mechanics/Sliding_Connector_Track.json"
+    },
+    {
+      "name": "Sliding Door",
+      "file": "Mechanics/Sliding_Door.json"
+    },
+    {
+      "name": "Sliding Door (Electric)",
+      "file": "Mechanics/Sliding_Door_(Electric).json"
+    },
+    {
+      "name": "Sliding Hatch",
+      "file": "Mechanics/Sliding_Hatch.json"
+    },
+    {
+      "name": "Sliding Hatch (Electric)",
+      "file": "Mechanics/Sliding_Hatch_(Electric).json"
+    },
+    {
+      "name": "Small Connector",
+      "file": "Mechanics/Small_Connector.json"
+    },
+    {
+      "name": "Small Keypad",
+      "file": "Mechanics/Small_Keypad.json"
+    },
+    {
+      "name": "Suspension",
+      "file": "Mechanics/Suspension.json"
+    },
+    {
+      "name": "Suspension",
+      "file": "Mechanics/Suspension.json"
+    },
+    {
+      "name": "Throttle Lever",
+      "file": "Mechanics/Throttle_Lever.json"
+    },
+    {
+      "name": "Toggle Button",
+      "file": "Mechanics/Toggle_Button.json"
+    },
+    {
+      "name": "Toggle Button (2 Sided)",
+      "file": "Mechanics/Toggle_Button_(2_Sided).json"
+    },
+    {
+      "name": "Torque Connector",
+      "file": "Mechanics/Torque_Connector.json"
+    },
+    {
+      "name": "Turret Ring (Large)",
+      "file": "Mechanics/Turret_Ring_(Large).json"
+    },
+    {
+      "name": "Turret Ring (Medium)",
+      "file": "Mechanics/Turret_Ring_(Medium).json"
+    },
+    {
+      "name": "Turret Ring (Small)",
+      "file": "Mechanics/Turret_Ring_(Small).json"
+    },
+    {
+      "name": "Velocity Pivot",
+      "file": "Mechanics/Velocity_Pivot.json"
+    },
+    {
+      "name": "Velocity Pivot (Fluid)",
+      "file": "Mechanics/Velocity_Pivot_(Fluid).json"
+    },
+    {
+      "name": "Velocity Pivot (Power)",
+      "file": "Mechanics/Velocity_Pivot_(Power).json"
+    }
+  ],
+  "Propulsion": [
+    {
+      "name": "Aircraft Propeller",
+      "file": "Propulsion/Aircraft_Propeller.json"
+    },
+    {
+      "name": "Azimuth Thruster",
+      "file": "Propulsion/Azimuth_Thruster.json"
+    },
+    {
+      "name": "Giant Propeller",
+      "file": "Propulsion/Giant_Propeller.json"
+    },
+    {
+      "name": "Heavy Large Rotor",
+      "file": "Propulsion/Heavy_Large_Rotor.json"
+    },
+    {
+      "name": "Heavy Rotor",
+      "file": "Propulsion/Heavy_Rotor.json"
+    },
+    {
+      "name": "Huge Rotor",
+      "file": "Propulsion/Huge_Rotor.json"
+    },
+    {
+      "name": "Large Ducted Fan",
+      "file": "Propulsion/Large_Ducted_Fan.json"
+    },
+    {
+      "name": "Large Electric Motor",
+      "file": "Propulsion/Large_Electric_Motor.json"
+    },
+    {
+      "name": "Large Engine",
+      "file": "Propulsion/Large_Engine.json"
+    },
+    {
+      "name": "Large Pitchable Propeller",
+      "file": "Propulsion/Large_Pitchable_Propeller.json"
+    },
+    {
+      "name": "Large Propeller",
+      "file": "Propulsion/Large_Propeller.json"
+    },
+    {
+      "name": "Large Rotor",
+      "file": "Propulsion/Large_Rotor.json"
+    },
+    {
+      "name": "Liquid Fuel Rocket",
+      "file": "Propulsion/Liquid_Fuel_Rocket.json"
+    },
+    {
+      "name": "Liquid Fuel Rocket (Large)",
+      "file": "Propulsion/Liquid_Fuel_Rocket_(Large).json"
+    },
+    {
+      "name": "Liquid Fuel Rocket (Small)",
+      "file": "Propulsion/Liquid_Fuel_Rocket_(Small).json"
+    },
+    {
+      "name": "Medium Electric Motor",
+      "file": "Propulsion/Medium_Electric_Motor.json"
+    },
+    {
+      "name": "Medium Engine",
+      "file": "Propulsion/Medium_Engine.json"
+    },
+    {
+      "name": "Pitchable Propeller",
+      "file": "Propulsion/Pitchable_Propeller.json"
+    },
+    {
+      "name": "Rotor (Large)",
+      "file": "Propulsion/Rotor_(Large).json"
+    },
+    {
+      "name": "Rotor (Light)",
+      "file": "Propulsion/Rotor_(Light).json"
+    },
+    {
+      "name": "Rotor (Small)",
+      "file": "Propulsion/Rotor_(Small).json"
+    },
+    {
+      "name": "Rotor (Tail)",
+      "file": "Propulsion/Rotor_(Tail).json"
+    },
+    {
+      "name": "Rotor End (Light)",
+      "file": "Propulsion/Rotor_End_(Light).json"
+    },
+    {
+      "name": "Rotor Propeller (Large)",
+      "file": "Propulsion/Rotor_Propeller_(Large).json"
+    },
+    {
+      "name": "Rotor Propeller (Small)",
+      "file": "Propulsion/Rotor_Propeller_(Small).json"
+    },
+    {
+      "name": "Rotor Propeller End (Large)",
+      "file": "Propulsion/Rotor_Propeller_End_(Large).json"
+    },
+    {
+      "name": "Rotor Propeller End (Small)",
+      "file": "Propulsion/Rotor_Propeller_End_(Small).json"
+    },
+    {
+      "name": "Small Ducted Fan",
+      "file": "Propulsion/Small_Ducted_Fan.json"
+    },
+    {
+      "name": "Small Electric Motor",
+      "file": "Propulsion/Small_Electric_Motor.json"
+    },
+    {
+      "name": "Small Engine",
+      "file": "Propulsion/Small_Engine.json"
+    },
+    {
+      "name": "Small Pitchable Propeller",
+      "file": "Propulsion/Small_Pitchable_Propeller.json"
+    },
+    {
+      "name": "Small Propeller",
+      "file": "Propulsion/Small_Propeller.json"
+    },
+    {
+      "name": "Solid Rocket Booster (Huge)",
+      "file": "Propulsion/Solid_Rocket_Booster_(Huge).json"
+    },
+    {
+      "name": "Solid Rocket Booster (Large)",
+      "file": "Propulsion/Solid_Rocket_Booster_(Large).json"
+    },
+    {
+      "name": "Solid Rocket Booster (Medium)",
+      "file": "Propulsion/Solid_Rocket_Booster_(Medium).json"
+    },
+    {
+      "name": "Solid Rocket Booster (Small)",
+      "file": "Propulsion/Solid_Rocket_Booster_(Small).json"
+    },
+    {
+      "name": "Solid Rocket Fuel (Huge)",
+      "file": "Propulsion/Solid_Rocket_Fuel_(Huge).json"
+    },
+    {
+      "name": "Solid Rocket Fuel (Huge) (Fins)",
+      "file": "Propulsion/Solid_Rocket_Fuel_(Huge)_(Fins).json"
+    },
+    {
+      "name": "Solid Rocket Fuel (Large)",
+      "file": "Propulsion/Solid_Rocket_Fuel_(Large).json"
+    },
+    {
+      "name": "Solid Rocket Fuel (Large) (Fins)",
+      "file": "Propulsion/Solid_Rocket_Fuel_(Large)_(Fins).json"
+    },
+    {
+      "name": "Solid Rocket Fuel (Medium)",
+      "file": "Propulsion/Solid_Rocket_Fuel_(Medium).json"
+    },
+    {
+      "name": "Solid Rocket Fuel (Medium) (Fins)",
+      "file": "Propulsion/Solid_Rocket_Fuel_(Medium)_(Fins).json"
+    },
+    {
+      "name": "Solid Rocket Fuel (Small)",
+      "file": "Propulsion/Solid_Rocket_Fuel_(Small).json"
+    },
+    {
+      "name": "Solid Rocket Fuel (Small) (Fins)",
+      "file": "Propulsion/Solid_Rocket_Fuel_(Small)_(Fins).json"
+    },
+    {
+      "name": "Torque Crank",
+      "file": "Propulsion/Torque_Crank.json"
+    },
+    {
+      "name": "Torque Meter",
+      "file": "Propulsion/Torque_Meter.json"
+    },
+    {
+      "name": "Train Wheel Assembly Classic",
+      "file": "Propulsion/Train_Wheel_Assembly_Classic.json"
+    },
+    {
+      "name": "Train Wheel Assembly Flanged A",
+      "file": "Propulsion/Train_Wheel_Assembly_Flanged_A.json"
+    },
+    {
+      "name": "Train Wheel Assembly Flanged B",
+      "file": "Propulsion/Train_Wheel_Assembly_Flanged_B.json"
+    },
+    {
+      "name": "Train Wheel Assembly Flanged C",
+      "file": "Propulsion/Train_Wheel_Assembly_Flanged_C.json"
+    },
+    {
+      "name": "Train Wheel Assembly Flanged D",
+      "file": "Propulsion/Train_Wheel_Assembly_Flanged_D.json"
+    },
+    {
+      "name": "Train Wheel Assembly Medium",
+      "file": "Propulsion/Train_Wheel_Assembly_Medium.json"
+    },
+    {
+      "name": "Train Wheel Assembly Small",
+      "file": "Propulsion/Train_Wheel_Assembly_Small.json"
+    },
+    {
+      "name": "Train Wheel Assembly Steam Large A",
+      "file": "Propulsion/Train_Wheel_Assembly_Steam_Large_A.json"
+    },
+    {
+      "name": "Train Wheel Assembly Steam Large B",
+      "file": "Propulsion/Train_Wheel_Assembly_Steam_Large_B.json"
+    },
+    {
+      "name": "Train Wheel Assembly Steam Medium A",
+      "file": "Propulsion/Train_Wheel_Assembly_Steam_Medium_A.json"
+    },
+    {
+      "name": "Train Wheel Assembly Steam Medium B",
+      "file": "Propulsion/Train_Wheel_Assembly_Steam_Medium_B.json"
+    },
+    {
+      "name": "Train Wheel Assembly Steam Small A",
+      "file": "Propulsion/Train_Wheel_Assembly_Steam_Small_A.json"
+    },
+    {
+      "name": "Train Wheel Assembly Steam Small B",
+      "file": "Propulsion/Train_Wheel_Assembly_Steam_Small_B.json"
+    },
+    {
+      "name": "Train Wheel Assembly x1",
+      "file": "Propulsion/Train_Wheel_Assembly_x1.json"
+    },
+    {
+      "name": "Train Wheel Assembly x1 Small",
+      "file": "Propulsion/Train_Wheel_Assembly_x1_Small.json"
+    },
+    {
+      "name": "Train Wheel Assembly x2",
+      "file": "Propulsion/Train_Wheel_Assembly_x2.json"
+    },
+    {
+      "name": "Train Wheel Assembly x3",
+      "file": "Propulsion/Train_Wheel_Assembly_x3.json"
+    },
+    {
+      "name": "Train Wheel Drive Piston Large",
+      "file": "Propulsion/Train_Wheel_Drive_Piston_Large.json"
+    },
+    {
+      "name": "Train Wheel Drive Piston Medium",
+      "file": "Propulsion/Train_Wheel_Drive_Piston_Medium.json"
+    },
+    {
+      "name": "Train Wheel Drive Piston Small",
+      "file": "Propulsion/Train_Wheel_Drive_Piston_Small.json"
+    },
+    {
+      "name": "Turbine Engine",
+      "file": "Propulsion/Turbine_Engine.json"
+    }
+  ],
+  "Specialist Equipment": [
+    {
+      "name": "Barometer",
+      "file": "Specialist Equipment/Barometer.json"
+    },
+    {
+      "name": "Bed",
+      "file": "Specialist Equipment/Bed.json"
+    },
+    {
+      "name": "Buoyancy Float Block",
+      "file": "Specialist Equipment/Buoyancy_Float_Block.json"
+    },
+    {
+      "name": "Buoyancy Float Pyramid",
+      "file": "Specialist Equipment/Buoyancy_Float_Pyramid.json"
+    },
+    {
+      "name": "Buoyancy Float Wedge",
+      "file": "Specialist Equipment/Buoyancy_Float_Wedge.json"
+    },
+    {
+      "name": "Camera Gimbal",
+      "file": "Specialist Equipment/Camera_Gimbal.json"
+    },
+    {
+      "name": "Camera Medium",
+      "file": "Specialist Equipment/Camera_Medium.json"
+    },
+    {
+      "name": "Camera Small",
+      "file": "Specialist Equipment/Camera_Small.json"
+    },
+    {
+      "name": "Camera Stabilized",
+      "file": "Specialist Equipment/Camera_Stabilized.json"
+    },
+    {
+      "name": "Electric Cable Pulley",
+      "file": "Specialist Equipment/Electric_Cable_Pulley.json"
+    },
+    {
+      "name": "Electric Cable Pulley (Corner)",
+      "file": "Specialist Equipment/Electric_Cable_Pulley_(Corner).json"
+    },
+    {
+      "name": "Electrical Cable Anchor",
+      "file": "Specialist Equipment/Electrical_Cable_Anchor.json"
+    },
+    {
+      "name": "Equipment inventory (Binoculars)",
+      "file": "Specialist Equipment/Equipment_inventory_(Binoculars).json"
+    },
+    {
+      "name": "Equipment inventory (C4 Detonator)",
+      "file": "Specialist Equipment/Equipment_inventory_(C4_Detonator).json"
+    },
+    {
+      "name": "Equipment inventory (C4 Explosive)",
+      "file": "Specialist Equipment/Equipment_inventory_(C4_Explosive).json"
+    },
+    {
+      "name": "Equipment inventory (Cable)",
+      "file": "Specialist Equipment/Equipment_inventory_(Cable).json"
+    },
+    {
+      "name": "Equipment inventory (Compass)",
+      "file": "Specialist Equipment/Equipment_inventory_(Compass).json"
+    },
+    {
+      "name": "Equipment inventory (Defibrillator)",
+      "file": "Specialist Equipment/Equipment_inventory_(Defibrillator).json"
+    },
+    {
+      "name": "Equipment inventory (Dog Whistle)",
+      "file": "Specialist Equipment/Equipment_inventory_(Dog_Whistle).json"
+    },
+    {
+      "name": "Equipment inventory (Fire Extinguisher)",
+      "file": "Specialist Equipment/Equipment_inventory_(Fire_Extinguisher).json"
+    },
+    {
+      "name": "Equipment inventory (First Aid Kit)",
+      "file": "Specialist Equipment/Equipment_inventory_(First_Aid_Kit).json"
+    },
+    {
+      "name": "Equipment inventory (Fishing Rod)",
+      "file": "Specialist Equipment/Equipment_inventory_(Fishing_Rod).json"
+    },
+    {
+      "name": "Equipment inventory (Flare)",
+      "file": "Specialist Equipment/Equipment_inventory_(Flare).json"
+    },
+    {
+      "name": "Equipment inventory (Flaregun Ammo)",
+      "file": "Specialist Equipment/Equipment_inventory_(Flaregun_Ammo).json"
+    },
+    {
+      "name": "Equipment inventory (Flaregun)",
+      "file": "Specialist Equipment/Equipment_inventory_(Flaregun).json"
+    },
+    {
+      "name": "Equipment inventory (Flashlight)",
+      "file": "Specialist Equipment/Equipment_inventory_(Flashlight).json"
+    },
+    {
+      "name": "Equipment inventory (Glowstick)",
+      "file": "Specialist Equipment/Equipment_inventory_(Glowstick).json"
+    },
+    {
+      "name": "Equipment Inventory (Hand Grenade)",
+      "file": "Specialist Equipment/Equipment_Inventory_(Hand_Grenade).json"
+    },
+    {
+      "name": "Equipment inventory (Hose)",
+      "file": "Specialist Equipment/Equipment_inventory_(Hose).json"
+    },
+    {
+      "name": "Equipment inventory (Night Vision Binoculars)",
+      "file": "Specialist Equipment/Equipment_inventory_(Night_Vision_Binoculars).json"
+    },
+    {
+      "name": "Equipment inventory (Oxygen Mask)",
+      "file": "Specialist Equipment/Equipment_inventory_(Oxygen_Mask).json"
+    },
+    {
+      "name": "Equipment Inventory (Pistol Ammo)",
+      "file": "Specialist Equipment/Equipment_Inventory_(Pistol_Ammo).json"
+    },
+    {
+      "name": "Equipment inventory (Pistol)",
+      "file": "Specialist Equipment/Equipment_inventory_(Pistol).json"
+    },
+    {
+      "name": "Equipment inventory (Radiation Detector)",
+      "file": "Specialist Equipment/Equipment_inventory_(Radiation_Detector).json"
+    },
+    {
+      "name": "Equipment inventory (Radio Signal Locator)",
+      "file": "Specialist Equipment/Equipment_inventory_(Radio_Signal_Locator).json"
+    },
+    {
+      "name": "Equipment inventory (Radio)",
+      "file": "Specialist Equipment/Equipment_inventory_(Radio).json"
+    },
+    {
+      "name": "Equipment inventory (Remote Control Unit)",
+      "file": "Specialist Equipment/Equipment_inventory_(Remote_Control_Unit).json"
+    },
+    {
+      "name": "Equipment inventory (Rifle Ammo)",
+      "file": "Specialist Equipment/Equipment_inventory_(Rifle_Ammo).json"
+    },
+    {
+      "name": "Equipment inventory (Rifle)",
+      "file": "Specialist Equipment/Equipment_inventory_(Rifle).json"
+    },
+    {
+      "name": "Equipment inventory (Rope)",
+      "file": "Specialist Equipment/Equipment_inventory_(Rope).json"
+    },
+    {
+      "name": "Equipment inventory (SMG Ammo)",
+      "file": "Specialist Equipment/Equipment_inventory_(SMG_Ammo).json"
+    },
+    {
+      "name": "Equipment inventory (SMG)",
+      "file": "Specialist Equipment/Equipment_inventory_(SMG).json"
+    },
+    {
+      "name": "Equipment inventory (Speargun Ammo)",
+      "file": "Specialist Equipment/Equipment_inventory_(Speargun_Ammo).json"
+    },
+    {
+      "name": "Equipment inventory (Speargun)",
+      "file": "Specialist Equipment/Equipment_inventory_(Speargun).json"
+    },
+    {
+      "name": "Equipment inventory (Strobe Light)",
+      "file": "Specialist Equipment/Equipment_inventory_(Strobe_Light).json"
+    },
+    {
+      "name": "Equipment inventory (Strobe Light, Infrared)",
+      "file": "Specialist Equipment/Equipment_inventory_(Strobe_Light,_Infrared).json"
+    },
+    {
+      "name": "Equipment inventory (Transponder)",
+      "file": "Specialist Equipment/Equipment_inventory_(Transponder).json"
+    },
+    {
+      "name": "Equipment inventory (Underwater Welding Torch)",
+      "file": "Specialist Equipment/Equipment_inventory_(Underwater_Welding_Torch).json"
+    },
+    {
+      "name": "Equipment inventory (Welding Torch)",
+      "file": "Specialist Equipment/Equipment_inventory_(Welding_Torch).json"
+    },
+    {
+      "name": "Flare Launcher",
+      "file": "Specialist Equipment/Flare_Launcher.json"
+    },
+    {
+      "name": "Fluid Cannon",
+      "file": "Specialist Equipment/Fluid_Cannon.json"
+    },
+    {
+      "name": "Fluid Hose Anchor",
+      "file": "Specialist Equipment/Fluid_Hose_Anchor.json"
+    },
+    {
+      "name": "Fluid Hose Pulley",
+      "file": "Specialist Equipment/Fluid_Hose_Pulley.json"
+    },
+    {
+      "name": "Fluid Hose Pulley (Corner)",
+      "file": "Specialist Equipment/Fluid_Hose_Pulley_(Corner).json"
+    },
+    {
+      "name": "Fluid Nozzle",
+      "file": "Specialist Equipment/Fluid_Nozzle.json"
+    },
+    {
+      "name": "Foghorn",
+      "file": "Specialist Equipment/Foghorn.json"
+    },
+    {
+      "name": "Harness",
+      "file": "Specialist Equipment/Harness.json"
+    },
+    {
+      "name": "Heater",
+      "file": "Specialist Equipment/Heater.json"
+    },
+    {
+      "name": "Hose",
+      "file": "Specialist Equipment/Hose.json"
+    },
+    {
+      "name": "Huge Winch",
+      "file": "Specialist Equipment/Huge_Winch.json"
+    },
+    {
+      "name": "Huge Winch",
+      "file": "Specialist Equipment/Huge_Winch.json"
+    },
+    {
+      "name": "Landing Float",
+      "file": "Specialist Equipment/Landing_Float.json"
+    },
+    {
+      "name": "Large equipment inventory (Empty)",
+      "file": "Specialist Equipment/Large_equipment_inventory_(Empty).json"
+    },
+    {
+      "name": "Large Winch",
+      "file": "Specialist Equipment/Large_Winch.json"
+    },
+    {
+      "name": "Large Winch",
+      "file": "Specialist Equipment/Large_Winch.json"
+    },
+    {
+      "name": "Light",
+      "file": "Specialist Equipment/Light.json"
+    },
+    {
+      "name": "Light (RGB)",
+      "file": "Specialist Equipment/Light_(RGB).json"
+    },
+    {
+      "name": "Medical Bed",
+      "file": "Specialist Equipment/Medical_Bed.json"
+    },
+    {
+      "name": "Medium Winch",
+      "file": "Specialist Equipment/Medium_Winch.json"
+    },
+    {
+      "name": "Medium Winch",
+      "file": "Specialist Equipment/Medium_Winch.json"
+    },
+    {
+      "name": "Megaphone Speaker (Large)",
+      "file": "Specialist Equipment/Megaphone_Speaker_(Large).json"
+    },
+    {
+      "name": "Megaphone Speaker (Small)",
+      "file": "Specialist Equipment/Megaphone_Speaker_(Small).json"
+    },
+    {
+      "name": "Mineral Drill",
+      "file": "Specialist Equipment/Mineral_Drill.json"
+    },
+    {
+      "name": "Mounted End-Effector",
+      "file": "Specialist Equipment/Mounted_End-Effector.json"
+    },
+    {
+      "name": "Mounted Welder",
+      "file": "Specialist Equipment/Mounted_Welder.json"
+    },
+    {
+      "name": "Outfit Inventory (Arctic)",
+      "file": "Specialist Equipment/Outfit_Inventory_(Arctic).json"
+    },
+    {
+      "name": "Outfit Inventory (Armor Vest)",
+      "file": "Specialist Equipment/Outfit_Inventory_(Armor_Vest).json"
+    },
+    {
+      "name": "Outfit Inventory (Black Hawk Vest)",
+      "file": "Specialist Equipment/Outfit_Inventory_(Black_Hawk_Vest).json"
+    },
+    {
+      "name": "Outfit Inventory (Bomb Disposal)",
+      "file": "Specialist Equipment/Outfit_Inventory_(Bomb_Disposal).json"
+    },
+    {
+      "name": "Outfit Inventory (Chest Rig)",
+      "file": "Specialist Equipment/Outfit_Inventory_(Chest_Rig).json"
+    },
+    {
+      "name": "Outfit Inventory (Diving)",
+      "file": "Specialist Equipment/Outfit_Inventory_(Diving).json"
+    },
+    {
+      "name": "Outfit Inventory (Empty)",
+      "file": "Specialist Equipment/Outfit_Inventory_(Empty).json"
+    },
+    {
+      "name": "Outfit Inventory (Firefighter SCBA)",
+      "file": "Specialist Equipment/Outfit_Inventory_(Firefighter_SCBA).json"
+    },
+    {
+      "name": "Outfit Inventory (Firefighter)",
+      "file": "Specialist Equipment/Outfit_Inventory_(Firefighter).json"
+    },
+    {
+      "name": "Outfit Inventory (Hazmat)",
+      "file": "Specialist Equipment/Outfit_Inventory_(Hazmat).json"
+    },
+    {
+      "name": "Outfit Inventory (Parachute)",
+      "file": "Specialist Equipment/Outfit_Inventory_(Parachute).json"
+    },
+    {
+      "name": "Outfit Inventory (Plate Vest)",
+      "file": "Specialist Equipment/Outfit_Inventory_(Plate_Vest).json"
+    },
+    {
+      "name": "Outfit Inventory (Scuba)",
+      "file": "Specialist Equipment/Outfit_Inventory_(Scuba).json"
+    },
+    {
+      "name": "Outfit Inventory (Space Exploration)",
+      "file": "Specialist Equipment/Outfit_Inventory_(Space_Exploration).json"
+    },
+    {
+      "name": "Outfit Inventory (Space)",
+      "file": "Specialist Equipment/Outfit_Inventory_(Space).json"
+    },
+    {
+      "name": "Padded Seat",
+      "file": "Specialist Equipment/Padded_Seat.json"
+    },
+    {
+      "name": "Passenger Seat",
+      "file": "Specialist Equipment/Passenger_Seat.json"
+    },
+    {
+      "name": "Passenger Seat",
+      "file": "Specialist Equipment/Passenger_Seat.json"
+    },
+    {
+      "name": "RCS Thruster",
+      "file": "Specialist Equipment/RCS_Thruster.json"
+    },
+    {
+      "name": "Rope Anchor",
+      "file": "Specialist Equipment/Rope_Anchor.json"
+    },
+    {
+      "name": "Rope Pulley",
+      "file": "Specialist Equipment/Rope_Pulley.json"
+    },
+    {
+      "name": "Rope Pulley (Corner)",
+      "file": "Specialist Equipment/Rope_Pulley_(Corner).json"
+    },
+    {
+      "name": "Rotating Light",
+      "file": "Specialist Equipment/Rotating_Light.json"
+    },
+    {
+      "name": "Saddle Passenger Seat",
+      "file": "Specialist Equipment/Saddle_Passenger_Seat.json"
+    },
+    {
+      "name": "Sail Anchor",
+      "file": "Specialist Equipment/Sail_Anchor.json"
+    },
+    {
+      "name": "Search Light",
+      "file": "Specialist Equipment/Search_Light.json"
+    },
+    {
+      "name": "Siren",
+      "file": "Specialist Equipment/Siren.json"
+    },
+    {
+      "name": "Small equipment inventory (Empty)",
+      "file": "Specialist Equipment/Small_equipment_inventory_(Empty).json"
+    },
+    {
+      "name": "Small Spotlight (Block)",
+      "file": "Specialist Equipment/Small_Spotlight_(Block).json"
+    },
+    {
+      "name": "Small Spotlight (Mounted)",
+      "file": "Specialist Equipment/Small_Spotlight_(Mounted).json"
+    },
+    {
+      "name": "Small Winch",
+      "file": "Specialist Equipment/Small_Winch.json"
+    },
+    {
+      "name": "Small Winch",
+      "file": "Specialist Equipment/Small_Winch.json"
+    },
+    {
+      "name": "Sonar Noisemaker",
+      "file": "Specialist Equipment/Sonar_Noisemaker.json"
+    },
+    {
+      "name": "Stretcher",
+      "file": "Specialist Equipment/Stretcher.json"
+    },
+    {
+      "name": "Transponder",
+      "file": "Specialist Equipment/Transponder.json"
+    },
+    {
+      "name": "Vehicle Parachute",
+      "file": "Specialist Equipment/Vehicle_Parachute.json"
+    },
+    {
+      "name": "winch end",
+      "file": "Specialist Equipment/winch_end.json"
+    },
+    {
+      "name": "winch end",
+      "file": "Specialist Equipment/winch_end.json"
+    },
+    {
+      "name": "winch end",
+      "file": "Specialist Equipment/winch_end.json"
+    },
+    {
+      "name": "winch end",
+      "file": "Specialist Equipment/winch_end.json"
+    },
+    {
+      "name": "winch end",
+      "file": "Specialist Equipment/winch_end.json"
+    }
+  ],
+  "Logic": [
+    {
+      "name": "Abs",
+      "file": "Logic/Abs.json"
+    },
+    {
+      "name": "Add",
+      "file": "Logic/Add.json"
+    },
+    {
+      "name": "And",
+      "file": "Logic/And.json"
+    },
+    {
+      "name": "Blinker",
+      "file": "Logic/Blinker.json"
+    },
+    {
+      "name": "Capacitor",
+      "file": "Logic/Capacitor.json"
+    },
+    {
+      "name": "Clamp",
+      "file": "Logic/Clamp.json"
+    },
+    {
+      "name": "Constant Number",
+      "file": "Logic/Constant_Number.json"
+    },
+    {
+      "name": "Constant On Signal",
+      "file": "Logic/Constant_On_Signal.json"
+    },
+    {
+      "name": "Counter",
+      "file": "Logic/Counter.json"
+    },
+    {
+      "name": "Counter (Ping Pong)",
+      "file": "Logic/Counter_(Ping_Pong).json"
+    },
+    {
+      "name": "Delay",
+      "file": "Logic/Delay.json"
+    },
+    {
+      "name": "Divide",
+      "file": "Logic/Divide.json"
+    },
+    {
+      "name": "Exponent",
+      "file": "Logic/Exponent.json"
+    },
+    {
+      "name": "Function (1 input)",
+      "file": "Logic/Function_(1_input).json"
+    },
+    {
+      "name": "Function (3 inputs)",
+      "file": "Logic/Function_(3_inputs).json"
+    },
+    {
+      "name": "Greater-than",
+      "file": "Logic/Greater-than.json"
+    },
+    {
+      "name": "JK Flip-Flop",
+      "file": "Logic/JK_Flip-Flop.json"
+    },
+    {
+      "name": "Less-Than",
+      "file": "Logic/Less-Than.json"
+    },
+    {
+      "name": "Memory Register",
+      "file": "Logic/Memory_Register.json"
+    },
+    {
+      "name": "Microprocessor",
+      "file": "Logic/Microprocessor.json"
+    },
+    {
+      "name": "Modulo",
+      "file": "Logic/Modulo.json"
+    },
+    {
+      "name": "Multiply",
+      "file": "Logic/Multiply.json"
+    },
+    {
+      "name": "Not",
+      "file": "Logic/Not.json"
+    },
+    {
+      "name": "Numerical Inverter",
+      "file": "Logic/Numerical_Inverter.json"
+    },
+    {
+      "name": "Numerical Junction",
+      "file": "Logic/Numerical_Junction.json"
+    },
+    {
+      "name": "Numerical Switchbox",
+      "file": "Logic/Numerical_Switchbox.json"
+    },
+    {
+      "name": "Or",
+      "file": "Logic/Or.json"
+    },
+    {
+      "name": "PID Controller",
+      "file": "Logic/PID_Controller.json"
+    },
+    {
+      "name": "Power Add",
+      "file": "Logic/Power_Add.json"
+    },
+    {
+      "name": "Power Meter",
+      "file": "Logic/Power_Meter.json"
+    },
+    {
+      "name": "Push to Toggle",
+      "file": "Logic/Push_to_Toggle.json"
+    },
+    {
+      "name": "SR Latch",
+      "file": "Logic/SR_Latch.json"
+    },
+    {
+      "name": "Subtract",
+      "file": "Logic/Subtract.json"
+    },
+    {
+      "name": "Threshold Gate",
+      "file": "Logic/Threshold_Gate.json"
+    },
+    {
+      "name": "Train Junction Controller",
+      "file": "Logic/Train_Junction_Controller.json"
+    },
+    {
+      "name": "Trigonometry",
+      "file": "Logic/Trigonometry.json"
+    },
+    {
+      "name": "Up/Down",
+      "file": "Logic/Up_Down.json"
+    },
+    {
+      "name": "Xor",
+      "file": "Logic/Xor.json"
+    }
+  ],
+  "Displays": [
+    {
+      "name": "Artificial Horizon",
+      "file": "Displays/Artificial_Horizon.json"
+    },
+    {
+      "name": "Buzzer",
+      "file": "Displays/Buzzer.json"
+    },
+    {
+      "name": "Clock",
+      "file": "Displays/Clock.json"
+    },
+    {
+      "name": "Compass Ball",
+      "file": "Displays/Compass_Ball.json"
+    },
+    {
+      "name": "Dial",
+      "file": "Displays/Dial.json"
+    },
+    {
+      "name": "Digital Display",
+      "file": "Displays/Digital_Display.json"
+    },
+    {
+      "name": "Gauge Display",
+      "file": "Displays/Gauge_Display.json"
+    },
+    {
+      "name": "HUD Large",
+      "file": "Displays/HUD_Large.json"
+    },
+    {
+      "name": "HUD Small",
+      "file": "Displays/HUD_Small.json"
+    },
+    {
+      "name": "Indicator Light",
+      "file": "Displays/Indicator_Light.json"
+    },
+    {
+      "name": "Indicator Light (RGB)",
+      "file": "Displays/Indicator_Light_(RGB).json"
+    },
+    {
+      "name": "Instrument Panel",
+      "file": "Displays/Instrument_Panel.json"
+    },
+    {
+      "name": "Laser Beacon",
+      "file": "Displays/Laser_Beacon.json"
+    },
+    {
+      "name": "Monitor 1x1",
+      "file": "Displays/Monitor_1x1.json"
+    },
+    {
+      "name": "Monitor 1x2",
+      "file": "Displays/Monitor_1x2.json"
+    },
+    {
+      "name": "Monitor 1x3",
+      "file": "Displays/Monitor_1x3.json"
+    },
+    {
+      "name": "Monitor 2x2",
+      "file": "Displays/Monitor_2x2.json"
+    },
+    {
+      "name": "Monitor 2x3",
+      "file": "Displays/Monitor_2x3.json"
+    },
+    {
+      "name": "Monitor 3x3",
+      "file": "Displays/Monitor_3x3.json"
+    },
+    {
+      "name": "Monitor 5x3",
+      "file": "Displays/Monitor_5x3.json"
+    },
+    {
+      "name": "Monitor 9x5",
+      "file": "Displays/Monitor_9x5.json"
+    },
+    {
+      "name": "Paintable Indicator",
+      "file": "Displays/Paintable_Indicator.json"
+    },
+    {
+      "name": "Paintable Sign",
+      "file": "Displays/Paintable_Sign.json"
+    },
+    {
+      "name": "Speaker (Small)",
+      "file": "Displays/Speaker_(Small).json"
+    },
+    {
+      "name": "Viewing Scope",
+      "file": "Displays/Viewing_Scope.json"
+    }
+  ],
+  "Sensors": [
+    {
+      "name": "Altimeter",
+      "file": "Sensors/Altimeter.json"
+    },
+    {
+      "name": "Angular Speed Sensor",
+      "file": "Sensors/Angular_Speed_Sensor.json"
+    },
+    {
+      "name": "Astronomy Sensor",
+      "file": "Sensors/Astronomy_Sensor.json"
+    },
+    {
+      "name": "Compass Sensor",
+      "file": "Sensors/Compass_Sensor.json"
+    },
+    {
+      "name": "Contact Sensor",
+      "file": "Sensors/Contact_Sensor.json"
+    },
+    {
+      "name": "Distance Sensor",
+      "file": "Sensors/Distance_Sensor.json"
+    },
+    {
+      "name": "Fishfinder",
+      "file": "Sensors/Fishfinder.json"
+    },
+    {
+      "name": "Gas Meter",
+      "file": "Sensors/Gas_Meter.json"
+    },
+    {
+      "name": "GPS Sensor",
+      "file": "Sensors/GPS_Sensor.json"
+    },
+    {
+      "name": "Humidity Sensor",
+      "file": "Sensors/Humidity_Sensor.json"
+    },
+    {
+      "name": "Impact Sensor",
+      "file": "Sensors/Impact_Sensor.json"
+    },
+    {
+      "name": "Laser Distance Sensor",
+      "file": "Sensors/Laser_Distance_Sensor.json"
+    },
+    {
+      "name": "Laser Point Sensor",
+      "file": "Sensors/Laser_Point_Sensor.json"
+    },
+    {
+      "name": "Laser Sensor (Missile)",
+      "file": "Sensors/Laser_Sensor_(Missile).json"
+    },
+    {
+      "name": "Linear Speed Sensor",
+      "file": "Sensors/Linear_Speed_Sensor.json"
+    },
+    {
+      "name": "Liquid Meter",
+      "file": "Sensors/Liquid_Meter.json"
+    },
+    {
+      "name": "Microphone",
+      "file": "Sensors/Microphone.json"
+    },
+    {
+      "name": "Physics Sensor",
+      "file": "Sensors/Physics_Sensor.json"
+    },
+    {
+      "name": "Player Sensor",
+      "file": "Sensors/Player_Sensor.json"
+    },
+    {
+      "name": "Radar",
+      "file": "Sensors/Radar.json"
+    },
+    {
+      "name": "Radar (AWACS)",
+      "file": "Sensors/Radar_(AWACS).json"
+    },
+    {
+      "name": "Radar (Basic)",
+      "file": "Sensors/Radar_(Basic).json"
+    },
+    {
+      "name": "Radar (Dish)",
+      "file": "Sensors/Radar_(Dish).json"
+    },
+    {
+      "name": "Radar (Dish)",
+      "file": "Sensors/Radar_(Dish).json"
+    },
+    {
+      "name": "Radar (Huge)",
+      "file": "Sensors/Radar_(Huge).json"
+    },
+    {
+      "name": "Radar (Large)",
+      "file": "Sensors/Radar_(Large).json"
+    },
+    {
+      "name": "Radar (Missile)",
+      "file": "Sensors/Radar_(Missile).json"
+    },
+    {
+      "name": "Radar (Phalanx)",
+      "file": "Sensors/Radar_(Phalanx).json"
+    },
+    {
+      "name": "Radar Detector",
+      "file": "Sensors/Radar_Detector.json"
+    },
+    {
+      "name": "Radiation Detector",
+      "file": "Sensors/Radiation_Detector.json"
+    },
+    {
+      "name": "Rain Sensor",
+      "file": "Sensors/Rain_Sensor.json"
+    },
+    {
+      "name": "Sonar (Large)",
+      "file": "Sensors/Sonar_(Large).json"
+    },
+    {
+      "name": "Sonar (Large)",
+      "file": "Sensors/Sonar_(Large).json"
+    },
+    {
+      "name": "Sonar (Medium)",
+      "file": "Sensors/Sonar_(Medium).json"
+    },
+    {
+      "name": "Sonar (Small)",
+      "file": "Sensors/Sonar_(Small).json"
+    },
+    {
+      "name": "Sonar (Small)",
+      "file": "Sensors/Sonar_(Small).json"
+    },
+    {
+      "name": "Temperature Probe",
+      "file": "Sensors/Temperature_Probe.json"
+    },
+    {
+      "name": "Tilt Sensor",
+      "file": "Sensors/Tilt_Sensor.json"
+    },
+    {
+      "name": "Transponder Locator",
+      "file": "Sensors/Transponder_Locator.json"
+    },
+    {
+      "name": "Wind Sensor",
+      "file": "Sensors/Wind_Sensor.json"
+    }
+  ],
+  "Fluid": [
+    {
+      "name": "Air Filter",
+      "file": "Fluid/Air_Filter.json"
+    },
+    {
+      "name": "Air Ram",
+      "file": "Fluid/Air_Ram.json"
+    },
+    {
+      "name": "Air Scoop Intake 1x1",
+      "file": "Fluid/Air_Scoop_Intake_1x1.json"
+    },
+    {
+      "name": "Air-Air Heat Exchanger 2x2",
+      "file": "Fluid/Air-Air_Heat_Exchanger_2x2.json"
+    },
+    {
+      "name": "Air-Air Heat Exchanger 2x5",
+      "file": "Fluid/Air-Air_Heat_Exchanger_2x5.json"
+    },
+    {
+      "name": "Air-Air Heat Exchanger 3x9",
+      "file": "Fluid/Air-Air_Heat_Exchanger_3x9.json"
+    },
+    {
+      "name": "Air-Liquid Heat Exchanger 1x2",
+      "file": "Fluid/Air-Liquid_Heat_Exchanger_1x2.json"
+    },
+    {
+      "name": "Air-Liquid Heat Exchanger 5x2",
+      "file": "Fluid/Air-Liquid_Heat_Exchanger_5x2.json"
+    },
+    {
+      "name": "Air-Liquid Heat Exchanger 5x3",
+      "file": "Fluid/Air-Liquid_Heat_Exchanger_5x3.json"
+    },
+    {
+      "name": "Air-Liquid Heat Exchanger 9x3",
+      "file": "Fluid/Air-Liquid_Heat_Exchanger_9x3.json"
+    },
+    {
+      "name": "Air-Liquid Heat Exchanger 9x5",
+      "file": "Fluid/Air-Liquid_Heat_Exchanger_9x5.json"
+    },
+    {
+      "name": "Catalytic Converter",
+      "file": "Fluid/Catalytic_Converter.json"
+    },
+    {
+      "name": "Centrifugal Separator",
+      "file": "Fluid/Centrifugal_Separator.json"
+    },
+    {
+      "name": "Cryo Cooler",
+      "file": "Fluid/Cryo_Cooler.json"
+    },
+    {
+      "name": "Desalinator",
+      "file": "Fluid/Desalinator.json"
+    },
+    {
+      "name": "Fluid Exhaust",
+      "file": "Fluid/Fluid_Exhaust.json"
+    },
+    {
+      "name": "Fluid Filter",
+      "file": "Fluid/Fluid_Filter.json"
+    },
+    {
+      "name": "Fluid Filter",
+      "file": "Fluid/Fluid_Filter.json"
+    },
+    {
+      "name": "Fluid Flow Valve",
+      "file": "Fluid/Fluid_Flow_Valve.json"
+    },
+    {
+      "name": "Fluid Heat Radiator",
+      "file": "Fluid/Fluid_Heat_Radiator.json"
+    },
+    {
+      "name": "Fluid Heat Radiator 3x3 (Electric)",
+      "file": "Fluid/Fluid_Heat_Radiator_3x3_(Electric).json"
+    },
+    {
+      "name": "Fluid Heat Radiator 5x5 (Electric)",
+      "file": "Fluid/Fluid_Heat_Radiator_5x5_(Electric).json"
+    },
+    {
+      "name": "Fluid Heat Sink",
+      "file": "Fluid/Fluid_Heat_Sink.json"
+    },
+    {
+      "name": "Fluid Intake",
+      "file": "Fluid/Fluid_Intake.json"
+    },
+    {
+      "name": "Fluid Jet",
+      "file": "Fluid/Fluid_Jet.json"
+    },
+    {
+      "name": "Fluid On/Off Valve",
+      "file": "Fluid/Fluid_On_Off_Valve.json"
+    },
+    {
+      "name": "Fluid On/Off Valve (Manual)",
+      "file": "Fluid/Fluid_On_Off_Valve_(Manual).json"
+    },
+    {
+      "name": "Fluid Port",
+      "file": "Fluid/Fluid_Port.json"
+    },
+    {
+      "name": "Fluid Port",
+      "file": "Fluid/Fluid_Port.json"
+    },
+    {
+      "name": "Fluid Port End",
+      "file": "Fluid/Fluid_Port_End.json"
+    },
+    {
+      "name": "Fluid Pressure Sensor",
+      "file": "Fluid/Fluid_Pressure_Sensor.json"
+    },
+    {
+      "name": "Fluid Pump",
+      "file": "Fluid/Fluid_Pump.json"
+    },
+    {
+      "name": "Fluid Pump (Manual)",
+      "file": "Fluid/Fluid_Pump_(Manual).json"
+    },
+    {
+      "name": "Fluid Slot Port",
+      "file": "Fluid/Fluid_Slot_Port.json"
+    },
+    {
+      "name": "Fluid Spawner",
+      "file": "Fluid/Fluid_Spawner.json"
+    },
+    {
+      "name": "Fluid Tank Large",
+      "file": "Fluid/Fluid_Tank_Large.json"
+    },
+    {
+      "name": "Fluid Tank Medium",
+      "file": "Fluid/Fluid_Tank_Medium.json"
+    },
+    {
+      "name": "Fluid Tank Small",
+      "file": "Fluid/Fluid_Tank_Small.json"
+    },
+    {
+      "name": "Fluid Variable Valve",
+      "file": "Fluid/Fluid_Variable_Valve.json"
+    },
+    {
+      "name": "Fractional Distillation Port",
+      "file": "Fluid/Fractional_Distillation_Port.json"
+    },
+    {
+      "name": "Gas Relief Valve",
+      "file": "Fluid/Gas_Relief_Valve.json"
+    },
+    {
+      "name": "Gas Tank (Huge)",
+      "file": "Fluid/Gas_Tank_(Huge).json"
+    },
+    {
+      "name": "Gas Tank (Large)",
+      "file": "Fluid/Gas_Tank_(Large).json"
+    },
+    {
+      "name": "Gas Tank (Medium)",
+      "file": "Fluid/Gas_Tank_(Medium).json"
+    },
+    {
+      "name": "Gas Tank (Small)",
+      "file": "Fluid/Gas_Tank_(Small).json"
+    },
+    {
+      "name": "Hydrogen Electrolyser",
+      "file": "Fluid/Hydrogen_Electrolyser.json"
+    },
+    {
+      "name": "Hydrogen Fuel Cell",
+      "file": "Fluid/Hydrogen_Fuel_Cell.json"
+    },
+    {
+      "name": "Impeller Pump",
+      "file": "Fluid/Impeller_Pump.json"
+    },
+    {
+      "name": "Impeller Pump (Small)",
+      "file": "Fluid/Impeller_Pump_(Small).json"
+    },
+    {
+      "name": "Large Fluid Pump",
+      "file": "Fluid/Large_Fluid_Pump.json"
+    },
+    {
+      "name": "Liquid Relief Valve",
+      "file": "Fluid/Liquid_Relief_Valve.json"
+    },
+    {
+      "name": "Liquid-Liquid Heat Exchanger 2x2",
+      "file": "Fluid/Liquid-Liquid_Heat_Exchanger_2x2.json"
+    },
+    {
+      "name": "Liquid-Liquid Heat Exchanger 5x5",
+      "file": "Fluid/Liquid-Liquid_Heat_Exchanger_5x5.json"
+    },
+    {
+      "name": "Slurry Filter",
+      "file": "Fluid/Slurry_Filter.json"
+    },
+    {
+      "name": "Steam Whistle",
+      "file": "Fluid/Steam_Whistle.json"
+    }
+  ],
+  "Electric": [
+    {
+      "name": "Electric Battery Large",
+      "file": "Electric/Electric_Battery_Large.json"
+    },
+    {
+      "name": "Electric Battery Medium",
+      "file": "Electric/Electric_Battery_Medium.json"
+    },
+    {
+      "name": "Electric Battery Small",
+      "file": "Electric/Electric_Battery_Small.json"
+    },
+    {
+      "name": "Electric Charger",
+      "file": "Electric/Electric_Charger.json"
+    },
+    {
+      "name": "Electric Circuit Breaker",
+      "file": "Electric/Electric_Circuit_Breaker.json"
+    },
+    {
+      "name": "Electric Relay",
+      "file": "Electric/Electric_Relay.json"
+    },
+    {
+      "name": "Large Generator",
+      "file": "Electric/Large_Generator.json"
+    },
+    {
+      "name": "Large Solar Cell",
+      "file": "Electric/Large_Solar_Cell.json"
+    },
+    {
+      "name": "Medium Generator",
+      "file": "Electric/Medium_Generator.json"
+    },
+    {
+      "name": "Small Generator",
+      "file": "Electric/Small_Generator.json"
+    },
+    {
+      "name": "Solar Cell",
+      "file": "Electric/Solar_Cell.json"
+    }
+  ],
+  "Jet Engines": [
+    {
+      "name": "Jet Combustion Chamber",
+      "file": "Jet Engines/Jet_Combustion_Chamber.json"
+    },
+    {
+      "name": "Jet Compressor",
+      "file": "Jet Engines/Jet_Compressor.json"
+    },
+    {
+      "name": "Jet Duct Angle",
+      "file": "Jet Engines/Jet_Duct_Angle.json"
+    },
+    {
+      "name": "Jet Duct Cross",
+      "file": "Jet Engines/Jet_Duct_Cross.json"
+    },
+    {
+      "name": "Jet Duct Diagonal",
+      "file": "Jet Engines/Jet_Duct_Diagonal.json"
+    },
+    {
+      "name": "Jet Duct Straight",
+      "file": "Jet Engines/Jet_Duct_Straight.json"
+    },
+    {
+      "name": "Jet Duct T",
+      "file": "Jet Engines/Jet_Duct_T.json"
+    },
+    {
+      "name": "Jet Exhaust",
+      "file": "Jet Engines/Jet_Exhaust.json"
+    },
+    {
+      "name": "Jet Exhaust Afterburner",
+      "file": "Jet Engines/Jet_Exhaust_Afterburner.json"
+    },
+    {
+      "name": "Jet Exhaust Rotating",
+      "file": "Jet Engines/Jet_Exhaust_Rotating.json"
+    },
+    {
+      "name": "Jet Turbine Medium",
+      "file": "Jet Engines/Jet_Turbine_Medium.json"
+    },
+    {
+      "name": "Jet Turbine Small",
+      "file": "Jet Engines/Jet_Turbine_Small.json"
+    },
+    {
+      "name": "Large Jet Intake",
+      "file": "Jet Engines/Large_Jet_Intake.json"
+    },
+    {
+      "name": "Small Jet Intake",
+      "file": "Jet Engines/Small_Jet_Intake.json"
+    }
+  ],
+  "Weapons": [
+    {
+      "name": "Artillery Cannon",
+      "file": "Weapons/Artillery_Cannon.json"
+    },
+    {
+      "name": "Artillery Cannon Barrel Extension",
+      "file": "Weapons/Artillery_Cannon_Barrel_Extension.json"
+    },
+    {
+      "name": "Artillery Cannon Barrel Extension",
+      "file": "Weapons/Artillery_Cannon_Barrel_Extension.json"
+    },
+    {
+      "name": "Artillery Cannon Barrel Extension",
+      "file": "Weapons/Artillery_Cannon_Barrel_Extension.json"
+    },
+    {
+      "name": "Artillery Cannon Barrel Extension",
+      "file": "Weapons/Artillery_Cannon_Barrel_Extension.json"
+    },
+    {
+      "name": "Artillery Cannon Belt (Connector)",
+      "file": "Weapons/Artillery_Cannon_Belt_(Connector).json"
+    },
+    {
+      "name": "Artillery Cannon Belt (Corner Inner)",
+      "file": "Weapons/Artillery_Cannon_Belt_(Corner_Inner).json"
+    },
+    {
+      "name": "Artillery Cannon Belt (Corner Outer)",
+      "file": "Weapons/Artillery_Cannon_Belt_(Corner_Outer).json"
+    },
+    {
+      "name": "Artillery Cannon Belt (Corner)",
+      "file": "Weapons/Artillery_Cannon_Belt_(Corner).json"
+    },
+    {
+      "name": "Artillery Cannon Belt (Feeder)",
+      "file": "Weapons/Artillery_Cannon_Belt_(Feeder).json"
+    },
+    {
+      "name": "Artillery Cannon Belt (Flexible)",
+      "file": "Weapons/Artillery_Cannon_Belt_(Flexible).json"
+    },
+    {
+      "name": "Artillery Cannon Belt (Junction)",
+      "file": "Weapons/Artillery_Cannon_Belt_(Junction).json"
+    },
+    {
+      "name": "Artillery Cannon Belt (Straight)",
+      "file": "Weapons/Artillery_Cannon_Belt_(Straight).json"
+    },
+    {
+      "name": "Artillery Cannon Muzzle Brake",
+      "file": "Weapons/Artillery_Cannon_Muzzle_Brake.json"
+    },
+    {
+      "name": "Artillery Cannon Muzzle Brake",
+      "file": "Weapons/Artillery_Cannon_Muzzle_Brake.json"
+    },
+    {
+      "name": "Artillery Cannon Muzzle Brake",
+      "file": "Weapons/Artillery_Cannon_Muzzle_Brake.json"
+    },
+    {
+      "name": "Autocannon Ammo Drum (Large)",
+      "file": "Weapons/Autocannon_Ammo_Drum_(Large).json"
+    },
+    {
+      "name": "Autocannon Ammo Drum (Medium)",
+      "file": "Weapons/Autocannon_Ammo_Drum_(Medium).json"
+    },
+    {
+      "name": "Autocannon Ammo Drum (Small)",
+      "file": "Weapons/Autocannon_Ammo_Drum_(Small).json"
+    },
+    {
+      "name": "Autocannon Belt (Connector)",
+      "file": "Weapons/Autocannon_Belt_(Connector).json"
+    },
+    {
+      "name": "Autocannon Belt (Corner Flat)",
+      "file": "Weapons/Autocannon_Belt_(Corner_Flat).json"
+    },
+    {
+      "name": "Autocannon Belt (Corner)",
+      "file": "Weapons/Autocannon_Belt_(Corner).json"
+    },
+    {
+      "name": "Autocannon Belt (Feeder)",
+      "file": "Weapons/Autocannon_Belt_(Feeder).json"
+    },
+    {
+      "name": "Autocannon Belt (Flexible)",
+      "file": "Weapons/Autocannon_Belt_(Flexible).json"
+    },
+    {
+      "name": "Autocannon Belt (Junction)",
+      "file": "Weapons/Autocannon_Belt_(Junction).json"
+    },
+    {
+      "name": "Autocannon Belt (Straight)",
+      "file": "Weapons/Autocannon_Belt_(Straight).json"
+    },
+    {
+      "name": "Battle Cannon",
+      "file": "Weapons/Battle_Cannon.json"
+    },
+    {
+      "name": "Battle Cannon Barrel Extension",
+      "file": "Weapons/Battle_Cannon_Barrel_Extension.json"
+    },
+    {
+      "name": "Battle Cannon Barrel Extension",
+      "file": "Weapons/Battle_Cannon_Barrel_Extension.json"
+    },
+    {
+      "name": "Battle Cannon Barrel Extension",
+      "file": "Weapons/Battle_Cannon_Barrel_Extension.json"
+    },
+    {
+      "name": "Battle Cannon Barrel Extension",
+      "file": "Weapons/Battle_Cannon_Barrel_Extension.json"
+    },
+    {
+      "name": "Battle Cannon Belt (Connector)",
+      "file": "Weapons/Battle_Cannon_Belt_(Connector).json"
+    },
+    {
+      "name": "Battle Cannon Belt (Corner Inner)",
+      "file": "Weapons/Battle_Cannon_Belt_(Corner_Inner).json"
+    },
+    {
+      "name": "Battle Cannon Belt (Corner Outer)",
+      "file": "Weapons/Battle_Cannon_Belt_(Corner_Outer).json"
+    },
+    {
+      "name": "Battle Cannon Belt (Corner)",
+      "file": "Weapons/Battle_Cannon_Belt_(Corner).json"
+    },
+    {
+      "name": "Battle Cannon Belt (Feeder)",
+      "file": "Weapons/Battle_Cannon_Belt_(Feeder).json"
+    },
+    {
+      "name": "Battle Cannon Belt (Flexible)",
+      "file": "Weapons/Battle_Cannon_Belt_(Flexible).json"
+    },
+    {
+      "name": "Battle Cannon Belt (Junction)",
+      "file": "Weapons/Battle_Cannon_Belt_(Junction).json"
+    },
+    {
+      "name": "Battle Cannon Belt (Straight)",
+      "file": "Weapons/Battle_Cannon_Belt_(Straight).json"
+    },
+    {
+      "name": "Battle Cannon Muzzle Brake",
+      "file": "Weapons/Battle_Cannon_Muzzle_Brake.json"
+    },
+    {
+      "name": "Battle Cannon Muzzle Brake",
+      "file": "Weapons/Battle_Cannon_Muzzle_Brake.json"
+    },
+    {
+      "name": "Battle Cannon Muzzle Brake",
+      "file": "Weapons/Battle_Cannon_Muzzle_Brake.json"
+    },
+    {
+      "name": "Bertha Cannon",
+      "file": "Weapons/Bertha_Cannon.json"
+    },
+    {
+      "name": "Bertha Cannon Barrel Extension",
+      "file": "Weapons/Bertha_Cannon_Barrel_Extension.json"
+    },
+    {
+      "name": "Bertha Cannon Belt (Connector)",
+      "file": "Weapons/Bertha_Cannon_Belt_(Connector).json"
+    },
+    {
+      "name": "Bertha Cannon Belt (Corner Inner)",
+      "file": "Weapons/Bertha_Cannon_Belt_(Corner_Inner).json"
+    },
+    {
+      "name": "Bertha Cannon Belt (Corner Outer)",
+      "file": "Weapons/Bertha_Cannon_Belt_(Corner_Outer).json"
+    },
+    {
+      "name": "Bertha Cannon Belt (Corner)",
+      "file": "Weapons/Bertha_Cannon_Belt_(Corner).json"
+    },
+    {
+      "name": "Bertha Cannon Belt (Feeder)",
+      "file": "Weapons/Bertha_Cannon_Belt_(Feeder).json"
+    },
+    {
+      "name": "Bertha Cannon Belt (Flexible)",
+      "file": "Weapons/Bertha_Cannon_Belt_(Flexible).json"
+    },
+    {
+      "name": "Bertha Cannon Belt (Junction)",
+      "file": "Weapons/Bertha_Cannon_Belt_(Junction).json"
+    },
+    {
+      "name": "Bertha Cannon Belt (Straight)",
+      "file": "Weapons/Bertha_Cannon_Belt_(Straight).json"
+    },
+    {
+      "name": "Heavy Autocannon",
+      "file": "Weapons/Heavy_Autocannon.json"
+    },
+    {
+      "name": "Heavy Autocannon Barrel Extension",
+      "file": "Weapons/Heavy_Autocannon_Barrel_Extension.json"
+    },
+    {
+      "name": "Heavy Autocannon Barrel Extension",
+      "file": "Weapons/Heavy_Autocannon_Barrel_Extension.json"
+    },
+    {
+      "name": "Heavy Autocannon Barrel Extension",
+      "file": "Weapons/Heavy_Autocannon_Barrel_Extension.json"
+    },
+    {
+      "name": "Heavy Autocannon Barrel Extension",
+      "file": "Weapons/Heavy_Autocannon_Barrel_Extension.json"
+    },
+    {
+      "name": "Heavy Autocannon Muzzle Brake",
+      "file": "Weapons/Heavy_Autocannon_Muzzle_Brake.json"
+    },
+    {
+      "name": "Heavy Autocannon Muzzle Brake",
+      "file": "Weapons/Heavy_Autocannon_Muzzle_Brake.json"
+    },
+    {
+      "name": "Heavy Autocannon Muzzle Brake",
+      "file": "Weapons/Heavy_Autocannon_Muzzle_Brake.json"
+    },
+    {
+      "name": "Light Autocannon",
+      "file": "Weapons/Light_Autocannon.json"
+    },
+    {
+      "name": "Light Autocannon Barrel Extension",
+      "file": "Weapons/Light_Autocannon_Barrel_Extension.json"
+    },
+    {
+      "name": "Light Autocannon Muzzle Brake",
+      "file": "Weapons/Light_Autocannon_Muzzle_Brake.json"
+    },
+    {
+      "name": "Light Autocannon Muzzle Brake",
+      "file": "Weapons/Light_Autocannon_Muzzle_Brake.json"
+    },
+    {
+      "name": "Light Autocannon Muzzle Brake",
+      "file": "Weapons/Light_Autocannon_Muzzle_Brake.json"
+    },
+    {
+      "name": "Light Autocannon Muzzle Brake",
+      "file": "Weapons/Light_Autocannon_Muzzle_Brake.json"
+    },
+    {
+      "name": "Machine Gun",
+      "file": "Weapons/Machine_Gun.json"
+    },
+    {
+      "name": "Machine Gun Ammo Box",
+      "file": "Weapons/Machine_Gun_Ammo_Box.json"
+    },
+    {
+      "name": "Machine Gun Ammo Box (Large)",
+      "file": "Weapons/Machine_Gun_Ammo_Box_(Large).json"
+    },
+    {
+      "name": "Rocket Launcher",
+      "file": "Weapons/Rocket_Launcher.json"
+    },
+    {
+      "name": "Rotary Autocannon",
+      "file": "Weapons/Rotary_Autocannon.json"
+    },
+    {
+      "name": "Rotary Autocannon Barrel Extension",
+      "file": "Weapons/Rotary_Autocannon_Barrel_Extension.json"
+    },
+    {
+      "name": "Warhead (EMP)",
+      "file": "Weapons/Warhead_(EMP).json"
+    },
+    {
+      "name": "Warhead (Large)",
+      "file": "Weapons/Warhead_(Large).json"
+    },
+    {
+      "name": "Warhead (Medium)",
+      "file": "Weapons/Warhead_(Medium).json"
+    },
+    {
+      "name": "Warhead (Small)",
+      "file": "Weapons/Warhead_(Small).json"
+    },
+    {
+      "name": "Warhead Body (Large)",
+      "file": "Weapons/Warhead_Body_(Large).json"
+    },
+    {
+      "name": "Warhead Body (Medium)",
+      "file": "Weapons/Warhead_Body_(Medium).json"
+    },
+    {
+      "name": "Warhead Body (Small)",
+      "file": "Weapons/Warhead_Body_(Small).json"
+    }
+  ],
+  "Modular Engines": [
+    {
+      "name": "Modular Engine Air Manifold",
+      "file": "Modular Engines/Modular_Engine_Air_Manifold.json"
+    },
+    {
+      "name": "Modular Engine Alternator",
+      "file": "Modular Engines/Modular_Engine_Alternator.json"
+    },
+    {
+      "name": "Modular Engine Clutch 1x1",
+      "file": "Modular Engines/Modular_Engine_Clutch_1x1.json"
+    },
+    {
+      "name": "Modular Engine Clutch 3x3",
+      "file": "Modular Engines/Modular_Engine_Clutch_3x3.json"
+    },
+    {
+      "name": "Modular Engine Clutch 5x5",
+      "file": "Modular Engines/Modular_Engine_Clutch_5x5.json"
+    },
+    {
+      "name": "Modular Engine Coolant Manifold",
+      "file": "Modular Engines/Modular_Engine_Coolant_Manifold.json"
+    },
+    {
+      "name": "Modular Engine Crankshaft 1x1",
+      "file": "Modular Engines/Modular_Engine_Crankshaft_1x1.json"
+    },
+    {
+      "name": "Modular Engine Crankshaft 3x1",
+      "file": "Modular Engines/Modular_Engine_Crankshaft_3x1.json"
+    },
+    {
+      "name": "Modular Engine Crankshaft 3x3",
+      "file": "Modular Engines/Modular_Engine_Crankshaft_3x3.json"
+    },
+    {
+      "name": "Modular Engine Crankshaft 5x5",
+      "file": "Modular Engines/Modular_Engine_Crankshaft_5x5.json"
+    },
+    {
+      "name": "Modular Engine Crankshaft Converter 3 to 1",
+      "file": "Modular Engines/Modular_Engine_Crankshaft_Converter_3_to_1.json"
+    },
+    {
+      "name": "Modular Engine Crankshaft Converter 5 to 3",
+      "file": "Modular Engines/Modular_Engine_Crankshaft_Converter_5_to_3.json"
+    },
+    {
+      "name": "Modular Engine Cylinder 1x1",
+      "file": "Modular Engines/Modular_Engine_Cylinder_1x1.json"
+    },
+    {
+      "name": "Modular Engine Cylinder 3x3",
+      "file": "Modular Engines/Modular_Engine_Cylinder_3x3.json"
+    },
+    {
+      "name": "Modular Engine Cylinder 5x5",
+      "file": "Modular Engines/Modular_Engine_Cylinder_5x5.json"
+    },
+    {
+      "name": "Modular Engine Drive Belt 1x1",
+      "file": "Modular Engines/Modular_Engine_Drive_Belt_1x1.json"
+    },
+    {
+      "name": "Modular Engine Drive Belt 3x3",
+      "file": "Modular Engines/Modular_Engine_Drive_Belt_3x3.json"
+    },
+    {
+      "name": "Modular Engine Drive Belt 5x5",
+      "file": "Modular Engines/Modular_Engine_Drive_Belt_5x5.json"
+    },
+    {
+      "name": "Modular Engine Exhaust Manifold (Corner)",
+      "file": "Modular Engines/Modular_Engine_Exhaust_Manifold_(Corner).json"
+    },
+    {
+      "name": "Modular Engine Exhaust Manifold (Straight)",
+      "file": "Modular Engines/Modular_Engine_Exhaust_Manifold_(Straight).json"
+    },
+    {
+      "name": "Modular Engine Fluid Pump",
+      "file": "Modular Engines/Modular_Engine_Fluid_Pump.json"
+    },
+    {
+      "name": "Modular Engine Flywheel 1x1",
+      "file": "Modular Engines/Modular_Engine_Flywheel_1x1.json"
+    },
+    {
+      "name": "Modular Engine Flywheel 3x3",
+      "file": "Modular Engines/Modular_Engine_Flywheel_3x3.json"
+    },
+    {
+      "name": "Modular Engine Flywheel 5x5",
+      "file": "Modular Engines/Modular_Engine_Flywheel_5x5.json"
+    },
+    {
+      "name": "Modular Engine Fuel Manifold",
+      "file": "Modular Engines/Modular_Engine_Fuel_Manifold.json"
+    },
+    {
+      "name": "Modular Engine Manifold (Corner)",
+      "file": "Modular Engines/Modular_Engine_Manifold_(Corner).json"
+    },
+    {
+      "name": "Modular Engine Manifold (Straight)",
+      "file": "Modular Engines/Modular_Engine_Manifold_(Straight).json"
+    },
+    {
+      "name": "Modular Engine Manifold (T)",
+      "file": "Modular Engines/Modular_Engine_Manifold_(T).json"
+    },
+    {
+      "name": "Modular Engine Starter",
+      "file": "Modular Engines/Modular_Engine_Starter.json"
+    },
+    {
+      "name": "Modular Engine Temperature Sensor",
+      "file": "Modular Engines/Modular_Engine_Temperature_Sensor.json"
+    }
+  ],
+  "Industry": [
+    {
+      "name": "Duct",
+      "file": "Industry/Duct.json"
+    },
+    {
+      "name": "Duct Large",
+      "file": "Industry/Duct_Large.json"
+    },
+    {
+      "name": "Duct Medium",
+      "file": "Industry/Duct_Medium.json"
+    },
+    {
+      "name": "Electric Furnace",
+      "file": "Industry/Electric_Furnace.json"
+    },
+    {
+      "name": "Firebox",
+      "file": "Industry/Firebox.json"
+    },
+    {
+      "name": "Firebox Large",
+      "file": "Industry/Firebox_Large.json"
+    },
+    {
+      "name": "Flexible Duct",
+      "file": "Industry/Flexible_Duct.json"
+    },
+    {
+      "name": "Funnel Duct",
+      "file": "Industry/Funnel_Duct.json"
+    },
+    {
+      "name": "Hopper",
+      "file": "Industry/Hopper.json"
+    },
+    {
+      "name": "Hopper Large",
+      "file": "Industry/Hopper_Large.json"
+    },
+    {
+      "name": "Hopper Medium",
+      "file": "Industry/Hopper_Medium.json"
+    },
+    {
+      "name": "Industrial Diesel Furnace",
+      "file": "Industry/Industrial_Diesel_Furnace.json"
+    },
+    {
+      "name": "Lobster Pot",
+      "file": "Industry/Lobster_Pot.json"
+    },
+    {
+      "name": "Mineral Converter",
+      "file": "Industry/Mineral_Converter.json"
+    },
+    {
+      "name": "Net Anchor",
+      "file": "Industry/Net_Anchor.json"
+    },
+    {
+      "name": "Nuclear Control Rod",
+      "file": "Industry/Nuclear_Control_Rod.json"
+    },
+    {
+      "name": "Nuclear Fuel Assembly",
+      "file": "Industry/Nuclear_Fuel_Assembly.json"
+    },
+    {
+      "name": "Nuclear Fuel Rod",
+      "file": "Industry/Nuclear_Fuel_Rod.json"
+    },
+    {
+      "name": "Oil Rig Drill Clamp",
+      "file": "Industry/Oil_Rig_Drill_Clamp.json"
+    },
+    {
+      "name": "Oil Rig Drill Clamp (End)",
+      "file": "Industry/Oil_Rig_Drill_Clamp_(End).json"
+    },
+    {
+      "name": "Oil Rig Drill Connector",
+      "file": "Industry/Oil_Rig_Drill_Connector.json"
+    },
+    {
+      "name": "Oil Rig Drill Swivel",
+      "file": "Industry/Oil_Rig_Drill_Swivel.json"
+    },
+    {
+      "name": "Oil Rig Pumpjack",
+      "file": "Industry/Oil_Rig_Pumpjack.json"
+    },
+    {
+      "name": "Oil Rig Pumpjack B",
+      "file": "Industry/Oil_Rig_Pumpjack_B.json"
+    },
+    {
+      "name": "Oil Rig Rod Storage",
+      "file": "Industry/Oil_Rig_Rod_Storage.json"
+    },
+    {
+      "name": "Oil Rig Rotary Table",
+      "file": "Industry/Oil_Rig_Rotary_Table.json"
+    },
+    {
+      "name": "Oil Rig Well Head",
+      "file": "Industry/Oil_Rig_Well_Head.json"
+    },
+    {
+      "name": "Steam Boiler",
+      "file": "Industry/Steam_Boiler.json"
+    },
+    {
+      "name": "Steam Condenser",
+      "file": "Industry/Steam_Condenser.json"
+    },
+    {
+      "name": "Steam Piston (Large)",
+      "file": "Industry/Steam_Piston_(Large).json"
+    },
+    {
+      "name": "Steam Piston (Medium)",
+      "file": "Industry/Steam_Piston_(Medium).json"
+    },
+    {
+      "name": "Steam Piston (Small)",
+      "file": "Industry/Steam_Piston_(Small).json"
+    },
+    {
+      "name": "Steam Turbine",
+      "file": "Industry/Steam_Turbine.json"
+    },
+    {
+      "name": "Vacuum Duct",
+      "file": "Industry/Vacuum_Duct.json"
+    },
+    {
+      "name": "Water Extractor",
+      "file": "Industry/Water_Extractor.json"
+    }
+  ],
+  "Misc": [
+    {
+      "name": "Flag (Large)",
+      "file": "Misc/Flag_(Large).json"
+    },
+    {
+      "name": "Flag (Medium)",
+      "file": "Misc/Flag_(Medium).json"
+    },
+    {
+      "name": "Flag (Small)",
+      "file": "Misc/Flag_(Small).json"
+    },
+    {
+      "name": "Large Tyre",
+      "file": "Misc/Large_Tyre.json"
+    },
+    {
+      "name": "Railing Segment Corner",
+      "file": "Misc/Railing_Segment_Corner.json"
+    },
+    {
+      "name": "Railing Segment Corner Diagonal",
+      "file": "Misc/Railing_Segment_Corner_Diagonal.json"
+    },
+    {
+      "name": "Railing Segment Curve",
+      "file": "Misc/Railing_Segment_Curve.json"
+    },
+    {
+      "name": "Railing Segment End",
+      "file": "Misc/Railing_Segment_End.json"
+    },
+    {
+      "name": "Railing Segment End Diagonal",
+      "file": "Misc/Railing_Segment_End_Diagonal.json"
+    },
+    {
+      "name": "Railing Segment End Incline",
+      "file": "Misc/Railing_Segment_End_Incline.json"
+    },
+    {
+      "name": "Railing Segment Extension",
+      "file": "Misc/Railing_Segment_Extension.json"
+    },
+    {
+      "name": "Railing Segment Extension Diagonal",
+      "file": "Misc/Railing_Segment_Extension_Diagonal.json"
+    },
+    {
+      "name": "Railing Segment Extension Incline",
+      "file": "Misc/Railing_Segment_Extension_Incline.json"
+    },
+    {
+      "name": "Railing Segment Incline",
+      "file": "Misc/Railing_Segment_Incline.json"
+    },
+    {
+      "name": "Railing Segment Middle",
+      "file": "Misc/Railing_Segment_Middle.json"
+    },
+    {
+      "name": "Railing Segment Middle Diagonal",
+      "file": "Misc/Railing_Segment_Middle_Diagonal.json"
+    },
+    {
+      "name": "Small Tyre",
+      "file": "Misc/Small_Tyre.json"
+    }
+  ],
+  "Windows": [
+    {
+      "name": "Porthole",
+      "file": "Windows/Porthole.json"
+    },
+    {
+      "name": "Porthole Small",
+      "file": "Windows/Porthole_Small.json"
+    },
+    {
+      "name": "Window 1x1",
+      "file": "Windows/Window_1x1.json"
+    },
+    {
+      "name": "Window 1x2",
+      "file": "Windows/Window_1x2.json"
+    },
+    {
+      "name": "Window 1x3",
+      "file": "Windows/Window_1x3.json"
+    },
+    {
+      "name": "Window 2x2",
+      "file": "Windows/Window_2x2.json"
+    },
+    {
+      "name": "Window 2x3",
+      "file": "Windows/Window_2x3.json"
+    },
+    {
+      "name": "Window 3x3",
+      "file": "Windows/Window_3x3.json"
+    },
+    {
+      "name": "Window Angle 1x1x1",
+      "file": "Windows/Window_Angle_1x1x1.json"
+    },
+    {
+      "name": "Window Angle 1x2x2",
+      "file": "Windows/Window_Angle_1x2x2.json"
+    },
+    {
+      "name": "Window Angle 1x3x3",
+      "file": "Windows/Window_Angle_1x3x3.json"
+    },
+    {
+      "name": "Window Angle 1x4x4",
+      "file": "Windows/Window_Angle_1x4x4.json"
+    },
+    {
+      "name": "Window Angle 2x1x1",
+      "file": "Windows/Window_Angle_2x1x1.json"
+    },
+    {
+      "name": "Window Angle 2x2x2",
+      "file": "Windows/Window_Angle_2x2x2.json"
+    },
+    {
+      "name": "Window Angle 2x3x3",
+      "file": "Windows/Window_Angle_2x3x3.json"
+    },
+    {
+      "name": "Window Angle 2x4x4",
+      "file": "Windows/Window_Angle_2x4x4.json"
+    },
+    {
+      "name": "Window Angle 3x1x1",
+      "file": "Windows/Window_Angle_3x1x1.json"
+    },
+    {
+      "name": "Window Angle 3x2x2",
+      "file": "Windows/Window_Angle_3x2x2.json"
+    },
+    {
+      "name": "Window Angle 3x3x3",
+      "file": "Windows/Window_Angle_3x3x3.json"
+    },
+    {
+      "name": "Window Angle 3x4x4",
+      "file": "Windows/Window_Angle_3x4x4.json"
+    },
+    {
+      "name": "Window Corner 2x3",
+      "file": "Windows/Window_Corner_2x3.json"
+    },
+    {
+      "name": "Window Corner 3x4",
+      "file": "Windows/Window_Corner_3x4.json"
+    },
+    {
+      "name": "Window Corner Full 1x1",
+      "file": "Windows/Window_Corner_Full_1x1.json"
+    },
+    {
+      "name": "Window Corner Full 2x2",
+      "file": "Windows/Window_Corner_Full_2x2.json"
+    },
+    {
+      "name": "Window Corner Full 3x3",
+      "file": "Windows/Window_Corner_Full_3x3.json"
+    },
+    {
+      "name": "Window Corner Full 4x4",
+      "file": "Windows/Window_Corner_Full_4x4.json"
+    },
+    {
+      "name": "Window Diamond 1x1x2",
+      "file": "Windows/Window_Diamond_1x1x2.json"
+    },
+    {
+      "name": "Window Diamond 1x2x3",
+      "file": "Windows/Window_Diamond_1x2x3.json"
+    },
+    {
+      "name": "Window Diamond 1x3x4",
+      "file": "Windows/Window_Diamond_1x3x4.json"
+    },
+    {
+      "name": "Window Diamond 1x4x5",
+      "file": "Windows/Window_Diamond_1x4x5.json"
+    },
+    {
+      "name": "Window Diamond 2x2x3",
+      "file": "Windows/Window_Diamond_2x2x3.json"
+    },
+    {
+      "name": "Window Diamond 2x3x4",
+      "file": "Windows/Window_Diamond_2x3x4.json"
+    },
+    {
+      "name": "Window Diamond 2x4x5",
+      "file": "Windows/Window_Diamond_2x4x5.json"
+    },
+    {
+      "name": "Window Diamond 3x2x3",
+      "file": "Windows/Window_Diamond_3x2x3.json"
+    },
+    {
+      "name": "Window Diamond 3x3x4",
+      "file": "Windows/Window_Diamond_3x3x4.json"
+    },
+    {
+      "name": "Window Diamond 3x4x5",
+      "file": "Windows/Window_Diamond_3x4x5.json"
+    },
+    {
+      "name": "Window Inverse Pyramid 1x1",
+      "file": "Windows/Window_Inverse_Pyramid_1x1.json"
+    },
+    {
+      "name": "Window Inverse Pyramid 2x2x2",
+      "file": "Windows/Window_Inverse_Pyramid_2x2x2.json"
+    },
+    {
+      "name": "Window Pyramid 1x1x1",
+      "file": "Windows/Window_Pyramid_1x1x1.json"
+    },
+    {
+      "name": "Window Pyramid 2x2x2",
+      "file": "Windows/Window_Pyramid_2x2x2.json"
+    },
+    {
+      "name": "Window Pyramid 3x3x3",
+      "file": "Windows/Window_Pyramid_3x3x3.json"
+    }
+  ]
+}

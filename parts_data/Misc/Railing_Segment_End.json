@@ -1,0 +1,11 @@
+{
+  "name": "Railing Segment End",
+  "category": "Misc",
+  "dlc": "",
+  "description": "",
+  "shortDescription": "End railing segment.",
+  "value": 30,
+  "mass": 2.0,
+  "logicNodes": [],
+  "properties": []
+}

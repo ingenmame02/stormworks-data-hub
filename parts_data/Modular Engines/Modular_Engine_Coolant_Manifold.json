@@ -1,0 +1,24 @@
+{
+  "name": "Modular Engine Coolant Manifold",
+  "category": "Modular Engines",
+  "dlc": "",
+  "description": "Attach a manifold to a cylinder to provide a connection for coolant to that cylinder. Cylinders that are chained directly adjacent to each other can share a single manifold.",
+  "shortDescription": "A modular engine coolant manifold.",
+  "value": 10,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Coolant A",
+      "mode": "input",
+      "type": "fluid",
+      "description": ""
+    },
+    {
+      "label": "Coolant B",
+      "mode": "output",
+      "type": "fluid",
+      "description": ""
+    }
+  ],
+  "properties": []
+}

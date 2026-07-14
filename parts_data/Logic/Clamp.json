@@ -1,0 +1,24 @@
+{
+  "name": "Clamp",
+  "category": "Logic",
+  "dlc": "",
+  "description": "The upper and lower values to clamp to can be configured by selecting this component with the select tool.",
+  "shortDescription": "The clamp takes a number input and clamps it to a set range.",
+  "value": 20,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Number to Clamp",
+      "mode": "input",
+      "type": "number",
+      "description": "The value to clamp within the upper and lower bounds."
+    },
+    {
+      "label": "Clamped Number",
+      "mode": "output",
+      "type": "number",
+      "description": "The input after being clamped within the upper and lower bounds."
+    }
+  ],
+  "properties": []
+}

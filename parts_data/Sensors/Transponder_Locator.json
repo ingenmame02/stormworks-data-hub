@@ -1,0 +1,30 @@
+{
+  "name": "Transponder Locator",
+  "category": "Sensors",
+  "dlc": "",
+  "description": "Detects all transponder signals over great distances. Outputs the strongest signal strength detected, transponder signal strengths will decrease with distance.",
+  "shortDescription": "An emergency search and rescue transponder locator.",
+  "value": 20,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Active",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Detects any transponder signals when active."
+    },
+    {
+      "label": "Transponder Pulse",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Emits a periodic boolean pulse, with a frequency determined by the distance to the nearest transponder signal."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    }
+  ],
+  "properties": []
+}

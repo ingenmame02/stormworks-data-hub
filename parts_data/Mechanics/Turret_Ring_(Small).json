@@ -1,0 +1,30 @@
+{
+  "name": "Turret Ring (Small)",
+  "category": "Mechanics",
+  "dlc": "",
+  "description": "A turret ring rotates in the same way as a velocity pivot. The gap inside the turret ring creates a door seal, and can be used to extend a sealed volume through the turret ring.",
+  "shortDescription": "A small turret ring that can rotate continuously.",
+  "value": 50,
+  "mass": 14.0,
+  "logicNodes": [
+    {
+      "label": "Rotational Speed",
+      "mode": "input",
+      "type": "number",
+      "description": "The speed at which the turret should rotate."
+    },
+    {
+      "label": "Current Rotation",
+      "mode": "output",
+      "type": "number",
+      "description": "The turrets measured rotation expressed in fractions of full turns."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    }
+  ],
+  "properties": []
+}

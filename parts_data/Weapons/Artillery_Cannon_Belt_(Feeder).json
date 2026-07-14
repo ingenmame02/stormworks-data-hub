@@ -1,0 +1,30 @@
+{
+  "name": "Artillery Cannon Belt (Feeder)",
+  "category": "Weapons",
+  "dlc": "",
+  "description": "Cannon ammo belts can store and transfer ammo shells. Feeder belts transfer ammo forwards using electric power. Spawned ammo type can be set in component properties window.",
+  "shortDescription": "An artillery cannon ammo belt.",
+  "value": 100,
+  "mass": 5.0,
+  "logicNodes": [
+    {
+      "label": "Feed",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Transfer shells in the direction of the arrow."
+    },
+    {
+      "label": "Contains Ammo",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Returns true if the belt contains a shell."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    }
+  ],
+  "properties": []
+}

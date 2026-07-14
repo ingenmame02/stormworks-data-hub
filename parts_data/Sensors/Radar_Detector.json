@@ -1,0 +1,18 @@
+{
+  "name": "Radar Detector",
+  "category": "Sensors",
+  "dlc": "",
+  "description": "This sensor outputs an On signal when it detects a radio wave.",
+  "shortDescription": "A sensor that can detect radar waves.",
+  "value": 1000,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Detected",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Returns an On signal when it detects a radio wave."
+    }
+  ],
+  "properties": []
+}

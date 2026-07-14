@@ -1,0 +1,36 @@
+{
+  "name": "Radio Video Recv",
+  "category": "Vehicle Control",
+  "dlc": "",
+  "description": "Receives a video signal on the frequency specified.",
+  "shortDescription": "A radio receiver for receiving video signals.",
+  "value": 1000,
+  "mass": 10.0,
+  "logicNodes": [
+    {
+      "label": "Frequency Recv",
+      "mode": "input",
+      "type": "number",
+      "description": ""
+    },
+    {
+      "label": "Signal Strength",
+      "mode": "output",
+      "type": "number",
+      "description": ""
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": ""
+    },
+    {
+      "label": "Video Recv",
+      "mode": "output",
+      "type": "video",
+      "description": ""
+    }
+  ],
+  "properties": []
+}

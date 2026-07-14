@@ -1,0 +1,36 @@
+{
+  "name": "Fluid Cannon",
+  "category": "Specialist Equipment",
+  "dlc": "",
+  "description": "The cannon is a turret and can rotate on 2 axis.",
+  "shortDescription": "A fluid cannon that fires pressurized water for putting out fires.",
+  "value": 100,
+  "mass": 11.0,
+  "logicNodes": [
+    {
+      "label": "Turret Swivel",
+      "mode": "input",
+      "type": "number",
+      "description": "Yaw axis servo control for the cannon head."
+    },
+    {
+      "label": "Nozzle Pitch",
+      "mode": "input",
+      "type": "number",
+      "description": "Pitch axis servo control for the cannon head."
+    },
+    {
+      "label": "Fluid Supply",
+      "mode": "input",
+      "type": "fluid",
+      "description": "The fluid input to output from the nozzle. Filters to water only."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    }
+  ],
+  "properties": []
+}

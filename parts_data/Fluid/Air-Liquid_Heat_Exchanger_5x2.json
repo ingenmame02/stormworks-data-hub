@@ -1,0 +1,48 @@
+{
+  "name": "Air-Liquid Heat Exchanger 5x2",
+  "category": "Fluid",
+  "dlc": "",
+  "description": "An intercooler that averages heat between air and a liquid at a rate proportional to the component's size.",
+  "shortDescription": "A heat exchanger that averages heat between air and a liquid.",
+  "value": 30,
+  "mass": 7.0,
+  "logicNodes": [
+    {
+      "label": "Temp A",
+      "mode": "output",
+      "type": "number",
+      "description": "Compartment air temperature."
+    },
+    {
+      "label": "Temp B",
+      "mode": "output",
+      "type": "number",
+      "description": "Compartment water temperature."
+    },
+    {
+      "label": "Air In",
+      "mode": "input",
+      "type": "fluid",
+      "description": "Input air port."
+    },
+    {
+      "label": "Air Out",
+      "mode": "input",
+      "type": "fluid",
+      "description": "Output air port."
+    },
+    {
+      "label": "Fluid In",
+      "mode": "input",
+      "type": "fluid",
+      "description": "Input fluid port."
+    },
+    {
+      "label": "Fluid Out",
+      "mode": "input",
+      "type": "fluid",
+      "description": "Output fluid port."
+    }
+  ],
+  "properties": []
+}

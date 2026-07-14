@@ -1,0 +1,11 @@
+{
+  "name": "Window 3x3",
+  "category": "Windows",
+  "dlc": "",
+  "description": "Sits flush with walls and ceilings.",
+  "shortDescription": "Basic window piece.",
+  "value": 45,
+  "mass": 4.0,
+  "logicNodes": [],
+  "properties": []
+}

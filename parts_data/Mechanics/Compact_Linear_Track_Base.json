@@ -1,0 +1,24 @@
+{
+  "name": "Compact Linear Track Base",
+  "category": "Mechanics",
+  "dlc": "",
+  "description": "You can build the track using the Compact Linear Track Extension component. The speed of the slider can be set using its number input.",
+  "shortDescription": "A compact slider that moves along a modular linear track.",
+  "value": 20,
+  "mass": 2.0,
+  "logicNodes": [
+    {
+      "label": "Slider Speed",
+      "mode": "input",
+      "type": "number",
+      "description": ""
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    }
+  ],
+  "properties": []
+}

@@ -1,0 +1,42 @@
+{
+  "name": "Net Anchor",
+  "category": "Industry",
+  "dlc": "",
+  "description": "Draw a rope logic link between four Net Anchors in a loop to form a net.",
+  "shortDescription": "An anchor point for a fishing net.",
+  "value": 15,
+  "mass": 3.0,
+  "logicNodes": [
+    {
+      "label": "Release Catch",
+      "mode": "input",
+      "type": "onoff",
+      "description": ""
+    },
+    {
+      "label": "Extend",
+      "mode": "input",
+      "type": "onoff",
+      "description": ""
+    },
+    {
+      "label": "Retract",
+      "mode": "input",
+      "type": "onoff",
+      "description": ""
+    },
+    {
+      "label": "Net Data",
+      "mode": "output",
+      "type": "composite",
+      "description": "Outputs attached net data. Value 1: net fill level, Value 2: net extend factor."
+    },
+    {
+      "label": "Net Node",
+      "mode": "input",
+      "type": "rope",
+      "description": ""
+    }
+  ],
+  "properties": []
+}

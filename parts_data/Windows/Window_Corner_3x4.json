@@ -1,0 +1,11 @@
+{
+  "name": "Window Corner 3x4",
+  "category": "Windows",
+  "dlc": "",
+  "description": "Corner windows are triangular in shape, making them useful for creating corners between angled windows.",
+  "shortDescription": "Basic window piece.",
+  "value": 60,
+  "mass": 4.0,
+  "logicNodes": [],
+  "properties": []
+}

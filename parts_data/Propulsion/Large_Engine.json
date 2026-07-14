@@ -1,0 +1,84 @@
+{
+  "name": "Large Engine",
+  "category": "Propulsion",
+  "dlc": "",
+  "description": "An on/off signal controls engine startup and throttle signal controls energy output.",
+  "shortDescription": "Large diesel engine that can be connected to powered components.",
+  "value": 3000,
+  "mass": 400.0,
+  "logicNodes": [
+    {
+      "label": "Starter",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Increases the engine RPS using electrical power to start up the engine."
+    },
+    {
+      "label": "Throttle",
+      "mode": "input",
+      "type": "number",
+      "description": "Standard value between 0 and 1 that controls the throttle of the engine."
+    },
+    {
+      "label": "RPS",
+      "mode": "output",
+      "type": "number",
+      "description": "Output value giving data info on engine speed."
+    },
+    {
+      "label": "Temperature",
+      "mode": "output",
+      "type": "number",
+      "description": "Output value giving data info on engine temperature."
+    },
+    {
+      "label": "RPS",
+      "mode": "output",
+      "type": "torque",
+      "description": "The power supplied by the engine for inputting to other components."
+    },
+    {
+      "label": "Fuel",
+      "mode": "input",
+      "type": "fluid",
+      "description": "The fuel supply for the engine."
+    },
+    {
+      "label": "Air",
+      "mode": "input",
+      "type": "fluid",
+      "description": "The air supply for the engine."
+    },
+    {
+      "label": "In Coolant",
+      "mode": "input",
+      "type": "fluid",
+      "description": "The return flow (cold) for the coolant system."
+    },
+    {
+      "label": "Out Coolant",
+      "mode": "output",
+      "type": "fluid",
+      "description": "The output flow (hot) for the coolant system."
+    },
+    {
+      "label": "Exhaust",
+      "mode": "output",
+      "type": "fluid",
+      "description": "Out flow for combusted fumes from the engine."
+    },
+    {
+      "label": "Exhaust",
+      "mode": "output",
+      "type": "fluid",
+      "description": "Out flow for combusted fumes from the engine."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    }
+  ],
+  "properties": []
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Modular Engine Flywheel 3x3",
+  "category": "Modular Engines",
+  "dlc": "",
+  "description": "The crankshaft is the core of an engine. A flywheel piece sits as part of the crankshaft and acts as a momentum (energy) store for a running engine, but also makes the engine harder to start.",
+  "shortDescription": "A modular engine crankshaft flywheel.",
+  "value": 650,
+  "mass": 200.0,
+  "logicNodes": [
+    {
+      "label": "RPS",
+      "mode": "output",
+      "type": "number",
+      "description": "Output value giving data info on engine speed."
+    }
+  ],
+  "properties": []
+}

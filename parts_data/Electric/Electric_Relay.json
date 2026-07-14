@@ -1,0 +1,30 @@
+{
+  "name": "Electric Relay",
+  "category": "Electric",
+  "dlc": "",
+  "description": "When turned on, the relay closes the circuit, allowing electrical energy to flow between terminals A and B.",
+  "shortDescription": "A relay for electrical systems.",
+  "value": 100,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Relay State",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Input to set if the electrical connection is made."
+    },
+    {
+      "label": "Electric A",
+      "mode": "output",
+      "type": "electric",
+      "description": "Terminal A electrical connection."
+    },
+    {
+      "label": "Electric B",
+      "mode": "output",
+      "type": "electric",
+      "description": "Terminal B electrical connection."
+    }
+  ],
+  "properties": []
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Equipment inventory (Glowstick)",
+  "category": "Specialist Equipment",
+  "dlc": "",
+  "description": "Press [$[action_equipment_use]] to throw a glowstick which emits light for an extended time. The editor paint tool can be used to set the glowstick hue.",
+  "shortDescription": "A small equipment storage unit containing glowsticks.",
+  "value": 50,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    }
+  ],
+  "properties": []
+}

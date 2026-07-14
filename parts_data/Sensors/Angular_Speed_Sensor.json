@@ -1,0 +1,18 @@
+{
+  "name": "Angular Speed Sensor",
+  "category": "Sensors",
+  "dlc": "",
+  "description": "This sensor outputs the angular speed of the component about the component's y axis.",
+  "shortDescription": "This sensor outputs its current angular speed in rotations per second, allowing you to measure how fast your vehicle is rotating.",
+  "value": 20,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Angular Speed",
+      "mode": "output",
+      "type": "number",
+      "description": "The sensor's angular speed in rotations per second."
+    }
+  ],
+  "properties": []
+}

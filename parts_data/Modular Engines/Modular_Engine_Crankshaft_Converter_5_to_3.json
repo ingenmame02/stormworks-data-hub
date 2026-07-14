@@ -1,0 +1,18 @@
+{
+  "name": "Modular Engine Crankshaft Converter 5 to 3",
+  "category": "Modular Engines",
+  "dlc": "",
+  "description": "The crankshaft is the core of an engine. This component efficiently converts torque between different size crankshafts. Multiple crankshaft blocks can be placed adajcent to each other to form larger engines.",
+  "shortDescription": "A modular engine crankshaft block.",
+  "value": 275,
+  "mass": 27.0,
+  "logicNodes": [
+    {
+      "label": "RPS",
+      "mode": "output",
+      "type": "number",
+      "description": "Output value giving data info on engine speed."
+    }
+  ],
+  "properties": []
+}

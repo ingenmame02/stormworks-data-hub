@@ -1,0 +1,24 @@
+{
+  "name": "Player Sensor",
+  "category": "Sensors",
+  "dlc": "",
+  "description": "If the sensor is facing into a sealed room, only players inside that room will be detected. Likewise, players inside sealed rooms will not be detected if the sensor is placed on the outside. The size of the area and types of players to detect can be changed by selecting this component with the select tool.",
+  "shortDescription": "A sensor that outputs the number of players detected within an area.",
+  "value": 50,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Detected",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Outputs an on signal if any players are detected."
+    },
+    {
+      "label": "Number Detected",
+      "mode": "output",
+      "type": "number",
+      "description": "The number of players detected by the sensor."
+    }
+  ],
+  "properties": []
+}

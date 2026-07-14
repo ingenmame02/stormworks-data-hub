@@ -1,0 +1,30 @@
+{
+  "name": "Liquid Relief Valve",
+  "category": "Fluid",
+  "dlc": "",
+  "description": "The valve allows liquids to pass across the two directional valve.",
+  "shortDescription": "A relief valve for liquids in a system.",
+  "value": 150,
+  "mass": 2.0,
+  "logicNodes": [
+    {
+      "label": "Flow Rate",
+      "mode": "output",
+      "type": "number",
+      "description": "Fluid flow rate in L/s."
+    },
+    {
+      "label": "Fluid A",
+      "mode": "output",
+      "type": "fluid",
+      "description": ""
+    },
+    {
+      "label": "Fluid B",
+      "mode": "output",
+      "type": "fluid",
+      "description": ""
+    }
+  ],
+  "properties": []
+}

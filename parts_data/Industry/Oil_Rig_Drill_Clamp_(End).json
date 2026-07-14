@@ -1,0 +1,24 @@
+{
+  "name": "Oil Rig Drill Clamp (End)",
+  "category": "Industry",
+  "dlc": "",
+  "description": "",
+  "shortDescription": "A clamp for moving drill rods into place.",
+  "value": 500,
+  "mass": 5.0,
+  "logicNodes": [
+    {
+      "label": "Clamp Rod",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Attach a drill rod to the clamp."
+    },
+    {
+      "label": "Rod Clamped",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Returns true when a drill rod is attached."
+    }
+  ],
+  "properties": []
+}

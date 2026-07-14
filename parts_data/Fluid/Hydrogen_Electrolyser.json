@@ -1,0 +1,36 @@
+{
+  "name": "Hydrogen Electrolyser",
+  "category": "Fluid",
+  "dlc": "",
+  "description": "Submerge the electrodes into a volume of water and provide electric to separate freshwater.",
+  "shortDescription": "A machine that separates water into hydrogen and oxygen.",
+  "value": 575,
+  "mass": 16.0,
+  "logicNodes": [
+    {
+      "label": "Enable",
+      "mode": "input",
+      "type": "onoff",
+      "description": ""
+    },
+    {
+      "label": "Oxygen Out",
+      "mode": "output",
+      "type": "fluid",
+      "description": ""
+    },
+    {
+      "label": "Hydrogen Out",
+      "mode": "output",
+      "type": "fluid",
+      "description": ""
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": ""
+    }
+  ],
+  "properties": []
+}

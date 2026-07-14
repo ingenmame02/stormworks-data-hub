@@ -1,0 +1,36 @@
+{
+  "name": "Monitor 1x1",
+  "category": "Displays",
+  "dlc": "",
+  "description": "Displays video data.",
+  "shortDescription": "A video screen.",
+  "value": 500,
+  "mass": 4.0,
+  "logicNodes": [
+    {
+      "label": "Power Switch",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Controls whether or not the screen is switched on."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": ""
+    },
+    {
+      "label": "Touch Output",
+      "mode": "output",
+      "type": "composite",
+      "description": ""
+    },
+    {
+      "label": "Video Signal",
+      "mode": "input",
+      "type": "video",
+      "description": ""
+    }
+  ],
+  "properties": []
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Radio Video Xmit",
+  "category": "Vehicle Control",
+  "dlc": "",
+  "description": "Sends a video signal on the frequency specified. (Max Effective Range : 10000m)",
+  "shortDescription": "A radio transmitter for sending video signals.",
+  "value": 2000,
+  "mass": 10.0,
+  "logicNodes": [
+    {
+      "label": "Frequency Send",
+      "mode": "input",
+      "type": "number",
+      "description": ""
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": ""
+    },
+    {
+      "label": "Video Send",
+      "mode": "input",
+      "type": "video",
+      "description": ""
+    }
+  ],
+  "properties": []
+}

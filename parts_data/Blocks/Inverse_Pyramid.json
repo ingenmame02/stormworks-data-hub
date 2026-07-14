@@ -1,0 +1,11 @@
+{
+  "name": "Inverse Pyramid",
+  "category": "Blocks",
+  "dlc": "",
+  "description": "Components can be attached to all faces, with the exception of the triangular face. Inverse pyramids are useful for closing gaps between perpendicular lines of wedge and pyramid blocks.",
+  "shortDescription": "Basic inverse pyramid-shaped building block.",
+  "value": 2,
+  "mass": 0.75,
+  "logicNodes": [],
+  "properties": []
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Window Angle 1x1x1",
+  "category": "Windows",
+  "dlc": "",
+  "description": "An angled window that can be used for creating cockpits and windscreens. Can also be used to create a corner between flat windows when oriented correctly.",
+  "shortDescription": "Basic window piece.",
+  "value": 5,
+  "mass": 1.0,
+  "logicNodes": [],
+  "properties": []
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Oil Rig Pumpjack",
+  "category": "Industry",
+  "dlc": "",
+  "description": "Pulling the piston of the pumpjack with enough force will lift the piston, pulling fluid through the pump. A mechanical force capable of repeatedly cycling the piston is required to pump fluid effectively.",
+  "shortDescription": "A pumpjack for extracting crude oil from a drilled oil well.",
+  "value": 1000,
+  "mass": 200.0,
+  "logicNodes": [
+    {
+      "label": "Fluid Out",
+      "mode": "input",
+      "type": "fluid",
+      "description": ""
+    }
+  ],
+  "properties": []
+}

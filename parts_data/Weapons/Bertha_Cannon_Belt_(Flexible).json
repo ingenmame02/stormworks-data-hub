@@ -1,0 +1,18 @@
+{
+  "name": "Bertha Cannon Belt (Flexible)",
+  "category": "Weapons",
+  "dlc": "",
+  "description": "Flexible belts can be connected together by rope nodes to transfer ammo. Cannon ammo belts can store and transfer ammo shells. Spawned ammo type can be set in component properties window. Bertha shells are too large to be moved by hand.",
+  "shortDescription": "A bertha cannon ammo belt.",
+  "value": 100,
+  "mass": 63.0,
+  "logicNodes": [
+    {
+      "label": "Ammo",
+      "mode": "input",
+      "type": "rope",
+      "description": ""
+    }
+  ],
+  "properties": []
+}

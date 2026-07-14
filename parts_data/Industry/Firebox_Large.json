@@ -1,0 +1,54 @@
+{
+  "name": "Firebox Large",
+  "category": "Industry",
+  "dlc": "",
+  "description": "Produces large amounts of heat. Can be supplied with a duct. Consumes 1 coal to ignite the fire.",
+  "shortDescription": "A coal powered firebox.",
+  "value": 200,
+  "mass": 400.0,
+  "logicNodes": [
+    {
+      "label": "Ignition",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Activate to consume a coal and ignite the firebox."
+    },
+    {
+      "label": "Coal Level",
+      "mode": "output",
+      "type": "number",
+      "description": ""
+    },
+    {
+      "label": "Temperature",
+      "mode": "output",
+      "type": "number",
+      "description": "Temperature of the coolant that is being heated."
+    },
+    {
+      "label": "Coolant In",
+      "mode": "input",
+      "type": "fluid",
+      "description": "In port for fluid to be heated by the firebox."
+    },
+    {
+      "label": "Coolant Out",
+      "mode": "input",
+      "type": "fluid",
+      "description": "Out port for fluid to be heated by the firebox."
+    },
+    {
+      "label": "Air",
+      "mode": "input",
+      "type": "fluid",
+      "description": "Port for supplying air to the fire."
+    },
+    {
+      "label": "Exhaust",
+      "mode": "output",
+      "type": "fluid",
+      "description": "Port for removing exhaust from burnt coal."
+    }
+  ],
+  "properties": []
+}

@@ -1,0 +1,36 @@
+{
+  "name": "Impeller Pump (Small)",
+  "category": "Fluid",
+  "dlc": "",
+  "description": "An Impeller that will force fluid through the system when torque is applied.",
+  "shortDescription": "An Impeller Pump that can push fluid through a system.",
+  "value": 40,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Flow Rate",
+      "mode": "output",
+      "type": "number",
+      "description": "Fluid flow rate in L/s."
+    },
+    {
+      "label": "RPS",
+      "mode": "output",
+      "type": "torque",
+      "description": ""
+    },
+    {
+      "label": "Fluid In",
+      "mode": "input",
+      "type": "fluid",
+      "description": ""
+    },
+    {
+      "label": "Fluid Out",
+      "mode": "input",
+      "type": "fluid",
+      "description": ""
+    }
+  ],
+  "properties": []
+}

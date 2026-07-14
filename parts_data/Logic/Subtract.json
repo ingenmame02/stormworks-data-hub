@@ -1,0 +1,30 @@
+{
+  "name": "Subtract",
+  "category": "Logic",
+  "dlc": "",
+  "description": "",
+  "shortDescription": "Takes two number inputs, subtracts the second from first, and outputs the result.",
+  "value": 20,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "A",
+      "mode": "input",
+      "type": "number",
+      "description": "The value to subtract from."
+    },
+    {
+      "label": "B",
+      "mode": "input",
+      "type": "number",
+      "description": "The value to subtract."
+    },
+    {
+      "label": "A - B",
+      "mode": "output",
+      "type": "number",
+      "description": "Outputs the result of subtracting B from A."
+    }
+  ],
+  "properties": []
+}

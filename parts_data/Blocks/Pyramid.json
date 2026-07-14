@@ -1,0 +1,11 @@
+{
+  "name": "Pyramid",
+  "category": "Blocks",
+  "dlc": "",
+  "description": "Components can be attached to all faces, with the exception of the triangular face. Pyramids can act as a corner-piece for perpendicular lines of wedge blocks.",
+  "shortDescription": "Basic pyramid-shaped building block. ",
+  "value": 2,
+  "mass": 0.25,
+  "logicNodes": [],
+  "properties": []
+}

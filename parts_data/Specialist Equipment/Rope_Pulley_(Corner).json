@@ -1,0 +1,36 @@
+{
+  "name": "Rope Pulley (Corner)",
+  "category": "Specialist Equipment",
+  "dlc": "",
+  "description": "Draw a rope logic link between two rope nodes to form a rope. Ropes will slide based on difference in force applied to each rope.",
+  "shortDescription": "A pulley that changes attached rope lengths based on forces applied to ropes.",
+  "value": 250,
+  "mass": 25.0,
+  "logicNodes": [
+    {
+      "label": "Rope 1 Length",
+      "mode": "output",
+      "type": "number",
+      "description": "The current length of rope 1 in metres."
+    },
+    {
+      "label": "Rope 2 Length",
+      "mode": "output",
+      "type": "number",
+      "description": "The current length of rope 2 in metres."
+    },
+    {
+      "label": "Rope 2",
+      "mode": "input",
+      "type": "rope",
+      "description": ""
+    },
+    {
+      "label": "Rope 1",
+      "mode": "input",
+      "type": "rope",
+      "description": ""
+    }
+  ],
+  "properties": []
+}

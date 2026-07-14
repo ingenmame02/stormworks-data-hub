@@ -1,0 +1,11 @@
+{
+  "name": "Pipe T-Piece",
+  "category": "Blocks",
+  "dlc": "",
+  "description": "",
+  "shortDescription": "A T-shaped pipe segment that can be used to branch piping into three directions.",
+  "value": 5,
+  "mass": 1.0,
+  "logicNodes": [],
+  "properties": []
+}

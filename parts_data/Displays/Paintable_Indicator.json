@@ -1,0 +1,24 @@
+{
+  "name": "Paintable Indicator",
+  "category": "Displays",
+  "dlc": "",
+  "description": "This block has a paintable surface where small grid squares can be painted individually. Use additive painting mode to paint the backlight grid. The backlight can be enabled by using an on signal and a name can be set with the select tool that will be visible when the indicator is looked at by a player.",
+  "shortDescription": "A backlit indicator for displaying painted detail.",
+  "value": 100,
+  "mass": 2.0,
+  "logicNodes": [
+    {
+      "label": "Backlight",
+      "mode": "input",
+      "type": "onoff",
+      "description": "Switches the backlight on when receiving an on signal."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    }
+  ],
+  "properties": []
+}

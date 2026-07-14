@@ -1,0 +1,30 @@
+{
+  "name": "Rotary Autocannon",
+  "category": "Weapons",
+  "dlc": "",
+  "description": "Rotary autocannons have a tremendous rate of fire, but can overheat quickly. Autocannons require electric power to load ammo from connected belts or drums.",
+  "shortDescription": "A rotary autocannon.",
+  "value": 100,
+  "mass": 400.0,
+  "logicNodes": [
+    {
+      "label": "Trigger",
+      "mode": "input",
+      "type": "onoff",
+      "description": "When true: feeds, loads, and fires cartridges from a connected belt or drum."
+    },
+    {
+      "label": "Loaded",
+      "mode": "output",
+      "type": "onoff",
+      "description": "Returns true when a cartridge is loaded and ready to fire."
+    },
+    {
+      "label": "Electric",
+      "mode": "input",
+      "type": "electric",
+      "description": "Electrical power connection."
+    }
+  ],
+  "properties": []
+}

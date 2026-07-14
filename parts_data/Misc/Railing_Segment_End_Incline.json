@@ -1,0 +1,11 @@
+{
+  "name": "Railing Segment End Incline",
+  "category": "Misc",
+  "dlc": "",
+  "description": "",
+  "shortDescription": "Inclined railing end segment with a vertical pole.",
+  "value": 30,
+  "mass": 2.0,
+  "logicNodes": [],
+  "properties": []
+}

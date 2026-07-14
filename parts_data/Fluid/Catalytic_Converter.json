@@ -1,0 +1,24 @@
+{
+  "name": "Catalytic Converter",
+  "category": "Fluid",
+  "dlc": "",
+  "description": "Catalytic converter that removes fumes and decreases the number of exhaust particles emitted from an exhaust.",
+  "shortDescription": "Reduces particles from exhausts.",
+  "value": 100,
+  "mass": 1.0,
+  "logicNodes": [
+    {
+      "label": "Exhaust In",
+      "mode": "input",
+      "type": "fluid",
+      "description": ""
+    },
+    {
+      "label": "Exhaust Out",
+      "mode": "input",
+      "type": "fluid",
+      "description": ""
+    }
+  ],
+  "properties": []
+}

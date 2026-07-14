@@ -1,0 +1,11 @@
+{
+  "name": "Railing Segment Curve",
+  "category": "Misc",
+  "dlc": "",
+  "description": "",
+  "shortDescription": "Curved corner railing segment.",
+  "value": 40,
+  "mass": 5.0,
+  "logicNodes": [],
+  "properties": []
+}
