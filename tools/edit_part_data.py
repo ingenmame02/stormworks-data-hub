@@ -1,8 +1,11 @@
 import json
+import sys
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 PARTS_DATA_DIR = REPO_ROOT / "parts_data"
+TRANSLATIONS_FILE = REPO_ROOT / "src" / "data" / "parts_translations_ja.json"
+INDEX_FILE = PARTS_DATA_DIR / "_index.json"
 
 DLC_NAMES = ["Search and Destroy", "Industrial Frontier", "Space"]
 PROPS_NONE_SENTINEL = {"name": "__none__", "description": ""}
@@ -20,6 +23,209 @@ def write_json(filepath, data):
 
 def get_category_dirs():
     return sorted(d.name for d in PARTS_DATA_DIR.iterdir() if d.is_dir() and d.name != ".git")
+
+
+def read_translations():
+    if TRANSLATIONS_FILE.exists():
+        return read_json(TRANSLATIONS_FILE)
+    return {}
+
+
+def save_translations(translations):
+    TRANSLATIONS_FILE.parent.mkdir(parents=True, exist_ok=True)
+    write_json(TRANSLATIONS_FILE, translations)
+
+
+def build_translation_skeleton(filepath, category_name):
+    data = read_json(filepath)
+    return {
+        "id": filepath.stem,
+        "category": category_name,
+        "name": data.get("name", filepath.stem),
+        "nameJa": "",
+        "description": data.get("description", ""),
+        "descriptionJa": "",
+        "shortDescription": data.get("shortDescription", ""),
+        "shortDescriptionJa": "",
+        "logicNodes": [
+            {
+                "label": node.get("label", ""),
+                "labelJa": "",
+                "description": node.get("description", ""),
+                "descriptionJa": "",
+            }
+            for node in data.get("logicNodes", [])
+        ],
+        "properties": [
+            {
+                "name": prop.get("name", ""),
+                "nameJa": "",
+                "description": prop.get("description", ""),
+                "descriptionJa": "",
+            }
+            for prop in data.get("properties", [])
+        ],
+    }
+
+
+def prompt(text, default=""):
+    value = input(text).rstrip()
+    return value if value != "" else default
+
+
+def choose_from_list(items, title):
+    while True:
+        print(f"\n=== {title} ===")
+        for index, item in enumerate(items, start=1):
+            print(f"  [{index}] {item}")
+        print("  [q] 終了")
+        choice = input("> ").strip().lower()
+        if choice == "q":
+            return None
+        if choice.isdigit():
+            index = int(choice) - 1
+            if 0 <= index < len(items):
+                return index
+        print("無効な入力です。")
+
+
+def edit_translation_entry(part_id, src, translation):
+    print(f"\n--- 翻訳編集: {part_id} ---")
+    print(f"カテゴリ: {translation.get('category', src.get('category', ''))}")
+
+    translation["nameJa"] = prompt(
+        f"名前翻訳 [現在: {translation.get('nameJa', '') or '<未設定>'}]\n英語: {src.get('name', '')}\n新しい翻訳: ",
+        translation.get("nameJa", ""),
+    )
+    translation["shortDescriptionJa"] = prompt(
+        f"短い説明翻訳 [現在: {translation.get('shortDescriptionJa', '') or '<未設定>'}]\n英語: {src.get('shortDescription', '')}\n新しい翻訳: ",
+        translation.get("shortDescriptionJa", ""),
+    )
+    translation["descriptionJa"] = prompt(
+        f"説明翻訳 [現在: {translation.get('descriptionJa', '') or '<未設定>'}]\n英語: {src.get('description', '')}\n新しい翻訳: ",
+        translation.get("descriptionJa", ""),
+    )
+
+    if src.get("logicNodes"):
+        print("\n論理ノード翻訳")
+        translation.setdefault("logicNodes", [])
+        for idx, node in enumerate(src["logicNodes"], start=1):
+            while len(translation["logicNodes"]) < idx:
+                translation["logicNodes"].append({"labelJa": "", "descriptionJa": ""})
+            trans_node = translation["logicNodes"][idx - 1]
+            print(f"\n  [{idx}] {node.get('label', '')}")
+            trans_node["labelJa"] = prompt(
+                f"    ラベル翻訳 [現在: {trans_node.get('labelJa', '') or '<未設定>'}]\n    新しい翻訳: ",
+                trans_node.get("labelJa", ""),
+            )
+            trans_node["descriptionJa"] = prompt(
+                f"    説明翻訳 [現在: {trans_node.get('descriptionJa', '') or '<未設定>'}]\n    英語: {node.get('description', '')}\n    新しい翻訳: ",
+                trans_node.get("descriptionJa", ""),
+            )
+
+    if src.get("properties"):
+        print("\nプロパティ翻訳")
+        translation.setdefault("properties", [])
+        for idx, prop in enumerate(src["properties"], start=1):
+            while len(translation["properties"]) < idx:
+                translation["properties"].append({"nameJa": "", "descriptionJa": ""})
+            trans_prop = translation["properties"][idx - 1]
+            print(f"\n  [{idx}] {prop.get('name', '')}")
+            trans_prop["nameJa"] = prompt(
+                f"    名前翻訳 [現在: {trans_prop.get('nameJa', '') or '<未設定>'}]\n    新しい翻訳: ",
+                trans_prop.get("nameJa", ""),
+            )
+            trans_prop["descriptionJa"] = prompt(
+                f"    説明翻訳 [現在: {trans_prop.get('descriptionJa', '') or '<未設定>'}]\n    英語: {prop.get('description', '')}\n    新しい翻訳: ",
+                trans_prop.get("descriptionJa", ""),
+            )
+
+    return translation
+
+
+def run_translation_mode():
+    if not INDEX_FILE.exists():
+        raise FileNotFoundError(f"_index.json not found: {INDEX_FILE}")
+
+    index_data = read_json(INDEX_FILE)
+    translations = read_translations()
+
+    categories = []
+    file_map = {}
+    for category_name, part_list in index_data.items():
+        categories.append(category_name)
+        file_map[category_name] = []
+        for part in part_list:
+            filepath = PARTS_DATA_DIR / part["file"]
+            if not filepath.exists():
+                continue
+            part_id = filepath.stem
+            if part_id not in translations:
+                translations[part_id] = build_translation_skeleton(filepath, category_name)
+            file_map[category_name].append((part_id, filepath))
+
+    while True:
+        category_idx = choose_from_list(categories, "翻訳したいカテゴリを選択")
+        if category_idx is None:
+            break
+
+        category_name = categories[category_idx]
+        choices = [part_id for part_id, _ in file_map[category_name]]
+        part_idx = choose_from_list(choices, f"{category_name} のパーツを選択")
+        if part_idx is None:
+            continue
+
+        part_id, filepath = file_map[category_name][part_idx]
+        src = read_json(filepath)
+        translation = translations[part_id]
+        translations[part_id] = edit_translation_entry(part_id, src, translation)
+        save_translations(translations)
+
+    print("翻訳編集を終了します。")
+
+
+def choose_main_mode():
+    while True:
+        print("パーツ編集モードを選択してください:")
+        print("  [1] 通常編集")
+        print("  [2] 翻訳編集")
+        print("  [q] 終了")
+        choice = input("> ").strip().lower()
+        if choice == "1":
+            return "edit"
+        if choice == "2":
+            return "translate"
+        if choice == "q":
+            return None
+        if choice in ("--translate", "-t", "translate"):
+            return "translate"
+        print("無効な入力です。")
+
+
+def main():
+    if any(arg in ("--translate", "-t", "translate") for arg in sys.argv[1:]):
+        run_translation_mode()
+        return
+
+    mode = choose_main_mode()
+    if mode == "translate":
+        run_translation_mode()
+        return
+    if mode is None:
+        print("終了します")
+        return
+
+    print("パーツJSON 編集ツール")
+    print("-" * 40)
+
+    while True:
+        categories = get_category_dirs()
+        cat = select_category(categories)
+        if cat is None:
+            break
+        run_category(cat)
+
+    print("終了します")
 
 
 def dlc_status_str(dlc):
@@ -248,20 +454,6 @@ def run_category(category_name):
                 if result is True:
                     edited += 1
             print(f"\n  個別編集完了: {edited}/{len(files)} ファイルを編集")
-
-
-def main():
-    print("パーツJSON 編集ツール")
-    print("-" * 40)
-
-    while True:
-        categories = get_category_dirs()
-        cat = select_category(categories)
-        if cat is None:
-            break
-        run_category(cat)
-
-    print("終了します")
 
 
 if __name__ == "__main__":

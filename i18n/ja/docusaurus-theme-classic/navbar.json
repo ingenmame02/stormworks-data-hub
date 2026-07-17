@@ -1,0 +1,22 @@
+{
+  "title": {
+    "message": "Stormworks Data Hub",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "Stormworks Data Hub Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.記事一覧": {
+    "message": "記事一覧",
+    "description": "Navbar item with label 記事一覧"
+  },
+  "item.label.ブロックデータ": {
+    "message": "ブロックデータ",
+    "description": "Navbar item with label ブロックデータ"
+  },
+  "item.label.エンジン": {
+    "message": "エンジン",
+    "description": "Navbar item with label エンジン"
+  }
+}

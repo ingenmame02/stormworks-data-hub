@@ -1,3 +1,6 @@
 @echo off
+echo Starting edit_part_data...
 python "%~dp0edit_part_data.py" %*
-pause
+echo.
+echo Press any key to exit...
+pause >nul

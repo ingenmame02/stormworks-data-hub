@@ -1,0 +1,16 @@
+---
+sidebar_position: 10
+title: Parts List
+---
+
+import { PartCard } from '@site/src/components/parts';
+import partsIndex from '@site/src/data/parts_index.json';
+
+{partsIndex.map((category) => (
+  <div key={category.name}>
+    <h2 id={category.name}>{category.name}</h2>
+    {category.parts.map((part) => (
+      <PartCard key={part.id} part={part} />
+    ))}
+  </div>
+))}

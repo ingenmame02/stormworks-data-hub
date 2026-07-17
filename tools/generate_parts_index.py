@@ -5,6 +5,7 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parent.parent
 PARTS_DATA_DIR = REPO_ROOT / "parts_data"
 OUTPUT_FILE = REPO_ROOT / "src" / "data" / "parts_index.json"
+TRANSLATIONS_FILE = REPO_ROOT / "src" / "data" / "parts_translations_ja.json"
 
 KEYBIND_MAP = {
     "[$[action_interact_left]]": "[Q]",
@@ -46,7 +47,7 @@ def read_json(filepath):
         return json.load(f)
 
 
-def build_part(filepath, category_name):
+def build_part(filepath, category_name, translation=None):
     data = read_json(filepath)
 
     logic_nodes = []
@@ -71,7 +72,7 @@ def build_part(filepath, category_name):
         }
         properties.append(entry)
 
-    return {
+    part = {
         "id": filepath.stem,
         "name": data.get("name", filepath.stem),
         "nameJa": "",
@@ -87,12 +88,44 @@ def build_part(filepath, category_name):
         "properties": properties,
     }
 
+    return merge_translation(part, translation)
+
+
+def read_translations():
+    if TRANSLATIONS_FILE.exists():
+        return read_json(TRANSLATIONS_FILE)
+    return {}
+
+
+def merge_translation(entry, translation):
+    if not translation:
+        return entry
+
+    entry["nameJa"] = translation.get("nameJa", "")
+    entry["descriptionJa"] = translation.get("descriptionJa", "")
+    entry["shortDescriptionJa"] = translation.get("shortDescriptionJa", "")
+
+    for i, node in enumerate(entry["logicNodes"]):
+        node_translations = translation.get("logicNodes", [])
+        if i < len(node_translations):
+            node["labelJa"] = node_translations[i].get("labelJa", "")
+            node["descriptionJa"] = node_translations[i].get("descriptionJa", "")
+
+    for i, prop in enumerate(entry["properties"]):
+        prop_translations = translation.get("properties", [])
+        if i < len(prop_translations):
+            prop["nameJa"] = prop_translations[i].get("nameJa", "")
+            prop["descriptionJa"] = prop_translations[i].get("descriptionJa", "")
+
+    return entry
+
 
 def main():
     index_path = PARTS_DATA_DIR / "_index.json"
     if not index_path.exists():
         raise FileNotFoundError(f"_index.json not found: {index_path}")
 
+    translations = read_translations()
     index_data = read_json(index_path)
 
     categories = []
@@ -111,7 +144,8 @@ def main():
                 missing_files.append(str(filepath.relative_to(PARTS_DATA_DIR)))
                 continue
 
-            parts.append(build_part(filepath, category_name))
+            part_trans = translations.get(filepath.stem, {})
+            parts.append(build_part(filepath, category_name, part_trans))
 
         categories.append({
             "name": category_name,

@@ -42,7 +42,15 @@ const config: Config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'ja',
-    locales: ['ja'],
+    locales: ['ja', 'en'],
+    localeConfigs: {
+      ja: {
+        label: '日本語',
+      },
+      en: {
+        label: 'English',
+      },
+    },
   },
 
   presets: [
@@ -93,8 +101,22 @@ const config: Config = {
           position: 'left',
           label: '記事一覧',
         },
-        {to: '/blocks_data', label: 'ブロックデータ', position: 'left'},
-        {to: '/engine', label: 'エンジン', position: 'left'},
+        {
+          type: 'doc',
+          docId: 'blocks_data',
+          label: 'ブロックデータ',
+          position: 'left',
+        },
+        {
+          type: 'doc',
+          docId: 'engine',
+          label: 'エンジン',
+          position: 'left',
+        },
+        {
+          type: 'localeDropdown',
+          position: 'right',
+        },
       ],
     },
     footer: {
