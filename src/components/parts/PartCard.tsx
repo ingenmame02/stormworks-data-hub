@@ -212,7 +212,18 @@ export default function PartCard({ part }: PartCardProps) {
   const displayName = part.nameJa || part.name;
   const displayShortDesc = part.shortDescriptionJa || part.shortDescription;
   const displayDesc = part.descriptionJa || part.description;
-  const displayDlc = part.dlc || 'なし';
+
+  let displayDlc: string;
+  if (part.dlc === '__none__') {
+    displayDlc = 'なし';
+  } else if (!part.dlc) {
+    displayDlc = '未登録';
+  } else {
+    displayDlc = part.dlc;
+  }
+
+  const realProperties = part.properties.filter((p) => p.name !== '__none__');
+  const hasPropsConfirmedNone = part.properties.length > 0 && realProperties.length === 0;
 
   const renderLogicTable = (title: string, nodes: LogicNode[]) => {
     if (nodes.length === 0) return null;
@@ -284,7 +295,7 @@ export default function PartCard({ part }: PartCardProps) {
       {renderLogicTable('入力', inputNodes)}
       {renderLogicTable('出力', outputNodes)}
 
-      {part.properties.length > 0 && (
+      {realProperties.length > 0 && (
         <>
           <div style={sectionHeaderStyle}>プロパティ</div>
           <table style={logicTableStyle}>
@@ -299,7 +310,7 @@ export default function PartCard({ part }: PartCardProps) {
               </tr>
             </thead>
             <tbody>
-              {part.properties.map((prop, i) => (
+              {realProperties.map((prop, i) => (
                 <tr key={i}>
                   <td style={propNameCellStyle}>{prop.nameJa || prop.name}</td>
                   <td style={descriptionCellStyle}>{prop.descriptionJa || prop.description}</td>
@@ -308,6 +319,9 @@ export default function PartCard({ part }: PartCardProps) {
             </tbody>
           </table>
         </>
+      )}
+      {hasPropsConfirmedNone && (
+        <p style={{ ...dlcStyle, marginTop: '0.5rem' }}>プロパティ: なし</p>
       )}
     </article>
   );
