@@ -4,6 +4,9 @@
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
+    "prebuild": "python tools/generate_parts_index.py",
+    "prestart": "python tools/generate_parts_index.py",
+    "pretypecheck": "python tools/generate_parts_index.py",
     "start": "docusaurus start",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",

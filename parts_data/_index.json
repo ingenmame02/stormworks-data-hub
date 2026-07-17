@@ -105,14 +105,6 @@
       "file": "Blocks/Pipe_T-Piece_Corner_(Enclosed).json"
     },
     {
-      "name": "Pivot",
-      "file": "Blocks/Pivot.json"
-    },
-    {
-      "name": "Pivot (Power)",
-      "file": "Blocks/Pivot_(Power).json"
-    },
-    {
       "name": "Pyramid",
       "file": "Blocks/Pyramid.json"
     },
@@ -137,18 +129,6 @@
       "file": "Blocks/Pyramid_4x4.json"
     },
     {
-      "name": "Robotic Pivot",
-      "file": "Blocks/Robotic_Pivot.json"
-    },
-    {
-      "name": "Robotic Pivot",
-      "file": "Blocks/Robotic_Pivot.json"
-    },
-    {
-      "name": "Robotic Pivot",
-      "file": "Blocks/Robotic_Pivot.json"
-    },
-    {
       "name": "Stair Step",
       "file": "Blocks/Stair_Step.json"
     },
@@ -159,26 +139,6 @@
     {
       "name": "Static Block",
       "file": "Blocks/Static_Block.json"
-    },
-    {
-      "name": "Turret Ring (Large)",
-      "file": "Blocks/Turret_Ring_(Large).json"
-    },
-    {
-      "name": "Turret Ring (Medium)",
-      "file": "Blocks/Turret_Ring_(Medium).json"
-    },
-    {
-      "name": "Turret Ring (Small)",
-      "file": "Blocks/Turret_Ring_(Small).json"
-    },
-    {
-      "name": "Velocity Pivot",
-      "file": "Blocks/Velocity_Pivot.json"
-    },
-    {
-      "name": "Velocity Pivot",
-      "file": "Blocks/Velocity_Pivot.json"
     },
     {
       "name": "Wedge",
