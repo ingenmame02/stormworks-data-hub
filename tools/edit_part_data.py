@@ -384,7 +384,6 @@ def run_translation_mode() -> None:
     print("パーツ翻訳編集ツール")
     print("-" * 40)
     print("日本語フィールドを parts_data の各 JSON に直接書き込みます。")
-    print("（parts_index.json / parts_translations_ja.json には保存しません）")
 
     try:
         index_data = load_index()
