@@ -47,7 +47,7 @@ def dlc_status_str(dlc: str) -> str:
     return dlc
 
 
-def props_status_str(props: list) -> str:
+def props_status_str(props):
     if not props:
         return "未登録"
     if len(props) == 1 and props[0].get("name") == "__none__":
@@ -55,11 +55,11 @@ def props_status_str(props: list) -> str:
     return f"{len(props)} 件"
 
 
-def is_props_none(props: list) -> bool:
+def is_props_none(props):
     return len(props) == 1 and props[0].get("name") == "__none__"
 
 
-def select_category(categories: list[str]) -> str | None:
+def select_category(categories):
     while True:
         print("\nカテゴリを選択:")
         for i, cat in enumerate(categories, 1):
@@ -197,8 +197,8 @@ def edit_properties(current_props: list):
     return props
 
 
-def edit_single_part(filepath: Path, i: int, total: int):
-    data = ensure_translation_fields(read_json(filepath))
+def edit_single_part(filepath, i, total):
+    data = read_json(filepath)
     rel_path = filepath.relative_to(PARTS_DATA_DIR)
     dlc = data.get("dlc", "")
     props = data.get("properties", [])
