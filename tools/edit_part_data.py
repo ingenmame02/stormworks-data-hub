@@ -1,234 +1,45 @@
-import json
+"""
+Interactive parts_data editor.
+
+Modes are registered through part_data_common so new workflows
+(e.g. tags, validation, bulk renames) can be added without changing
+the storage format. All writes go to parts_data/<Category>/<Part>.json.
+"""
+
+from __future__ import annotations
+
 import sys
 from pathlib import Path
 
-REPO_ROOT = Path(__file__).resolve().parent.parent
-PARTS_DATA_DIR = REPO_ROOT / "parts_data"
-TRANSLATIONS_FILE = REPO_ROOT / "src" / "data" / "parts_translations_ja.json"
-INDEX_FILE = PARTS_DATA_DIR / "_index.json"
+from part_data_common import (
+    PARTS_DATA_DIR,
+    PROPERTY_TEXT_FIELDS,
+    PART_TEXT_FIELDS,
+    LOGIC_NODE_TEXT_FIELDS,
+    choose_from_list,
+    ensure_translation_fields,
+    get_category_dirs,
+    get_mode_handler,
+    iter_parts_from_index,
+    list_modes,
+    load_index,
+    normalize_part_shape,
+    prompt,
+    read_json,
+    register_mode,
+    translation_progress,
+    write_json,
+)
 
 DLC_NAMES = ["Search and Destroy", "Industrial Frontier", "Space"]
-PROPS_NONE_SENTINEL = {"name": "__none__", "description": ""}
+PROPS_NONE_SENTINEL = {"name": "__none__", "description": "", "nameJa": "", "descriptionJa": ""}
 
 
-def read_json(filepath):
-    with open(filepath, encoding="utf-8") as f:
-        return json.load(f)
+# ---------------------------------------------------------------------------
+# Shared UI helpers (normal edit mode)
+# ---------------------------------------------------------------------------
 
-
-def write_json(filepath, data):
-    with open(filepath, "w", encoding="utf-8") as f:
-        json.dump(data, f, indent=2, ensure_ascii=False)
-
-
-def get_category_dirs():
-    return sorted(d.name for d in PARTS_DATA_DIR.iterdir() if d.is_dir() and d.name != ".git")
-
-
-def read_translations():
-    if TRANSLATIONS_FILE.exists():
-        return read_json(TRANSLATIONS_FILE)
-    return {}
-
-
-def save_translations(translations):
-    TRANSLATIONS_FILE.parent.mkdir(parents=True, exist_ok=True)
-    write_json(TRANSLATIONS_FILE, translations)
-
-
-def build_translation_skeleton(filepath, category_name):
-    data = read_json(filepath)
-    return {
-        "id": filepath.stem,
-        "category": category_name,
-        "name": data.get("name", filepath.stem),
-        "nameJa": "",
-        "description": data.get("description", ""),
-        "descriptionJa": "",
-        "shortDescription": data.get("shortDescription", ""),
-        "shortDescriptionJa": "",
-        "logicNodes": [
-            {
-                "label": node.get("label", ""),
-                "labelJa": "",
-                "description": node.get("description", ""),
-                "descriptionJa": "",
-            }
-            for node in data.get("logicNodes", [])
-        ],
-        "properties": [
-            {
-                "name": prop.get("name", ""),
-                "nameJa": "",
-                "description": prop.get("description", ""),
-                "descriptionJa": "",
-            }
-            for prop in data.get("properties", [])
-        ],
-    }
-
-
-def prompt(text, default=""):
-    value = input(text).rstrip()
-    return value if value != "" else default
-
-
-def choose_from_list(items, title):
-    while True:
-        print(f"\n=== {title} ===")
-        for index, item in enumerate(items, start=1):
-            print(f"  [{index}] {item}")
-        print("  [q] 終了")
-        choice = input("> ").strip().lower()
-        if choice == "q":
-            return None
-        if choice.isdigit():
-            index = int(choice) - 1
-            if 0 <= index < len(items):
-                return index
-        print("無効な入力です。")
-
-
-def edit_translation_entry(part_id, src, translation):
-    print(f"\n--- 翻訳編集: {part_id} ---")
-    print(f"カテゴリ: {translation.get('category', src.get('category', ''))}")
-
-    translation["nameJa"] = prompt(
-        f"名前翻訳 [現在: {translation.get('nameJa', '') or '<未設定>'}]\n英語: {src.get('name', '')}\n新しい翻訳: ",
-        translation.get("nameJa", ""),
-    )
-    translation["shortDescriptionJa"] = prompt(
-        f"短い説明翻訳 [現在: {translation.get('shortDescriptionJa', '') or '<未設定>'}]\n英語: {src.get('shortDescription', '')}\n新しい翻訳: ",
-        translation.get("shortDescriptionJa", ""),
-    )
-    translation["descriptionJa"] = prompt(
-        f"説明翻訳 [現在: {translation.get('descriptionJa', '') or '<未設定>'}]\n英語: {src.get('description', '')}\n新しい翻訳: ",
-        translation.get("descriptionJa", ""),
-    )
-
-    if src.get("logicNodes"):
-        print("\n論理ノード翻訳")
-        translation.setdefault("logicNodes", [])
-        for idx, node in enumerate(src["logicNodes"], start=1):
-            while len(translation["logicNodes"]) < idx:
-                translation["logicNodes"].append({"labelJa": "", "descriptionJa": ""})
-            trans_node = translation["logicNodes"][idx - 1]
-            print(f"\n  [{idx}] {node.get('label', '')}")
-            trans_node["labelJa"] = prompt(
-                f"    ラベル翻訳 [現在: {trans_node.get('labelJa', '') or '<未設定>'}]\n    新しい翻訳: ",
-                trans_node.get("labelJa", ""),
-            )
-            trans_node["descriptionJa"] = prompt(
-                f"    説明翻訳 [現在: {trans_node.get('descriptionJa', '') or '<未設定>'}]\n    英語: {node.get('description', '')}\n    新しい翻訳: ",
-                trans_node.get("descriptionJa", ""),
-            )
-
-    if src.get("properties"):
-        print("\nプロパティ翻訳")
-        translation.setdefault("properties", [])
-        for idx, prop in enumerate(src["properties"], start=1):
-            while len(translation["properties"]) < idx:
-                translation["properties"].append({"nameJa": "", "descriptionJa": ""})
-            trans_prop = translation["properties"][idx - 1]
-            print(f"\n  [{idx}] {prop.get('name', '')}")
-            trans_prop["nameJa"] = prompt(
-                f"    名前翻訳 [現在: {trans_prop.get('nameJa', '') or '<未設定>'}]\n    新しい翻訳: ",
-                trans_prop.get("nameJa", ""),
-            )
-            trans_prop["descriptionJa"] = prompt(
-                f"    説明翻訳 [現在: {trans_prop.get('descriptionJa', '') or '<未設定>'}]\n    英語: {prop.get('description', '')}\n    新しい翻訳: ",
-                trans_prop.get("descriptionJa", ""),
-            )
-
-    return translation
-
-
-def run_translation_mode():
-    if not INDEX_FILE.exists():
-        raise FileNotFoundError(f"_index.json not found: {INDEX_FILE}")
-
-    index_data = read_json(INDEX_FILE)
-    translations = read_translations()
-
-    categories = []
-    file_map = {}
-    for category_name, part_list in index_data.items():
-        categories.append(category_name)
-        file_map[category_name] = []
-        for part in part_list:
-            filepath = PARTS_DATA_DIR / part["file"]
-            if not filepath.exists():
-                continue
-            part_id = filepath.stem
-            if part_id not in translations:
-                translations[part_id] = build_translation_skeleton(filepath, category_name)
-            file_map[category_name].append((part_id, filepath))
-
-    while True:
-        category_idx = choose_from_list(categories, "翻訳したいカテゴリを選択")
-        if category_idx is None:
-            break
-
-        category_name = categories[category_idx]
-        choices = [part_id for part_id, _ in file_map[category_name]]
-        part_idx = choose_from_list(choices, f"{category_name} のパーツを選択")
-        if part_idx is None:
-            continue
-
-        part_id, filepath = file_map[category_name][part_idx]
-        src = read_json(filepath)
-        translation = translations[part_id]
-        translations[part_id] = edit_translation_entry(part_id, src, translation)
-        save_translations(translations)
-
-    print("翻訳編集を終了します。")
-
-
-def choose_main_mode():
-    while True:
-        print("パーツ編集モードを選択してください:")
-        print("  [1] 通常編集")
-        print("  [2] 翻訳編集")
-        print("  [q] 終了")
-        choice = input("> ").strip().lower()
-        if choice == "1":
-            return "edit"
-        if choice == "2":
-            return "translate"
-        if choice == "q":
-            return None
-        if choice in ("--translate", "-t", "translate"):
-            return "translate"
-        print("無効な入力です。")
-
-
-def main():
-    if any(arg in ("--translate", "-t", "translate") for arg in sys.argv[1:]):
-        run_translation_mode()
-        return
-
-    mode = choose_main_mode()
-    if mode == "translate":
-        run_translation_mode()
-        return
-    if mode is None:
-        print("終了します")
-        return
-
-    print("パーツJSON 編集ツール")
-    print("-" * 40)
-
-    while True:
-        categories = get_category_dirs()
-        cat = select_category(categories)
-        if cat is None:
-            break
-        run_category(cat)
-
-    print("終了します")
-
-
-def dlc_status_str(dlc):
+def dlc_status_str(dlc: str) -> str:
     if dlc == "__none__":
         return "なし（確認済み）"
     if not dlc:
@@ -236,7 +47,7 @@ def dlc_status_str(dlc):
     return dlc
 
 
-def props_status_str(props):
+def props_status_str(props: list) -> str:
     if not props:
         return "未登録"
     if len(props) == 1 and props[0].get("name") == "__none__":
@@ -244,11 +55,11 @@ def props_status_str(props):
     return f"{len(props)} 件"
 
 
-def is_props_none(props):
+def is_props_none(props: list) -> bool:
     return len(props) == 1 and props[0].get("name") == "__none__"
 
 
-def select_category(categories):
+def select_category(categories: list[str]) -> str | None:
     while True:
         print("\nカテゴリを選択:")
         for i, cat in enumerate(categories, 1):
@@ -269,7 +80,7 @@ def select_category(categories):
         print("無効な入力")
 
 
-def category_menu(category_name, file_count):
+def category_menu(category_name: str, file_count: int) -> str:
     while True:
         print(f"\n=== {category_name} ({file_count} ファイル) ===")
         print("  [1] 一括DLC設定")
@@ -278,17 +89,13 @@ def category_menu(category_name, file_count):
         print("  [q] 終了")
         inp = input("  > ").strip().lower()
 
-        if inp == "q":
-            return "quit"
-        if inp == "r":
-            return "back"
-        if inp in ("1", "2"):
+        if inp in ("q", "r", "1", "2"):
             return inp
 
 
-def pick_dlc(prompt, current):
+def pick_dlc(prompt_label: str, current: str):
     while True:
-        print(f"\n[{prompt}] 現在: {dlc_status_str(current)}")
+        print(f"\n[{prompt_label}] 現在: {dlc_status_str(current)}")
         for i, name in enumerate(DLC_NAMES, 1):
             print(f"  [{i}] {name}")
         print(f"  [{len(DLC_NAMES) + 1}] DLCなし（確認済み）")
@@ -314,7 +121,7 @@ def pick_dlc(prompt, current):
         print("無効な入力")
 
 
-def batch_set_dlc(files):
+def batch_set_dlc(files: list[Path]) -> int:
     result = pick_dlc("一括DLC設定", "")
     if result is None or result == "__skip__":
         return 0
@@ -330,7 +137,7 @@ def batch_set_dlc(files):
     return applied
 
 
-def edit_properties(current_props):
+def edit_properties(current_props: list):
     props = list(current_props)
     if is_props_none(props):
         props = []
@@ -365,10 +172,17 @@ def edit_properties(current_props):
             name = input("    プロパティ名: ").strip()
             desc = input("    説明: ").strip()
             if name or desc:
-                props.append({"name": name, "description": desc})
+                props.append(
+                    {
+                        "name": name,
+                        "nameJa": "",
+                        "description": desc,
+                        "descriptionJa": "",
+                    }
+                )
         elif inp == "2":
             if is_empty:
-                return [PROPS_NONE_SENTINEL]
+                return [dict(PROPS_NONE_SENTINEL)]
             try:
                 idx = int(input(f"    削除する番号 (1-{len(props)}): ").strip())
                 if 1 <= idx <= len(props):
@@ -383,8 +197,8 @@ def edit_properties(current_props):
     return props
 
 
-def edit_single_part(filepath, i, total):
-    data = read_json(filepath)
+def edit_single_part(filepath: Path, i: int, total: int):
+    data = ensure_translation_fields(read_json(filepath))
     rel_path = filepath.relative_to(PARTS_DATA_DIR)
     dlc = data.get("dlc", "")
     props = data.get("properties", [])
@@ -429,7 +243,7 @@ def edit_single_part(filepath, i, total):
     return True
 
 
-def run_category(category_name):
+def run_category(category_name: str) -> bool:
     cat_dir = PARTS_DATA_DIR / category_name
     files = sorted(cat_dir.glob("*.json"))
     if not files:
@@ -438,9 +252,9 @@ def run_category(category_name):
 
     while True:
         cmd = category_menu(category_name, len(files))
-        if cmd == "quit":
+        if cmd == "q":
             return False
-        if cmd == "back":
+        if cmd == "r":
             return True
         if cmd == "1":
             batch_set_dlc(files)
@@ -456,8 +270,236 @@ def run_category(category_name):
             print(f"\n  個別編集完了: {edited}/{len(files)} ファイルを編集")
 
 
+def run_edit_mode() -> None:
+    print("パーツJSON 編集ツール（通常編集）")
+    print("-" * 40)
+    print("保存先: parts_data/<カテゴリ>/<パーツ>.json")
+
+    while True:
+        categories = get_category_dirs()
+        cat = select_category(categories)
+        if cat is None:
+            break
+        cont = run_category(cat)
+        if not cont:
+            break
+
+    print("通常編集を終了します。")
+
+
+# ---------------------------------------------------------------------------
+# Translation mode — writes Japanese fields into parts_data JSON
+# ---------------------------------------------------------------------------
+
+def _prompt_ja_field(label: str, en_value: str, current_ja: str) -> str:
+    current = current_ja or "<未設定>"
+    return prompt(
+        f"{label} [現在: {current}]\n英語: {en_value}\n新しい翻訳: ",
+        current_ja,
+    )
+
+
+def edit_translation_on_part(filepath: Path, category_name: str) -> bool:
+    """
+    Edit Japanese fields on a single parts_data file.
+    Returns True if saved, False if cancelled without save intent.
+    """
+    data = ensure_translation_fields(read_json(filepath))
+    part_id = filepath.stem
+    filled, total = translation_progress(data)
+
+    print(f"\n--- 翻訳編集: {part_id} ---")
+    print(f"カテゴリ: {category_name}")
+    print(f"進捗: {filled}/{total} フィールド")
+    print(f"保存先: {filepath.relative_to(PARTS_DATA_DIR)}")
+
+    labels = {
+        "name": "名前翻訳",
+        "shortDescription": "短い説明翻訳",
+        "description": "説明翻訳",
+    }
+    for en_key, ja_key in PART_TEXT_FIELDS:
+        en_value = data.get(en_key, "")
+        # Always edit name; skip other empty English fields.
+        if en_key != "name" and not en_value:
+            continue
+        data[ja_key] = _prompt_ja_field(
+            labels.get(en_key, ja_key),
+            en_value,
+            data.get(ja_key, ""),
+        )
+
+    logic_nodes = data.get("logicNodes") or []
+    if logic_nodes:
+        print("\n論理ノード翻訳")
+        for idx, node in enumerate(logic_nodes, start=1):
+            if not isinstance(node, dict):
+                continue
+            print(f"\n  [{idx}] {node.get('label', '')}")
+            for en_key, ja_key in LOGIC_NODE_TEXT_FIELDS:
+                en_value = node.get(en_key, "")
+                labels = {
+                    "label": "    ラベル翻訳",
+                    "description": "    説明翻訳",
+                }
+                # Always prompt for label; for description only if EN exists or JA exists
+                if en_key == "description" and not en_value and not node.get(ja_key):
+                    continue
+                node[ja_key] = _prompt_ja_field(
+                    labels.get(en_key, ja_key),
+                    en_value,
+                    node.get(ja_key, ""),
+                )
+
+    properties = [
+        p
+        for p in (data.get("properties") or [])
+        if isinstance(p, dict) and p.get("name") != "__none__"
+    ]
+    if properties:
+        print("\nプロパティ翻訳")
+        for idx, prop in enumerate(properties, start=1):
+            print(f"\n  [{idx}] {prop.get('name', '')}")
+            for en_key, ja_key in PROPERTY_TEXT_FIELDS:
+                en_value = prop.get(en_key, "")
+                labels = {
+                    "name": "    名前翻訳",
+                    "description": "    説明翻訳",
+                }
+                if en_key == "description" and not en_value and not prop.get(ja_key):
+                    continue
+                prop[ja_key] = _prompt_ja_field(
+                    labels.get(en_key, ja_key),
+                    en_value,
+                    prop.get(ja_key, ""),
+                )
+
+    write_json(filepath, normalize_part_shape(data))
+    filled, total = translation_progress(data)
+    print(f"\n保存しました -> {filepath.relative_to(PARTS_DATA_DIR)} ({filled}/{total})")
+    return True
+
+
+def run_translation_mode() -> None:
+    print("パーツ翻訳編集ツール")
+    print("-" * 40)
+    print("日本語フィールドを parts_data の各 JSON に直接書き込みます。")
+    print("（parts_index.json / parts_translations_ja.json には保存しません）")
+
+    try:
+        index_data = load_index()
+    except FileNotFoundError as exc:
+        print(exc)
+        return
+
+    categories: list[str] = []
+    file_map: dict[str, list[tuple[str, Path]]] = {}
+    for category_name, part_id, filepath in iter_parts_from_index(index_data):
+        if not filepath.exists():
+            continue
+        if category_name not in file_map:
+            categories.append(category_name)
+            file_map[category_name] = []
+        file_map[category_name].append((part_id, filepath))
+
+    while True:
+        category_idx = choose_from_list(categories, "翻訳したいカテゴリを選択")
+        if category_idx is None:
+            break
+
+        category_name = categories[category_idx]
+        entries = file_map[category_name]
+
+        # Show progress next to each part name
+        choices = []
+        for part_id, filepath in entries:
+            data = ensure_translation_fields(read_json(filepath))
+            filled, total = translation_progress(data)
+            mark = "✓" if total > 0 and filled == total else f"{filled}/{total}"
+            choices.append(f"{part_id}  [{mark}]")
+
+        part_idx = choose_from_list(choices, f"{category_name} のパーツを選択")
+        if part_idx is None:
+            continue
+
+        part_id, filepath = entries[part_idx]
+        edit_translation_on_part(filepath, category_name)
+
+    print("翻訳編集を終了します。")
+
+
+# ---------------------------------------------------------------------------
+# Mode registration & entry point
+# ---------------------------------------------------------------------------
+
+def register_builtin_modes() -> None:
+    # Clear is not needed; re-registering is fine for reloads.
+    register_mode("1", "通常編集（DLC / プロパティ）", run_edit_mode)
+    register_mode("2", "翻訳編集（parts_data に日本語を保存）", run_translation_mode)
+    # Future modes:
+    # register_mode("3", "タグ編集", run_tags_mode)
+    # register_mode("4", "整合性チェック", run_validate_mode)
+
+
+def choose_main_mode() -> str | None:
+    modes = list_modes()
+    while True:
+        print("パーツ編集モードを選択してください:")
+        for key, label in modes:
+            print(f"  [{key}] {label}")
+        print("  [q] 終了")
+        choice = input("> ").strip().lower()
+        if choice == "q":
+            return None
+        if get_mode_handler(choice):
+            return choice
+        # CLI-style aliases
+        if choice in ("--translate", "-t", "translate"):
+            return "2"
+        if choice in ("--edit", "-e", "edit"):
+            return "1"
+        print("無効な入力です。")
+
+
+def resolve_cli_mode(argv: list[str]) -> str | None:
+    if any(arg in ("--translate", "-t", "translate") for arg in argv):
+        return "2"
+    if any(arg in ("--edit", "-e", "edit") for arg in argv):
+        return "1"
+    # Generic: --mode=N or --mode N
+    for i, arg in enumerate(argv):
+        if arg.startswith("--mode="):
+            return arg.split("=", 1)[1]
+        if arg == "--mode" and i + 1 < len(argv):
+            return argv[i + 1]
+    return None
+
+
+def main() -> None:
+    register_builtin_modes()
+
+    mode_key = resolve_cli_mode(sys.argv[1:])
+    if mode_key is None:
+        mode_key = choose_main_mode()
+
+    if mode_key is None:
+        print("終了します")
+        return
+
+    handler = get_mode_handler(mode_key)
+    if handler is None:
+        print(f"不明なモード: {mode_key}")
+        print("利用可能:", ", ".join(f"{k}={label}" for k, label in list_modes()))
+        return
+
+    handler()
+
+
 if __name__ == "__main__":
     try:
         main()
     except KeyboardInterrupt:
         print("\n中断しました")
+    except Exception as exc:
+        print(f"\nエラー: {exc}")
+        raise

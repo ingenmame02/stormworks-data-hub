@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import Translate, { translate } from '@docusaurus/Translate';
+import { pickLocalized } from './locale';
 
 type LogicNode = {
   label: string;
@@ -200,7 +203,28 @@ function typeBadgeStyle(type: string): React.CSSProperties {
   };
 }
 
+function formatDlc(dlc: string): string {
+  if (dlc === '__none__') {
+    return translate({
+      id: 'parts.dlc.none',
+      message: 'None',
+      description: 'DLC status when the part needs no DLC',
+    });
+  }
+  if (!dlc) {
+    return translate({
+      id: 'parts.dlc.unregistered',
+      message: 'Unregistered',
+      description: 'DLC status when not yet filled in',
+    });
+  }
+  return dlc;
+}
+
 export default function PartCard({ part }: PartCardProps) {
+  const { i18n } = useDocusaurusContext();
+  const locale = i18n.currentLocale;
+
   const imgPath = `/img/Block_data/${part.category}/${part.name}.png`;
   const resolvedSrc = useBaseUrl(imgPath);
   const fallbackSrc = useBaseUrl('/img/stormworks_data_hub_logo.svg');
@@ -209,23 +233,20 @@ export default function PartCard({ part }: PartCardProps) {
   const inputNodes = part.logicNodes.filter((node) => node.mode === 'input');
   const outputNodes = part.logicNodes.filter((node) => node.mode === 'output');
 
-  const displayName = part.nameJa || part.name;
-  const displayShortDesc = part.shortDescriptionJa || part.shortDescription;
-  const displayDesc = part.descriptionJa || part.description;
-
-  let displayDlc: string;
-  if (part.dlc === '__none__') {
-    displayDlc = 'なし';
-  } else if (!part.dlc) {
-    displayDlc = '未登録';
-  } else {
-    displayDlc = part.dlc;
-  }
+  const displayName = pickLocalized(locale, part.name, part.nameJa);
+  const displayShortDesc = pickLocalized(
+    locale,
+    part.shortDescription,
+    part.shortDescriptionJa,
+  );
+  const displayDesc = pickLocalized(locale, part.description, part.descriptionJa);
+  const displayDlc = formatDlc(part.dlc);
 
   const realProperties = part.properties.filter((p) => p.name !== '__none__');
-  const hasPropsConfirmedNone = part.properties.length > 0 && realProperties.length === 0;
+  const hasPropsConfirmedNone =
+    part.properties.length > 0 && realProperties.length === 0;
 
-  const renderLogicTable = (title: string, nodes: LogicNode[]) => {
+  const renderLogicTable = (title: React.ReactNode, nodes: LogicNode[]) => {
     if (nodes.length === 0) return null;
 
     return (
@@ -239,19 +260,40 @@ export default function PartCard({ part }: PartCardProps) {
           </colgroup>
           <thead>
             <tr>
-              <th style={typeHeaderStyle}>種別</th>
-              <th style={labelHeaderStyle}>ラベル</th>
-              <th style={descriptionHeaderStyle}>説明</th>
+              <th style={typeHeaderStyle}>
+                <Translate id="parts.logic.type" description="Logic node type column">
+                  Type
+                </Translate>
+              </th>
+              <th style={labelHeaderStyle}>
+                <Translate id="parts.logic.label" description="Logic node label column">
+                  Label
+                </Translate>
+              </th>
+              <th style={descriptionHeaderStyle}>
+                <Translate
+                  id="parts.logic.description"
+                  description="Logic node description column"
+                >
+                  Description
+                </Translate>
+              </th>
             </tr>
           </thead>
           <tbody>
             {nodes.map((node, index) => (
               <tr key={`${node.mode}-${node.type}-${node.label}-${index}`}>
                 <td style={typeColStyle}>
-                  <span style={typeBadgeStyle(node.type)}>{typeLabels[node.type] ?? node.type}</span>
+                  <span style={typeBadgeStyle(node.type)}>
+                    {typeLabels[node.type] ?? node.type}
+                  </span>
                 </td>
-                <td style={labelColStyle}>{node.labelJa || node.label}</td>
-                <td style={descriptionCellStyle}>{node.descriptionJa || node.description}</td>
+                <td style={labelColStyle}>
+                  {pickLocalized(locale, node.label, node.labelJa)}
+                </td>
+                <td style={descriptionCellStyle}>
+                  {pickLocalized(locale, node.description, node.descriptionJa)}
+                </td>
               </tr>
             ))}
           </tbody>
@@ -266,7 +308,7 @@ export default function PartCard({ part }: PartCardProps) {
         <div style={imageWrapStyle}>
           <img
             src={imgSrc}
-            alt={part.name}
+            alt={displayName}
             width="90"
             height="90"
             style={{ objectFit: 'contain', width: '100%', height: '100%' }}
@@ -278,26 +320,51 @@ export default function PartCard({ part }: PartCardProps) {
         <div style={nameAreaStyle}>
           <h3 style={titleStyle}>{displayName}</h3>
           <div style={metaRowStyle}>
-            <span>DLC依存: {displayDlc}</span>
-            <span>コスト: ${part.value}</span>
-            <span>重量: {part.mass} mass</span>
+            <span>
+              <Translate id="parts.meta.dlc" description="DLC dependency label">
+                DLC
+              </Translate>
+              : {displayDlc}
+            </span>
+            <span>
+              <Translate id="parts.meta.cost" description="Part cost label">
+                Cost
+              </Translate>
+              : ${part.value}
+            </span>
+            <span>
+              <Translate id="parts.meta.mass" description="Part mass label">
+                Mass
+              </Translate>
+              : {part.mass} mass
+            </span>
           </div>
-          {displayShortDesc && (
-            <p style={dlcStyle}>{displayShortDesc}</p>
-          )}
+          {displayShortDesc && <p style={dlcStyle}>{displayShortDesc}</p>}
         </div>
       </div>
 
-      {displayDesc && (
-        <p style={descriptionStyle}>{displayDesc}</p>
-      )}
+      {displayDesc && <p style={descriptionStyle}>{displayDesc}</p>}
 
-      {renderLogicTable('入力', inputNodes)}
-      {renderLogicTable('出力', outputNodes)}
+      {renderLogicTable(
+        <Translate id="parts.logic.inputs" description="Input nodes section title">
+          Inputs
+        </Translate>,
+        inputNodes,
+      )}
+      {renderLogicTable(
+        <Translate id="parts.logic.outputs" description="Output nodes section title">
+          Outputs
+        </Translate>,
+        outputNodes,
+      )}
 
       {realProperties.length > 0 && (
         <>
-          <div style={sectionHeaderStyle}>プロパティ</div>
+          <div style={sectionHeaderStyle}>
+            <Translate id="parts.properties" description="Properties section title">
+              Properties
+            </Translate>
+          </div>
           <table style={logicTableStyle}>
             <colgroup>
               <col style={{ width: '140px' }} />
@@ -305,15 +372,33 @@ export default function PartCard({ part }: PartCardProps) {
             </colgroup>
             <thead>
               <tr>
-                <th style={propNameHeaderStyle}>名前</th>
-                <th style={descriptionHeaderStyle}>説明</th>
+                <th style={propNameHeaderStyle}>
+                  <Translate
+                    id="parts.properties.name"
+                    description="Property name column"
+                  >
+                    Name
+                  </Translate>
+                </th>
+                <th style={descriptionHeaderStyle}>
+                  <Translate
+                    id="parts.properties.description"
+                    description="Property description column"
+                  >
+                    Description
+                  </Translate>
+                </th>
               </tr>
             </thead>
             <tbody>
               {realProperties.map((prop, i) => (
                 <tr key={i}>
-                  <td style={propNameCellStyle}>{prop.nameJa || prop.name}</td>
-                  <td style={descriptionCellStyle}>{prop.descriptionJa || prop.description}</td>
+                  <td style={propNameCellStyle}>
+                    {pickLocalized(locale, prop.name, prop.nameJa)}
+                  </td>
+                  <td style={descriptionCellStyle}>
+                    {pickLocalized(locale, prop.description, prop.descriptionJa)}
+                  </td>
                 </tr>
               ))}
             </tbody>
@@ -321,7 +406,14 @@ export default function PartCard({ part }: PartCardProps) {
         </>
       )}
       {hasPropsConfirmedNone && (
-        <p style={{ ...dlcStyle, marginTop: '0.5rem' }}>プロパティ: なし</p>
+        <p style={{ ...dlcStyle, marginTop: '0.5rem' }}>
+          <Translate
+            id="parts.properties.none"
+            description="Shown when part has no properties"
+          >
+            Properties: none
+          </Translate>
+        </p>
       )}
     </article>
   );

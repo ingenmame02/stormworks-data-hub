@@ -345,5 +345,61 @@
   "theme.tags.tagsPageTitle": {
     "message": "タグ",
     "description": "The title of the tag list page"
+  },
+  "parts.dlc.none": {
+    "message": "なし",
+    "description": "DLC status when the part needs no DLC"
+  },
+  "parts.dlc.unregistered": {
+    "message": "未登録",
+    "description": "DLC status when not yet filled in"
+  },
+  "parts.logic.type": {
+    "message": "種別",
+    "description": "Logic node type column"
+  },
+  "parts.logic.label": {
+    "message": "ラベル",
+    "description": "Logic node label column"
+  },
+  "parts.logic.description": {
+    "message": "説明",
+    "description": "Logic node description column"
+  },
+  "parts.logic.inputs": {
+    "message": "入力",
+    "description": "Input nodes section title"
+  },
+  "parts.logic.outputs": {
+    "message": "出力",
+    "description": "Output nodes section title"
+  },
+  "parts.meta.dlc": {
+    "message": "DLC依存",
+    "description": "DLC dependency label"
+  },
+  "parts.meta.cost": {
+    "message": "コスト",
+    "description": "Part cost label"
+  },
+  "parts.meta.mass": {
+    "message": "重量",
+    "description": "Part mass label"
+  },
+  "parts.properties": {
+    "message": "プロパティ",
+    "description": "Properties section title"
+  },
+  "parts.properties.name": {
+    "message": "名前",
+    "description": "Property name column"
+  },
+  "parts.properties.description": {
+    "message": "説明",
+    "description": "Property description column"
+  },
+  "parts.properties.none": {
+    "message": "プロパティ: なし",
+    "description": "Shown when part has no properties"
   }
 }

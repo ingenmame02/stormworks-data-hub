@@ -124,9 +124,11 @@ def parse_definitions(definitions_dir):
 
                     logic_node = {
                         "label": label,
+                        "labelJa": "",
                         "mode": io_mode,
                         "type": signal_type,
                         "description": node_desc,
+                        "descriptionJa": "",
                     }
                     logic_nodes.append(logic_node)
 
@@ -135,10 +137,13 @@ def parse_definitions(definitions_dir):
 
             part = {
                 "name": name,
+                "nameJa": "",
                 "category": category,
                 "dlc": "",
                 "description": description,
+                "descriptionJa": "",
                 "shortDescription": short_description,
+                "shortDescriptionJa": "",
                 "value": value,
                 "mass": mass,
                 "logicNodes": logic_nodes,
@@ -182,10 +187,43 @@ def output_parts(parts, output_dir):
             safe_name = safe_filename(part["name"])
             file_path = cat_dir / f"{safe_name}.json"
 
+            # Preserve Japanese fields / DLC / properties already curated in parts_data.
+            if file_path.exists():
+                try:
+                    with open(file_path, encoding="utf-8") as existing_f:
+                        old_data = json.load(existing_f)
+                    part = merge_preserved_fields(part, old_data)
+                except (OSError, json.JSONDecodeError) as e:
+                    print(f"Warning: could not merge existing {file_path}: {e}", file=sys.stderr)
+
             with open(file_path, "w", encoding="utf-8") as f:
                 json.dump(part, f, ensure_ascii=False, indent=2)
+                f.write("\n")
 
     print(f"\nTotal: {len(parts)} parts in {len(sorted_categories)} categories")
+
+
+def merge_preserved_fields(new_part, old_part):
+    """Keep curated fields when regenerating from game definitions."""
+    for key in ("nameJa", "descriptionJa", "shortDescriptionJa", "dlc"):
+        if old_part.get(key):
+            new_part[key] = old_part[key]
+
+    # properties are curated manually (not in XML definitions)
+    if old_part.get("properties"):
+        new_part["properties"] = old_part["properties"]
+
+    old_nodes = old_part.get("logicNodes") or []
+    new_nodes = new_part.get("logicNodes") or []
+    for i, node in enumerate(new_nodes):
+        if i >= len(old_nodes):
+            break
+        old_node = old_nodes[i] or {}
+        for key in ("labelJa", "descriptionJa"):
+            if old_node.get(key):
+                node[key] = old_node[key]
+
+    return new_part
 
 
 def main():
