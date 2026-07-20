@@ -9,6 +9,9 @@
 .cache-loader
 src/data/parts_index.json
 
+# Python
+__pycache__/
+
 # Misc
 .DS_Store
 .env.local

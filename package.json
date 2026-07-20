@@ -17,7 +17,6 @@
     "write-heading-ids": "docusaurus write-heading-ids",
     "edit-part-data": "python tools/edit_part_data.py",
     "edit-part-translations": "python tools/edit_part_data.py --translate",
-    "migrate-part-translations": "python tools/migrate_translations_to_parts_data.py",
     "typecheck": "tsc"
   },
   "dependencies": {

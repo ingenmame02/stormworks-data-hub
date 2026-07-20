@@ -452,11 +452,6 @@ def choose_main_mode() -> str | None:
             return None
         if get_mode_handler(choice):
             return choice
-        # CLI-style aliases
-        if choice in ("--translate", "-t", "translate"):
-            return "2"
-        if choice in ("--edit", "-e", "edit"):
-            return "1"
         print("無効な入力です。")
 
 

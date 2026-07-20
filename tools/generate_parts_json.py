@@ -206,11 +206,11 @@ def output_parts(parts, output_dir):
 def merge_preserved_fields(new_part, old_part):
     """Keep curated fields when regenerating from game definitions."""
     for key in ("nameJa", "descriptionJa", "shortDescriptionJa", "dlc"):
-        if old_part.get(key):
+        if key in old_part and old_part[key] is not None:
             new_part[key] = old_part[key]
 
     # properties are curated manually (not in XML definitions)
-    if old_part.get("properties"):
+    if "properties" in old_part and old_part["properties"] is not None:
         new_part["properties"] = old_part["properties"]
 
     old_nodes = old_part.get("logicNodes") or []
@@ -220,7 +220,7 @@ def merge_preserved_fields(new_part, old_part):
             break
         old_node = old_nodes[i] or {}
         for key in ("labelJa", "descriptionJa"):
-            if old_node.get(key):
+            if key in old_node and old_node[key] is not None:
                 node[key] = old_node[key]
 
     return new_part
