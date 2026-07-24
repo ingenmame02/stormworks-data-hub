@@ -1,17 +1,22 @@
 {
   "name": "Handle",
+  "nameJa": "取っ手",
   "category": "Blocks",
   "dlc": "",
   "description": "Interacting with [$[action_interact_left]] or [$[action_interact_right]] again will detach that hand. The handle can be used to drag vehicles around. If a vehicle is too heavy to move, you will be detached automatically when you move outside the handle's interaction range.",
+  "descriptionJa": "[$[action_interact_left]]や[$[action_interact_right]]を押してつかめる取っ手です。取っ手をつかんでいる時に[$[action_interact_left]]や[$[action_interact_right]]を押すと離せます。軽い乗り物は取っ手をつかんでそのまま動かせます。プレイヤーがとっての範囲外に移動したとき自動的に手を放します。",
   "shortDescription": "A handle that you can attach to by interacting with [$[action_interact_left]] or [$[action_interact_right]].",
+  "shortDescriptionJa": "[$[action_interact_left]] または [$[action_interact_right]] を押して、掴むことができるハンドルです。",
   "value": 5,
   "mass": 1.0,
   "logicNodes": [
     {
       "label": "Occupied",
+      "labelJa": "使用中",
       "mode": "output",
       "type": "onoff",
-      "description": "Outputs an on signal if a player is attached to the handle."
+      "description": "Outputs an on signal if a player is attached to the handle.",
+      "descriptionJa": "プレイヤーがハンドルを使用しているとき、オン信号を出力します。"
     }
   ],
   "properties": []
