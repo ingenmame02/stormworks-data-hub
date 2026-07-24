@@ -225,7 +225,7 @@ export default function PartCard({ part }: PartCardProps) {
   const { i18n } = useDocusaurusContext();
   const locale = i18n.currentLocale;
 
-  const imgPath = `/parts/img/${part.category}/${part.id}.jpg`;
+  const imgPath = `/img/Block_data/${part.category}/${part.name}.png`;
   const resolvedSrc = useBaseUrl(imgPath);
   const fallbackSrc = useBaseUrl('/img/stormworks_data_hub_logo.svg');
   const [imgSrc, setImgSrc] = useState(resolvedSrc);
