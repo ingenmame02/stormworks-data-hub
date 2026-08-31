@@ -19,3 +19,4 @@ This site is a data hub for gradually organizing the mechanics and building meth
 
 - [Block Data](./blocks_data)
 - [Modular Engine Basics](./engine)
+- [Radar Specifications](./radar)

@@ -99,18 +99,18 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: '記事一覧',
+          label: 'All Articles',
         },
         {
           type: 'doc',
           docId: 'blocks_data',
-          label: 'ブロックデータ',
+          label: 'Block Data',
           position: 'left',
         },
         {
           type: 'doc',
           docId: 'engine',
-          label: 'エンジン',
+          label: 'Engine',
           position: 'left',
         },
         {
