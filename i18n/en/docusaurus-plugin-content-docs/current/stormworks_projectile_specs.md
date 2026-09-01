@@ -5,10 +5,6 @@ title: Projectile Specifications
 
 # Stormworks Projectile Specifications Summary
 
-Data Hub Assumptions
-
-- The basic unit of time is **1 tick = 1/60 second**.
-
 ---
 
 ## 1. Physics Model (Common to All Projectiles)
