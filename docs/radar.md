@@ -3,8 +3,6 @@ sidebar_position: 4
 title: レーダーの仕様
 ---
 
-
-
 # Stormworks レーダー仕様
 
 | 項目 | 値 / 式 |

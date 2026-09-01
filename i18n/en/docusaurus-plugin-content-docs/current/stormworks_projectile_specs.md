@@ -2,7 +2,6 @@
 sidebar_position: 5
 title: Projectile Specifications
 ---
-
 # Stormworks Projectile Specifications Summary
 
 ---

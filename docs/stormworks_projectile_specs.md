@@ -2,7 +2,6 @@
 sidebar_position: 5
 title: 砲弾の仕様
 ---
-
 # Stormworks 砲弾仕様まとめ
 
 ---

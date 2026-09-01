@@ -3,7 +3,6 @@ sidebar_position: 4
 title: Radar Specifications
 ---
 
-
 # Stormworks Radar Specifications
 
 | Item | Value / Formula |
