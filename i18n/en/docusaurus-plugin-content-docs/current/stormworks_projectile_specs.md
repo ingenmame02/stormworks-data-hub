@@ -26,7 +26,7 @@ Percentage of velocity remaining after 1 second:
 
 ### 1-2 Gravity {#1-2}
 
-The gravitational force acting on a projectile **is not constant; it weakens as altitude h increases**.
+The gravitational force acting on a projectile **is not constant; it decreases as altitude h increases**.
 
 ```
 g(h) = 30 × exp(−1/60 × h/1000)    [m/s²]
@@ -43,43 +43,44 @@ Acceleration due to wind `a_wind` [m/tick²]:
 a_wind = W × p(h) × (WindInf / 60)
 ```
 
-Altitude-dependent atmospheric pressure/density coefficient `p(h)`
+- `W` [m/tick²]
+- Altitude-dependent pressure/density coefficient `p(h)`
 
 ```
 p(h) = (((44.33 − h/1000) / 11.89)^5.256) / 1013
 ```
 
 - `W` … Wind speed (in-game value) [m/s]
-- `p(h)` … A coefficient representing changes in air density based on altitude. The higher the altitude, the smaller the value (as shown in the formula above).
-- `WindInf` … Wind influence coefficient for each gun (see table in [§2-1](#2-1)). The smaller the value, the smaller the effect of wind.
+- `p(h)` … Coefficient representing changes in air density based on altitude. The higher the altitude, the smaller the value (as shown in the formula above)
+- `WindInf` … Wind influence factor for each gun (see table in [§2-1](#2-1)). The smaller the value, the smaller the effect of wind
 - `/60` … Conversion from m/s to m/tick
 
-The deceleration rate `k` does not vary with altitude. Altitude-related factors affecting projectiles appear in this wind term and in gravity ([§1-2](#1-2)).
+The deceleration rate `k` does not vary with altitude. Altitude-related factors affecting projectiles are reflected in this wind term and in gravity ([§1-2](#1-2)).
 
 ### 1-4 Disappearance Conditions
 
 - Projectiles disappear once they exceed their lifespan (lifeSpan).
-- Small-caliber projectiles tend to disappear even at speeds of approximately **less than 50 m/s**.
-- Rocket, Battle, Artillery, and Bertha projectiles will remain until the end of their lifespan even at speeds below 50 m/s, except when underwater.
+- Small-caliber shells tend to dissipate even at speeds of approximately **less than 50 m/s**.
+- Rocket, Battle, Artillery, and Bertha shells will remain until the end of their lifespan even at speeds below 50 m/s, except when underwater.
 
 ---
 
-## 2. Cannon List (Standard Table)
+## 2. Gun List (Standard Table)
 
-The “guideline” range is an estimate for horizontal to 45° indirect fire. The effective range varies depending on altitude, wind, and decay conditions.
+The “guideline” range is an estimate for horizontal to 45° indirect fire. Effective range varies depending on altitude, wind, and decay conditions.
 
 ### 2-1 Basic Parameters {#2-1}
 
-| Type | Gun | Muzzle Velocity v [m/s] (m/tick) | Deceleration Rate k [/tick] | Lifespan [tick] (s) | WindInf [dimensionless] | Approximate Range |
-|---|---|---|---| ---|---|---|
+| Type | Gun | Muzzle Velocity v [m/s] (m/tick) | Decay Rate k [/tick] | Lifespan [tick] (s) | WindInf | Estimated Range |
+|---| ---|---|---|---|---|---|
 | 1 | Machine Gun | 800 (13.333) | 0.025 | 120 (2.00) | 0.15 | Approx. 500 m |
 | 2 | Light AC | 1000 (16.667) | 0.02 | 150 (2.50) | 0.135 | Approx. 750 m |
 | 3 | Rotary AC | 1000 (16.667) | 0.01 | 300 (5.00) | 0.13 | Approx. 1.5 km |
 | 4 | Heavy AC | 900 (15.000) | 0.005 | 600 (10.00) | 0.125 | Approx. 2.5 km |
 | 5 | Battle | 800 (13.333) | 0.002 | 1500 (25.00) | 0.12 | Approx. 4.5 km (45° indirect) |
 | 6 | Artillery | 700 (11.667) | 0.001 | 2,400 (40.00) | 0.11  | Approx. 6.5 km (45° indirect) |
-| 7 | Bertha | 600 (10.000) | 0.0005 | 2,400 (40.00) | 0.105 | Approx. 7.5 km (45° indirect) |
-| 8 | Rocket Launcher | Approx. 50 (initial launch velocity) | 0.003 | 3,600 (60) | 0.125 | Approx. 2.5 km |
+| 7 | Bertha | 600 (10.000) | 0.0005 | 2400 (40.00) | 0.105 | Approx. 7.5 km (45° indirect) |
+| 8 | Rocket Launcher | Approx. 50 (initial launch velocity) | 0.003 | 3600 (60) | 0.125 | Approx. 2.5 km |
 
 Since the Rocket undergoes an **acceleration phase (approx. 600 m/s² × 1 second)** after launch, the “constant initial velocity + drag” formula ([§5](#5)) cannot be applied. Please separate the acceleration and integrate it (see [§2-2](#2-2)).
 
@@ -87,8 +88,8 @@ Since the Rocket undergoes an **acceleration phase (approx. 600 m/s² × 1 secon
 
 | Type | Weapon | Rate of Fire / Notes | Ammunition | Disappearance |
 |---|---|---|---|---|
-| 1 | Machine Gun | Burst 900 rpm (4 ticks/shot) | Kinetic / AP / Incendiary | Prone to disintegration at speeds below approx. 50 m/s |
-| 2 | Light AC | Burst 450 rpm / Sustained approx. 319 rpm | Kinetic / HE / Frag / AP / Incendiary | Prone to disintegration at speeds below approx. 50 m/s |
+| 1 | Machine Gun | Burst 900 rpm (4 ticks/shot) | Kinetic / AP / Incendiary | Prone to disintegration at speeds below approximately 50 m/s |
+| 2 | Light AC | Burst 450 rpm / Sustained approx. 319 rpm | Kinetic / HE / Frag / AP / Incendiary | Prone to disintegration at speeds below approximately 50 m/s |
 | 3 | Rotary AC | Burst: 1,800 rpm / Sustained: Approx. 814 rpm, Spin-up: Approx. 0.5 s | Kinetic / HE / Frag / AP / Incendiary | Prone to dissipation at speeds below approx. 50 m/s |
 | 4 | Heavy AC | Burst: Approx. 112.5 rpm / Sustained: Approx. 99 rpm | Kinetic / HE / Frag / AP / Incendiary | Prone to disintegration at speeds below approx. 50 m/s |
 | 5 | Battle | Approx. 20 rounds/minute | Kinetic / HE / Frag / AP / Incendiary | Remains until the end of its lifespan even at low speeds, except underwater |
@@ -118,7 +119,7 @@ Ballistics (initial velocity, drag, and flight time) are determined by the gun a
 
 | Weapon | HE | Frag | Kinetic | AP | Incendiary |
 |---|---|---|---|---|---|
-| Machine Gun | × | × | ✓ | ✓ | ✓ |
+| Machine Gun | × | × | ○ | ○ | ○ |
 | Autocannons | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Battle | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Artillery | ✓ | ✓ | × | ✓ | × |
@@ -172,17 +173,25 @@ Drag only (horizontal, no gravity):
 
 ```
 v(t) = v0 × (1 − k)^t                 -- t is a tick
-x(t) = v0 × (1 − (1 − k)^t) / k       -- k ≠ 0; displacement is in meters
+x(t) = v0 × (1 − (1 − k)^t) / k       -- k ≠ 0, displacement is in m
 ```
 
-With gravity, continuous approximation:
+With Gravity · Continuous Approximation:
+
+In the continuous approximation, the discrete decay at each tick, `v_new = v_old × (1 − k)`, is treated as continuous exponential decay. The continuous decay coefficient in this case is denoted as **`k_base`** (units: [/s]).
+
+```
+k_base = −ln(1 − k)
+```
+
+(When `k` is small, it can be approximated as `k_base ≈ k × 60`. *Note: Since the deceleration rate k represents the rate of decrease per tick, k_base is calculated as the decay rate per second, not per tick.)
 
 ```
 dv/dt = a − k_base × v
 v(t)  = v0 × e^{−k_base t} + (a / k_base) × (1 − e^{−k_base t})
 ```
 
-Substitute the values for gravity and wind into `a`. Time `t` is a tick.
+`a` represents the combined effects of gravity and wind. Time `t` is in ticks.
 
 Common conversions:
 
@@ -190,7 +199,7 @@ Common conversions:
 v[m/tick]      = v[m/s] ÷ 60
 g[m/tick²]     = 30 ÷ 3600
 lifespan[s]        = lifeSpan ÷ 60
-remaining velocity ratio (per second)    = (1 − k)^60
+residual velocity ratio (1 second)    = (1 − k)^60
 ```
 
 ---
