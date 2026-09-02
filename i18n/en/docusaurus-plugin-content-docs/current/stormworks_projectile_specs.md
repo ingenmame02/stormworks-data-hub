@@ -43,46 +43,43 @@ Acceleration due to wind `a_wind` [m/tick²]:
 a_wind = W × p(h) × (WindInf / 60)
 ```
 
-- `W` [m/tick²]
-- Altitude-dependent pressure/density coefficient `p(h)`
-
 ```
 p(h) = (((44.33 − h/1000) / 11.89)^5.256) / 1013
 ```
 
-- `W` … Wind speed (in-game value) [m/s]
-- `p(h)` … Coefficient representing changes in air density based on altitude. The higher the altitude, the smaller the value (as shown in the formula above)
-- `WindInf` … Wind influence factor for each gun (see table in [§2-1](#2-1)). The smaller the value, the smaller the effect of wind
+- `W` [m/tick²]
+- `p(h)` … A coefficient representing changes in air density based on altitude. The higher the altitude, the smaller the value (as shown in the formula above)
+- `WindInf` … Wind influence factor for each gun (table in [§2-1](#2-1)). The smaller the value, the smaller the wind’s effect
 - `/60` … Conversion from m/s to m/tick
 
-The deceleration rate `k` does not vary with altitude. Altitude-related factors affecting projectiles are reflected in this wind term and in gravity ([§1-2](#1-2)).
+The deceleration rate `k` does not vary with altitude. Altitude-related factors affecting the projectile appear in this wind term and in gravity ([§1-2](#1-2)).
 
 ### 1-4 Disappearance Conditions
 
 - Projectiles disappear once they exceed their lifespan (lifeSpan).
-- Small-caliber shells tend to dissipate even at speeds of approximately **less than 50 m/s**.
-- Rocket, Battle, Artillery, and Bertha shells will remain until the end of their lifespan even at speeds below 50 m/s, except when underwater.
+- Small-caliber projectiles tend to disappear even at speeds of approximately **less than 50 m/s**.
+- Rocket, Battle, Artillery, and Bertha projectiles remain until the end of their lifespan even at speeds below 50 m/s, except when underwater.
 
 ---
 
 ## 2. Gun List (Standard Table)
 
-The “guideline” range is an estimate for horizontal to 45° indirect fire. Effective range varies depending on altitude, wind, and decay conditions.
+The “Approximate Range” is an estimate for horizontal to 45° indirect fire. Effective range varies depending on altitude, wind, and disappearance conditions.
 
 ### 2-1 Basic Parameters {#2-1}
 
-| Type | Gun | Muzzle Velocity v [m/s] (m/tick) | Decay Rate k [/tick] | Lifespan [tick] (s) | WindInf | Estimated Range |
-|---| ---|---|---|---|---|---|
+| Type | Gun | Initial Velocity v [m/s] (m/tick) | Deceleration Rate k [/tick] | Lifespan [tick] (s) | WindInf | Approx. Range |
+|---|---|---|---|---|---|---|
 | 1 | Machine Gun | 800 (13.333) | 0.025 | 120 (2.00) | 0.15 | Approx. 500 m |
 | 2 | Light AC | 1000 (16.667) | 0.02 | 150 (2.50) | 0.135 | Approx. 750 m |
 | 3 | Rotary AC | 1000 (16.667) | 0.01 | 300 (5.00) | 0.13 | Approx. 1.5 km |
 | 4 | Heavy AC | 900 (15.000) | 0.005 | 600 (10.00) | 0.125 | Approx. 2.5 km |
-| 5 | Battle | 800 (13.333) | 0.002 | 1500 (25.00) | 0.12 | Approx. 4.5 km (45° indirect) |
+| 5 | Battle | 800 (13.333) | 0.002 | 1,500 (25.00) | 0.12 | Approx. 4.5 km (45° indirect) |
 | 6 | Artillery | 700 (11.667) | 0.001 | 2,400 (40.00) | 0.11  | Approx. 6.5 km (45° indirect) |
 | 7 | Bertha | 600 (10.000) | 0.0005 | 2400 (40.00) | 0.105 | Approx. 7.5 km (45° indirect) |
-| 8 | Rocket Launcher | Approx. 50 (initial launch velocity) | 0.003 | 3600 (60) | 0.125 | Approx. 2.5 km |
+| 8 | Rocket Launcher | Approx. 50 (initial velocity) | 0.003 | 3,600 (60) | 0.125 | approx. 2.5 km |
 
-Since the Rocket undergoes an **acceleration phase (approx. 600 m/s² × 1 second)** after launch, the “constant initial velocity + drag” formula ([§5](#5)) cannot be applied. Please separate the acceleration and integrate it (see [§2-2](#2-2)).
+Since the Rocket undergoes an **acceleration phase (approx. 600 m/s² × 1 second)** after launch, the “constant initial velocity + drag” equation ([§5](#5)) cannot be applied. Please separate the acceleration and integrate it (see [§2-2](#2-2)).
 
 ### 2-2 Rate of Fire, Ammunition, and Disappearance {#2-2}
 
@@ -115,7 +112,7 @@ Ballistics (initial velocity, drag, and flight time) are determined by the gun a
 | Armor Piercing (AP) | Penetrates blocks based on velocity |
 | Incendiary | Area damage + ignition check |
 
-### 3-2 Available Ammo Types by Weapon
+### 3-2 Available Ammunition Types by Weapon
 
 | Weapon | HE | Frag | Kinetic | AP | Incendiary |
 |---|---|---|---|---|---|
@@ -184,14 +181,14 @@ In the continuous approximation, the discrete decay at each tick, `v_new = v_old
 k_base = −ln(1 − k)
 ```
 
-(When `k` is small, it can be approximated as `k_base ≈ k × 60`. *Note: Since the deceleration rate k represents the rate of decrease per tick, k_base is calculated as the decay rate per second, not per tick.)
+(When `k` is small, it can be approximated as `k_base ≈ k`. *Note: Since the deceleration rate k represents the rate of decrease per tick, k_base is the equivalent rate of decay per second, not per tick.)
 
 ```
 dv/dt = a − k_base × v
 v(t)  = v0 × e^{−k_base t} + (a / k_base) × (1 − e^{−k_base t})
 ```
 
-`a` represents the combined effects of gravity and wind. Time `t` is in ticks.
+`a` represents gravity and wind. Time `t` is in ticks.
 
 Common conversions:
 
