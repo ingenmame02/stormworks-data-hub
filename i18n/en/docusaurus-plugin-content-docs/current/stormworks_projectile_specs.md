@@ -181,7 +181,7 @@ In the continuous approximation, the discrete decay at each tick, `v_new = v_old
 k_base = −ln(1 − k)
 ```
 
-(When `k` is small, it can be approximated as `k_base ≈ k`. *Note: Since the deceleration rate k represents the rate of decrease per tick, k_base is the equivalent rate of decay per second, not per tick.)
+(When `k` is small, it can be approximated as `k_base ≈ k`. )
 
 ```
 dv/dt = a − k_base × v
