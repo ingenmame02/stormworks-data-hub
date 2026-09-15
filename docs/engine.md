@@ -2,6 +2,7 @@
 sidebar_position: 3
 title: エンジン作成チュートリアル
 ---
+共著：rikkun2X
 
 # エンジン作成チュートリアル
 

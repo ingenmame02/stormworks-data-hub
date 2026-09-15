@@ -2,6 +2,7 @@
 sidebar_position: 4
 title: エンジンデータ集
 ---
+共著：rikkun2X
 
 # エンジンデータ集
 
