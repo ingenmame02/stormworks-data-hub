@@ -1,0 +1,18 @@
+---
+sidebar_position: 5
+title: Engine Tuning Tool
+---
+Co-authored by: rikkun2X
+
+import EngineThrottleTool from '@site/src/components/EngineThrottleTool';
+
+# Engine Tuning Tool
+
+By entering the size and quantity of cylinders and crankshafts, power source, RPS, and target output, this tool generates air throttle and fuel throttle formulas using coefficients from the data collection. For a configuration of 10 small cylinders and 5 small crankshafts, it uses the shared V10 quadratic measurement model. For 8 small cylinders and 4 small crankshafts, it applies the small V8 conversion rule obtained from the author.
+
+<EngineThrottleTool />
+
+## How to Read the Formula
+
+In the general model, resistance coefficients for base values, cylinders, and crankshafts from the data collection are added for each unit. This total resistance is added to the target output, and the resulting value is divided by the measured power coefficient of the power source to generate the formula. Fuel is adjusted by multiplying the air amount by the boost correction and then by the fuel ratio.
+
