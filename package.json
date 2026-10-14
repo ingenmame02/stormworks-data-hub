@@ -10,6 +10,7 @@
     "start": "docusaurus start",
     "start:ja": "docusaurus start --locale ja",
     "start:en": "docusaurus start --locale en",
+    "test": "node --test",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
@@ -37,7 +38,7 @@
     "@docusaurus/tsconfig": "3.10.1",
     "@docusaurus/types": "3.10.1",
     "@types/react": "^19.0.0",
-    "typescript": "~6.0.2"
+    "typescript": "7.0.2"
   },
   "browserslist": {
     "production": [
