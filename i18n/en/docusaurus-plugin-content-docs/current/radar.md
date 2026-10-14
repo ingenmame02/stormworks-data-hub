@@ -44,7 +44,7 @@ During detection, the following uniformly distributed noise continues to be adde
 | Dish | 800 km |
 | AWACS | 2000 km |
 
-## 5. Effective Range (Maximum Detection Range) Formula
+## 5. Effective Range (Maximum Detection Range) Formula {#5}
 
 The effective range is derived from the FOV setting:
 

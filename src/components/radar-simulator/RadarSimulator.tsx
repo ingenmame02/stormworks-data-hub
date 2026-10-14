@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, useCallback } from 'react';
+import React, { useRef, useCallback, useState, useEffect } from 'react';
 
 const RADAR_TYPES = {
   Missile: 80000,
@@ -32,6 +32,16 @@ interface DetectedTarget {
 }
 
 const RadarSimulator = () => {
+  // Responsive state - Simple boolean based on window width (no batching)
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    setIsMobile(window.innerWidth < 1024);
+    const handleResize = () => setIsMobile(window.innerWidth < 1024);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   // Radar Properties
   const [radarType, setRadarType] = useState('Basic');
   const [fovX, setFovX] = useState(0.05); // Beam width in turns (Horizontal)
@@ -249,8 +259,18 @@ const RadarSimulator = () => {
     <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', padding: '20px', backgroundColor: '#1a1a1a', color: '#eee', borderRadius: '8px' }}>
       <h2>Radar Simulator</h2>
 
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
+      <div style={{
+        display: 'flex',
+        flexDirection: isMobile ? 'column' : 'row',
+        flexWrap: 'wrap',
+        gap: '20px'
+      }}>
         {/* Controls */}
+        <div style={{ 
+          flex: isMobile ? '1 1 100%' : '1 1 450px',
+          minWidth: isMobile ? 'auto' : '380px'
+        }}>
+        {/* Controls Section - Contains all control inputs */}
         <div style={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
           
           {/* Radar Settings Section */}
@@ -452,9 +472,16 @@ const RadarSimulator = () => {
             </div>
           </div>
         </div>
+      </div>
 
-        {/* Visualization */}
-        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+        {/* Visualization Section */}
+        <div style={{ 
+          display: 'flex', 
+          flexDirection: 'column',
+          alignItems: 'center',
+          flex: isMobile ? '1 1 100%' : '1 1 420px',
+          minWidth: `${VIEW_SIZE}px`
+        }}>
           <h3 style={{ margin: 0 }}>Radar View</h3>
           <div style={{ marginTop: '10px', width: VIEW_SIZE, height: VIEW_SIZE, position: 'relative' }}>
             <svg
@@ -492,16 +519,16 @@ const RadarSimulator = () => {
               ))}
 
               {detectedTargets.map((t, i) => {
-                 const correctedAngleRad = (t.azimuth - 0.5) * 2 * Math.PI;
-                 return (
-                   <circle
-                     key={`${t.id}-${i}`}
-                     cx={CENTER + Math.cos(correctedAngleRad) * getVisualScale(t.distance)}
-                     cy={CENTER + Math.sin(correctedAngleRad) * getVisualScale(t.distance)}
-                     r="4"
-                     fill="#f00"
-                   />
-                 );
+                const correctedAngleRad = (t.azimuth - 0.5) * 2 * Math.PI;
+                return (
+                  <circle
+                    key={`${t.id}-${i}`}
+                    cx={CENTER + Math.cos(correctedAngleRad) * getVisualScale(t.distance)}
+                    cy={CENTER + Math.sin(correctedAngleRad) * getVisualScale(t.distance)}
+                    r="4"
+                    fill="#f00"
+                  />
+                );
               })}
             </svg>
           </div>
